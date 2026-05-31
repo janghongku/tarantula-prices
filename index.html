@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>거미 가격 도감 · price index</title>
+<meta name="description" content="여러 거미(타란튤라) 분양샵의 상품명과 가격을 한 곳에 모아 검색·필터·정렬하는 가격 모아보기. 이미지 미수집, 원문 링크로 연결.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#100e0c; --surface:#1a1613; --surface-2:#221d18; --line:#322a22;
+    --text:#ece4d6; --muted:#8c8071; --faint:#5f564b;
+    --accent:#d8923f; --accent-soft:#3a2a16; --naver:#03c75a; --own:#8fb6c6;
+  }
+  *{box-sizing:border-box} html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:"Public Sans",system-ui,sans-serif; line-height:1.5;
+    background-image:
+      radial-gradient(900px 500px at 85% -10%, #1c160f 0%, transparent 60%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+    min-height:100vh;
+  }
+  .wrap{max-width:940px;margin:0 auto;padding:48px 24px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:24px}
+  .kicker{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent)}
+  h1{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(34px,6vw,52px);margin:.18em 0 .12em;letter-spacing:-.01em;line-height:1.02}
+  h1 em{font-style:italic;font-weight:500;color:var(--muted)}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted)}
+  .meta b{color:var(--text);font-weight:700}
+  .meta .dot{color:var(--faint)}
+  .controls{display:flex;flex-direction:column;gap:12px;margin-bottom:8px}
+  .ctl-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .search{flex:1;min-width:220px;position:relative}
+  .search input{width:100%;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:11px 14px 11px 36px;font-size:14px;font-family:inherit;outline:none;transition:border-color .2s}
+  .search input:focus{border-color:var(--accent)}
+  .search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:15px;height:15px;stroke:var(--faint)}
+  .seg{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:3px}
+  .seg button{background:none;border:none;color:var(--muted);padding:8px 14px;border-radius:7px;font-size:13px;cursor:pointer;transition:.15s;font-family:inherit}
+  .seg button.on{background:var(--accent);color:#1a1206;font-weight:600}
+  .sortsel{background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:0 12px;font-size:13px;cursor:pointer;font-family:inherit;height:40px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap}
+  .chip{background:var(--surface);border:1px solid var(--line);color:var(--muted);padding:6px 13px;border-radius:20px;font-size:12.5px;cursor:pointer;transition:.15s;font-family:"JetBrains Mono",monospace}
+  .chip:hover{color:var(--text);border-color:var(--faint)}
+  .chip.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .chip .n{opacity:.55;margin-left:5px}
+  .barwrap{margin:18px 0 10px;font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted)}
+  .row{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;padding:14px 4px;border-bottom:1px solid var(--line);transition:.12s}
+  .row:hover{background:var(--surface);border-radius:10px;padding-left:14px;padding-right:14px}
+  .pname{display:flex;flex-direction:column;gap:6px;min-width:0}
+  .pname a{color:var(--text);text-decoration:none;font-size:15px;font-weight:500;line-height:1.35}
+  .pname a:hover{color:var(--accent)}
+  .tag{align-self:flex-start;font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.03em;padding:2px 8px;border-radius:5px;border:1px solid var(--line);color:var(--muted)}
+  .tag .ch{font-weight:700}
+  .tag.naver .ch{color:var(--naver)} .tag.own .ch{color:var(--own)}
+  .price{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:17px;white-space:nowrap}
+  .price small{color:var(--faint);font-weight:500;font-size:12px;margin-left:2px}
+  .empty{color:var(--faint);text-align:center;padding:60px 0;font-family:"Fraunces",serif;font-style:italic;font-size:18px}
+  .empty code{font-family:"JetBrains Mono",monospace;font-style:normal;font-size:13px;color:var(--accent);background:var(--surface);padding:2px 7px;border-radius:5px}
+  footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);color:var(--faint);font-size:12px;font-family:"JetBrains Mono",monospace;line-height:1.9}
+  footer a{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--faint)}
+  footer a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Theraphosidae · Price Index</div>
+    <h1>거미 가격 도감 <em>price index</em></h1>
+    <div class="meta">
+      <span><b id="count">0</b> / <span id="total">0</span> 품목</span>
+      <span class="dot">·</span>
+      <span id="freshness">불러오는 중…</span>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="ctl-row">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="q" placeholder="상품명 검색 (예: 팜포베테우스, 유체, 암컷, Brachypelma)">
+      </div>
+      <div class="seg" id="channel">
+        <button data-c="all" class="on">전체</button>
+        <button data-c="자사몰">자사몰</button>
+        <button data-c="네이버">네이버</button>
+      </div>
+      <select class="sortsel" id="sort">
+        <option value="price">낮은 가격순</option>
+        <option value="price-d">높은 가격순</option>
+        <option value="name">이름순</option>
+        <option value="vendor">업체순</option>
+      </select>
+    </div>
+    <div class="chips" id="vendors"></div>
+  </div>
+
+  <div class="barwrap" id="bar"></div>
+  <div id="list"><div class="empty">불러오는 중…</div></div>
+
+  <footer>
+    상품명·가격은 각 판매처 페이지에서 모은 <b>원문 그대로</b>입니다(가공·정규화 안 함). 이미지는 수집하지 않으며, 각 행은 원문 상품 페이지로 연결됩니다.<br>
+    가격·재고는 실제 판매처와 다를 수 있으니 <b>구매 전 원문 확인</b> 필수입니다. 자료는 <span id="ftime">—</span> 기준.<br>
+    판매처 운영자께: 노출 제외(opt-out)를 원하시면 이 페이지 운영자에게 알려주시면 바로 반영합니다.
+  </footer>
+</div>
+
+<script>
+let DATA=[], META={}, channel="all", sort="price", vendorSel=new Set();
+const won=n=>Number(n).toLocaleString("ko-KR");
+const chCls=c=>c==="네이버"?"naver":"own";
+const $=id=>document.getElementById(id);
+
+function fmtDate(iso){
+  if(!iso) return null;
+  const d=new Date(iso);
+  if(isNaN(d)) return iso;
+  const p=n=>String(n).padStart(2,"0");
+  return `${d.getFullYear()}.${p(d.getMonth()+1)}.${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`;
+}
+
+function buildVendorChips(){
+  // 현재 채널 필터에 맞는 업체만, 건수와 함께
+  const pool=DATA.filter(p=>channel==="all"||p.channel===channel);
+  const counts={};
+  pool.forEach(p=>counts[p.vendor]=(counts[p.vendor]||0)+1);
+  const vs=Object.keys(counts).sort((a,b)=>a.localeCompare(b,"ko"));
+  $("vendors").innerHTML=
+    `<span class="chip ${vendorSel.size===0?'on':''}" data-v="__all">전체 업체</span>`+
+    vs.map(v=>`<span class="chip ${vendorSel.has(v)?'on':''}" data-v="${v}">${v}<span class="n">${counts[v]}</span></span>`).join("");
+}
+
+function render(){
+  const q=$("q").value.trim().toLowerCase();
+  let items=DATA.filter(p=>
+    (channel==="all"||p.channel===channel) &&
+    (vendorSel.size===0||vendorSel.has(p.vendor)) &&
+    (!q||(p.name||"").toLowerCase().includes(q)));
+  items.sort((a,b)=>
+    sort==="name"?a.name.localeCompare(b.name,"ko"):
+    sort==="vendor"?(a.vendor+a.channel).localeCompare(b.vendor+b.channel,"ko")||a.price-b.price:
+    sort==="price-d"?b.price-a.price:a.price-b.price);
+
+  $("count").textContent=items.length;
+  if(items.length){
+    const ps=items.map(p=>p.price).sort((a,b)=>a-b);
+    $("bar").textContent=
+      `최저 ${won(ps[0])}원 · 최고 ${won(ps[ps.length-1])}원 · 중앙값 ${won(ps[ps.length>>1])}원`;
+  }else $("bar").textContent="";
+
+  $("list").innerHTML=items.length?items.map(p=>`
+    <div class="row">
+      <div class="pname">
+        <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
+        <span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>
+      </div>
+      <div class="price">${won(p.price)}<small>원</small></div>
+    </div>`).join(""):`<div class="empty">해당 조건의 품목 없음</div>`;
+}
+
+function escapeHtml(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+
+function setFreshness(){
+  const ch=META.channels||{};
+  const parts=[];
+  if(ch["자사몰"]) parts.push(`자사몰 ${fmtDate(ch["자사몰"])}`);
+  if(ch["네이버"]) parts.push(`네이버 ${fmtDate(ch["네이버"])}`);
+  const overall=fmtDate(META.updated_at);
+  $("freshness").innerHTML = parts.length?`갱신 — ${parts.join(" · ")}`:(overall?`갱신 ${overall}`:"");
+  $("ftime").textContent = parts.length?parts.join(" · "):(overall||"—");
+}
+
+function init(data){
+  DATA=(data.products||[]).filter(p=>p&&p.name&&p.price>0);
+  META=data;
+  $("total").textContent=DATA.length;
+  setFreshness();
+  buildVendorChips();
+  render();
+}
+
+$("q").addEventListener("input",render);
+$("sort").addEventListener("change",e=>{sort=e.target.value;render();});
+$("channel").addEventListener("click",e=>{
+  const b=e.target.closest("button[data-c]");if(!b)return;
+  channel=b.dataset.c;
+  [...document.querySelectorAll("#channel button")].forEach(x=>x.classList.toggle("on",x===b));
+  vendorSel.clear();           // 채널 바꾸면 업체 선택 초기화(다른 채널 업체가 안 보일 수 있어서)
+  buildVendorChips();render();});
+$("vendors").addEventListener("click",e=>{
+  const c=e.target.closest(".chip[data-v]");if(!c)return;
+  const v=c.dataset.v;
+  if(v==="__all")vendorSel.clear();
+  else vendorSel.has(v)?vendorSel.delete(v):vendorSel.add(v);
+  buildVendorChips();render();});
+
+// 데이터가 파일에 내장돼 있으면(공유용 단일 파일) 그걸 쓰고, 아니면 prices.json fetch
+if (window.__PRICES__) {
+  init(window.__PRICES__);
+} else {
+  fetch("prices.json",{cache:"no-store"})
+    .then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
+    .then(init)
+    .catch(err=>{
+      $("freshness").textContent="데이터 없음";
+      $("list").innerHTML=`<div class="empty">prices.json 을 읽지 못했습니다 (${escapeHtml(String(err.message||err))}).<br>
+        로컬에서 볼 땐 폴더에서 <code>python -m http.server</code> 실행 후<br>
+        <code>http://localhost:8000</code> 으로 열어 주세요. (file:// 로 직접 열면 브라우저가 막습니다)</div>`;
+    });
+}
+</script>
+</body>
+</html>
