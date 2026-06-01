@@ -1,0 +1,30 @@
+name: update-prices
+
+# 자사몰(Cafe24)만 12시간마다 자동 갱신. 네이버는 클라우드 IP 차단으로 제외(집에서 수동).
+on:
+  schedule:
+    - cron: "0 0,12 * * *"      # 매일 09:00 / 21:00 KST
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-prices
+  cancel-in-progress: false
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4
+      - name: Scrape Cafe24 self-malls
+        run: python scrape.py --only cafe24
+      - name: Commit prices
+        run: |
+          git config user.name  "price-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add prices.json price_history.json
+          git diff --staged --quiet || git commit -m "chore: auto-update self-mall prices"
+          git push
