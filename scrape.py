@@ -73,6 +73,7 @@ NAME_KEYS  = ("productName", "name", "dispNm", "title")
 PRICE_KEYS = ("discountedSalePrice", "salePrice", "price", "lowPrice", "sellingPrice")
 ID_KEYS    = ("id", "productNo", "productId", "channelProductNo")
 OUT_FILE   = "prices.json"
+HIST_FILE  = "price_history.json"   # url -> [[날짜, 가격], ...] (로컬 추이 기록, 커밋 안 함)
 
 
 def to_int_price(text):
@@ -349,20 +350,32 @@ def scrape_smartstore_all(sources, headful=False, profile=None):
                 continue
             seen, got = set(), []
             for cid in spider.keys():
-                pg = 1
-                while pg <= 30:
-                    url = f"{base}/category/{cid}?st=TOTALSALE&dt=IMAGE&page={pg}&size=80"
-                    try:
-                        page.goto(url, wait_until="domcontentloaded", timeout=30000)
-                        page.wait_for_timeout(1200); scroll_until_stable(page)
-                    except Exception as e:
-                        print(f"    [{cid}] goto 실패: {e}"); break
+                url = f"{base}/category/{cid}?st=TOTALSALE&dt=IMAGE&size=80"
+                try:
+                    page.goto(url, wait_until="domcontentloaded", timeout=30000)
+                    page.wait_for_timeout(1500); scroll_until_stable(page)
+                except Exception as e:
+                    print(f"    [{cid}] goto 실패: {e}"); continue
+                # 80개 초과분: 페이지 번호를 클릭하며 DOM에서 수집 (네이버 SSR은 첫 페이지만 줌)
+                pagenum = 1
+                while pagenum <= 15:
                     batch = [b for b in extract_smartstore(page, src) if b["url"] not in seen]
+                    if not batch and pagenum > 1:
+                        break                                   # 새 상품 없음 = 끝
                     for b in batch: seen.add(b["url"])
                     got += batch
-                    if not batch:
+                    nxt, clicked = pagenum + 1, False
+                    for role in ("link", "button"):             # 다음 페이지 번호 클릭
+                        try:
+                            loc = page.get_by_role(role, name=str(nxt), exact=True)
+                            if loc.count() > 0:
+                                loc.first.click(timeout=4000); clicked = True; break
+                        except Exception:
+                            pass
+                    if not clicked:
                         break
-                    pg += 1
+                    page.wait_for_timeout(1600); scroll_until_stable(page)
+                    pagenum = nxt
             print(f"  [{src['vendor']} 네이버:{src['handle']}] {len(got)}건 (거미)", flush=True)
             out += got
         closer.close()
@@ -405,6 +418,46 @@ def merge_with_existing(new_products, attempted_channels, now_iso):
 
 
 # ─────────────────────────────────────────────────────────────
+# 가격 변동: 직전 prices.json 대비 prev(이전가) 표시 + price_history.json 추이 기록
+# ─────────────────────────────────────────────────────────────
+def recent_naver_hours(now):
+    """직전 네이버 수집 후 경과 시간(시간). 없으면 None."""
+    last = load_existing()[1].get("네이버")
+    if not last:
+        return None
+    try:
+        return (now - datetime.datetime.fromisoformat(last)).total_seconds() / 3600
+    except Exception:
+        return None
+
+
+def apply_price_changes(products, now_iso):
+    old_by_url = {p["url"]: p["price"] for p in load_existing()[0] if p.get("url")}
+    hist = {}
+    hp = pathlib.Path(HIST_FILE)
+    if hp.exists():
+        try:
+            hist = json.loads(hp.read_text(encoding="utf-8"))
+        except Exception:
+            hist = {}
+    changed = 0
+    for p in products:
+        p.pop("prev", None)
+        u, price = p["url"], p["price"]
+        old = old_by_url.get(u)
+        if old is not None and old != price:
+            p["prev"] = old; changed += 1
+        h = hist.get(u)
+        if not h or h[-1][1] != price:                 # 가격 바뀌었거나 처음 본 상품
+            hist.setdefault(u, []).append([now_iso[:10], price])
+            hist[u] = hist[u][-24:]                     # 최근 24개만
+    try:
+        hp.write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
+    except Exception:
+        pass
+    return changed
+
+
 def main():
     global DEBUG
     ap = argparse.ArgumentParser()
@@ -413,8 +466,11 @@ def main():
     ap.add_argument("--debug", action="store_true")
     ap.add_argument("--no-merge", action="store_true", help="기존 prices.json 무시(전체 덮어쓰기)")
     ap.add_argument("--profile", metavar="DIR", help="네이버 로그인 세션 재사용용 브라우저 프로필 폴더")
+    ap.add_argument("--force", action="store_true", help="네이버 하루 1회 가드 무시")
     args = ap.parse_args()
     DEBUG = args.debug
+    now = datetime.datetime.now()
+    now_iso = now.isoformat(timespec="seconds")
 
     products, attempted = [], set()
     if args.only != "smartstore":
@@ -423,15 +479,20 @@ def main():
         for s in [s for s in SOURCES if s["type"] == "cafe24"]:
             products += scrape_cafe24(s)
     if args.only != "cafe24":
-        print("네이버 수집...")
-        attempted.add("네이버")
-        products += scrape_smartstore_all([s for s in SOURCES if s["type"] == "smartstore"],
-                                          headful=args.headful, profile=args.profile)
+        hrs = recent_naver_hours(now)
+        if hrs is not None and hrs < 20 and not args.force:
+            print(f"네이버: 마지막 수집 {hrs:.1f}시간 전 → 하루 1회 가드로 건너뜀 (강제: --force)")
+        else:
+            print("네이버 수집...")
+            attempted.add("네이버")
+            products += scrape_smartstore_all([s for s in SOURCES if s["type"] == "smartstore"],
+                                              headful=args.headful, profile=args.profile)
 
-    now_iso = datetime.datetime.now().isoformat(timespec="seconds")
     channels = {ch: now_iso for ch in {p["channel"] for p in products}}
     if not args.no_merge:
         products, channels = merge_with_existing(products, attempted, now_iso)
+
+    changed = apply_price_changes(products, now_iso)
 
     data = {"updated_at": now_iso, "channels": channels, "products": products}
     with open(OUT_FILE, "w", encoding="utf-8") as f:
@@ -441,7 +502,8 @@ def main():
     for p in products:
         by_ch[p["channel"]] = by_ch.get(p["channel"], 0) + 1
     print(f"\n→ {OUT_FILE} 저장 (총 {len(products)}건; " +
-          ", ".join(f"{k} {v}" for k, v in sorted(by_ch.items())) + ").")
+          ", ".join(f"{k} {v}" for k, v in sorted(by_ch.items())) +
+          f"). 가격변동 {changed}건.")
     if not products:
         print("  0건이면 --headful --debug 로 다시 돌리고 debug_* 파일을 확인.")
 

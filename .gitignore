@@ -22,6 +22,8 @@ exp_naver.py
 verify_ui.py
 # 공유용 생성물 (build_share.py로 언제든 재생성)
 거미가격_공유.html
+# 로컬 가격추이 기록 (커밋 안 함 — 추이는 git 히스토리로도 남음)
+price_history.json
 
 # macOS
 .DS_Store

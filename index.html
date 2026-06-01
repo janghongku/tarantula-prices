@@ -57,8 +57,12 @@
   .tag{align-self:flex-start;font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.03em;padding:2px 8px;border-radius:5px;border:1px solid var(--line);color:var(--muted)}
   .tag .ch{font-weight:700}
   .tag.naver .ch{color:var(--naver)} .tag.own .ch{color:var(--own)}
-  .price{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:17px;white-space:nowrap}
+  .price{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:17px;white-space:nowrap;text-align:right}
   .price small{color:var(--faint);font-weight:500;font-size:12px;margin-left:2px}
+  .chg{display:block;margin-top:3px;font-size:11px;font-weight:700;font-family:"JetBrains Mono",monospace}
+  .chg.up{color:#e0705e}   /* 가격 오름 */
+  .chg.down{color:#5fa8e0} /* 가격 내림 */
+  .chg .was{color:var(--faint);font-weight:500;text-decoration:line-through;margin-left:4px}
   .empty{color:var(--faint);text-align:center;padding:60px 0;font-family:"Fraunces",serif;font-style:italic;font-size:18px}
   .empty code{font-family:"JetBrains Mono",monospace;font-style:normal;font-size:13px;color:var(--accent);background:var(--surface);padding:2px 7px;border-radius:5px}
   footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);color:var(--faint);font-size:12px;font-family:"JetBrains Mono",monospace;line-height:1.9}
@@ -148,8 +152,9 @@ function render(){
   $("count").textContent=items.length;
   if(items.length){
     const ps=items.map(p=>p.price).sort((a,b)=>a-b);
+    const nchg=items.filter(p=>p.prev!=null&&p.prev!==p.price).length;
     $("bar").textContent=
-      `최저 ${won(ps[0])}원 · 최고 ${won(ps[ps.length-1])}원 · 중앙값 ${won(ps[ps.length>>1])}원`;
+      `최저 ${won(ps[0])}원 · 최고 ${won(ps[ps.length-1])}원 · 중앙값 ${won(ps[ps.length>>1])}원`+(nchg?` · 가격변동 ${nchg}건`:"");
   }else $("bar").textContent="";
 
   $("list").innerHTML=items.length?items.map(p=>`
@@ -158,11 +163,16 @@ function render(){
         <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
         <span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>
       </div>
-      <div class="price">${won(p.price)}<small>원</small></div>
+      <div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}</div>
     </div>`).join(""):`<div class="empty">해당 조건의 품목 없음</div>`;
 }
 
 function escapeHtml(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function chgHtml(p){
+  if(p.prev==null||p.prev===p.price) return "";
+  const up=p.price>p.prev, diff=Math.abs(p.price-p.prev), pct=p.prev?Math.round(diff/p.prev*100):0;
+  return `<span class="chg ${up?'up':'down'}">${up?'▲':'▼'} ${won(diff)}${pct?` (${pct}%)`:''}<span class="was">${won(p.prev)}원</span></span>`;
+}
 
 function setFreshness(){
   const ch=META.channels||{};
