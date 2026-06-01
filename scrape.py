@@ -73,7 +73,7 @@ NAME_KEYS  = ("productName", "name", "dispNm", "title")
 PRICE_KEYS = ("discountedSalePrice", "salePrice", "price", "lowPrice", "sellingPrice")
 ID_KEYS    = ("id", "productNo", "productId", "channelProductNo")
 OUT_FILE   = "prices.json"
-HIST_FILE  = "price_history.json"   # url -> [[날짜, 가격], ...] (로컬 추이 기록, 커밋 안 함)
+HIST_FILE  = "price_history.json"   # url -> [[날짜, 가격], ...] 가격 추이 기록(커밋해서 영구 누적)
 
 
 def to_int_price(text):
