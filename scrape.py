@@ -556,6 +556,9 @@ def main():
 
     changed = apply_price_changes(products, now_iso)
 
+    # 고정 순서로 정렬 → 매 수집마다 순서가 안 바뀌어 git diff에 '실제 변동'만 보인다
+    products.sort(key=lambda p: (p.get("channel", ""), p.get("vendor", ""), p.get("url", "")))
+
     data = {"updated_at": now_iso, "channels": channels, "products": products}
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
