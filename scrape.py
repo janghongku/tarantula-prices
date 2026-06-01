@@ -491,7 +491,8 @@ def recent_naver_hours(now):
 
 
 def apply_price_changes(products, now_iso):
-    old_by_url = {p["url"]: p["price"] for p in load_existing()[0] if p.get("url")}
+    """price_history.json에 가격 추이를 누적하고, 각 상품에 직전가(prev)·변동일·그래프(hist)를 붙인다.
+    이력 기반(직전 '다른' 가격과 비교)이라 하루에 여러 번/채널별로 돌려도 변동 표시가 안 사라지고 영구 누적."""
     hist = {}
     hp = pathlib.Path(HIST_FILE)
     if hp.exists():
@@ -503,16 +504,15 @@ def apply_price_changes(products, now_iso):
     for p in products:
         p.pop("prev", None); p.pop("changed_on", None); p.pop("hist", None)
         u, price = p["url"], p["price"]
-        old = old_by_url.get(u)
-        if old is not None and old != price:
-            p["prev"] = old; p["changed_on"] = now_iso[:10]; changed += 1
-        h = hist.get(u)
-        if not h or h[-1][1] != price:                 # 가격 바뀌었거나 처음 본 상품
-            hist.setdefault(u, []).append([now_iso[:10], price])
-            hist[u] = hist[u][-24:]                     # 최근 24개만
-        # 그래프용: 가격이 1번이라도 바뀐 적 있으면(=이력 2개+) 상품에 첨부
-        if len(hist.get(u, [])) > 1:
-            p["hist"] = hist[u][-12:]
+        h = hist.setdefault(u, [])
+        if not h or h[-1][1] != price:                 # 가격이 바뀐 날만 이력에 1점 추가
+            h.append([now_iso[:10], price])
+            hist[u] = h = h[-24:]
+        if len(h) >= 2:                                # 과거에 다른 가격이 있었음 = 변동 이력
+            p["prev"] = h[-2][1]                        # 직전 '다른' 가격
+            p["changed_on"] = h[-1][0]                  # 최근 변동일
+            p["hist"] = h[-12:]                         # 그래프용
+            changed += 1
     try:
         hp.write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
     except Exception:
