@@ -303,6 +303,75 @@ def _login_wait(page, vendor, headful, reload_url):
     return not _blocked(page)
 
 
+def api_category_products(page, channel_uid, cid, src):
+    """네이버 내부 상품목록 API로 카테고리 전체를 깨끗하게(이름/판매가) 수집. 80개 한계 없음.
+    DOM 파싱(배송비·설명 오인)을 안 거쳐 #배송비/#긴이름 문제도 없음."""
+    out = {}
+    for pg in range(1, 26):
+        api = (f"https://smartstore.naver.com/i/v2/channels/{channel_uid}/categories/{cid}/products"
+               f"?categorySearchType=DISPCATG&sortType=TOTALSALE&page={pg}&pageSize=80")
+        try:
+            data = page.evaluate(
+                "async (u)=>{try{const r=await fetch(u,{headers:{accept:'application/json'},credentials:'include'});"
+                "if(!r.ok) return null; return await r.json();}catch(e){return null;}}", api)
+        except Exception:
+            break
+        if not data:
+            break
+        found, stack = {}, [data]
+        while stack:
+            o = stack.pop()
+            if isinstance(o, dict):
+                n, p, pid = pull_product(o)
+                if n and p and pid:
+                    found.setdefault(pid, (n, p))
+                stack.extend(o.values())
+            elif isinstance(o, list):
+                stack.extend(o)
+        new = 0
+        for pid, (n, p) in found.items():
+            if pid in out or not (100 <= p <= 50_000_000) or "http" in n.lower():
+                continue
+            out[pid] = {"vendor": src["vendor"], "channel": src["channel"], "name": n, "price": p,
+                        "url": f"https://smartstore.naver.com/{src['handle']}/products/{pid}"}
+            new += 1
+        if new == 0:
+            break
+    return list(out.values())
+
+
+def click_category_products(page, base, cid, src):
+    """폴백: 카테고리 페이지에서 페이지번호 클릭하며 DOM 수집."""
+    url = f"{base}/category/{cid}?st=TOTALSALE&dt=IMAGE&size=80"
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        page.wait_for_timeout(1500); scroll_until_stable(page)
+    except Exception:
+        return []
+    seen, got, pagenum = set(), [], 1
+    while pagenum <= 15:
+        batch = [b for b in extract_smartstore(page, src) if b["url"] not in seen]
+        if not batch and pagenum > 1:
+            break
+        for b in batch:
+            seen.add(b["url"])
+        got += batch
+        nxt, clicked = pagenum + 1, False
+        for role in ("menuitem", "link", "button"):
+            try:
+                loc = page.get_by_role(role, name=str(nxt), exact=True)
+                if loc.count() > 0:
+                    loc.first.scroll_into_view_if_needed(timeout=3000)
+                    loc.first.click(timeout=4000); clicked = True; break
+            except Exception:
+                pass
+        if not clicked:
+            break
+        page.wait_for_timeout(1600); scroll_until_stable(page)
+        pagenum = nxt
+    return got
+
+
 def scrape_smartstore_all(sources, headful=False, profile=None):
     try:
         from playwright.sync_api import sync_playwright
@@ -351,36 +420,22 @@ def scrape_smartstore_all(sources, headful=False, profile=None):
             if not spider:                               # 거미 카테고리 없으면 제외(거미 안 파는 매장)
                 print(f"  [{src['vendor']}] 거미 카테고리 없음 → 제외", flush=True)
                 continue
-            seen, got = set(), []
+            channel_uid = page.evaluate(
+                "()=>{const m=JSON.stringify(window.__PRELOADED_STATE__||{})"
+                ".match(/\"channelUid\":\"([^\"]+)\"/);return m?m[1]:null;}")
+            seen, got, used_api = set(), [], False
             for cid in spider.keys():
-                url = f"{base}/category/{cid}?st=TOTALSALE&dt=IMAGE&size=80"
-                try:
-                    page.goto(url, wait_until="domcontentloaded", timeout=30000)
-                    page.wait_for_timeout(1500); scroll_until_stable(page)
-                except Exception as e:
-                    print(f"    [{cid}] goto 실패: {e}"); continue
-                # 80개 초과분: 페이지 번호를 클릭하며 DOM에서 수집 (네이버 SSR은 첫 페이지만 줌)
-                pagenum = 1
-                while pagenum <= 15:
-                    batch = [b for b in extract_smartstore(page, src) if b["url"] not in seen]
-                    if not batch and pagenum > 1:
-                        break                                   # 새 상품 없음 = 끝
-                    for b in batch: seen.add(b["url"])
-                    got += batch
-                    nxt, clicked = pagenum + 1, False
-                    for role in ("menuitem", "link", "button"):  # 네이버 페이지번호 = role=menuitem
-                        try:
-                            loc = page.get_by_role(role, name=str(nxt), exact=True)
-                            if loc.count() > 0:
-                                loc.first.scroll_into_view_if_needed(timeout=3000)
-                                loc.first.click(timeout=4000); clicked = True; break
-                        except Exception:
-                            pass
-                    if not clicked:
-                        break
-                    page.wait_for_timeout(1600); scroll_until_stable(page)
-                    pagenum = nxt
-            print(f"  [{src['vendor']} 네이버:{src['handle']}] {len(got)}건 (거미)", flush=True)
+                items = api_category_products(page, channel_uid, cid, src) if channel_uid else []
+                if items:
+                    used_api = True
+                else:                                          # API 실패 시 클릭 폴백
+                    items = click_category_products(page, base, cid, src)
+                for it in items:
+                    if it["url"] in seen:
+                        continue
+                    seen.add(it["url"]); got.append(it)
+            print(f"  [{src['vendor']} 네이버:{src['handle']}] {len(got)}건 (거미)"
+                  + (" [API]" if used_api else " [DOM]"), flush=True)
             out += got
         closer.close()
     return out
@@ -446,15 +501,18 @@ def apply_price_changes(products, now_iso):
             hist = {}
     changed = 0
     for p in products:
-        p.pop("prev", None)
+        p.pop("prev", None); p.pop("changed_on", None); p.pop("hist", None)
         u, price = p["url"], p["price"]
         old = old_by_url.get(u)
         if old is not None and old != price:
-            p["prev"] = old; changed += 1
+            p["prev"] = old; p["changed_on"] = now_iso[:10]; changed += 1
         h = hist.get(u)
         if not h or h[-1][1] != price:                 # 가격 바뀌었거나 처음 본 상품
             hist.setdefault(u, []).append([now_iso[:10], price])
             hist[u] = hist[u][-24:]                     # 최근 24개만
+        # 그래프용: 가격이 1번이라도 바뀐 적 있으면(=이력 2개+) 상품에 첨부
+        if len(hist.get(u, [])) > 1:
+            p["hist"] = hist[u][-12:]
     try:
         hp.write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
     except Exception:

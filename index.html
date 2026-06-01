@@ -43,6 +43,13 @@
   .seg button{background:none;border:none;color:var(--muted);padding:8px 14px;border-radius:7px;font-size:13px;cursor:pointer;transition:.15s;font-family:inherit}
   .seg button.on{background:var(--accent);color:#1a1206;font-weight:600}
   .sortsel{background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:0 12px;font-size:13px;cursor:pointer;font-family:inherit;height:40px}
+  .toggle{background:var(--surface);border:1px solid var(--line);color:var(--muted);border-radius:10px;padding:0 14px;font-size:13px;cursor:pointer;font-family:inherit;height:40px;transition:.15s}
+  .toggle:hover{color:var(--text);border-color:var(--faint)}
+  .toggle.on{background:var(--accent);color:#1a1206;font-weight:700;border-color:var(--accent)}
+  .spark{display:block;margin-top:4px}
+  .spark .ln{fill:none;stroke:var(--muted);stroke-width:1.5}
+  .spark .dot{fill:var(--accent)}
+  .chgdate{color:var(--faint);font-weight:500;margin-left:5px}
   .chips{display:flex;gap:8px;flex-wrap:wrap}
   .chip{background:var(--surface);border:1px solid var(--line);color:var(--muted);padding:6px 13px;border-radius:20px;font-size:12.5px;cursor:pointer;transition:.15s;font-family:"JetBrains Mono",monospace}
   .chip:hover{color:var(--text);border-color:var(--faint)}
@@ -99,6 +106,7 @@
         <option value="name">이름순</option>
         <option value="vendor">업체순</option>
       </select>
+      <button id="onlyChg" class="toggle" title="가격이 변동된 상품만 보기">변동만 ▲▼</button>
     </div>
     <div class="chips" id="vendors"></div>
   </div>
@@ -114,7 +122,7 @@
 </div>
 
 <script>
-let DATA=[], META={}, channel="all", sort="price", vendorSel=new Set();
+let DATA=[], META={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false;
 const won=n=>Number(n).toLocaleString("ko-KR");
 const chCls=c=>c==="네이버"?"naver":"own";
 const $=id=>document.getElementById(id);
@@ -143,6 +151,7 @@ function render(){
   let items=DATA.filter(p=>
     (channel==="all"||p.channel===channel) &&
     (vendorSel.size===0||vendorSel.has(p.vendor)) &&
+    (!onlyChanged||(p.prev!=null&&p.prev!==p.price)) &&
     (!q||(p.name||"").toLowerCase().includes(q)));
   items.sort((a,b)=>
     sort==="name"?a.name.localeCompare(b.name,"ko"):
@@ -163,7 +172,7 @@ function render(){
         <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
         <span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>
       </div>
-      <div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}</div>
+      <div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}${sparkHtml(p)}</div>
     </div>`).join(""):`<div class="empty">해당 조건의 품목 없음</div>`;
 }
 
@@ -171,7 +180,17 @@ function escapeHtml(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"
 function chgHtml(p){
   if(p.prev==null||p.prev===p.price) return "";
   const up=p.price>p.prev, diff=Math.abs(p.price-p.prev), pct=p.prev?Math.round(diff/p.prev*100):0;
-  return `<span class="chg ${up?'up':'down'}">${up?'▲':'▼'} ${won(diff)}${pct?` (${pct}%)`:''}<span class="was">${won(p.prev)}원</span></span>`;
+  const d=p.changed_on?`<span class="chgdate">${escapeHtml(p.changed_on.slice(5).replace('-','/'))}</span>`:'';
+  return `<span class="chg ${up?'up':'down'}">${up?'▲':'▼'} ${won(diff)}${pct?` (${pct}%)`:''}<span class="was">${won(p.prev)}원</span>${d}</span>`;
+}
+function sparkHtml(p){
+  const h=p.hist; if(!Array.isArray(h)||h.length<2) return "";
+  const ps=h.map(x=>x[1]), mn=Math.min(...ps), mx=Math.max(...ps), rng=(mx-mn)||1, W=92,H=24,n=h.length;
+  const pts=h.map((x,i)=>[ (i/(n-1))*(W-4)+2, H-2-((x[1]-mn)/rng)*(H-4) ]);
+  const path=pts.map((q,i)=>(i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1)).join(' ');
+  const lp=pts[pts.length-1];
+  const title=h.map(x=>`${x[0]} ${won(x[1])}원`).join('\n');
+  return `<svg class="spark" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><title>${escapeHtml(title)}</title><path class="ln" d="${path}"/><circle class="dot" cx="${lp[0].toFixed(1)}" cy="${lp[1].toFixed(1)}" r="2"/></svg>`;
 }
 
 function setFreshness(){
@@ -195,6 +214,7 @@ function init(data){
 
 $("q").addEventListener("input",render);
 $("sort").addEventListener("change",e=>{sort=e.target.value;render();});
+$("onlyChg").addEventListener("click",e=>{onlyChanged=!onlyChanged;e.target.classList.toggle("on",onlyChanged);render();});
 $("channel").addEventListener("click",e=>{
   const b=e.target.closest("button[data-c]");if(!b)return;
   channel=b.dataset.c;
