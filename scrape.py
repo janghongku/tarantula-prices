@@ -199,6 +199,8 @@ def extract_smartstore(page, src):
                 for v in o: walk(v)
         walk(state)
         for pid, (n, p) in found.items():
+            if not (100 <= p <= 50_000_000):           # 비정상가 거름(파싱 오류 방지)
+                continue
             url = f"https://smartstore.naver.com/{handle}/products/{pid}"
             out[url] = {"vendor": src["vendor"], "channel": src["channel"], "name": n, "price": p, "url": url}
 
@@ -214,11 +216,12 @@ def extract_smartstore(page, src):
         if u.startswith("/"): u = "https://smartstore.naver.com" + u
         if not u or u in out: continue
         txt = c.inner_text()
-        price = to_int_price(txt)
+        m = re.search(r"([0-9][0-9,]{2,})\s*원", txt)   # '원' 앞 숫자만(콤마 포함) → 리뷰수/상품번호 오인 방지
+        price = int(m.group(1).replace(",", "")) if m else None
         lines = [l.strip() for l in txt.splitlines() if l.strip()]
-        cand = [l for l in lines if not PRICE_RE.fullmatch(l.replace("원", "").strip())]
+        cand = [l for l in lines if not PRICE_RE.fullmatch(l.replace("원", "").strip()) and "http" not in l.lower()]
         name = max(cand, key=len) if cand else None
-        if name and price:
+        if name and price and "http" not in name.lower() and 100 <= price <= 50_000_000:
             out[u] = {"vendor": src["vendor"], "channel": src["channel"],
                       "name": name, "price": price, "url": u}
 
@@ -365,10 +368,11 @@ def scrape_smartstore_all(sources, headful=False, profile=None):
                     for b in batch: seen.add(b["url"])
                     got += batch
                     nxt, clicked = pagenum + 1, False
-                    for role in ("link", "button"):             # 다음 페이지 번호 클릭
+                    for role in ("menuitem", "link", "button"):  # 네이버 페이지번호 = role=menuitem
                         try:
                             loc = page.get_by_role(role, name=str(nxt), exact=True)
                             if loc.count() > 0:
+                                loc.first.scroll_into_view_if_needed(timeout=3000)
                                 loc.first.click(timeout=4000); clicked = True; break
                         except Exception:
                             pass
