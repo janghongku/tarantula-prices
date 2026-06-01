@@ -13,8 +13,8 @@ debug_*.json
 state_*.json
 scrape_err.log
 ui.png
-# 네이버 봇차단 탐색용 실험 스크립트 (공개 안 함)
-exp_naver.py
+# 네이버 탐색용 실험 스크립트 (공개 안 함)
+exp_*.py
 
 # 로컬 도구 / 에디터 상태
 .claude/
