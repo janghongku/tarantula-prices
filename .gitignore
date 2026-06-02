@@ -25,6 +25,8 @@ verify_ui.py
 # 그룹핑 재생성 산출물 (species_groups.py groups/candidates 로 재생성)
 groups.json
 candidates_review.txt
+# 합본 엑셀 — 바이너리라 커밋 안 함(make_xlsx.py로 로컬 생성, CSV가 원본 아카이브)
+거미_가격_아카이브.xlsx
 
 # macOS
 .DS_Store
