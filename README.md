@@ -6,15 +6,29 @@
 **공개 주소: https://janghongku.github.io/tarantula-prices/** (이 링크만 주면 누구나 열람)
 오프라인으로 줄 땐 `build_share.py`로 만든 `거미가격_공유.html` 단일 파일을 보내도 됨.
 
-## 파일
-| 파일 | 역할 |
-|---|---|
-| `scrape.py` | 각 샵에서 이름+가격 수집 → `prices.json` 생성 |
-| `prices.json` | 수집 결과(데이터) |
-| `index.html` | `prices.json`을 읽어 표시 (로컬 서버로 열기) |
-| `build_share.py` | 데이터를 박아넣은 **단일 파일** 생성 → 친구에게 전송용 |
-| `거미가격_공유.html` | 그 단일 파일. **더블클릭하면 열림** (서버·인터넷 불필요) |
-| `verify_ui.py` | 페이지가 잘 렌더되는지 점검(개발용) |
+## 폴더 구조
+```
+tarantula-prices/
+├── index.html            사이트 (GitHub Pages가 루트에서 서빙)
+├── prices.json           수집 데이터 (사이트가 fetch)
+├── group_map.json        종 묶음 매핑 (사이트가 fetch)
+├── price_history.json    가격 이력 (영구 누적 — 절대 삭제 금지)
+├── species_aliases.json  종 묶기 별칭 사전 (수동 편집)
+│
+├── scrape.py             수집 → prices.json / price_history.json
+├── species_groups.py     같은 종 묶기 → group_map.json   (map / report / candidates)
+├── make_report.py        변동 글(txt) + 변동로그·전체현황(csv) + 알림 플래그
+├── make_xlsx.py          합본 엑셀 (요약 / 전체현황 / 가격변동)
+├── make_graphs.py        2회+ 변동 추이 그래프 (개별 + 모음)
+├── make_cards.py         변동 요약 카드 + 고정 안내 배너 이미지
+├── notify.py             변동 시 맥 알림 (+ 선택: 휴대폰 푸시)
+├── build_share.py        데이터 내장 단일 파일 생성
+│
+├── outputs/   ⬅ 모든 생성물 (글·csv·카드/안내/모음 png·graphs/·엑셀·공유html)
+└── _dev/        실험·임시 스크립트 (비공개)
+```
+**생성물은 전부 `outputs/`.** 사이트가 읽는 `prices.json`·`group_map.json` 과 핵심 데이터·스크립트만 루트에 둔다.
+글 발행: `outputs/가격변동_안내.png` + `가격변동_카드.png` (+ 2회+ 변동 시 `가격추이_모음.png`).
 
 ## 수집 대상
 **자사몰 (Cafe24, requests+BeautifulSoup)** — robots.txt가 `/product/list.html` 허용(확인):
