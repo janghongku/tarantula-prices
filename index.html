@@ -72,6 +72,29 @@
   .chg.up{color:#e0705e}   /* 가격 오름 */
   .chg.down{color:#5fa8e0} /* 가격 내림 */
   .chg .was{color:var(--faint);font-weight:500;text-decoration:line-through;margin-left:4px}
+  /* 묶음(그룹) 카드 */
+  .gcard{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:var(--surface);overflow:hidden}
+  .gcard[open]{border-color:var(--faint);background:var(--surface-2)}
+  .gcard.solo{background:transparent}
+  .gcard summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:8px 16px;align-items:baseline;padding:13px 16px}
+  .gcard summary::-webkit-details-marker{display:none}
+  .gcard summary:hover{background:var(--surface)}
+  .gname{font-size:15.5px;font-weight:600;color:var(--text);display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;min-width:0}
+  .gname .car{color:var(--faint);font-weight:400;font-size:12px;transition:.15s}
+  .gcard[open] .gname .car{transform:rotate(90deg);display:inline-block}
+  .gsci{font-family:"Fraunces",serif;font-style:italic;font-weight:500;font-size:12.5px;color:var(--muted)}
+  .gprice{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:16px;text-align:right;white-space:nowrap;color:var(--text)}
+  .gprice small{color:var(--faint);font-weight:500;font-size:11px}
+  .gsub{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px 7px;font-family:"JetBrains Mono",monospace;font-size:11px}
+  .gsub .gcount{color:var(--faint);align-self:center;margin-right:2px}
+  .gsub .vd{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--muted)}
+  .gcard[open] .gsub .vd{background:var(--bg)}
+  .gsub .vd b{color:var(--text);font-weight:700}
+  .gsub .vd.lo{border-color:var(--accent)} .gsub .vd.lo b{color:var(--accent)}
+  .gbody{border-top:1px solid var(--line);padding:2px 16px 8px}
+  .gbody .row{border-bottom:1px solid var(--line)}
+  .gbody .row:last-child{border-bottom:none}
+  .gbody .row:hover{padding-left:4px;padding-right:4px;background:transparent}
   .empty{color:var(--faint);text-align:center;padding:60px 0;font-family:"Fraunces",serif;font-style:italic;font-size:18px}
   .empty code{font-family:"JetBrains Mono",monospace;font-style:normal;font-size:13px;color:var(--accent);background:var(--surface);padding:2px 7px;border-radius:5px}
   footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);color:var(--faint);font-size:12px;font-family:"JetBrains Mono",monospace;line-height:1.9}
@@ -109,6 +132,7 @@
         <option value="vendor">업체순</option>
       </select>
       <button id="onlyChg" class="toggle" title="가격이 변동된 상품만 보기">변동만 ▲▼</button>
+      <button id="grpBtn" class="toggle" title="같은 종끼리 묶어서 업체 가격 비교">🔗 묶음</button>
     </div>
     <div class="chips" id="vendors"></div>
   </div>
@@ -124,8 +148,9 @@
 </div>
 
 <script>
-let DATA=[], META={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false;
+let DATA=[], META={}, GMAP={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false, grouped=false;
 const won=n=>Number(n).toLocaleString("ko-KR");
+const keyOf=p=>p.url||(p.vendor+"␟"+p.name);
 const chCls=c=>c==="네이버"?"naver":"own";
 const $=id=>document.getElementById(id);
 
@@ -155,6 +180,7 @@ function render(){
     (vendorSel.size===0||vendorSel.has(p.vendor)) &&
     (!onlyChanged||(p.prev!=null&&p.prev!==p.price)) &&
     (!q||(p.name||"").toLowerCase().includes(q)));
+  if(grouped) return renderGrouped(items,q);
   items.sort((a,b)=>
     sort==="name"?a.name.localeCompare(b.name,"ko"):
     sort==="vendor"?(a.vendor+a.channel).localeCompare(b.vendor+b.channel,"ko")||a.price-b.price:
@@ -176,6 +202,45 @@ function render(){
       </div>
       <div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}${sparkHtml(p)}</div>
     </div>`).join(""):`<div class="empty">해당 조건의 품목 없음</div>`;
+}
+
+function renderGrouped(items,q){
+  const gs={};
+  items.forEach(p=>{
+    const g=p.group, gid=g?g.i:("solo:"+keyOf(p));
+    (gs[gid]||(gs[gid]={items:[],name:(g&&g.n)||p.name.split("/")[0].trim(),sci:(g&&g.s)||""})).items.push(p);
+  });
+  let arr=Object.values(gs).map(g=>{
+    const ps=g.items.map(p=>p.price);
+    return {...g,vendors:[...new Set(g.items.map(p=>p.vendor))],min:Math.min(...ps),max:Math.max(...ps)};
+  });
+  arr.sort((a,b)=> b.vendors.length-a.vendors.length ||
+    (sort==="price-d"?b.min-a.min : sort==="name"?a.name.localeCompare(b.name,"ko") : a.min-b.min));
+
+  $("count").textContent=items.length;
+  const multi=arr.filter(g=>g.vendors.length>=2).length;
+  $("bar").textContent=arr.length?`${arr.length}개 종 · ${items.length}개 품목 · 업체비교 가능 ${multi}종`:"";
+  const openAll=q&&arr.length<=12;
+  $("list").innerHTML=arr.length?arr.map(g=>{
+    const vmin={}; g.items.forEach(p=>{if(vmin[p.vendor]==null||p.price<vmin[p.vendor])vmin[p.vendor]=p.price;});
+    const lo=Math.min(...Object.values(vmin));
+    const chips=Object.entries(vmin).sort((a,b)=>a[1]-b[1])
+      .map(([v,pr])=>`<span class="vd ${pr===lo?'lo':''}">${escapeHtml(v)} <b>${won(pr)}</b></span>`).join("");
+    const rows=g.items.slice().sort((a,b)=>a.price-b.price).map(p=>`
+      <div class="row"><div class="pname">
+        <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
+        <span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>
+      </div><div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}</div></div>`).join("");
+    const solo=g.vendors.length<2;
+    return `<details class="gcard${solo?' solo':''}"${openAll?' open':''}>
+      <summary>
+        <div class="gname"><span class="car">▶</span>${escapeHtml(g.name)}${g.sci?`<span class="gsci">${escapeHtml(g.sci)}</span>`:""}</div>
+        <div class="gprice">${won(g.min)}${g.max!==g.min?`<small> ~ ${won(g.max)}</small>`:""}<small>원</small></div>
+        <div class="gsub"><span class="gcount">${g.vendors.length}곳·${g.items.length}개</span>${chips}</div>
+      </summary>
+      <div class="gbody">${rows}</div>
+    </details>`;
+  }).join(""):`<div class="empty">해당 조건의 품목 없음</div>`;
 }
 
 function escapeHtml(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
@@ -214,6 +279,7 @@ function setFreshness(){
 
 function init(data){
   DATA=(data.products||[]).filter(p=>p&&p.name&&p.price>0);
+  DATA.forEach(p=>p.group=GMAP[keyOf(p)]||null);
   META=data;
   $("total").textContent=DATA.length;
   setFreshness();
@@ -224,6 +290,7 @@ function init(data){
 $("q").addEventListener("input",render);
 $("sort").addEventListener("change",e=>{sort=e.target.value;render();});
 $("onlyChg").addEventListener("click",e=>{onlyChanged=!onlyChanged;e.target.classList.toggle("on",onlyChanged);render();});
+$("grpBtn").addEventListener("click",e=>{grouped=!grouped;e.currentTarget.classList.toggle("on",grouped);render();});
 $("channel").addEventListener("click",e=>{
   const b=e.target.closest("button[data-c]");if(!b)return;
   channel=b.dataset.c;
@@ -239,11 +306,13 @@ $("vendors").addEventListener("click",e=>{
 
 // 데이터가 파일에 내장돼 있으면(공유용 단일 파일) 그걸 쓰고, 아니면 prices.json fetch
 if (window.__PRICES__) {
+  GMAP=window.__GROUP_MAP__||{};
   init(window.__PRICES__);
 } else {
-  fetch("prices.json",{cache:"no-store"})
-    .then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
-    .then(init)
+  Promise.all([
+    fetch("prices.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}),
+    fetch("group_map.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null)
+  ]).then(([prices,gm])=>{ if(gm&&gm.map)GMAP=gm.map; init(prices); })
     .catch(err=>{
       $("freshness").textContent="데이터 없음";
       $("list").innerHTML=`<div class="empty">prices.json 을 읽지 못했습니다 (${escapeHtml(String(err.message||err))}).<br>
