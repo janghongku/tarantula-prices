@@ -51,9 +51,6 @@
   .toggle{background:var(--surface);border:1px solid var(--line);color:var(--muted);border-radius:10px;padding:0 14px;font-size:13px;cursor:pointer;font-family:inherit;height:40px;transition:.15s}
   .toggle:hover{color:var(--text);border-color:var(--faint)}
   .toggle.on{background:var(--accent);color:#1a1206;font-weight:700;border-color:var(--accent)}
-  .spark{display:block;margin-top:4px}
-  .spark .ln{fill:none;stroke:var(--muted);stroke-width:1.5}
-  .spark .dot{fill:var(--accent)}
   .chgdate{color:var(--faint);font-weight:500;margin-left:5px}
   .chips{display:flex;gap:8px;flex-wrap:wrap}
   .chip{background:var(--surface);border:1px solid var(--line);color:var(--muted);padding:6px 13px;border-radius:20px;font-size:12.5px;cursor:pointer;transition:.15s;font-family:"JetBrains Mono",monospace}
@@ -235,7 +232,7 @@ function render(){
         <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
         <span class="metaline"><span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>${soldBadge(p)}${lowBadge(p)}</span>
       </div>
-      <div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}${sparkHtml(p)}</div>
+      <div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}</div>
     </div>`).join(""):`<div class="empty">해당 조건의 품목 없음</div>`;
 }
 function soldBadge(p){return p.soldout?'<span class="soldtag">품절</span>':"";}
@@ -302,16 +299,6 @@ function chgHtml(p){
   const d=p.changed_on?`<span class="chgdate">${escapeHtml(p.changed_on.slice(5).replace('-','/'))}</span>`:'';
   return `<span class="chg ${up?'up':'down'}" title="이전 확인 가격 대비">${up?'▲':'▼'} ${won(diff)}${pct?` (${pct}%)`:''}<span class="was">${won(p.prev)}원</span>${d}</span>`;
 }
-function sparkHtml(p){
-  const h=p.hist; if(!Array.isArray(h)||h.length<2) return "";
-  const ps=h.map(x=>x[1]), mn=Math.min(...ps), mx=Math.max(...ps), rng=(mx-mn)||1, W=92,H=24,n=h.length;
-  const pts=h.map((x,i)=>[ (i/(n-1))*(W-4)+2, H-2-((x[1]-mn)/rng)*(H-4) ]);
-  const path=pts.map((q,i)=>(i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1)).join(' ');
-  const lp=pts[pts.length-1];
-  const title=h.map(x=>`${x[0]} ${won(x[1])}원`).join('\n');
-  return `<svg class="spark" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><title>${escapeHtml(title)}</title><path class="ln" d="${path}"/><circle class="dot" cx="${lp[0].toFixed(1)}" cy="${lp[1].toFixed(1)}" r="2"/></svg>`;
-}
-
 function relTime(iso){
   if(!iso) return ""; const d=new Date(iso); if(isNaN(d)) return "";
   const m=Math.floor((Date.now()-d)/60000);
