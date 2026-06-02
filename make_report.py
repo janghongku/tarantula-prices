@@ -17,8 +17,10 @@
 import json, csv, re, os, argparse, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-LOG_FILE = os.path.join(HERE, "가격변동_로그.csv")
-TXT_FILE = os.path.join(HERE, "가격변동_기록.txt")
+OUTDIR = os.path.join(HERE, "outputs")          # 생성물 폴더
+os.makedirs(OUTDIR, exist_ok=True)
+LOG_FILE = os.path.join(OUTDIR, "가격변동_로그.csv")
+TXT_FILE = os.path.join(OUTDIR, "가격변동_기록.txt")
 
 # 판매처/채널 약칭 (글에 쓸 표기)
 ABBR = {"거미랑": "ㄱㅁㄹ", "타란툴라코리아": "ㅌㅋ", "더쥬 송파점": "ㄷㅈㅅㅍ", "타란센터": "ㅌㄹㅅㅌ"}
@@ -73,7 +75,7 @@ def all_change_events():
 
 
 # ── 전체 종별 현황 스냅샷 (모든 상품: 최초관측~현재) ──────────────
-SNAP_FILE = os.path.join(HERE, "종별_가격현황.csv")
+SNAP_FILE = os.path.join(OUTDIR, "종별_가격현황.csv")
 SNAP_COLS = ["거미", "판매처", "채널", "최초관측일", "최초가", "현재가", "변동횟수", "최근변동일", "재고", "URL"]
 
 
@@ -199,7 +201,7 @@ def main():
     new_events, total = update_log(events)
     print(f"변동 로그: 신규 {len(new_events)}건 / 누적 {total}건 → {os.path.basename(LOG_FILE)}")
     # 새 변동 알림 플래그 (notify.py가 읽음). 변동 없으면 플래그 제거.
-    flag = os.path.join(HERE, "_새변동.txt")
+    flag = os.path.join(OUTDIR, "_새변동.txt")
     if new_events:
         up = sum(1 for e in new_events if e["price"] > e["prev"]); dn = len(new_events) - up
         latest = max(e["date"] for e in new_events)

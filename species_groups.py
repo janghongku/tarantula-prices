@@ -19,6 +19,7 @@ from collections import defaultdict, Counter
 from datetime import datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+OUTDIR = os.path.join(HERE, "outputs")          # 검수 산출물(groups/candidates)은 여기로
 PRICES = os.path.join(HERE, "prices.json")
 ALIASES = os.path.join(HERE, "species_aliases.json")
 
@@ -202,7 +203,8 @@ def cmd_candidates():
         for m in sorted(members, key=lambda x: x["price"]):
             st = stage_of(m["name"]) or ""
             lines.append(f"    [{m['vendor']}] {m['name'].split('/')[0].strip()[:46]}  {m['price']:,}원 {st}")
-    out = os.path.join(HERE, "candidates_review.txt")
+    os.makedirs(OUTDIR, exist_ok=True)
+    out = os.path.join(OUTDIR, "candidates_review.txt")
     open(out, "w", encoding="utf-8").write("\n".join(lines))
     n_cand = sum(len(v) for a, v in cand.items() if len({m['vendor'] for m in v}) >= 2)
     print(f"검수 후보 {n_cand}개 상품 → {out}")
@@ -233,7 +235,8 @@ def cmd_groups():
             "items": [{**m, "stage": stage_of(m["name"])} for m in members],
         })
     out["groups"].sort(key=lambda x: (-len(x["vendors"]), -x["count"]))
-    path = os.path.join(HERE, "groups.json")
+    os.makedirs(OUTDIR, exist_ok=True)
+    path = os.path.join(OUTDIR, "groups.json")
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"{len(out['groups'])}개 그룹 → {path}")
 

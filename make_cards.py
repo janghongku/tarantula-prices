@@ -18,8 +18,10 @@ from matplotlib.patches import FancyBboxPatch
 from make_report import all_change_events, ABBR, CH, STORE_ORDER, CH_ORDER
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(HERE, "가격변동_카드.png")
-INTRO = os.path.join(HERE, "가격변동_안내.png")
+OUTDIR = os.path.join(HERE, "outputs")
+os.makedirs(OUTDIR, exist_ok=True)
+OUT = os.path.join(OUTDIR, "가격변동_카드.png")
+INTRO = os.path.join(OUTDIR, "가격변동_안내.png")
 
 _fonts = {f.name for f in fm.fontManager.ttflist}
 for _c in ("AppleGothic", "Apple SD Gothic Neo", "NanumGothic", "Malgun Gothic"):

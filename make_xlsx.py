@@ -14,9 +14,10 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SNAP = os.path.join(HERE, "종별_가격현황.csv")
-LOG = os.path.join(HERE, "가격변동_로그.csv")
-OUT = os.path.join(HERE, "거미_가격_아카이브.xlsx")
+OUTDIR = os.path.join(HERE, "outputs")
+SNAP = os.path.join(OUTDIR, "종별_가격현황.csv")
+LOG = os.path.join(OUTDIR, "가격변동_로그.csv")
+OUT = os.path.join(OUTDIR, "거미_가격_아카이브.xlsx")
 
 MONEY = {"최초가", "현재가", "이전가", "변동가", "증감액"}
 INTNUM = MONEY | {"증감률(%)", "변동횟수"}

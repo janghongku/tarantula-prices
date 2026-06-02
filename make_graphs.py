@@ -20,8 +20,9 @@ from matplotlib.ticker import FuncFormatter
 from make_report import ABBR, CH      # 판매처/채널 약칭 (샵 이름 직접 노출 금지)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GRAPHDIR = os.path.join(HERE, "graphs")
-MONTAGE = os.path.join(HERE, "가격추이_모음.png")
+OUTDIR = os.path.join(HERE, "outputs")
+GRAPHDIR = os.path.join(OUTDIR, "graphs")
+MONTAGE = os.path.join(OUTDIR, "가격추이_모음.png")
 
 _fonts = {f.name for f in fm.fontManager.ttflist}
 for _c in ("AppleGothic", "Apple SD Gothic Neo", "NanumGothic", "Malgun Gothic"):

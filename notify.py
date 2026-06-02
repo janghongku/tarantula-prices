@@ -14,8 +14,8 @@ cron 맨 끝에서 실행됨. 변동 없으면 아무 것도 안 함.
 import os, json, subprocess, urllib.request, urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FLAG = os.path.join(HERE, "_새변동.txt")
-WEBHOOK = os.path.join(HERE, "notify_webhook.txt")
+FLAG = os.path.join(HERE, "outputs", "_새변동.txt")
+WEBHOOK = os.path.join(HERE, "notify_webhook.txt")   # 설정 파일은 루트(찾기 쉽게)
 
 
 def mac_notify(title, msg):
