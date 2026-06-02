@@ -52,6 +52,14 @@
   .toggle:hover{color:var(--text);border-color:var(--faint)}
   .toggle.on{background:var(--accent);color:#1a1206;font-weight:700;border-color:var(--accent)}
   .chgdate{color:var(--faint);font-weight:500;margin-left:5px}
+  .chgmore{cursor:pointer;color:var(--muted);font-weight:600;margin-left:3px;font-size:11px}
+  .chgmore:hover{color:var(--accent)}
+  .chgtrail{display:none;margin-top:5px;font-family:"JetBrains Mono",monospace;font-size:10.5px;color:var(--muted);text-align:right;line-height:1.8}
+  .chgtrail.open{display:block}
+  .chgtrail .tp{color:var(--text);font-weight:700}
+  .chgtrail .up{color:#e0705e} .chgtrail .down{color:#5fa8e0}
+  .chgtrail .tfirst{color:var(--faint)}
+  .trow{white-space:nowrap}
   .chips{display:flex;gap:8px;flex-wrap:wrap}
   .chip{background:var(--surface);border:1px solid var(--line);color:var(--muted);padding:6px 13px;border-radius:20px;font-size:12.5px;cursor:pointer;transition:.15s;font-family:"JetBrains Mono",monospace}
   .chip:hover{color:var(--text);border-color:var(--faint)}
@@ -296,8 +304,17 @@ function escapeHtml(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"
 function chgHtml(p){
   if(p.prev==null||p.prev===p.price) return "";
   const up=p.price>p.prev, diff=Math.abs(p.price-p.prev), pct=p.prev?Math.round(diff/p.prev*100):0;
-  const d=p.changed_on?`<span class="chgdate">${escapeHtml(p.changed_on.slice(5).replace('-','/'))}</span>`:'';
-  return `<span class="chg ${up?'up':'down'}" title="이전 확인 가격 대비">${up?'▲':'▼'} ${won(diff)}${pct?` (${pct}%)`:''}<span class="was">${won(p.prev)}원</span>${d}</span>`;
+  const hop=`<span class="chg ${up?'up':'down'}" title="이전 확인 가격 대비">${up?'▲':'▼'} ${won(diff)}${pct?` (${pct}%)`:''}<span class="was">${won(p.prev)}원</span></span>`;
+  const h=Array.isArray(p.hist)&&p.hist.length>=2?p.hist:null;
+  if(!h) return hop;
+  return `${hop}<span class="chgmore">· ${h.length-1}회 변동 ▾</span><div class="chgtrail">${trailHtml(h)}</div>`;
+}
+function trailHtml(h){   // [[날짜,가격],...] 오름차순 → 날짜·가격·증감 목록
+  return h.map((x,i)=>{
+    let delta='<span class="tfirst">최초</span>';
+    if(i>0){const d=x[1]-h[i-1][1]; delta=`<span class="${d>0?'up':'down'}">${d>0?'▲':'▼'} ${won(Math.abs(d))}</span>`;}
+    return `<div class="trow"><span class="td">${escapeHtml((x[0]||'').slice(5).replace('-','/'))}</span> <span class="tp">${won(x[1])}원</span> ${delta}</div>`;
+  }).join("");
 }
 function relTime(iso){
   if(!iso) return ""; const d=new Date(iso); if(isNaN(d)) return "";
@@ -333,6 +350,12 @@ function init(data){
   render();
 }
 
+$("list").addEventListener("click",e=>{   // '· N회 변동 ▾' 클릭 → 이력 펼침/접힘
+  const m=e.target.closest(".chgmore"); if(!m)return;
+  const tr=m.parentNode.querySelector(".chgtrail"); if(!tr)return;
+  const open=tr.classList.toggle("open");
+  m.textContent=m.textContent.replace(/[▾▴]/, open?"▴":"▾");
+});
 $("q").addEventListener("input",render);
 $("sort").addEventListener("change",e=>{sort=e.target.value;render();});
 $("onlyChg").addEventListener("click",e=>{onlyChanged=!onlyChanged;e.target.classList.toggle("on",onlyChanged);render();});
