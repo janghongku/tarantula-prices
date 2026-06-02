@@ -346,18 +346,20 @@ def api_category_products(page, channel_uid, cid, src):
         while stack:
             o = stack.pop()
             if isinstance(o, dict):
-                n, p, pid = pull_product(o)
+                n, p, pid, sold = pull_product(o)
                 if n and p and pid:
-                    found.setdefault(pid, (n, p))
+                    found.setdefault(pid, (n, p, sold))
                 stack.extend(o.values())
             elif isinstance(o, list):
                 stack.extend(o)
         new = 0
-        for pid, (n, p) in found.items():
+        for pid, (n, p, sold) in found.items():
             if pid in out or not (100 <= p <= 50_000_000) or "http" in n.lower():
                 continue
             out[pid] = {"vendor": src["vendor"], "channel": src["channel"], "name": n, "price": p,
                         "url": f"https://smartstore.naver.com/{src['handle']}/products/{pid}"}
+            if sold:
+                out[pid]["soldout"] = True
             new += 1
         if new == 0:
             break
