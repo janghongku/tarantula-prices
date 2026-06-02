@@ -164,13 +164,23 @@
 </div>
 
 <script>
-let DATA=[], META={}, GMAP={}, GSMIN={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false, grouped=false, showSold=false, cheapestOnly=false;
+let DATA=[], META={}, GMAP={}, GSMIN={}, GKNOWN={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false, grouped=false, showSold=false, cheapestOnly=false;
 const won=n=>Number(n).toLocaleString("ko-KR");
 const keyOf=p=>p.url||(p.vendor+"␟"+p.name);
-// 같은 종(group)+같은 성장단계 기준 비교 키, 그리고 '더 낮게 표시한 곳이 없는가'
-const cmpKey=p=>((p.group&&p.group.i)||("solo:"+keyOf(p)))+"|"+((p.group&&p.group.st)||"");
-// 성장단계가 확인된 항목끼리만 비교(유체↔성체 오비교 방지). 단계 미상이면 그대로 표시.
-const isLowest=p=>{const st=p.group&&p.group.st; if(!st)return true; const m=GSMIN[cmpKey(p)]; return m==null||p.price<=m;};
+// 단계 추정: 표기 있으면 그대로, 미상이면 같은 종의 '단계표기+재고' 중 가격이 가장 가까운(±50% 이내) 단계 채택
+function effStage(p){
+  const st=p.group&&p.group.st; if(st) return st;
+  const gid=p.group&&p.group.i, list=gid&&GKNOWN[gid]; if(!list||!list.length) return "";
+  let best="",bd=Infinity;
+  for(const q of list){const d=Math.abs(q.p-p.price); if(d<bd){bd=d;best=q.s;}}
+  return (best && bd<=p.price*0.5) ? best : "";   // 가격이 너무 동떨어지면 추정 포기(그대로 표시)
+}
+// 같은 종+같은(추정) 단계에서 더 낮게 표시한 다른 항목이 없으면 true
+function isLowest(p){
+  const gid=p.group&&p.group.i; if(!gid) return true;
+  const st=effStage(p); if(!st) return true;
+  const m=GSMIN[gid+"|"+st]; return m==null||p.price<=m;
+}
 const chCls=c=>c==="네이버"?"naver":"own";
 const $=id=>document.getElementById(id);
 
@@ -309,8 +319,10 @@ function setFreshness(){
 function init(data){
   DATA=(data.products||[]).filter(p=>p&&p.name&&p.price>0);
   DATA.forEach(p=>p.group=GMAP[keyOf(p)]||null);
-  GSMIN={};                       // 종·성장단계별 '재고 있는' 최소 표시가 (단계 확인된 것만, 전체 판매처 기준)
-  DATA.forEach(p=>{ if(p.soldout||!(p.group&&p.group.st))return; const k=cmpKey(p); if(GSMIN[k]==null||p.price<GSMIN[k])GSMIN[k]=p.price; });
+  GSMIN={}; GKNOWN={};            // 종·단계별 재고 최소 표시가 + 종별 '단계표기 재고' 목록(미상 단계 추정용)
+  DATA.forEach(p=>{ if(p.soldout)return; const gid=p.group&&p.group.i, st=p.group&&p.group.st; if(!gid||!st)return;
+    const k=gid+"|"+st; if(GSMIN[k]==null||p.price<GSMIN[k])GSMIN[k]=p.price;
+    (GKNOWN[gid]||(GKNOWN[gid]=[])).push({p:p.price,s:st}); });
   META=data;
   $("total").textContent=DATA.length;
   setFreshness();
