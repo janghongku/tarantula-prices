@@ -46,7 +46,7 @@ SOURCES = [
     {"type": "smartstore", "vendor": "타란툴라코리아",     "channel": "네이버", "handle": "tarantulakorea"},
     {"type": "smartstore", "vendor": "타란센터",          "channel": "네이버", "handle": "tarancenter"},
     {"type": "smartstore", "vendor": "더쥬 송파점",        "channel": "네이버", "handle": "tzblossom"},
-    {"type": "smartstore", "vendor": "거미랑 스마트스토어", "channel": "네이버", "handle": "terrafactory"},
+    {"type": "smartstore", "vendor": "거미랑", "channel": "네이버", "handle": "terrafactory"},
 ]
 
 # 자사몰: robots 허용 구역 → 정직하게 식별되는 UA(+연락처). 네이버: 실제 브라우저 UA.
