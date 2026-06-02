@@ -514,6 +514,18 @@ def recent_naver_hours(now):
         return None
 
 
+def hist_key(url):
+    """가격이력 키 — URL 대신 안정적인 상품번호 기반.
+    상품명을 바꾸거나 재등록해 URL(슬러그)이 변해도 같은 번호면 이력이 안 끊긴다.
+    네이버 .../products/{pid}, 자사몰 .../product/{슬러그}/{번호}/ 에서 번호 추출."""
+    u = url or ""
+    host = re.sub(r"^https?://", "", u).split("/")[0]
+    if not host:
+        return u
+    m = re.search(r"/products/(\d+)", u) or re.search(r"/product/[^/]+/(\d+)", u)
+    return f"{host}/{m.group(1)}" if m else u
+
+
 def apply_price_changes(products, now_iso):
     """price_history.json에 가격 추이를 누적하고, 각 상품에 직전가(prev)·변동일·그래프(hist)를 붙인다.
     이력 기반(직전 '다른' 가격과 비교)이라 하루에 여러 번/채널별로 돌려도 변동 표시가 안 사라지고 영구 누적."""
@@ -527,7 +539,7 @@ def apply_price_changes(products, now_iso):
     changed = 0
     for p in products:
         p.pop("prev", None); p.pop("changed_on", None); p.pop("hist", None)
-        u, price = p["url"], p["price"]
+        u, price = hist_key(p["url"]), p["price"]
         h = hist.setdefault(u, [])
         if not h or h[-1][1] != price:                 # 가격이 바뀐 날만 이력에 1점 추가
             h.append([now_iso[:10], price])
