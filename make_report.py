@@ -114,12 +114,12 @@ def update_log(events):
             for r in csv.DictReader(f):
                 rows.append(r)
                 existing.add((r["날짜"], r["URL"], r["변동가"]))
-    added = 0
+    new_events = []
     for e in events:
         k = (e["date"], e["url"], str(e["price"]))
         if k in existing:
             continue
-        existing.add(k); added += 1
+        existing.add(k); new_events.append(e)
         d = e["price"] - e["prev"]; pct = round(abs(d) / e["prev"] * 100) if e["prev"] else 0
         rows.append({"날짜": e["date"], "판매처": e["vendor"], "채널": e["channel"], "거미": e["species"],
                      "이전가": e["prev"], "변동가": e["price"], "증감액": d, "증감률(%)": pct,
@@ -129,7 +129,7 @@ def update_log(events):
         w = csv.DictWriter(f, fieldnames=COLS); w.writeheader()
         for r in rows:
             w.writerow({c: r.get(c, "") for c in COLS})
-    return added, len(rows)
+    return new_events, len(rows)
 
 
 # ── 글(txt) 생성 ─────────────────────────────────────────────
@@ -196,8 +196,16 @@ def main():
     args = ap.parse_args()
 
     events = all_change_events()
-    added, total = update_log(events)
-    print(f"변동 로그: 신규 {added}건 / 누적 {total}건 → {os.path.basename(LOG_FILE)}")
+    new_events, total = update_log(events)
+    print(f"변동 로그: 신규 {len(new_events)}건 / 누적 {total}건 → {os.path.basename(LOG_FILE)}")
+    # 새 변동 알림 플래그 (notify.py가 읽음). 변동 없으면 플래그 제거.
+    flag = os.path.join(HERE, "_새변동.txt")
+    if new_events:
+        up = sum(1 for e in new_events if e["price"] > e["prev"]); dn = len(new_events) - up
+        latest = max(e["date"] for e in new_events)
+        open(flag, "w", encoding="utf-8").write(f"신규 변동 {len(new_events)}건 · 인상 {up} · 인하 {dn} · {latest}")
+    elif os.path.exists(flag):
+        os.remove(flag)
     nsnap = write_snapshot()
     print(f"전체 현황: {nsnap}개 상품 → {os.path.basename(SNAP_FILE)}")
     if args.log_only:

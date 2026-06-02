@@ -19,6 +19,7 @@ from make_report import all_change_events, ABBR, CH, STORE_ORDER, CH_ORDER
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "가격변동_카드.png")
+INTRO = os.path.join(HERE, "가격변동_안내.png")
 
 _fonts = {f.name for f in fm.fontManager.ttflist}
 for _c in ("AppleGothic", "Apple SD Gothic Neo", "NanumGothic", "Malgun Gothic"):
@@ -108,6 +109,31 @@ def render(events, out, urgent=False):
     return True
 
 
+def render_intro(date, out):
+    """글 맨 앞 고정 안내 배너."""
+    fig = plt.figure(figsize=(9, 4.7), dpi=130)
+    fig.patch.set_facecolor(BG)
+    ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
+    ax.add_patch(FancyBboxPatch((0.035, 0.06), 0.93, 0.88, boxstyle="round,pad=0,rounding_size=0.025",
+                 linewidth=1.3, edgecolor="#d8cdbb", facecolor="white"))
+    cx = 0.5
+    ax.text(cx, 0.83, "타란튤라 판매가 변동 기록", fontsize=23, fontweight="bold", color=INK, ha="center", va="center")
+    ax.text(cx, 0.705, f"{date} 변동 확인", fontsize=13.5, color=SUB, ha="center", va="center")
+    ax.plot([0.2, 0.8], [0.625, 0.625], color="#ece4d6", lw=1)
+    body = [
+        "대상:  ㄱㅁㄹ · ㅌㅋ · ㄷㅈㅅㅍ · ㅌㄹㅅㅌ   (자사몰 / N스토어)",
+        "기준:  국내 판매처 공개 표시가",
+        "실제 구매가 · 재고 · 배송비 · 개체 상태는 판매처 원문에서 확인하세요.",
+    ]
+    y = 0.53
+    for ln in body:
+        ax.text(cx, y, ln, fontsize=12.5, color="#4a4339", ha="center", va="center"); y -= 0.10
+    ax.text(cx, 0.155, "※ 개인적으로 확인·기록한 참고 자료이며 판매·중개·광고가 아닙니다.",
+            fontsize=11, color=SUB, ha="center", va="center", style="italic")
+    fig.savefig(out, facecolor=BG)
+    plt.close(fig)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=7)
@@ -127,6 +153,11 @@ def main():
         print(f"카드 이미지 생성 → {os.path.basename(OUT)} ({len(win)}건)")
     else:
         print("변동 없음 → 카드 생략")
+    # 고정 안내 배너(항상 생성, 날짜만 갱신)
+    idate = (max((e["date"] for e in win), default="") or max((e["date"] for e in ev), default="")
+             or datetime.date.today().isoformat()).replace("-", ".")
+    render_intro(idate, INTRO)
+    print(f"안내 배너 → {os.path.basename(INTRO)}")
 
 
 if __name__ == "__main__":
