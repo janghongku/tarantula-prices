@@ -78,6 +78,8 @@
   .metaline{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
   .soldtag{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.03em;padding:2px 7px;border-radius:5px;border:1px solid #6b3a36;color:#e0705e;background:#2a1715}
   .lowtag{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.02em;padding:2px 7px;border-radius:5px;border:1px solid #2f4a3d;color:#7fb89a;background:#16241d;white-space:nowrap}
+  .cmptag{font-family:"JetBrains Mono",monospace;font-size:10px;padding:2px 7px;border-radius:5px;border:1px solid var(--line);color:var(--muted);background:var(--surface-2);white-space:nowrap}
+  .cmptag b{color:var(--text);font-weight:700}
   .row.sold{opacity:.5}
   /* 묶음(그룹) 카드 */
   .gcard{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:var(--surface);overflow:hidden}
@@ -165,7 +167,7 @@
 </div>
 
 <script>
-let DATA=[], META={}, GMAP={}, GSMIN={}, GSMAX={}, GKNOWN={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false, grouped=false, showSold=false, cheapestOnly=false;
+let DATA=[], META={}, GMAP={}, GSMIN={}, GSMAX={}, GVEND={}, GKNOWN={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false, grouped=false, showSold=false, cheapestOnly=false;
 const won=n=>Number(n).toLocaleString("ko-KR");
 const keyOf=p=>p.url||(p.vendor+"␟"+p.name);
 // 단계 추정: 표기 있으면 그대로, 미상이면 같은 종의 '단계표기+재고' 중 가격이 가장 가까운(±50% 이내) 단계 채택
@@ -242,7 +244,10 @@ function lowBadge(p){
   if(p.soldout)return ""; const gid=p.group&&p.group.i; if(!gid)return "";
   const st=effStage(p); if(!st)return ""; const k=gid+"|"+st, mn=GSMIN[k], mx=GSMAX[k];
   if(mn==null||p.price>mn||mx<=mn)return "";
-  return `<span class="lowtag" title="같은 종·같은 성장단계 기준 가장 낮은 표시가">✓ 가장 낮음 · 타 ~${won(mx)}원</span>`;
+  const vm=GVEND[k]||{};
+  const others=Object.entries(vm).filter(([v])=>v!==p.vendor).sort((a,b)=>a[1]-b[1])
+    .map(([v,pr])=>`<span class="cmptag">${escapeHtml(v)} <b>${won(pr)}</b></span>`).join("");
+  return `<span class="lowtag" title="같은 종·같은 성장단계 기준 가장 낮은 표시가">✓ 가장 낮음</span>${others}`;
 }
 
 function renderGrouped(items,q){
@@ -330,9 +335,10 @@ function init(data){
   // 1) 단계표기+재고 목록(미상 단계 추정용)  2) 종·(추정)단계별 재고 최소/최대 표시가
   GKNOWN={};
   DATA.forEach(p=>{ if(p.soldout)return; const gid=p.group&&p.group.i, st=p.group&&p.group.st; if(gid&&st)(GKNOWN[gid]||(GKNOWN[gid]=[])).push({p:p.price,s:st}); });
-  GSMIN={}; GSMAX={};
+  GSMIN={}; GSMAX={}; GVEND={};
   DATA.forEach(p=>{ if(p.soldout)return; const gid=p.group&&p.group.i; if(!gid)return; const st=effStage(p); if(!st)return; const k=gid+"|"+st;
-    if(GSMIN[k]==null||p.price<GSMIN[k])GSMIN[k]=p.price; if(GSMAX[k]==null||p.price>GSMAX[k])GSMAX[k]=p.price; });
+    if(GSMIN[k]==null||p.price<GSMIN[k])GSMIN[k]=p.price; if(GSMAX[k]==null||p.price>GSMAX[k])GSMAX[k]=p.price;
+    const vm=GVEND[k]||(GVEND[k]={}); if(vm[p.vendor]==null||p.price<vm[p.vendor])vm[p.vendor]=p.price; });
   META=data;
   $("total").textContent=DATA.length;
   setFreshness();
@@ -344,8 +350,12 @@ $("q").addEventListener("input",render);
 $("sort").addEventListener("change",e=>{sort=e.target.value;render();});
 $("onlyChg").addEventListener("click",e=>{onlyChanged=!onlyChanged;e.target.classList.toggle("on",onlyChanged);render();});
 $("soldBtn").addEventListener("click",e=>{showSold=!showSold;e.currentTarget.classList.toggle("on",showSold);buildVendorChips();render();});
-$("lowBtn").addEventListener("click",e=>{cheapestOnly=!cheapestOnly;e.currentTarget.classList.toggle("on",cheapestOnly);render();});
-$("grpBtn").addEventListener("click",e=>{grouped=!grouped;e.currentTarget.classList.toggle("on",grouped);render();});
+$("lowBtn").addEventListener("click",e=>{cheapestOnly=!cheapestOnly;
+  if(cheapestOnly&&grouped){grouped=false;$("grpBtn").classList.remove("on");}  // 묶음과 동시 사용 불가
+  e.currentTarget.classList.toggle("on",cheapestOnly);render();});
+$("grpBtn").addEventListener("click",e=>{grouped=!grouped;
+  if(grouped&&cheapestOnly){cheapestOnly=false;$("lowBtn").classList.remove("on");}
+  e.currentTarget.classList.toggle("on",grouped);render();});
 $("channel").addEventListener("click",e=>{
   const b=e.target.closest("button[data-c]");if(!b)return;
   channel=b.dataset.c;
