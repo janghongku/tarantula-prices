@@ -214,8 +214,12 @@ function renderGrouped(items,q){
     const ps=g.items.map(p=>p.price);
     return {...g,vendors:[...new Set(g.items.map(p=>p.vendor))],min:Math.min(...ps),max:Math.max(...ps)};
   });
-  arr.sort((a,b)=> b.vendors.length-a.vendors.length ||
-    (sort==="price-d"?b.min-a.min : sort==="name"?a.name.localeCompare(b.name,"ko") : a.min-b.min));
+  // 선택한 정렬을 1순위로. 가격은 각 묶음의 '최저가(min)' 기준. 업체순일 때만 업체수 우선.
+  arr.sort((a,b)=>
+    sort==="price-d" ? b.min-a.min||a.name.localeCompare(b.name,"ko") :
+    sort==="name"    ? a.name.localeCompare(b.name,"ko") :
+    sort==="vendor"  ? b.vendors.length-a.vendors.length||a.min-b.min :
+                       a.min-b.min||a.name.localeCompare(b.name,"ko"));
 
   $("count").textContent=items.length;
   const multi=arr.filter(g=>g.vendors.length>=2).length;
