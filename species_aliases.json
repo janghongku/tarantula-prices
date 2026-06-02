@@ -29,6 +29,7 @@
     {"canonical": "멕시칸 블랙벨벳", "sci": "", "match": [["블랙벨벳"]]},
     {"canonical": "멕시칸 블러드렉", "sci": "Aphonopelma bicoloratum", "match": [["블러드렉"]]},
     {"canonical": "볼리비안 스틸리블루", "sci": "Pamphobeteus sp.", "match": [["볼리비안", "스틸리블루"], ["볼리비안", "스틸리"], ["볼리비아", "스틸리블루"]]},
+    {"canonical": "타일랜드 블랙 (빅블랙)", "sci": "Cyriopagopus minax", "match": [["타일랜드", "블랙"], ["타일랜드블랙"], ["타블"]]},
     {"canonical": "자이언트 골덴니", "sci": "", "match": [["골덴니"]]},
     {"canonical": "후리아나 핑크토", "sci": "", "match": [["후리아나"]]},
     {"canonical": "사바 블루", "sci": "", "match": [["사바블루"]]},
