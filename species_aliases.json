@@ -27,6 +27,7 @@
     {"canonical": "하티하티 어스타이거", "sci": "", "match": [["하티하티"]]},
     {"canonical": "카엥 크라찬", "sci": "Chilobrachys sp. 'kaeng krachan'", "match": [["카엥", "크라찬"]]},
     {"canonical": "멕시칸 블랙벨벳", "sci": "", "match": [["블랙벨벳"]]},
+    {"canonical": "멕시칸 블러드렉", "sci": "Aphonopelma bicoloratum", "match": [["블러드렉"]]},
     {"canonical": "카우투스", "sci": "Phormictopus cautus", "match": [["카우투스"]]},
     {"canonical": "엑클레시아스티쿠스", "sci": "Psalmopoeus ecclesiasticus", "match": [["엑클레시아스티쿠스"]]},
     {"canonical": "퀴로가이", "sci": "Grammostola quirogai", "match": [["퀴로가이"]]},
