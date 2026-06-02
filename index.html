@@ -72,6 +72,9 @@
   .chg.up{color:#e0705e}   /* 가격 오름 */
   .chg.down{color:#5fa8e0} /* 가격 내림 */
   .chg .was{color:var(--faint);font-weight:500;text-decoration:line-through;margin-left:4px}
+  .metaline{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+  .soldtag{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.03em;padding:2px 7px;border-radius:5px;border:1px solid #6b3a36;color:#e0705e;background:#2a1715}
+  .row.sold{opacity:.5}
   /* 묶음(그룹) 카드 */
   .gcard{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:var(--surface);overflow:hidden}
   .gcard[open]{border-color:var(--faint);background:var(--surface-2)}
@@ -132,6 +135,7 @@
         <option value="vendor">업체순</option>
       </select>
       <button id="onlyChg" class="toggle" title="가격이 변동된 상품만 보기">변동만 ▲▼</button>
+      <button id="soldBtn" class="toggle" title="품절 상품도 표시 (기본: 숨김)">품절 포함</button>
       <button id="grpBtn" class="toggle" title="같은 종끼리 묶어서 업체 가격 비교">🔗 묶음</button>
     </div>
     <div class="chips" id="vendors"></div>
@@ -148,7 +152,7 @@
 </div>
 
 <script>
-let DATA=[], META={}, GMAP={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false, grouped=false;
+let DATA=[], META={}, GMAP={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false, grouped=false, showSold=false;
 const won=n=>Number(n).toLocaleString("ko-KR");
 const keyOf=p=>p.url||(p.vendor+"␟"+p.name);
 const chCls=c=>c==="네이버"?"naver":"own";
@@ -164,7 +168,7 @@ function fmtDate(iso){
 
 function buildVendorChips(){
   // 현재 채널 필터에 맞는 업체만, 건수와 함께
-  const pool=DATA.filter(p=>channel==="all"||p.channel===channel);
+  const pool=DATA.filter(p=>(channel==="all"||p.channel===channel)&&(showSold||!p.soldout));
   const counts={};
   pool.forEach(p=>counts[p.vendor]=(counts[p.vendor]||0)+1);
   const vs=Object.keys(counts).sort((a,b)=>a.localeCompare(b,"ko"));
@@ -178,6 +182,7 @@ function render(){
   let items=DATA.filter(p=>
     (channel==="all"||p.channel===channel) &&
     (vendorSel.size===0||vendorSel.has(p.vendor)) &&
+    (showSold||!p.soldout) &&
     (!onlyChanged||(p.prev!=null&&p.prev!==p.price)) &&
     (!q||(p.name||"").toLowerCase().includes(q)));
   if(grouped) return renderGrouped(items,q);
@@ -195,14 +200,15 @@ function render(){
   }else $("bar").textContent="";
 
   $("list").innerHTML=items.length?items.map(p=>`
-    <div class="row">
+    <div class="row${p.soldout?' sold':''}">
       <div class="pname">
         <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
-        <span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>
+        <span class="metaline"><span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>${soldBadge(p)}</span>
       </div>
       <div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}${sparkHtml(p)}</div>
     </div>`).join(""):`<div class="empty">해당 조건의 품목 없음</div>`;
 }
+function soldBadge(p){return p.soldout?'<span class="soldtag">품절</span>':"";}
 
 function renderGrouped(items,q){
   const gs={};
@@ -231,9 +237,9 @@ function renderGrouped(items,q){
     const chips=Object.entries(vmin).sort((a,b)=>a[1]-b[1])
       .map(([v,pr])=>`<span class="vd ${pr===lo?'lo':''}">${escapeHtml(v)} <b>${won(pr)}</b></span>`).join("");
     const rows=g.items.slice().sort((a,b)=>a.price-b.price).map(p=>`
-      <div class="row"><div class="pname">
+      <div class="row${p.soldout?' sold':''}"><div class="pname">
         <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
-        <span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>
+        <span class="metaline"><span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>${soldBadge(p)}</span>
       </div><div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}</div></div>`).join("");
     const solo=g.vendors.length<2;
     return `<details class="gcard${solo?' solo':''}"${openAll?' open':''}>
@@ -294,6 +300,7 @@ function init(data){
 $("q").addEventListener("input",render);
 $("sort").addEventListener("change",e=>{sort=e.target.value;render();});
 $("onlyChg").addEventListener("click",e=>{onlyChanged=!onlyChanged;e.target.classList.toggle("on",onlyChanged);render();});
+$("soldBtn").addEventListener("click",e=>{showSold=!showSold;e.currentTarget.classList.toggle("on",showSold);buildVendorChips();render();});
 $("grpBtn").addEventListener("click",e=>{grouped=!grouped;e.currentTarget.classList.toggle("on",grouped);render();});
 $("channel").addEventListener("click",e=>{
   const b=e.target.closest("button[data-c]");if(!b)return;

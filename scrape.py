@@ -72,6 +72,9 @@ STEALTH_JS = (
 NAME_KEYS  = ("productName", "name", "dispNm", "title")
 PRICE_KEYS = ("discountedSalePrice", "salePrice", "price", "lowPrice", "sellingPrice")
 ID_KEYS    = ("id", "productNo", "productId", "channelProductNo")
+# 품절 감지(네이버 state): 판매상태 키 + '품절' 의미 값
+SOLD_KEYS  = ("saleStatusType", "saleStatus", "productStatusType", "statusType")
+SOLD_VALS  = ("OUTOFSTOCK", "SOLDOUT", "SOLD_OUT", "SUSPENSION", "CLOSE", "STOP", "END", "WAIT")
 OUT_FILE   = "prices.json"
 HIST_FILE  = "price_history.json"   # url -> [[날짜, 가격], ...] 가격 추이 기록(커밋해서 영구 누적)
 
@@ -104,6 +107,15 @@ def cafe24_price(li):
             return p
     # 3) 최후: 카드 전체 텍스트
     return to_int_price(li.get_text(" ", strip=True))
+
+
+def cafe24_soldout(li):
+    """Cafe24 표준 품절 아이콘(ico_product_soldout) 또는 품절 alt 로 감지."""
+    for im in li.find_all("img"):
+        src = im.get("src", "").lower()
+        if "soldout" in src or "sold_out" in src or "품절" in im.get("alt", ""):
+            return True
+    return False
 
 
 def dump(name, content):
@@ -149,8 +161,11 @@ def scrape_cafe24(src):
                 price = cafe24_price(li)
                 if name and price:
                     seen.add(full)
-                    out.append({"vendor": src["vendor"], "channel": src["channel"],
-                                "name": name, "price": price, "url": full})
+                    prod = {"vendor": src["vendor"], "channel": src["channel"],
+                            "name": name, "price": price, "url": full}
+                    if cafe24_soldout(li):
+                        prod["soldout"] = True
+                    out.append(prod)
                     added += 1
             if added == 0:                              # 이 페이지에 새 상품 없으면(중복 페이지) 종료
                 break
@@ -179,7 +194,9 @@ def pull_product(d):
                 if isinstance(bv.get(k), (int, float)) and bv[k] > 0:
                     price = int(bv[k]); break
     pid = next((str(d[k]) for k in ID_KEYS if d.get(k)), None)
-    return name, price, pid
+    sold = any(isinstance(d.get(k), str) and any(s in d[k].upper() for s in SOLD_VALS)
+               for k in SOLD_KEYS)
+    return name, price, pid, sold
 
 
 def extract_smartstore(page, src):
@@ -191,18 +208,20 @@ def extract_smartstore(page, src):
         found = {}
         def walk(o):
             if isinstance(o, dict):
-                n, p, pid = pull_product(o)
+                n, p, pid, sold = pull_product(o)
                 if n and p and pid:           # id까지 있어야 진짜 상품(요약/혜택 객체 거름)
-                    found.setdefault(pid, (n, p))
+                    found.setdefault(pid, (n, p, sold))
                 for v in o.values(): walk(v)
             elif isinstance(o, list):
                 for v in o: walk(v)
         walk(state)
-        for pid, (n, p) in found.items():
+        for pid, (n, p, sold) in found.items():
             if not (100 <= p <= 50_000_000):           # 비정상가 거름(파싱 오류 방지)
                 continue
             url = f"https://smartstore.naver.com/{handle}/products/{pid}"
             out[url] = {"vendor": src["vendor"], "channel": src["channel"], "name": n, "price": p, "url": url}
+            if sold:
+                out[url]["soldout"] = True
 
     # 스크롤로 더 로드된 카드에서 state에 없는 상품 보충
     try:
@@ -214,8 +233,12 @@ def extract_smartstore(page, src):
         if not link: continue
         u = (link.get_attribute("href") or "").split("?")[0]
         if u.startswith("/"): u = "https://smartstore.naver.com" + u
-        if not u or u in out: continue
+        if not u: continue
         txt = c.inner_text()
+        sold = "품절" in txt                              # 네이버 품절 딱지(가장 확실한 신호)
+        if u in out:                                      # state로 이미 잡힌 상품도 DOM 품절로 보강
+            if sold: out[u]["soldout"] = True
+            continue
         m = re.search(r"([0-9][0-9,]{2,})\s*원", txt)   # '원' 앞 숫자만(콤마 포함) → 리뷰수/상품번호 오인 방지
         price = int(m.group(1).replace(",", "")) if m else None
         lines = [l.strip() for l in txt.splitlines() if l.strip()]
@@ -224,6 +247,7 @@ def extract_smartstore(page, src):
         if name and price and "http" not in name.lower() and 100 <= price <= 50_000_000:
             out[u] = {"vendor": src["vendor"], "channel": src["channel"],
                       "name": name, "price": price, "url": u}
+            if sold: out[u]["soldout"] = True
 
     if not out and state:
         dump(f"debug_{handle}_state.json", json.dumps(state, ensure_ascii=False)[:300000])
