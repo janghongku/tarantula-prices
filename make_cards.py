@@ -32,7 +32,7 @@ plt.rcParams["axes.unicode_minus"] = False
 
 BG = "#fbf8f3"; INK = "#2b2620"; SUB = "#8a8175"
 UP = "#c0392b"; DOWN = "#2471a3"
-W = 9.0            # 가로(인치)
+W = 10.0           # 가로(인치)
 ROWH = 0.40       # 항목 줄 높이
 SECH = 0.58       # 섹션 헤더 높이
 STOREH = 0.40     # 판매처 헤더 높이
@@ -97,14 +97,16 @@ def render(events, out, urgent=False):
         else:
             e = val; d = e["price"] - e["prev"]; pct = round(abs(d) / e["prev"] * 100)
             arr = "▲" if d > 0 else "▼"
+            dt = (e.get("date") or "")[5:].replace("-", "/")          # 변동일 MM/DD
             ax.text(0.78, cy, e["species"], fontsize=12.5, color=INK, va="center")
-            ax.text(W - 1.55, cy, f"{won(e['prev'])} → {won(e['price'])}", fontsize=11.5,
+            ax.text(W - 3.95, cy, dt, fontsize=10.5, color="#9a917f", va="center", ha="right")
+            ax.text(W - 1.6, cy, f"{won(e['prev'])} → {won(e['price'])}", fontsize=11.5,
                     color="#5a5246", va="center", ha="right")
             ax.text(W - 0.5, cy, f"{arr}{pct}%", fontsize=12, fontweight="bold", color=col, va="center", ha="right")
             ax.plot([0.6, W - 0.5], [y + h, y + h], color="#efe9df", lw=0.8)
         y += h
 
-    ax.text(W / 2, H - 0.22, "국내 판매처 공개 표시가 · 구매 전 원문 확인 · 한국 타란튤라 판매가 기록 프로젝트",
+    ax.text(W / 2, H - 0.22, "국내 판매처 공개 표시가 · 날짜=표시가가 바뀐 날(관측 기준) · 구매 전 원문 확인 · 한국 타란튤라 판매가 기록 프로젝트",
             fontsize=8.5, color="#b3ada2", ha="center", va="center")
     fig.savefig(out, facecolor=BG)
     plt.close(fig)

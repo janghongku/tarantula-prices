@@ -304,7 +304,9 @@ function escapeHtml(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"
 function chgHtml(p){
   if(p.prev==null||p.prev===p.price) return "";
   const up=p.price>p.prev, diff=Math.abs(p.price-p.prev), pct=p.prev?Math.round(diff/p.prev*100):0;
-  const hop=`<span class="chg ${up?'up':'down'}" title="이전 확인 가격 대비">${up?'▲':'▼'} ${won(diff)}${pct?` (${pct}%)`:''}<span class="was">${won(p.prev)}원</span></span>`;
+  const cdate=p.changed_on||(Array.isArray(p.hist)&&p.hist.length?p.hist[p.hist.length-1][0]:null);
+  const cd=cdate?`<span class="chgdate" title="가격이 바뀐 날(관측 기준)">${escapeHtml(cdate.slice(5).replace('-','/'))} 변동</span>`:"";
+  const hop=`<span class="chg ${up?'up':'down'}" title="이전 확인 가격 대비">${up?'▲':'▼'} ${won(diff)}${pct?` (${pct}%)`:''}<span class="was">${won(p.prev)}원</span>${cd}</span>`;
   const h=Array.isArray(p.hist)&&p.hist.length>=2?p.hist:null;
   if(!h) return hop;
   return `${hop}<span class="chgmore">· ${h.length-1}회 변동 ▾</span><div class="chgtrail">${trailHtml(h)}</div>`;

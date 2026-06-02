@@ -170,9 +170,10 @@ def gen_text(events, urgent=False):
                 L.append(""); L.append(f"{ABBR.get(store, store)} / {CH.get(ch, ch)} ({word} {len(si)}건)")
                 for i, e in enumerate(si, 1):
                     d = abs(e["price"] - e["prev"]); pct = round(d / e["prev"] * 100) if e["prev"] else 0
+                    dt = (e.get("date") or "")[5:].replace("-", "/")          # 변동일 MM/DD
                     L.extend(["", f"{i:02d}. {e['species']}",
                               f"가격: {won(e['prev'])}원 → {won(e['price'])}원",
-                              f"변동: {arr}{won(d)}원 / {pct}% {word}"])
+                              f"변동: {arr}{won(d)}원 / {pct}% {word}  ·  {dt} 변동"])
 
     block("▲ 가격 인상", up, "인상", "▲")
     block("▼ 가격 인하", down, "인하", "▼")
