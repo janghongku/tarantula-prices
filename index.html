@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>거미 가격 도감 · price index</title>
-<meta name="description" content="여러 거미(타란튤라) 분양샵의 상품명과 가격을 한 곳에 모아 검색·필터·정렬하는 가격 모아보기. 이미지 미수집, 원문 링크로 연결.">
+<title>타란튤라 판매가 관찰표 · Tarantula Price Watch</title>
+<meta name="description" content="국내 타란튤라/절지류 판매 페이지의 공개 표시 가격을 개인적으로 기록한 참고용 아카이브. 판매·중개·광고·제휴·추천 서비스가 아니며, 이미지·리뷰·상세설명은 수집하지 않고 원문 링크로 연결합니다.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +35,8 @@
   .meta .dot{color:var(--faint)}
   .meta #freshness{color:var(--text)}
   .meta .rel{color:var(--accent);font-weight:600}
+  .notice{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:13px 16px;margin-bottom:18px;font-size:12.5px;color:var(--muted);line-height:1.7}
+  .notice b{color:var(--text);font-weight:600}
   .controls{display:flex;flex-direction:column;gap:12px;margin-bottom:8px}
   .ctl-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
   .search{flex:1;min-width:220px;position:relative}
@@ -104,19 +106,25 @@
   footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);color:var(--faint);font-size:12px;font-family:"JetBrains Mono",monospace;line-height:1.9}
   footer a{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--faint)}
   footer a:hover{color:var(--accent)}
+  footer p{margin:0 0 10px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div class="kicker">Theraphosidae · Price Index</div>
-    <h1>거미 가격 도감 <em>price index</em></h1>
+    <div class="kicker">Theraphosidae · Price Watch</div>
+    <h1>타란튤라 판매가 관찰표 <em>price watch</em></h1>
     <div class="meta">
       <span><b id="count">0</b> / <span id="total">0</span> 품목</span>
       <span class="dot">·</span>
       <span id="freshness">불러오는 중…</span>
     </div>
   </header>
+
+  <div class="notice">
+    본 페이지는 국내 타란튤라/절지류 판매 페이지의 공개 표시 가격을 개인적으로 기록한 <b>참고용 아카이브</b>입니다. 판매·중개·광고·제휴·추천 목적의 서비스가 아닙니다.<br>
+    표시된 값은 <b>확인 시점의 판매처 표시 가격</b>이며, 실제 구매가·재고·배송비·쿠폰·개체 상태·성별·사이즈·학명 표기와 다를 수 있습니다. 구매 전 반드시 판매처 원문 페이지를 확인하세요.
+  </div>
 
   <div class="controls">
     <div class="ctl-row">
@@ -130,14 +138,14 @@
         <button data-c="네이버">네이버</button>
       </div>
       <select class="sortsel" id="sort">
-        <option value="price">낮은 가격순</option>
-        <option value="price-d">높은 가격순</option>
+        <option value="price">확인 가격 낮은 순</option>
+        <option value="price-d">확인 가격 높은 순</option>
         <option value="name">이름순</option>
-        <option value="vendor">업체순</option>
+        <option value="vendor">판매처순</option>
       </select>
-      <button id="onlyChg" class="toggle" title="가격이 변동된 상품만 보기">변동만 ▲▼</button>
-      <button id="soldBtn" class="toggle" title="품절 상품도 표시 (기본: 숨김)">품절 포함</button>
-      <button id="grpBtn" class="toggle" title="같은 종끼리 묶어서 업체 가격 비교">🔗 묶음</button>
+      <button id="onlyChg" class="toggle" title="최근 확인 가격이 변동된 항목만 보기">최근 변동 ▲▼</button>
+      <button id="soldBtn" class="toggle" title="품절 항목도 표시 (기본: 숨김)">품절 포함</button>
+      <button id="grpBtn" class="toggle" title="같은 종끼리 묶어 판매처별 표시 가격 보기">🔗 묶음</button>
     </div>
     <div class="chips" id="vendors"></div>
   </div>
@@ -146,9 +154,10 @@
   <div id="list"><div class="empty">불러오는 중…</div></div>
 
   <footer>
-    상품명·가격은 각 판매처 페이지에서 모은 <b>원문 그대로</b>입니다(가공·정규화 안 함). 이미지는 수집하지 않으며, 각 행은 원문 상품 페이지로 연결됩니다.<br>
-    가격·재고는 실제 판매처와 다를 수 있으니 <b>구매 전 원문 확인</b> 필수입니다. 자료는 <span id="ftime">—</span> 기준.<br>
-    판매처 운영자께: 노출 제외(opt-out)를 원하시면 이 페이지 운영자에게 알려주시면 바로 반영합니다.
+    <p>본 페이지는 국내 타란튤라/절지류 판매 페이지의 공개 표시 가격을 개인적으로 기록한 참고용 아카이브입니다. 본 페이지는 판매·중개·광고·제휴·추천 서비스를 제공하지 않습니다. 표시된 값은 확인 시점의 판매처 표시 가격이며, 실제 구매가·재고·배송비·쿠폰·개체 상태·성별·사이즈·학명 표기와 다를 수 있습니다. 구매 전 반드시 판매처 원문 페이지를 확인하시기 바랍니다.</p>
+    <p>수집 원칙: 공개 페이지에 표시된 상품명·가격만 기록하며, 이미지·리뷰·상세설명·판매자 고유 문구·로그인이 필요한 정보는 수집·표시하지 않습니다. 각 항목은 원문 상품 페이지로 연결됩니다. 수집 빈도는 과도하지 않게 운영하며, 차단 우회나 비공개 정보 수집은 하지 않습니다. 판매처 간 차이를 평가하지 않으며, 특정 판매처를 추천·우대하지 않습니다.</p>
+    <p>판매처 운영자 또는 권리자께서는 노출 제외, 명칭 수정, 링크 삭제를 요청하실 수 있습니다. 요청 확인 후 합리적인 기간 내 반영하겠습니다. 요청은 <a href="https://github.com/janghongku/tarantula-prices/issues" target="_blank" rel="noopener">GitHub Issues</a>로 남겨 주세요. <!-- TODO: 운영자 연락 이메일 추가 --></p>
+    <p>최근 확인: <span id="ftime">—</span></p>
   </footer>
 </div>
 
@@ -174,7 +183,7 @@ function buildVendorChips(){
   pool.forEach(p=>counts[p.vendor]=(counts[p.vendor]||0)+1);
   const vs=Object.keys(counts).sort((a,b)=>a.localeCompare(b,"ko"));
   $("vendors").innerHTML=
-    `<span class="chip ${vendorSel.size===0?'on':''}" data-v="__all">전체 업체</span>`+
+    `<span class="chip ${vendorSel.size===0?'on':''}" data-v="__all">전체 판매처</span>`+
     vs.map(v=>`<span class="chip ${vendorSel.has(v)?'on':''}" data-v="${v}">${v}<span class="n">${counts[v]}</span></span>`).join("");
 }
 
@@ -197,7 +206,7 @@ function render(){
     const ps=items.map(p=>p.price).sort((a,b)=>a-b);
     const nchg=items.filter(p=>p.prev!=null&&p.prev!==p.price).length;
     $("bar").textContent=
-      `최저 ${won(ps[0])}원 · 최고 ${won(ps[ps.length-1])}원 · 중앙값 ${won(ps[ps.length>>1])}원`+(nchg?` · 가격변동 ${nchg}건`:"");
+      `확인 가격 ${won(ps[0])}~${won(ps[ps.length-1])}원 · 중앙값 ${won(ps[ps.length>>1])}원`+(nchg?` · 최근 변동 ${nchg}건`:"");
   }else $("bar").textContent="";
 
   $("list").innerHTML=items.length?items.map(p=>`
@@ -232,13 +241,12 @@ function renderGrouped(items,q){
 
   $("count").textContent=items.length;
   const multi=arr.filter(g=>g.vendors.length>=2).length;
-  $("bar").textContent=arr.length?`${arr.length}개 종 · ${items.length}개 품목 · 업체비교 가능 ${multi}종`:"";
+  $("bar").textContent=arr.length?`${arr.length}개 종 · ${items.length}개 항목 · 판매처 2곳 이상 ${multi}종`:"";
   const openAll=q&&arr.length<=12;
   $("list").innerHTML=arr.length?arr.map(g=>{
     const vmin={}; g.items.forEach(p=>{if(vmin[p.vendor]==null||p.price<vmin[p.vendor])vmin[p.vendor]=p.price;});
-    const lo=Math.min(...Object.values(vmin));
-    const chips=Object.entries(vmin).sort((a,b)=>a[1]-b[1])
-      .map(([v,pr])=>`<span class="vd ${pr===lo?'lo':''}">${escapeHtml(v)} <b>${won(pr)}</b></span>`).join("");
+    const chips=Object.entries(vmin).sort((a,b)=>a[0].localeCompare(b[0],"ko"))
+      .map(([v,pr])=>`<span class="vd">${escapeHtml(v)} <b>${won(pr)}</b></span>`).join("");
     const rows=g.items.slice().sort((a,b)=>a.price-b.price).map(p=>`
       <div class="row${p.soldout?' sold':''}"><div class="pname">
         <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
@@ -248,7 +256,7 @@ function renderGrouped(items,q){
     const nchg=g.items.filter(p=>p.prev!=null&&p.prev!==p.price).length;
     return `<details class="gcard${solo?' solo':''}"${openAll||nchg?' open':''}>
       <summary>
-        <div class="gname"><span class="car">▶</span>${escapeHtml(g.name)}${g.sci?`<span class="gsci">${escapeHtml(g.sci)}</span>`:""}${nchg?`<span class="gchg">▲▼ 변동${nchg>1?' '+nchg:''}</span>`:""}</div>
+        <div class="gname"><span class="car">▶</span>${escapeHtml(g.name)}${g.sci?`<span class="gsci">${escapeHtml(g.sci)}</span>`:""}${nchg?`<span class="gchg">최근 변동${nchg>1?' '+nchg:''}</span>`:""}</div>
         <div class="gprice">${won(g.min)}${g.max!==g.min?`<small> ~ ${won(g.max)}</small>`:""}<small>원</small></div>
         <div class="gsub"><span class="gcount">${g.vendors.length}곳·${g.items.length}개</span>${chips}</div>
       </summary>
@@ -262,7 +270,7 @@ function chgHtml(p){
   if(p.prev==null||p.prev===p.price) return "";
   const up=p.price>p.prev, diff=Math.abs(p.price-p.prev), pct=p.prev?Math.round(diff/p.prev*100):0;
   const d=p.changed_on?`<span class="chgdate">${escapeHtml(p.changed_on.slice(5).replace('-','/'))}</span>`:'';
-  return `<span class="chg ${up?'up':'down'}">${up?'▲':'▼'} ${won(diff)}${pct?` (${pct}%)`:''}<span class="was">${won(p.prev)}원</span>${d}</span>`;
+  return `<span class="chg ${up?'up':'down'}" title="이전 확인 가격 대비">${up?'▲':'▼'} ${won(diff)}${pct?` (${pct}%)`:''}<span class="was">${won(p.prev)}원</span>${d}</span>`;
 }
 function sparkHtml(p){
   const h=p.hist; if(!Array.isArray(h)||h.length<2) return "";
@@ -286,7 +294,7 @@ function setFreshness(){
   const seg=(label,iso)=> iso?`${label} ${fmtDate(iso)} <span class="rel">${relTime(iso)}</span>`:null;
   const parts=[seg("자사몰",ch["자사몰"]), seg("네이버",ch["네이버"])].filter(Boolean);
   const overall=fmtDate(META.updated_at);
-  $("freshness").innerHTML = parts.length?`🕒 갱신 ${parts.join(" · ")}`:(overall?`🕒 갱신 ${overall}`:"");
+  $("freshness").innerHTML = parts.length?`🕒 최근 확인 ${parts.join(" · ")}`:(overall?`🕒 최근 확인 ${overall}`:"");
   const plain=[ch["자사몰"]&&`자사몰 ${fmtDate(ch["자사몰"])}`, ch["네이버"]&&`네이버 ${fmtDate(ch["네이버"])}`].filter(Boolean);
   $("ftime").textContent = plain.length?plain.join(" · "):(overall||"—");
 }
