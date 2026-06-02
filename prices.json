@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-02T02:53:09",
+  "updated_at": "2026-06-02T16:08:35",
   "channels": {
-    "자사몰": "2026-06-02T02:53:09",
+    "자사몰": "2026-06-02T16:08:35",
     "네이버": "2026-06-02T07:26:08"
   },
   "products": [
@@ -13937,8 +13937,20 @@
       "vendor": "타란센터",
       "channel": "자사몰",
       "name": "발할라 어스타이거 유체 / Omothymus Sp. \"Valhalla\"",
-      "price": 50000,
-      "url": "https://tarancenter.com/product/발할라-어스타이거-유체-omothymus-sp-valhalla/1554/category/51/display/1/"
+      "price": 35000,
+      "url": "https://tarancenter.com/product/발할라-어스타이거-유체-omothymus-sp-valhalla/1554/category/51/display/1/",
+      "prev": 50000,
+      "changed_on": "2026-06-02",
+      "hist": [
+        [
+          "2026-06-02",
+          50000
+        ],
+        [
+          "2026-06-02",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -15573,7 +15585,8 @@
       "channel": "자사몰",
       "name": "진x현님 개인결제창",
       "price": 369000,
-      "url": "https://tarancenter.com/product/진x현님-개인결제창/1573/category/51/display/1/"
+      "url": "https://tarancenter.com/product/진x현님-개인결제창/1573/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -17503,7 +17516,8 @@
       "channel": "자사몰",
       "name": "멕시칸 제이드 푸에고 '무레이' 유체",
       "price": 220000,
-      "url": "https://tarantulakorea.com/product/멕시칸-제이드-푸에고-무레이-유체/499/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/멕시칸-제이드-푸에고-무레이-유체/499/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
