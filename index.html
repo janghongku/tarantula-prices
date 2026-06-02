@@ -220,12 +220,14 @@ function renderGrouped(items,q){
     const ps=g.items.map(p=>p.price);
     return {...g,vendors:[...new Set(g.items.map(p=>p.vendor))],min:Math.min(...ps),max:Math.max(...ps)};
   });
-  // 선택한 정렬을 1순위로. 가격은 각 묶음의 '최저가(min)' 기준. 업체순일 때만 업체수 우선.
-  arr.sort((a,b)=>
+  // 비교 가능한(2곳+) 묶음을 위로, 1곳짜리(비교 불가)는 아래로. 그 안에서 선택한 정렬 적용.
+  // (업체 '수'로 줄세우면 가격순이 이상해지므로, 비교가능/불가 2단계로만 나눔)
+  const cmp=(a,b)=>
     sort==="price-d" ? b.min-a.min||a.name.localeCompare(b.name,"ko") :
     sort==="name"    ? a.name.localeCompare(b.name,"ko") :
     sort==="vendor"  ? b.vendors.length-a.vendors.length||a.min-b.min :
-                       a.min-b.min||a.name.localeCompare(b.name,"ko"));
+                       a.min-b.min||a.name.localeCompare(b.name,"ko");
+  arr.sort((a,b)=> ((b.vendors.length>=2)-(a.vendors.length>=2)) || cmp(a,b));
 
   $("count").textContent=items.length;
   const multi=arr.filter(g=>g.vendors.length>=2).length;
