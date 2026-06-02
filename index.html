@@ -146,6 +146,7 @@
       </select>
       <button id="onlyChg" class="toggle" title="최근 확인 가격이 변동된 항목만 보기">최근 변동 ▲▼</button>
       <button id="soldBtn" class="toggle" title="품절 항목도 표시 (기본: 숨김)">품절 포함</button>
+      <button id="lowBtn" class="toggle" title="같은 종·같은 성장단계를 더 낮게 표시한 다른 판매처가 없는 항목만 (판매처를 고르면 그 판매처 기준)">가장 낮은 표시가만</button>
       <button id="grpBtn" class="toggle" title="같은 종끼리 묶어 판매처별 표시 가격 보기">🔗 묶음</button>
     </div>
     <div class="chips" id="vendors"></div>
@@ -163,9 +164,13 @@
 </div>
 
 <script>
-let DATA=[], META={}, GMAP={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false, grouped=false, showSold=false;
+let DATA=[], META={}, GMAP={}, GSMIN={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false, grouped=false, showSold=false, cheapestOnly=false;
 const won=n=>Number(n).toLocaleString("ko-KR");
 const keyOf=p=>p.url||(p.vendor+"␟"+p.name);
+// 같은 종(group)+같은 성장단계 기준 비교 키, 그리고 '더 낮게 표시한 곳이 없는가'
+const cmpKey=p=>((p.group&&p.group.i)||("solo:"+keyOf(p)))+"|"+((p.group&&p.group.st)||"");
+// 성장단계가 확인된 항목끼리만 비교(유체↔성체 오비교 방지). 단계 미상이면 그대로 표시.
+const isLowest=p=>{const st=p.group&&p.group.st; if(!st)return true; const m=GSMIN[cmpKey(p)]; return m==null||p.price<=m;};
 const chCls=c=>c==="네이버"?"naver":"own";
 const $=id=>document.getElementById(id);
 
@@ -194,6 +199,7 @@ function render(){
     (channel==="all"||p.channel===channel) &&
     (vendorSel.size===0||vendorSel.has(p.vendor)) &&
     (showSold||!p.soldout) &&
+    (!cheapestOnly||isLowest(p)) &&
     (!onlyChanged||(p.prev!=null&&p.prev!==p.price)) &&
     (!q||(p.name||"").toLowerCase().includes(q)));
   if(grouped) return renderGrouped(items,q);
@@ -303,6 +309,8 @@ function setFreshness(){
 function init(data){
   DATA=(data.products||[]).filter(p=>p&&p.name&&p.price>0);
   DATA.forEach(p=>p.group=GMAP[keyOf(p)]||null);
+  GSMIN={};                       // 종·성장단계별 '재고 있는' 최소 표시가 (단계 확인된 것만, 전체 판매처 기준)
+  DATA.forEach(p=>{ if(p.soldout||!(p.group&&p.group.st))return; const k=cmpKey(p); if(GSMIN[k]==null||p.price<GSMIN[k])GSMIN[k]=p.price; });
   META=data;
   $("total").textContent=DATA.length;
   setFreshness();
@@ -314,6 +322,7 @@ $("q").addEventListener("input",render);
 $("sort").addEventListener("change",e=>{sort=e.target.value;render();});
 $("onlyChg").addEventListener("click",e=>{onlyChanged=!onlyChanged;e.target.classList.toggle("on",onlyChanged);render();});
 $("soldBtn").addEventListener("click",e=>{showSold=!showSold;e.currentTarget.classList.toggle("on",showSold);buildVendorChips();render();});
+$("lowBtn").addEventListener("click",e=>{cheapestOnly=!cheapestOnly;e.currentTarget.classList.toggle("on",cheapestOnly);render();});
 $("grpBtn").addEventListener("click",e=>{grouped=!grouped;e.currentTarget.classList.toggle("on",grouped);render();});
 $("channel").addEventListener("click",e=>{
   const b=e.target.closest("button[data-c]");if(!b)return;

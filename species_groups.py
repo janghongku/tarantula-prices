@@ -260,7 +260,7 @@ def cmd_map():
         cleaned = [c for c in (clean_display(m["name"]) for m in members) if len(c) >= 2]
         name = meta[key]["disp"] or (min(cleaned, key=len) if cleaned else members[0]["name"].split("/")[0].strip())
         for p in members:
-            out[stable_id(p)] = {"i": key, "n": name, "s": meta[key]["sci"]}
+            out[stable_id(p)] = {"i": key, "n": name, "s": meta[key]["sci"], "st": stage_of(p["name"]) or ""}
     path = os.path.join(HERE, "group_map.json")
     json.dump({"generated_at": datetime.now().isoformat(timespec="seconds"), "map": out},
               open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
