@@ -86,6 +86,7 @@
   .gname .car{color:var(--faint);font-weight:400;font-size:12px;transition:.15s}
   .gcard[open] .gname .car{transform:rotate(90deg);display:inline-block}
   .gsci{font-family:"Fraunces",serif;font-style:italic;font-weight:500;font-size:12.5px;color:var(--muted)}
+  .gchg{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:700;color:#e0705e;border:1px solid #6b3a36;background:#2a1715;border-radius:5px;padding:1px 6px}
   .gprice{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:16px;text-align:right;white-space:nowrap;color:var(--text)}
   .gprice small{color:var(--faint);font-weight:500;font-size:11px}
   .gsub{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px 7px;font-family:"JetBrains Mono",monospace;font-size:11px}
@@ -244,9 +245,10 @@ function renderGrouped(items,q){
         <span class="metaline"><span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>${soldBadge(p)}</span>
       </div><div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}</div></div>`).join("");
     const solo=g.vendors.length<2;
-    return `<details class="gcard${solo?' solo':''}"${openAll?' open':''}>
+    const nchg=g.items.filter(p=>p.prev!=null&&p.prev!==p.price).length;
+    return `<details class="gcard${solo?' solo':''}"${openAll||nchg?' open':''}>
       <summary>
-        <div class="gname"><span class="car">▶</span>${escapeHtml(g.name)}${g.sci?`<span class="gsci">${escapeHtml(g.sci)}</span>`:""}</div>
+        <div class="gname"><span class="car">▶</span>${escapeHtml(g.name)}${g.sci?`<span class="gsci">${escapeHtml(g.sci)}</span>`:""}${nchg?`<span class="gchg">▲▼ 변동${nchg>1?' '+nchg:''}</span>`:""}</div>
         <div class="gprice">${won(g.min)}${g.max!==g.min?`<small> ~ ${won(g.max)}</small>`:""}<small>원</small></div>
         <div class="gsub"><span class="gcount">${g.vendors.length}곳·${g.items.length}개</span>${chips}</div>
       </summary>
