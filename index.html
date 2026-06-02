@@ -77,6 +77,7 @@
   .chg .was{color:var(--faint);font-weight:500;text-decoration:line-through;margin-left:4px}
   .metaline{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
   .soldtag{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.03em;padding:2px 7px;border-radius:5px;border:1px solid #6b3a36;color:#e0705e;background:#2a1715}
+  .lowtag{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.02em;padding:2px 7px;border-radius:5px;border:1px solid #2f4a3d;color:#7fb89a;background:#16241d;white-space:nowrap}
   .row.sold{opacity:.5}
   /* 묶음(그룹) 카드 */
   .gcard{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:var(--surface);overflow:hidden}
@@ -164,7 +165,7 @@
 </div>
 
 <script>
-let DATA=[], META={}, GMAP={}, GSMIN={}, GKNOWN={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false, grouped=false, showSold=false, cheapestOnly=false;
+let DATA=[], META={}, GMAP={}, GSMIN={}, GSMAX={}, GKNOWN={}, channel="all", sort="price", vendorSel=new Set(), onlyChanged=false, grouped=false, showSold=false, cheapestOnly=false;
 const won=n=>Number(n).toLocaleString("ko-KR");
 const keyOf=p=>p.url||(p.vendor+"␟"+p.name);
 // 단계 추정: 표기 있으면 그대로, 미상이면 같은 종의 '단계표기+재고' 중 가격이 가장 가까운(±50% 이내) 단계 채택
@@ -230,12 +231,19 @@ function render(){
     <div class="row${p.soldout?' sold':''}">
       <div class="pname">
         <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
-        <span class="metaline"><span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>${soldBadge(p)}</span>
+        <span class="metaline"><span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>${soldBadge(p)}${lowBadge(p)}</span>
       </div>
       <div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}${sparkHtml(p)}</div>
     </div>`).join(""):`<div class="empty">해당 조건의 품목 없음</div>`;
 }
 function soldBadge(p){return p.soldout?'<span class="soldtag">품절</span>':"";}
+// 같은 종·같은(추정)단계에서 가장 낮은 표시가이고, 더 높게 표시한 다른 항목이 있을 때만 배지
+function lowBadge(p){
+  if(p.soldout)return ""; const gid=p.group&&p.group.i; if(!gid)return "";
+  const st=effStage(p); if(!st)return ""; const k=gid+"|"+st, mn=GSMIN[k], mx=GSMAX[k];
+  if(mn==null||p.price>mn||mx<=mn)return "";
+  return `<span class="lowtag" title="같은 종·같은 성장단계 기준 가장 낮은 표시가">✓ 가장 낮음 · 타 ~${won(mx)}원</span>`;
+}
 
 function renderGrouped(items,q){
   const gs={};
@@ -267,7 +275,7 @@ function renderGrouped(items,q){
     const rows=g.items.slice().sort((a,b)=>a.price-b.price).map(p=>`
       <div class="row${p.soldout?' sold':''}"><div class="pname">
         <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
-        <span class="metaline"><span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>${soldBadge(p)}</span>
+        <span class="metaline"><span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>${soldBadge(p)}${lowBadge(p)}</span>
       </div><div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}</div></div>`).join("");
     const solo=g.vendors.length<2;
     const nchg=g.items.filter(p=>p.prev!=null&&p.prev!==p.price).length;
@@ -319,10 +327,12 @@ function setFreshness(){
 function init(data){
   DATA=(data.products||[]).filter(p=>p&&p.name&&p.price>0);
   DATA.forEach(p=>p.group=GMAP[keyOf(p)]||null);
-  GSMIN={}; GKNOWN={};            // 종·단계별 재고 최소 표시가 + 종별 '단계표기 재고' 목록(미상 단계 추정용)
-  DATA.forEach(p=>{ if(p.soldout)return; const gid=p.group&&p.group.i, st=p.group&&p.group.st; if(!gid||!st)return;
-    const k=gid+"|"+st; if(GSMIN[k]==null||p.price<GSMIN[k])GSMIN[k]=p.price;
-    (GKNOWN[gid]||(GKNOWN[gid]=[])).push({p:p.price,s:st}); });
+  // 1) 단계표기+재고 목록(미상 단계 추정용)  2) 종·(추정)단계별 재고 최소/최대 표시가
+  GKNOWN={};
+  DATA.forEach(p=>{ if(p.soldout)return; const gid=p.group&&p.group.i, st=p.group&&p.group.st; if(gid&&st)(GKNOWN[gid]||(GKNOWN[gid]=[])).push({p:p.price,s:st}); });
+  GSMIN={}; GSMAX={};
+  DATA.forEach(p=>{ if(p.soldout)return; const gid=p.group&&p.group.i; if(!gid)return; const st=effStage(p); if(!st)return; const k=gid+"|"+st;
+    if(GSMIN[k]==null||p.price<GSMIN[k])GSMIN[k]=p.price; if(GSMAX[k]==null||p.price>GSMAX[k])GSMAX[k]=p.price; });
   META=data;
   $("total").textContent=DATA.length;
   setFreshness();
