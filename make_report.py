@@ -76,7 +76,7 @@ def all_change_events():
 
 # ── 전체 종별 현황 스냅샷 (모든 상품: 최초관측~현재) ──────────────
 SNAP_FILE = os.path.join(OUTDIR, "종별_가격현황.csv")
-SNAP_COLS = ["거미", "판매처", "채널", "최초관측일", "최초가", "현재가", "변동횟수", "최근변동일", "재고", "URL"]
+SNAP_COLS = ["거미", "판매처", "채널", "최초관측일", "최초가", "현재가", "변동횟수", "가격추이", "최근변동일", "재고", "URL"]
 
 
 def write_snapshot():
@@ -94,6 +94,8 @@ def write_snapshot():
             "거미": species_name(p, gm), "판매처": p["vendor"], "채널": p["channel"],
             "최초관측일": pts[0][0] if pts else "", "최초가": pts[0][1] if pts else p["price"],
             "현재가": p["price"], "변동횟수": max(0, len(pts) - 1),
+            # 가격추이: 변동이 있으면 모든 가격점을 순서대로(아카이브 — 중간값까지 전부). 날짜별 상세는 가격변동 시트.
+            "가격추이": " → ".join(f"{int(pt[1]):,}" for pt in pts) if len(pts) >= 2 else "",
             "최근변동일": pts[-1][0] if len(pts) >= 2 else "", "재고": "품절" if p.get("soldout") else "재고",
             "URL": p.get("url", ""),
         })
