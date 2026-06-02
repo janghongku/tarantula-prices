@@ -72,6 +72,37 @@ def all_change_events():
     return ev
 
 
+# ── 전체 종별 현황 스냅샷 (모든 상품: 최초관측~현재) ──────────────
+SNAP_FILE = os.path.join(HERE, "종별_가격현황.csv")
+SNAP_COLS = ["거미", "판매처", "채널", "최초관측일", "최초가", "현재가", "변동횟수", "최근변동일", "재고", "URL"]
+
+
+def write_snapshot():
+    prods = json.load(open(os.path.join(HERE, "prices.json"), encoding="utf-8"))["products"]
+    hist = json.load(open(os.path.join(HERE, "price_history.json"), encoding="utf-8"))
+    try:
+        gm = json.load(open(os.path.join(HERE, "group_map.json"), encoding="utf-8"))["map"]
+    except Exception:
+        gm = {}
+    rows = []
+    for p in prods:
+        hk = hist_key(p["url"]) if p.get("url") else None
+        pts = hist.get(hk, []) if hk else []
+        rows.append({
+            "거미": species_name(p, gm), "판매처": p["vendor"], "채널": p["channel"],
+            "최초관측일": pts[0][0] if pts else "", "최초가": pts[0][1] if pts else p["price"],
+            "현재가": p["price"], "변동횟수": max(0, len(pts) - 1),
+            "최근변동일": pts[-1][0] if len(pts) >= 2 else "", "재고": "품절" if p.get("soldout") else "재고",
+            "URL": p.get("url", ""),
+        })
+    rows.sort(key=lambda r: (r["거미"], r["판매처"], r["채널"]))
+    with open(SNAP_FILE, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=SNAP_COLS); w.writeheader()
+        for r in rows:
+            w.writerow(r)
+    return len(rows)
+
+
 # ── CSV 누적 로그 ─────────────────────────────────────────────
 COLS = ["날짜", "판매처", "채널", "거미", "이전가", "변동가", "증감액", "증감률(%)", "방향", "URL"]
 
@@ -166,7 +197,9 @@ def main():
 
     events = all_change_events()
     added, total = update_log(events)
-    print(f"로그 갱신: 신규 {added}건 / 누적 {total}건 → {os.path.basename(LOG_FILE)}")
+    print(f"변동 로그: 신규 {added}건 / 누적 {total}건 → {os.path.basename(LOG_FILE)}")
+    nsnap = write_snapshot()
+    print(f"전체 현황: {nsnap}개 상품 → {os.path.basename(SNAP_FILE)}")
     if args.log_only:
         return
 
