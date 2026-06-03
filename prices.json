@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-03T01:20:39",
+  "updated_at": "2026-06-03T03:28:24",
   "channels": {
-    "자사몰": "2026-06-02T16:08:35",
+    "자사몰": "2026-06-03T03:28:24",
     "네이버": "2026-06-03T01:20:39"
   },
   "products": [
@@ -18676,6 +18676,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "자이언트그린 핑크토 '퀴타라 리버' 유체",
+      "price": 30000,
+      "url": "https://tarantulakorea.com/product/자이언트그린-핑크토-퀴타라-리버-유체/395/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "제브라 '코스타리카' 유체",
       "price": 20000,
       "url": "https://tarantulakorea.com/product/제브라-코스타리카-유체/275/category/24/display/1/"
@@ -18928,16 +18935,16 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "크세 화이트 M라인 스파이더링",
+      "name": "크세 화이트 M라인 유체",
       "price": 150000,
-      "url": "https://tarantulakorea.com/product/크세-화이트-m라인-스파이더링/743/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/크세-화이트-m라인-유체/743/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "크세 화이트 M라인 스파이더링",
+      "name": "크세 화이트 M라인 유체",
       "price": 150000,
-      "url": "https://tarantulakorea.com/product/크세-화이트-m라인-스파이더링/743/category/24/display/2/"
+      "url": "https://tarantulakorea.com/product/크세-화이트-m라인-유체/743/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -19176,6 +19183,13 @@
       "name": "[특가] 베트남실버 유체",
       "price": 10000,
       "url": "https://tarantulakorea.com/product/특가-베트남실버-유체/387/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "티그리스 오너멘탈 '타이거' 유체",
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/티그리스-오너멘탈-타이거-유체/140/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
