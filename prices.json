@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-03T16:23:39",
+  "updated_at": "2026-06-04T03:22:46",
   "channels": {
-    "자사몰": "2026-06-03T16:23:39",
-    "네이버": "2026-06-03T19:45:35"
+    "자사몰": "2026-06-04T03:22:46",
+    "네이버": "2026-06-04T03:22:46"
   },
   "products": [
     {
@@ -1211,7 +1211,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "팜포베테우스 미라도르 유체 / 타란튤라 거미 아시안포레스트 타란툴라 전갈 절지류 타사모",
+      "name": "팜포베테우스 미라도르 유체 특대 / 타란튤라 거미 아시안포레스트 타란툴라 전갈 절지류 타사모",
       "price": 68000,
       "url": "https://smartstore.naver.com/tzblossom/products/10333867598"
     },
@@ -1756,8 +1756,7 @@
       "channel": "네이버",
       "name": "오렌지 프린지드 도리에 칼리만탄 약 15cm 준성체 암컷 / 타란튤라 오프 거미 절지류",
       "price": 75000,
-      "url": "https://smartstore.naver.com/tzblossom/products/12880252977",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tzblossom/products/12880252977"
     },
     {
       "vendor": "더쥬 송파점",
@@ -2149,7 +2148,8 @@
       "channel": "네이버",
       "name": "팜포베테우스 마스카라 유체 / 거미 타란툴라 타란튤라 밀웜 귀뚜라미 절지류 곤충 용품",
       "price": 20000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801250412"
+      "url": "https://smartstore.naver.com/tzblossom/products/8801250412",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -2261,7 +2261,8 @@
       "channel": "네이버",
       "name": "팜파스 트웨니 레드 (그로사) 유체 / 타란튤라 타란툴라 거미 절지류 전갈 지네 곤충",
       "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9343719052"
+      "url": "https://smartstore.naver.com/tzblossom/products/9343719052",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
