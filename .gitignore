@@ -35,6 +35,7 @@ graphs/
 # 변동 요약 카드/안내 이미지 — 글 첨부용, 로컬 생성(make_cards.py)
 가격변동_카드.png
 가격변동_안내.png
+신규입고_카드.png
 # 알림용 로컬 파일(커밋 금지: 웹훅엔 비밀 토큰 포함)
 _새변동.txt
 notify_webhook.txt

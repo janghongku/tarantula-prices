@@ -15,13 +15,14 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib import font_manager as fm
 from matplotlib.patches import FancyBboxPatch
-from make_report import all_change_events, ABBR, CH, STORE_ORDER, CH_ORDER
+from make_report import all_change_events, all_new_arrivals, ABBR, CH, STORE_ORDER, CH_ORDER
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTDIR = os.path.join(HERE, "outputs")
 os.makedirs(OUTDIR, exist_ok=True)
 OUT = os.path.join(OUTDIR, "가격변동_카드.png")
 INTRO = os.path.join(OUTDIR, "가격변동_안내.png")
+NEW = os.path.join(OUTDIR, "신규입고_카드.png")
 
 _fonts = {f.name for f in fm.fontManager.ttflist}
 for _c in ("AppleGothic", "Apple SD Gothic Neo", "NanumGothic", "Malgun Gothic"):
@@ -31,7 +32,7 @@ for _c in ("AppleGothic", "Apple SD Gothic Neo", "NanumGothic", "Malgun Gothic")
 plt.rcParams["axes.unicode_minus"] = False
 
 BG = "#fbf8f3"; INK = "#2b2620"; SUB = "#8a8175"
-UP = "#c0392b"; DOWN = "#2471a3"
+UP = "#c0392b"; DOWN = "#2471a3"; NEWC = "#1e8449"
 W = 10.0           # 가로(인치)
 ROWH = 0.40       # 항목 줄 높이
 SECH = 0.58       # 섹션 헤더 높이
@@ -113,6 +114,59 @@ def render(events, out, urgent=False):
     return True
 
 
+def build_new_lines(arrivals):
+    lines = [("sec", f"신규 입고  {len(arrivals)}건", NEWC, SECH)]
+    for store in STORE_ORDER:
+        for ch in CH_ORDER:
+            si = sorted([a for a in arrivals if a["vendor"] == store and a["channel"] == ch],
+                        key=lambda a: -a["price"])
+            if not si:
+                continue
+            lines.append(("store", f"{ABBR.get(store, store)} / {CH.get(ch, ch)}  {len(si)}건", SUB, STOREH))
+            for a in si:
+                lines.append(("item", a, NEWC, ROWH))
+    return lines
+
+
+def render_new(arrivals, out):
+    """신규입고 카드 — 가격변동 카드와 같은 톤, 판매처별 묶음. 약칭만 노출."""
+    if not arrivals:
+        return False
+    lines = build_new_lines(arrivals)
+    latest = max(a["date"] for a in arrivals)
+    yy, mm, dd = map(int, latest.split("-")); wk = (dd - 1) // 7 + 1
+    head_h = 1.45; foot_h = 0.5
+    H = head_h + sum(h for *_, h in lines) + foot_h
+    fig = plt.figure(figsize=(W, H), dpi=130); fig.patch.set_facecolor(BG)
+    ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, W); ax.set_ylim(0, H); ax.invert_yaxis(); ax.axis("off")
+    ax.text(0.45, 0.45, "타란튤라 신규 입고", fontsize=20, fontweight="bold", color=INK, va="center")
+    ax.text(0.45, 1.05, f"{mm}월 {wk}주차  ·  {latest.replace('-', '.')}  ·  신규 {len(arrivals)}건",
+            fontsize=12, color=SUB, va="center")
+    ax.plot([0.45, W - 0.45], [1.38, 1.38], color="#e3ddd2", lw=1)
+    y = head_h
+    for kind, val, col, h in lines:
+        cy = y + h / 2
+        if kind == "sec":
+            ax.add_patch(FancyBboxPatch((0.4, y + 0.06), W - 0.8, h - 0.14,
+                         boxstyle="round,pad=0,rounding_size=0.08", linewidth=0, facecolor=col, alpha=0.10))
+            ax.text(0.62, cy, val, fontsize=14.5, fontweight="bold", color=col, va="center")
+        elif kind == "store":
+            ax.text(0.6, cy, val, fontsize=11, fontweight="bold", color=SUB, va="center")
+        else:
+            a = val; dt = (a.get("date") or "")[5:].replace("-", "/")
+            name = a["species"] + ("  (품절)" if a.get("soldout") else "")
+            ax.text(0.78, cy, name, fontsize=12.5, color=INK, va="center")
+            ax.text(W - 2.9, cy, dt, fontsize=10.5, color="#9a917f", va="center", ha="right")
+            ax.text(W - 0.5, cy, f"{won(a['price'])}원", fontsize=12, fontweight="bold", color=INK, va="center", ha="right")
+            ax.plot([0.6, W - 0.5], [y + h, y + h], color="#efe9df", lw=0.8)
+        y += h
+    ax.text(W / 2, H - 0.22, "국내 판매처 공개 표시가 · 날짜=처음 확인한 날 · 구매 전 원문 확인 · 한국 타란튤라 판매가 기록 프로젝트",
+            fontsize=8.5, color="#b3ada2", ha="center", va="center")
+    fig.savefig(out, facecolor=BG)
+    plt.close(fig)
+    return True
+
+
 def render_intro(date, out):
     """글 맨 앞 고정 안내 배너."""
     fig = plt.figure(figsize=(9, 4.7), dpi=130)
@@ -157,6 +211,20 @@ def main():
         print(f"카드 이미지 생성 → {os.path.basename(OUT)} ({len(win)}건)")
     else:
         print("변동 없음 → 카드 생략")
+    # 신규입고 카드 (변동 카드와 동일 윈도우: --since 또는 최근 N일)
+    arr = all_new_arrivals()
+    if args.since:
+        arrwin = [a for a in arr if a["date"] >= args.since]
+    elif arr:
+        alatest = max(a["date"] for a in arr)
+        astart = (datetime.date.fromisoformat(alatest) - datetime.timedelta(days=args.days - 1)).isoformat()
+        arrwin = [a for a in arr if a["date"] >= astart]
+    else:
+        arrwin = []
+    if render_new(arrwin, NEW):
+        print(f"신규입고 카드 → {os.path.basename(NEW)} ({len(arrwin)}건)")
+    else:
+        print("신규입고 없음 → 카드 생략")
     # 고정 안내 배너(항상 생성, 날짜만 갱신)
     idate = (max((e["date"] for e in win), default="") or max((e["date"] for e in ev), default="")
              or datetime.date.today().isoformat()).replace("-", ".")

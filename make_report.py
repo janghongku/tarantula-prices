@@ -107,6 +107,60 @@ def write_snapshot():
     return len(rows)
 
 
+# ── 신규입고(신규등록) ────────────────────────────────────────
+# 2026-06-02 = 최초 카탈로그 대량 구축(베이스라인, 2514건 최초관측). 그 이후 처음 관측된
+# 상품만 '신규입고'로 본다. 평상시엔 이 날짜 이후 최초관측이면 자동으로 신규 — 조정은
+# price_history 재베이스라인/마이그레이션 같은 예외 때만.
+ARRIVALS_AFTER = "2026-06-02"
+NEW_LOG = os.path.join(OUTDIR, "신규등록_로그.csv")
+NEW_COLS = ["등록일", "판매처", "채널", "거미", "가격", "재고", "URL"]
+
+
+def all_new_arrivals():
+    """price_history에서 베이스라인 이후 처음 관측된 상품(=신규입고)."""
+    prods = json.load(open(os.path.join(HERE, "prices.json"), encoding="utf-8"))["products"]
+    hist = json.load(open(os.path.join(HERE, "price_history.json"), encoding="utf-8"))
+    try:
+        gm = json.load(open(os.path.join(HERE, "group_map.json"), encoding="utf-8"))["map"]
+    except Exception:
+        gm = {}
+    by_key = {hist_key(p["url"]): p for p in prods if p.get("url")}
+    out = []
+    for hk, pts in hist.items():
+        if not pts or pts[0][0] <= ARRIVALS_AFTER:
+            continue
+        p = by_key.get(hk)
+        if not p:
+            continue
+        out.append({"date": pts[0][0], "vendor": p["vendor"], "channel": p["channel"],
+                    "species": species_name(p, gm), "price": p["price"],
+                    "soldout": bool(p.get("soldout")), "url": p["url"], "raw": p["name"]})
+    return out
+
+
+def update_new_log(arrivals):
+    """신규입고를 append-only로 누적(상품번호 기준 1회). 가격변동 로그와 동일 컨셉."""
+    existing, rows = set(), []
+    if os.path.exists(NEW_LOG):
+        with open(NEW_LOG, encoding="utf-8-sig") as f:
+            for r in csv.DictReader(f):
+                rows.append(r); existing.add(hist_key(r["URL"]))
+    new = []
+    for a in arrivals:
+        k = hist_key(a["url"])
+        if k in existing:
+            continue
+        existing.add(k); new.append(a)
+        rows.append({"등록일": a["date"], "판매처": a["vendor"], "채널": a["channel"], "거미": a["species"],
+                     "가격": a["price"], "재고": "품절" if a["soldout"] else "재고", "URL": a["url"]})
+    rows.sort(key=lambda r: (str(r["등록일"]), str(r["판매처"]), str(r["거미"])))
+    with open(NEW_LOG, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=NEW_COLS); w.writeheader()
+        for r in rows:
+            w.writerow({c: r.get(c, "") for c in NEW_COLS})
+    return new, len(rows)
+
+
 # ── CSV 누적 로그 ─────────────────────────────────────────────
 COLS = ["날짜", "판매처", "채널", "거미", "이전가", "변동가", "증감액", "증감률(%)", "방향", "URL"]
 
@@ -213,6 +267,9 @@ def main():
         os.remove(flag)
     nsnap = write_snapshot()
     print(f"전체 현황: {nsnap}개 상품 → {os.path.basename(SNAP_FILE)}")
+    arrivals = all_new_arrivals()
+    new_arr, total_arr = update_new_log(arrivals)
+    print(f"신규입고 로그: 신규 {len(new_arr)}건 / 누적 {total_arr}건 → {os.path.basename(NEW_LOG)}")
     if args.log_only:
         return
 

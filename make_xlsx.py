@@ -17,13 +17,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUTDIR = os.path.join(HERE, "outputs")
 SNAP = os.path.join(OUTDIR, "종별_가격현황.csv")
 LOG = os.path.join(OUTDIR, "가격변동_로그.csv")
+NEWLOG = os.path.join(OUTDIR, "신규등록_로그.csv")
 OUT = os.path.join(OUTDIR, "거미_가격_아카이브.xlsx")
 
-MONEY = {"최초가", "현재가", "이전가", "변동가", "증감액"}
+MONEY = {"최초가", "현재가", "이전가", "변동가", "증감액", "가격"}
 INTNUM = MONEY | {"증감률(%)", "변동횟수"}
 WIDTH = {"거미": 26, "판매처": 13, "채널": 8, "최초관측일": 13, "최초가": 11, "현재가": 11,
          "변동횟수": 9, "가격추이": 42, "최근변동일": 13, "재고": 7, "날짜": 12, "이전가": 11, "변동가": 11,
-         "증감액": 10, "증감률(%)": 10, "방향": 7, "URL": 52}
+         "증감액": 10, "증감률(%)": 10, "방향": 7, "등록일": 12, "가격": 11, "URL": 52}
 HDR_FILL = PatternFill("solid", fgColor="3A2A16")
 HDR_FONT = Font(bold=True, color="FFFFFF")
 UP_FONT, DOWN_FONT = Font(color="C0392B", bold=True), Font(color="2471A3", bold=True)
@@ -114,6 +115,7 @@ def summary_sheet(wb, snap, log):
 def main():
     snap = read_csv(SNAP)
     log = read_csv(LOG)
+    newlog = read_csv(NEWLOG)
     wb = Workbook()
     wb.remove(wb.active)  # 기본 시트 제거
     summary_sheet(wb, snap, log)
@@ -121,8 +123,10 @@ def main():
         add_table(wb, "전체현황", snap[0], snap[1])
     if log[0]:
         add_table(wb, "가격변동", log[0], log[1], color_dir=True)
+    if newlog[0]:
+        add_table(wb, "신규입고", newlog[0], newlog[1])
     wb.save(OUT)
-    print(f"엑셀 생성: {os.path.basename(OUT)}  (시트: 요약 / 전체현황 {len(snap[1])}행 / 가격변동 {len(log[1])}행)")
+    print(f"엑셀 생성: {os.path.basename(OUT)}  (시트: 요약 / 전체현황 {len(snap[1])}행 / 가격변동 {len(log[1])}행 / 신규입고 {len(newlog[1])}행)")
 
 
 if __name__ == "__main__":
