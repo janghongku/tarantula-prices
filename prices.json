@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-05T02:45:05",
+  "updated_at": "2026-06-05T14:32:30",
   "channels": {
-    "자사몰": "2026-06-05T02:45:05",
+    "자사몰": "2026-06-05T14:32:30",
     "네이버": "2026-06-05T00:15:18"
   },
   "products": [
@@ -15308,7 +15308,8 @@
       "channel": "자사몰",
       "name": "썬타이거 암컷 준성체 초 10cm+ / Psalmopoeus irminia",
       "price": 60000,
-      "url": "https://tarancenter.com/product/썬타이거-암컷-준성체-초-10cm-psalmopoeus-irminia/1574/category/51/display/1/"
+      "url": "https://tarancenter.com/product/썬타이거-암컷-준성체-초-10cm-psalmopoeus-irminia/1574/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -15456,7 +15457,8 @@
       "channel": "자사몰",
       "name": "아프리칸 혼드바분 암컷 준성체 9cm / Ceratogyrus darlingi",
       "price": 50000,
-      "url": "https://tarancenter.com/product/아프리칸-혼드바분-암컷-준성체-9cm-ceratogyrus-darlingi/1572/category/51/display/1/"
+      "url": "https://tarancenter.com/product/아프리칸-혼드바분-암컷-준성체-9cm-ceratogyrus-darlingi/1572/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
