@@ -9,7 +9,7 @@
   python3 make_cards.py --since 2026-06-02 --urgent
 (matplotlib 필요)
 """
-import os, argparse, datetime
+import os, json, argparse, datetime
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -41,6 +41,15 @@ STOREH = 0.40     # 판매처 헤더 높이
 
 def won(n):
     return f"{int(n):,}"
+
+
+def crawl_date():
+    """마지막 크롤(확인) 날짜 — prices.json updated_at. 변동이 없어도 매 크롤마다 갱신됨."""
+    try:
+        d = json.load(open(os.path.join(HERE, "prices.json"), encoding="utf-8")).get("updated_at", "")
+        return d[:10].replace("-", ".")
+    except Exception:
+        return ""
 
 
 def build_lines(events):
@@ -81,8 +90,11 @@ def render(events, out, urgent=False):
 
     title = "타란튤라 판매가 변동" if not urgent else "[긴급] 타란튤라 판매가 변동"
     ax.text(0.45, 0.45, title, fontsize=20, fontweight="bold", color=INK, va="center")
-    sub = (f"{mm}월 {wk}주차" if not urgent else "긴급") + f"  ·  {latest.replace('-', '.')}  ·  인상 {nup} · 인하 {ndn}"
+    sub = (f"{mm}월 {wk}주차" if not urgent else "긴급") + f"  ·  최근 변동 {latest.replace('-', '.')}  ·  인상 {nup} · 인하 {ndn}"
     ax.text(0.45, 1.05, sub, fontsize=12, color=SUB, va="center")
+    cd = crawl_date()
+    if cd:
+        ax.text(W - 0.45, 1.05, f"확인 {cd}", fontsize=11, color=SUB, va="center", ha="right")
     ax.plot([0.45, W - 0.45], [1.38, 1.38], color="#e3ddd2", lw=1)
 
     y = head_h
@@ -140,8 +152,11 @@ def render_new(arrivals, out):
     fig = plt.figure(figsize=(W, H), dpi=130); fig.patch.set_facecolor(BG)
     ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, W); ax.set_ylim(0, H); ax.invert_yaxis(); ax.axis("off")
     ax.text(0.45, 0.45, "타란튤라 신규 입고", fontsize=20, fontweight="bold", color=INK, va="center")
-    ax.text(0.45, 1.05, f"{mm}월 {wk}주차  ·  {latest.replace('-', '.')}  ·  신규 {len(arrivals)}건",
+    ax.text(0.45, 1.05, f"{mm}월 {wk}주차  ·  최근 입고 {latest.replace('-', '.')}  ·  신규 {len(arrivals)}건",
             fontsize=12, color=SUB, va="center")
+    cd = crawl_date()
+    if cd:
+        ax.text(W - 0.45, 1.05, f"확인 {cd}", fontsize=11, color=SUB, va="center", ha="right")
     ax.plot([0.45, W - 0.45], [1.38, 1.38], color="#e3ddd2", lw=1)
     y = head_h
     for kind, val, col, h in lines:
