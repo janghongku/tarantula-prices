@@ -169,6 +169,7 @@ COLS = ["날짜", "판매처", "채널", "거미", "이전가", "변동가", "�
 
 
 def update_log(events):
+    cur_name = {e["url"]: e["species"] for e in events}   # URL→현재 그룹 기준 종명(오라벨 자가치유)
     existing, rows = set(), []
     if os.path.exists(LOG_FILE):
         with open(LOG_FILE, encoding="utf-8-sig") as f:
@@ -185,6 +186,9 @@ def update_log(events):
         rows.append({"날짜": e["date"], "판매처": e["vendor"], "채널": e["channel"], "거미": e["species"],
                      "이전가": e["prev"], "변동가": e["price"], "증감액": d, "증감률(%)": pct,
                      "방향": "인상" if d > 0 else "인하", "URL": e["url"]})
+    for r in rows:                                         # 기존 행 종명을 현재 그룹 기준으로 갱신
+        if r.get("URL") in cur_name:
+            r["거미"] = cur_name[r["URL"]]
     rows.sort(key=lambda r: (str(r["날짜"]), str(r["판매처"]), str(r["거미"])))
     with open(LOG_FILE, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=COLS); w.writeheader()
