@@ -54,8 +54,15 @@ _bracket = re.compile(r"[\[\(（【].*?[\]\)）】]")
 _size = re.compile(r"\d+\.?\d*\s*cm\+?-?")
 
 
+# 설명 '본문' 시작 마커(학명 뒤). 학명 latin은 이 앞에 오므로, 여기서 잘라 설명 속 다른 종 학명 오인을 막는다.
+_BODY_MARK = re.compile(
+    r'\s*(?:습성|수명|사육|사이즈|성체\s*크기|성장\s*속도|먹이|서식|원산지|난이도|'
+    r'분양\s*개체|판매\s*개체|개체\s*크기|추가\s*사진|애완\s*거미|실제\s*모습|실\s*모습|배송|서비스가)')
+
+
 def latin_binom(full):
-    """알려진 속(屬)으로 시작하는 학명만 추출 (지명/오타 노이즈 배제)."""
+    """알려진 속(屬)으로 시작하는 학명만 추출 (지명/오타·설명 속 타 종 학명 배제)."""
+    full = _BODY_MARK.split(full or "", 1)[0]      # 설명 본문 제외
     for m in _binom.finditer(full):
         g, s = m.group(1).lower(), m.group(2).lower()
         if g in GENERA:
@@ -68,9 +75,28 @@ def stage_of(name):
     return next((s for s in STAGE_W if s in core), None)
 
 
+# 설명/스펙/다음 라벨이 시작되는 마커 — 이 앞까지만 종명으로 본다.
+_DESC_MARK = re.compile(
+    r'\s*(?:학명|습성|수명|사육|사이즈|성체\s*크기|성장\s*속도|먹이|서식|원산지|난이도|'
+    r'분양\s*개체|판매\s*개체|개체\s*크기|추가\s*사진|애완\s*거미|실제\s*모습|실\s*모습|배송|서비스가)')
+
+
+def _despec(name):
+    """설명 떡칠 제목에서 종명 부분만: 관용명/커먼네임 우선·학명 접두 제거·분양 접두·마커 앞까지.
+    표시명(clean_display)과 그룹핑 토큰(core_tokens)이 공유 → 떡칠 제목의 오분류 방지."""
+    s = (name or "").split("/")[0]
+    m = re.search(r'(?:관용명|커먼네임)\s*[:：\-]\s*(.+)', s)
+    if m:
+        s = m.group(1)
+    else:
+        s = re.sub(r'^\s*학명\s*[:：\-]\s*', '', s)
+    s = re.sub(r'^\s*분양\s*인?\s*', '', s)
+    return _DESC_MARK.split(s, 1)[0]
+
+
 def core_tokens(name):
-    """노이즈/속성/크기/학명 제거 후 한글 핵심 토큰."""
-    c = _bracket.sub(" ", name.split("/")[0])
+    """노이즈/속성/크기/학명/설명라벨 제거 후 한글 핵심 토큰."""
+    c = _bracket.sub(" ", _despec(name))
     c = _size.sub(" ", c)
     for k in ATTR_W:
         c = c.replace(k, " ")
@@ -85,25 +111,9 @@ def token_key(name):
     return "".join(sorted(toks)) if toks else None
 
 
-# 설명/스펙/다음 라벨이 시작되는 마커 — 이 앞까지만 종명으로 본다.
-_DESC_MARK = re.compile(
-    r'\s*(?:학명|습성|수명|사육|사이즈|성체\s*크기|성장\s*속도|먹이|서식|원산지|난이도|'
-    r'분양\s*개체|판매\s*개체|개체\s*크기|추가\s*사진|애완\s*거미|실제\s*모습|실\s*모습|배송|서비스가)')
-
-
 def clean_display(name):
-    """표시용 깔끔한 종명. Cafe24 일부는 name에 설명 전체(관용명/학명/습성/배송…)가
-    들어와 매우 길다 → 통용명(또는 학명) 종명만 뽑고, 그래도 길면 40자에서 자른다(…)."""
-    raw0 = (name or "").split("/")[0]
-    s = raw0
-    m = re.search(r'(?:관용명|커먼네임)\s*[:：\-]\s*(.+)', s)   # 통용명 우선('관용명 - X')
-    if m:
-        s = m.group(1)
-    else:
-        s = re.sub(r'^\s*학명\s*[:：\-]\s*', '', s)            # '학명 - {라틴}' 접두면 라틴 사용
-    s = re.sub(r'^\s*분양\s*인?\s*', '', s)                    # '분양 인 ' 접두
-    s = _DESC_MARK.split(s, 1)[0]                               # 스펙/설명 시작 앞까지
-    c = _bracket.sub(" ", s)
+    """표시용 깔끔한 종명(설명 떡칠 제거 + 40자 캡). _despec를 core_tokens와 공유."""
+    c = _bracket.sub(" ", _despec(name))
     c = _size.sub(" ", c)
     for k in sorted(ATTR_W, key=len, reverse=True):
         c = c.replace(k, " ")
@@ -113,7 +123,7 @@ def clean_display(name):
     if len(head) >= 2:
         c = head
     if len(c) < 2:                                            # 다 걸러져 비면 원문 앞부분 사용
-        c = re.sub(r"\s+", " ", raw0).strip(" -·,")
+        c = re.sub(r"\s+", " ", (name or "").split("/")[0]).strip(" -·,")
     return (c[:40].rstrip() + "…") if len(c) > 40 else c
 
 
@@ -245,8 +255,9 @@ def cmd_groups():
         members = [it[0] for it in items]
         # 표시명: 별칭 사전의 canonical 우선, 없으면 멤버 중 가장 짧고 깔끔한 이름
         cleaned = [c for c in (clean_display(m["name"]) for m in members) if len(c) >= 2]
+        cnt = Counter(cleaned)                                  # 표시명=다수결(동률이면 짧은 것). 이상값 1개가 오라벨하는 것 방지
         disp = next((d for _, d, _ in items if d), None) \
-            or (min(cleaned, key=len) if cleaned else members[0]["name"].split("/")[0].strip())
+            or (min(cnt, key=lambda c: (-cnt[c], len(c))) if cnt else members[0]["name"].split("/")[0].strip())
         sci = next((s for _, _, s in items if s), "")
         prices = [m["price"] for m in members]
         out["groups"].append({
@@ -282,7 +293,8 @@ def cmd_map():
     out = {}
     for key, members in byid.items():
         cleaned = [c for c in (clean_display(m["name"]) for m in members) if len(c) >= 2]
-        name = meta[key]["disp"] or (min(cleaned, key=len) if cleaned else members[0]["name"].split("/")[0].strip())
+        cnt = Counter(cleaned)                                  # 표시명=다수결(동률이면 짧은 것). 이상값 1개 오라벨 방지
+        name = meta[key]["disp"] or (min(cnt, key=lambda c: (-cnt[c], len(c))) if cnt else members[0]["name"].split("/")[0].strip())
         for p in members:
             out[stable_id(p)] = {"i": key, "n": name, "s": meta[key]["sci"], "st": stage_of(p["name"]) or ""}
     path = os.path.join(HERE, "group_map.json")
