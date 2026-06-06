@@ -239,8 +239,10 @@ def extract_smartstore(page, src):
         if u in out:                                      # state로 이미 잡힌 상품도 DOM 품절로 보강
             if sold: out[u]["soldout"] = True
             continue
-        m = re.search(r"([0-9][0-9,]{2,})\s*원", txt)   # '원' 앞 숫자만(콤마 포함) → 리뷰수/상품번호 오인 방지
-        price = int(m.group(1).replace(",", "")) if m else None
+        # DOM 카드 텍스트엔 정가·할인가·배송비가 섞여 있어 가격이 모호함(API 429 폴백 시).
+        # '원' 가격이 정확히 1개일 때만 신뢰. 2개 이상(정가/할인가/배송비 혼재)이면 스킵 → 기존 가격 유지.
+        nums = re.findall(r"([0-9][0-9,]{2,})\s*원", txt)
+        price = int(nums[0].replace(",", "")) if len(nums) == 1 else None
         lines = [l.strip() for l in txt.splitlines() if l.strip()]
         cand = [l for l in lines if not PRICE_RE.fullmatch(l.replace("원", "").strip()) and "http" not in l.lower()]
         name = max(cand, key=len) if cand else None
