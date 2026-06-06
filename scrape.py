@@ -528,6 +528,24 @@ def hist_key(url):
     return f"{host}/{m.group(1)}" if m else u
 
 
+_SPEC_LABELS = ("배송", "습성", "수명", "사육", "분양 개체", "개체 크기", "성체크기")
+
+
+def _suspect_price(p, last):
+    """자동 파싱 가격을 신뢰할 수 없는 경우 True (마지막 정상가 유지용).
+    - 네이버 리스팅 중 '설명을 제목에 떡칠'한 상품(관용명/학명+배송·습성…): 가격 필드가
+      옵션/placeholder라 엉뚱한 값(배송비 4,000 등)이 잡힘.
+    - 품절/문의용 placeholder 폭등가(100만/999만…)가 직전 대비 2배 이상 점프."""
+    if p.get("channel") != "네이버" or not last:
+        return False
+    nm = p.get("name", "")
+    price = p.get("price", 0)
+    stuffed = ("관용명" in nm) or (len(nm) > 60 and "학명" in nm and any(s in nm for s in _SPEC_LABELS))
+    too_cheap = stuffed and price <= 5000 and price <= last * 0.5        # 배송비/동전 숫자 오인(폭락)
+    placeholder = price in (1_000_000, 9_999_999, 99_999_999, 99_999_990) and price >= last * 2  # 품절/문의 폭등
+    return too_cheap or placeholder
+
+
 def apply_price_changes(products, now_iso):
     """price_history.json에 가격 추이를 누적하고, 각 상품에 직전가(prev)·변동일·그래프(hist)를 붙인다.
     이력 기반(직전 '다른' 가격과 비교)이라 하루에 여러 번/채널별로 돌려도 변동 표시가 안 사라지고 영구 누적."""
@@ -543,6 +561,9 @@ def apply_price_changes(products, now_iso):
         p.pop("prev", None); p.pop("changed_on", None); p.pop("hist", None)
         u, price = hist_key(p["url"]), p["price"]
         h = hist.setdefault(u, [])
+        last = h[-1][1] if h else None
+        if last and price != last and _suspect_price(p, last):   # 신뢰 불가 → 마지막 정상가 유지
+            price = p["price"] = last
         if not h or h[-1][1] != price:                 # 가격이 바뀐 날만 이력에 1점 추가
             h.append([now_iso[:10], price])
             hist[u] = h = h[-24:]
