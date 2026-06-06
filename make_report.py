@@ -15,6 +15,7 @@
   python3 make_report.py --log-only       # 글 없이 csv 로그만 갱신
 """
 import json, csv, re, os, argparse, datetime
+from species_groups import clean_display
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTDIR = os.path.join(HERE, "outputs")          # 생성물 폴더
@@ -43,11 +44,13 @@ def hist_key(url):
     return f"{host}/{m.group(1)}" if m else u
 
 
+clean_name = clean_display   # 종명 정제는 species_groups와 동일 함수(카드·사이트·CSV 일관)
+
+
 def species_name(p, gm):
-    """묶음 대표명(가장 깔끔) 우선, 없으면 '/' 앞 + 프로모 제거."""
+    """묶음 대표명 우선, 없으면 상품명 — 어느 쪽이든 clean_name으로 정제(묶음명도 길 수 있음)."""
     g = gm.get(keyOf(p), {})
-    nm = g.get("n") or re.sub(r'^\(?\s*\d+월\s*이벤트\s*\)?\s*', '', p["name"].split("/")[0]).strip()
-    return nm.split(",")[0].strip()
+    return clean_name(g.get("n") or p["name"])
 
 
 def all_change_events():
@@ -157,7 +160,7 @@ def update_new_log(arrivals):
     with open(NEW_LOG, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=NEW_COLS); w.writeheader()
         for r in rows:
-            w.writerow({c: r.get(c, "") for c in NEW_COLS})
+            w.writerow({c: (clean_name(r[c]) if c == "거미" and r.get(c) else r.get(c, "")) for c in NEW_COLS})
     return new, len(rows)
 
 
@@ -186,7 +189,7 @@ def update_log(events):
     with open(LOG_FILE, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=COLS); w.writeheader()
         for r in rows:
-            w.writerow({c: r.get(c, "") for c in COLS})
+            w.writerow({c: (clean_name(r[c]) if c == "거미" and r.get(c) else r.get(c, "")) for c in COLS})
     return new_events, len(rows)
 
 

@@ -85,15 +85,36 @@ def token_key(name):
     return "".join(sorted(toks)) if toks else None
 
 
+# 설명/스펙/다음 라벨이 시작되는 마커 — 이 앞까지만 종명으로 본다.
+_DESC_MARK = re.compile(
+    r'\s*(?:학명|습성|수명|사육|사이즈|성체\s*크기|성장\s*속도|먹이|서식|원산지|난이도|'
+    r'분양\s*개체|판매\s*개체|개체\s*크기|추가\s*사진|애완\s*거미|실제\s*모습|실\s*모습|배송|서비스가)')
+
+
 def clean_display(name):
-    """표시용 깔끔한 이름: 슬래시 앞에서 괄호/크기/단계/성별만 제거(종 단어·어순 유지)."""
-    c = _bracket.sub(" ", name.split("/")[0])
+    """표시용 깔끔한 종명. Cafe24 일부는 name에 설명 전체(관용명/학명/습성/배송…)가
+    들어와 매우 길다 → 통용명(또는 학명) 종명만 뽑고, 그래도 길면 40자에서 자른다(…)."""
+    raw0 = (name or "").split("/")[0]
+    s = raw0
+    m = re.search(r'(?:관용명|커먼네임)\s*[:：\-]\s*(.+)', s)   # 통용명 우선('관용명 - X')
+    if m:
+        s = m.group(1)
+    else:
+        s = re.sub(r'^\s*학명\s*[:：\-]\s*', '', s)            # '학명 - {라틴}' 접두면 라틴 사용
+    s = re.sub(r'^\s*분양\s*인?\s*', '', s)                    # '분양 인 ' 접두
+    s = _DESC_MARK.split(s, 1)[0]                               # 스펙/설명 시작 앞까지
+    c = _bracket.sub(" ", s)
     c = _size.sub(" ", c)
     for k in sorted(ATTR_W, key=len, reverse=True):
         c = c.replace(k, " ")
     c = re.sub(r"[\"'“”‘’]", " ", c)
     c = re.sub(r"\s+", " ", c).strip(" -·,")
-    return c
+    head = c.split(",")[0].strip()                            # 쉼표 앞(주 이름)만
+    if len(head) >= 2:
+        c = head
+    if len(c) < 2:                                            # 다 걸러져 비면 원문 앞부분 사용
+        c = re.sub(r"\s+", " ", raw0).strip(" -·,")
+    return (c[:40].rstrip() + "…") if len(c) > 40 else c
 
 
 # ── 사전/자동맵 로드 ───────────────────────────────────────────

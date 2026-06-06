@@ -52,6 +52,13 @@ def crawl_date():
         return ""
 
 
+def short(s, n=24):
+    """카드 한 줄에 들어가도록 종명 길이 제한(넘으면 …). clean_name으로도 못 줄인
+    긴 한글 관용명 대비 안전장치."""
+    s = str(s or "")
+    return s if len(s) <= n else s[:n].rstrip() + "…"
+
+
 def build_lines(events):
     up = [e for e in events if e["price"] > e["prev"]]
     down = [e for e in events if e["price"] < e["prev"]]
@@ -111,7 +118,7 @@ def render(events, out, urgent=False):
             e = val; d = e["price"] - e["prev"]; pct = round(abs(d) / e["prev"] * 100)
             arr = "▲" if d > 0 else "▼"
             dt = (e.get("date") or "")[5:].replace("-", "/")          # 변동일 MM/DD
-            ax.text(0.78, cy, e["species"], fontsize=12.5, color=INK, va="center")
+            ax.text(0.78, cy, short(e["species"]), fontsize=12.5, color=INK, va="center")
             ax.text(W - 3.95, cy, dt, fontsize=10.5, color="#9a917f", va="center", ha="right")
             ax.text(W - 1.6, cy, f"{won(e['prev'])} → {won(e['price'])}", fontsize=11.5,
                     color="#5a5246", va="center", ha="right")
@@ -169,7 +176,7 @@ def render_new(arrivals, out):
             ax.text(0.6, cy, val, fontsize=11, fontweight="bold", color=SUB, va="center")
         else:
             a = val; dt = (a.get("date") or "")[5:].replace("-", "/")
-            name = a["species"] + ("  (품절)" if a.get("soldout") else "")
+            name = short(a["species"]) + ("  (품절)" if a.get("soldout") else "")
             ax.text(0.78, cy, name, fontsize=12.5, color=INK, va="center")
             ax.text(W - 2.9, cy, dt, fontsize=10.5, color="#9a917f", va="center", ha="right")
             ax.text(W - 0.5, cy, f"{won(a['price'])}원", fontsize=12, fontweight="bold", color=INK, va="center", ha="right")
