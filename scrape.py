@@ -24,7 +24,7 @@
 소스 추가/수정은 SOURCES 한 곳만. Cafe24 cate_no = 카테고리 클릭 시 URL의 cate_no 값.
 """
 
-import re, json, time, argparse, datetime, pathlib
+import re, json, time, random, argparse, datetime, pathlib
 import requests
 from bs4 import BeautifulSoup
 
@@ -374,7 +374,7 @@ def api_category_products(page, channel_uid, cid, src):
             new += 1
         if new == 0:
             break
-        time.sleep(0.5)                                  # 페이지 간 간격(버스트 줄여 429 예방)
+        time.sleep(random.uniform(3, 7))                 # 페이지 간 간격(무작위 3~7s) — 사람 페이스, 규칙적 패턴 탐지 회피
     return list(out.values())
 
 
@@ -437,8 +437,8 @@ def scrape_smartstore_all(sources, headful=False, profile=None):
             pass
 
         for i, src in enumerate(sources):
-            if i:                                        # 스토어 사이 간격 — 버스트 분산해 429 예방
-                time.sleep(20)
+            if i:                                        # 스토어 사이 간격(무작위 90~180s) — 사람처럼 불규칙, 버스트 분산
+                time.sleep(random.uniform(90, 180))
             base = f"https://smartstore.naver.com/{src['handle']}"
             entry = base + "/category/ALL?st=TOTALSALE&dt=IMAGE&size=80"
             try:
