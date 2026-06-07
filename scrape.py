@@ -336,12 +336,21 @@ def api_category_products(page, channel_uid, cid, src):
     for pg in range(1, 26):
         api = (f"https://smartstore.naver.com/i/v2/channels/{channel_uid}/categories/{cid}/products"
                f"?categorySearchType=DISPCATG&sortType=TOTALSALE&page={pg}&pageSize=80")
-        try:
-            data = page.evaluate(
-                "async (u)=>{try{const r=await fetch(u,{headers:{accept:'application/json'},credentials:'include'});"
-                "if(!r.ok) return null; return await r.json();}catch(e){return null;}}", api)
-        except Exception:
-            break
+        data = None
+        for attempt in range(4):                       # 429(과다요청) 시 점잖게 쉬었다 재시도
+            try:
+                res = page.evaluate(
+                    "async (u)=>{try{const r=await fetch(u,{headers:{accept:'application/json'},credentials:'include'});"
+                    "return {ok:r.ok, status:r.status, body: r.ok ? await r.json() : null};}catch(e){return {ok:false,status:0};}}", api)
+            except Exception:
+                res = None
+            if res and res.get("ok"):
+                data = res.get("body"); break
+            if res and res.get("status") == 429 and attempt < 3:
+                wait = 20 * (attempt + 1)               # 20·40·60s 점증 대기 → 차단 풀릴 시간 줌
+                print(f"    · 429 과다요청 → {wait}s 쉬고 재시도 ({src['vendor']})", flush=True)
+                time.sleep(wait); continue
+            break                                        # 429 아닌 에러/끝페이지면 중단
         if not data:
             break
         found, stack = {}, [data]
@@ -365,6 +374,7 @@ def api_category_products(page, channel_uid, cid, src):
             new += 1
         if new == 0:
             break
+        time.sleep(0.5)                                  # 페이지 간 간격(버스트 줄여 429 예방)
     return list(out.values())
 
 
