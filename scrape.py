@@ -485,8 +485,19 @@ def load_existing():
 
 def merge_with_existing(new_products, attempted_channels, now_iso):
     old_products, old_channels = load_existing()
-    refreshed = {(p["vendor"], p["channel"]) for p in new_products}   # 이번에 실제 데이터 나온 (업체,채널)
-    merged = list(new_products)
+    def _cnt(ps):
+        c = {}
+        for p in ps:
+            k = (p.get("vendor"), p.get("channel")); c[k] = c.get(k, 0) + 1
+        return c
+    new_cnt, old_cnt = _cnt(new_products), _cnt(old_products)
+    # 부분수집(깨진 크롤) 방어: 새 수집이 기존의 60% 미만인 (업체,채널)은 '깨졌다'고 보고
+    # 새(부분) 데이터를 버리고 기존을 유지 → DOM 폴백/타임아웃으로 절반만 긁혀도 데이터 손실 안 함.
+    broken = {k for k in new_cnt if old_cnt.get(k, 0) >= 20 and new_cnt[k] < old_cnt[k] * 0.6}
+    if broken:
+        print(f"  ⚠ 부분수집 의심(기존 대비 60%↓) → 새 데이터 버리고 기존 유지: {sorted(broken)}")
+    merged = [p for p in new_products if (p.get("vendor"), p.get("channel")) not in broken]
+    refreshed = {(p.get("vendor"), p.get("channel")) for p in merged}   # 정상 수집된 (업체,채널)만
     carried = 0
     for op in old_products:
         ch = op.get("channel"); key = (op.get("vendor"), ch)

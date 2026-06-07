@@ -36,6 +36,8 @@ graphs/
 가격변동_카드.png
 가격변동_안내.png
 신규입고_카드.png
+# 변동 상품 스크린샷(증거 기록, 로컬 보관 — 바이너리라 커밋 안 함. snap_changes.py로 생성)
+snapshots/
 # 알림용 로컬 파일(커밋 금지: 웹훅엔 비밀 토큰 포함)
 _새변동.txt
 notify_webhook.txt
