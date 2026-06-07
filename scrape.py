@@ -436,7 +436,9 @@ def scrape_smartstore_all(sources, headful=False, profile=None):
         except Exception:
             pass
 
-        for src in sources:
+        for i, src in enumerate(sources):
+            if i:                                        # 스토어 사이 간격 — 버스트 분산해 429 예방
+                time.sleep(20)
             base = f"https://smartstore.naver.com/{src['handle']}"
             entry = base + "/category/ALL?st=TOTALSALE&dt=IMAGE&size=80"
             try:
@@ -611,6 +613,7 @@ def main():
     ap.add_argument("--no-merge", action="store_true", help="기존 prices.json 무시(전체 덮어쓰기)")
     ap.add_argument("--profile", metavar="DIR", help="네이버 로그인 세션 재사용용 브라우저 프로필 폴더")
     ap.add_argument("--force", action="store_true", help="네이버 하루 1회 가드 무시")
+    ap.add_argument("--store", metavar="HANDLE|업체", help="네이버 특정 스토어만 수집(부하분산 로테이션용). handle 또는 업체명 일부")
     args = ap.parse_args()
     DEBUG = args.debug
     now = datetime.datetime.now()
@@ -627,10 +630,13 @@ def main():
         if hrs is not None and hrs < 20 and not args.force:
             print(f"네이버: 마지막 수집 {hrs:.1f}시간 전 → 하루 1회 가드로 건너뜀 (강제: --force)")
         else:
-            print("네이버 수집...")
+            ss = [s for s in SOURCES if s["type"] == "smartstore"]
+            if args.store:                               # 부하분산: 특정 스토어만(로테이션)
+                ss = [s for s in ss if args.store.lower() == s.get("handle", "").lower()
+                      or args.store in s.get("vendor", "")]
+            print("네이버 수집..." + (f" (한정: {', '.join(s['vendor'] for s in ss)})" if args.store else ""))
             attempted.add("네이버")
-            products += scrape_smartstore_all([s for s in SOURCES if s["type"] == "smartstore"],
-                                              headful=args.headful, profile=args.profile)
+            products += scrape_smartstore_all(ss, headful=args.headful, profile=args.profile)
 
     channels = {ch: now_iso for ch in {p["channel"] for p in products}}
     if not args.no_merge:
