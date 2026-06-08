@@ -337,7 +337,7 @@ def api_category_products(page, channel_uid, cid, src):
         api = (f"https://smartstore.naver.com/i/v2/channels/{channel_uid}/categories/{cid}/products"
                f"?categorySearchType=DISPCATG&sortType=TOTALSALE&page={pg}&pageSize=80")
         data = None
-        for attempt in range(4):                       # 429(과다요청) 시 점잖게 쉬었다 재시도
+        for attempt in range(8):                       # 429/CAPTCHA 시 — 사용자가 브라우저에서 풀 시간을 충분히 줌
             try:
                 res = page.evaluate(
                     "async (u)=>{try{const r=await fetch(u,{headers:{accept:'application/json'},credentials:'include'});"
@@ -346,11 +346,12 @@ def api_category_products(page, channel_uid, cid, src):
                 res = None
             if res and res.get("ok"):
                 data = res.get("body"); break
-            if res and res.get("status") == 429 and attempt < 3:
-                wait = 20 * (attempt + 1)               # 20·40·60s 점증 대기 → 차단 풀릴 시간 줌
-                print(f"    · 429 과다요청 → {wait}s 쉬고 재시도 ({src['vendor']})", flush=True)
+            if res and res.get("status") in (429, 0, 403) and attempt < 7:
+                wait = min(90, 30 * (attempt + 1))       # 30·60·90·90… (최대 ~9분) → CAPTCHA 풀 여유
+                print(f"    · 차단/429 ({src['vendor']}) — 브라우저에 '자동입력 방지(CAPTCHA)' 뜨면 "
+                      f"지금 풀어주세요(창 닫지 말고!). {int(wait)}s 후 재시도…", flush=True)
                 time.sleep(wait); continue
-            break                                        # 429 아닌 에러/끝페이지면 중단
+            break                                        # 다른 에러/끝페이지면 중단
         if not data:
             break
         found, stack = {}, [data]
@@ -476,6 +477,10 @@ def scrape_smartstore_all(sources, headful=False, profile=None):
                     seen.add(it["url"]); got.append(it)
             print(f"  [{src['vendor']} 네이버:{src['handle']}] {len(got)}건 (거미)"
                   + (" [API]" if used_api else " [DOM]"), flush=True)
+            if i == 0 and not used_api:                  # 첫 스토어부터 API 차단([DOM]) = IP 레벨 차단 추정
+                print("  ⚠ 첫 스토어 API 차단 → IP 차단 판단. 네이버 전체 중단(DOM은 부정확 → 버리고 "
+                      "기존 데이터 유지). 며칠 쉬었다 재시도 권장.", flush=True)
+                break                                    # got 안 더함 → 기존 네이버 데이터 그대로 보존
             out += got
         closer.close()
     return out
