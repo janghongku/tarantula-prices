@@ -191,25 +191,31 @@ def render_new(arrivals, out):
 
 def render_intro(date, out):
     """글 맨 앞 고정 안내 배너."""
-    fig = plt.figure(figsize=(9, 4.7), dpi=130)
+    fig = plt.figure(figsize=(9, 5.4), dpi=130)
     fig.patch.set_facecolor(BG)
     ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
-    ax.add_patch(FancyBboxPatch((0.035, 0.06), 0.93, 0.88, boxstyle="round,pad=0,rounding_size=0.025",
+    ax.add_patch(FancyBboxPatch((0.035, 0.05), 0.93, 0.90, boxstyle="round,pad=0,rounding_size=0.022",
                  linewidth=1.3, edgecolor="#d8cdbb", facecolor="white"))
     cx = 0.5
-    ax.text(cx, 0.83, "타란튤라 판매가 변동 기록", fontsize=23, fontweight="bold", color=INK, ha="center", va="center")
-    ax.text(cx, 0.705, f"{date} 변동 확인", fontsize=13.5, color=SUB, ha="center", va="center")
-    ax.plot([0.2, 0.8], [0.625, 0.625], color="#ece4d6", lw=1)
+    ax.text(cx, 0.86, "타란튤라 판매가 변동 기록", fontsize=23, fontweight="bold", color=INK, ha="center", va="center")
+    ax.text(cx, 0.755, f"{date} 변동 확인", fontsize=13.5, color=SUB, ha="center", va="center")
+    ax.plot([0.2, 0.8], [0.69, 0.69], color="#ece4d6", lw=1)
     body = [
         "대상:  ㄱㅁㄹ · ㅌㅋ · ㄷㅈㅅㅍ · ㅌㄹㅅㅌ   (자사몰 / N스토어)",
         "기준:  국내 판매처 공개 표시가",
         "실제 구매가 · 재고 · 배송비 · 개체 상태는 판매처 원문에서 확인하세요.",
     ]
-    y = 0.53
+    y = 0.60
     for ln in body:
-        ax.text(cx, y, ln, fontsize=12.5, color="#4a4339", ha="center", va="center"); y -= 0.10
-    ax.text(cx, 0.155, "※ 개인적으로 확인·기록한 참고 자료이며 판매·중개·광고가 아닙니다.",
-            fontsize=11, color=SUB, ha="center", va="center", style="italic")
+        ax.text(cx, y, ln, fontsize=12.5, color="#4a4339", ha="center", va="center"); y -= 0.085
+    notes = [
+        "※ 개인적으로 확인·기록한 참고 자료이며 판매·중개·광고가 아닙니다.",
+        "※ 수집 특성상 일부 가격이 누락·지연되거나 실제와 다를 수 있습니다.",
+        "※ 잘못된 정보는 댓글로 제보해 주시면 확인 후 반영하겠습니다.",
+    ]
+    y = 0.31
+    for ln in notes:
+        ax.text(cx, y, ln, fontsize=10.5, color=SUB, ha="center", va="center", style="italic"); y -= 0.075
     fig.savefig(out, facecolor=BG)
     plt.close(fig)
 
