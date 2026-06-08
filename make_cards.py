@@ -70,7 +70,7 @@ def build_lines(events):
         for store in STORE_ORDER:
             for ch in CH_ORDER:
                 si = sorted([e for e in items if e["vendor"] == store and e["channel"] == ch],
-                            key=lambda e: -e["price"])
+                            key=lambda e: (e["date"], -e["price"]))   # 날짜 오름차순(오래된 게 위, 최신이 아래) → 같은날은 가격순
                 if not si:
                     continue
                 lines.append(("store", f"{ABBR.get(store, store)} / {CH.get(ch, ch)}", SUB, STOREH))
