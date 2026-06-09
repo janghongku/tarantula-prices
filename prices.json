@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-09T02:31:39",
+  "updated_at": "2026-06-09T14:33:23",
   "channels": {
-    "자사몰": "2026-06-09T02:31:39",
+    "자사몰": "2026-06-09T14:33:23",
     "네이버": "2026-06-07T12:05:19"
   },
   "products": [
@@ -15469,7 +15469,8 @@
       "channel": "자사몰",
       "name": "아크카야 어스타이거 유체 / Phormingochilus Sp. \"Akcaya\"",
       "price": 25000,
-      "url": "https://tarancenter.com/product/아크카야-어스타이거-유체-phormingochilus-sp-akcaya/1344/category/51/display/1/"
+      "url": "https://tarancenter.com/product/아크카야-어스타이거-유체-phormingochilus-sp-akcaya/1344/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -16736,8 +16737,20 @@
       "vendor": "타란센터",
       "channel": "자사몰",
       "name": "트리니다드 쉐브론 유체 / Psalmopoeus cambridgei",
-      "price": 20000,
-      "url": "https://tarancenter.com/product/트리니다드-쉐브론-유체-psalmopoeus-cambridgei/1407/category/51/display/1/"
+      "price": 5000,
+      "url": "https://tarancenter.com/product/트리니다드-쉐브론-유체-psalmopoeus-cambridgei/1407/category/51/display/1/",
+      "prev": 20000,
+      "changed_on": "2026-06-09",
+      "hist": [
+        [
+          "2026-06-02",
+          20000
+        ],
+        [
+          "2026-06-09",
+          5000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -18489,9 +18502,21 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "싱가폴블루 스파이더링 / 직거래 분양만 가능",
-      "price": 25000,
-      "url": "https://tarantulakorea.com/product/싱가폴블루-스파이더링-직거래-분양만-가능/106/category/67/display/1/"
+      "name": "싱가폴블루 유체",
+      "price": 28000,
+      "url": "https://tarantulakorea.com/product/싱가폴블루-유체/106/category/67/display/1/",
+      "prev": 25000,
+      "changed_on": "2026-06-09",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-06-09",
+          28000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
