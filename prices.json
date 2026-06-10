@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-10T10:26:42",
+  "updated_at": "2026-06-10T15:00:33",
   "channels": {
-    "자사몰": "2026-06-10T09:52:59",
+    "자사몰": "2026-06-10T15:00:33",
     "네이버": "2026-06-10T10:26:42"
   },
   "products": [
@@ -888,19 +888,7 @@
       "channel": "네이버",
       "name": "페루비안 블론드 / 타란튤라 새잡이거미 애완거미 희귀동물 곤충",
       "price": 29000,
-      "url": "https://smartstore.naver.com/terrafactory/products/5735348315",
-      "prev": 45000,
-      "changed_on": "2026-06-10",
-      "hist": [
-        [
-          "2026-06-06",
-          45000
-        ],
-        [
-          "2026-06-10",
-          29000
-        ]
-      ]
+      "url": "https://smartstore.naver.com/terrafactory/products/5735348315"
     },
     {
       "vendor": "거미랑",
@@ -3529,16 +3517,12 @@
       "name": "발할라 어스타이거 나무위성 버로우성 타란튤라 유체",
       "price": 35000,
       "url": "https://smartstore.naver.com/tarancenter/products/13036660209",
-      "prev": 34000,
+      "prev": 35000,
       "changed_on": "2026-06-10",
       "hist": [
         [
           "2026-06-03",
           35000
-        ],
-        [
-          "2026-06-08",
-          34000
         ],
         [
           "2026-06-10",
@@ -15815,7 +15799,8 @@
       "channel": "자사몰",
       "name": "에버리티 어스타이거 유체 / Phormingochilus everetti",
       "price": 35000,
-      "url": "https://tarancenter.com/product/에버리티-어스타이거-유체-phormingochilus-everetti/1306/category/51/display/1/"
+      "url": "https://tarancenter.com/product/에버리티-어스타이거-유체-phormingochilus-everetti/1306/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -18968,13 +18953,6 @@
       "name": "인디언 오너멘탈 유체",
       "price": 10000,
       "url": "https://tarantulakorea.com/product/인디언-오너멘탈-유체/136/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "인디언레인보우 유체",
-      "price": 55000,
-      "url": "https://tarantulakorea.com/product/인디언레인보우-유체/81/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
