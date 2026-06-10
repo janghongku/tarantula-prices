@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-10T10:26:42",
+  "updated_at": "2026-06-11T02:05:02",
   "channels": {
     "자사몰": "2026-06-10T09:52:59",
-    "네이버": "2026-06-10T10:26:42"
+    "네이버": "2026-06-11T02:05:02"
   },
   "products": [
     {
@@ -888,19 +888,7 @@
       "channel": "네이버",
       "name": "페루비안 블론드 / 타란튤라 새잡이거미 애완거미 희귀동물 곤충",
       "price": 29000,
-      "url": "https://smartstore.naver.com/terrafactory/products/5735348315",
-      "prev": 45000,
-      "changed_on": "2026-06-10",
-      "hist": [
-        [
-          "2026-06-06",
-          45000
-        ],
-        [
-          "2026-06-10",
-          29000
-        ]
-      ]
+      "url": "https://smartstore.naver.com/terrafactory/products/5735348315"
     },
     {
       "vendor": "거미랑",
@@ -1323,7 +1311,8 @@
       "channel": "네이버",
       "name": "펜넬헤울릿티 유체 / 타란튤라 거미 아시안포레스트 타란툴라 절지류 타사모 파충류 나무지타",
       "price": 70000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10456920278"
+      "url": "https://smartstore.naver.com/tzblossom/products/10456920278",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -1435,7 +1424,8 @@
       "channel": "네이버",
       "name": "메탈릭 핑크토 유체 / 절지류 거미 키우기 파충류 타란튤라 밀웜 귀뚜라미 타사모 파충류",
       "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11003518319"
+      "url": "https://smartstore.naver.com/tzblossom/products/11003518319",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -1637,7 +1627,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "더쥬 송파점 5월 절지류 랜덤박스 / 상품 설명에 기재되어진 타란튤라 중 1마리가 랜덤으로 발송되어집니다 / 교환, 환불, 취소 불가품목이오니 신중한 구매바랍니다.",
+      "name": "더쥬 송파점 6월 절지류 랜덤박스 / 상품 설명에 기재되어진 타란튤라 중 1마리가 랜덤으로 발송되어집니다 / 교환, 환불, 취소 불가품목이오니 신중한 구매바랍니다.",
       "price": 15000,
       "url": "https://smartstore.naver.com/tzblossom/products/11821343821"
     },
@@ -3529,16 +3519,12 @@
       "name": "발할라 어스타이거 나무위성 버로우성 타란튤라 유체",
       "price": 35000,
       "url": "https://smartstore.naver.com/tarancenter/products/13036660209",
-      "prev": 34000,
+      "prev": 35000,
       "changed_on": "2026-06-10",
       "hist": [
         [
           "2026-06-03",
           35000
-        ],
-        [
-          "2026-06-08",
-          34000
         ],
         [
           "2026-06-10",
