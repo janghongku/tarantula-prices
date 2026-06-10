@@ -47,10 +47,18 @@ def hist_key(url):
 clean_name = clean_display   # 종명 정제는 species_groups와 동일 함수(카드·사이트·CSV 일관)
 
 
+NAME_OVERRIDE = {            # 그룹 자동투표가 학명/오타로 잡은 종 → 한글 통명 강제(사이트·카드·CSV 일관)
+    "Chilocosmia dichromate": "뉴기니아 블랙퓨리",
+    "Chilocosmia arndsti": "뉴기니아 러스트오렌지",
+    "미 아칸 레드럼프": "미초아칸 레드럼프",
+}
+
+
 def species_name(p, gm):
     """묶음 대표명 우선, 없으면 상품명 — 어느 쪽이든 clean_name으로 정제(묶음명도 길 수 있음)."""
     g = gm.get(keyOf(p), {})
-    return clean_name(g.get("n") or p["name"])
+    nm = clean_name(g.get("n") or p["name"])
+    return NAME_OVERRIDE.get(nm, nm)
 
 
 def all_change_events():

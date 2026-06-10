@@ -68,6 +68,11 @@ STEALTH_JS = (
     "Object.defineProperty(navigator,'languages',{get:()=>['ko-KR','ko','en-US','en']});"
     "window.chrome={runtime:{}};"
 )
+# 진짜 Chrome용: window.chrome 스텁 제거(실제 객체 보존), webdriver만 정리
+STEALTH_JS_LIGHT = (
+    "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});"
+    "Object.defineProperty(navigator,'languages',{get:()=>['ko-KR','ko','en-US','en']});"
+)
 
 NAME_KEYS  = ("productName", "name", "dispNm", "title")
 PRICE_KEYS = ("discountedSalePrice", "salePrice", "price", "lowPrice", "sellingPrice")
@@ -379,6 +384,106 @@ def api_category_products(page, channel_uid, cid, src):
     return list(out.values())
 
 
+def _collect_products(obj, src, into):
+    """JSON/state 객체를 훑어 상품을 into(pid->dict)에 누적. pull_product 재사용(이름/판매가/품절 정확)."""
+    found, stack = {}, [obj]
+    while stack:
+        o = stack.pop()
+        if isinstance(o, dict):
+            n, p, pid, sold = pull_product(o)
+            if n and p and pid:
+                found.setdefault(pid, (n, p, sold))
+            stack.extend(o.values())
+        elif isinstance(o, list):
+            stack.extend(o)
+    for pid, (n, p, sold) in found.items():
+        if pid in into or not (100 <= p <= 50_000_000) or "http" in n.lower():
+            continue
+        into[pid] = {"vendor": src["vendor"], "channel": src["channel"], "name": n, "price": p,
+                     "url": f"https://smartstore.naver.com/{src['handle']}/products/{pid}"}
+        if sold:
+            into[pid]["soldout"] = True
+
+
+def _state_json(page):
+    """현재 페이지 __PRELOADED_STATE__를 dict로(내비게이션 중 context 파괴 시 재시도)."""
+    for _ in range(6):
+        try:
+            s = page.evaluate("()=>window.__PRELOADED_STATE__?JSON.stringify(window.__PRELOADED_STATE__):null")
+            return json.loads(s) if s else None
+        except Exception:
+            page.wait_for_timeout(1500)
+    return None
+
+
+def _click_page_num(page, n):
+    """하단 페이지번호 버튼 n 클릭(있으면 True). 페이지가 스스로 다음 페이지를 부르게 함."""
+    for role in ("menuitem", "link", "button"):
+        try:
+            loc = page.get_by_role(role, name=str(n), exact=True)
+            if loc.count() > 0:
+                loc.first.scroll_into_view_if_needed(timeout=3000)
+                loc.first.click(timeout=4000)
+                return True
+        except Exception:
+            continue
+    return False
+
+
+def page_xhr_products(page, base, cid, src):
+    """차단 회피 핵심: 직접 API를 부르지 않고 '페이지가 스스로 내는' 정상(200) 요청을 탄다.
+    1페이지=__PRELOADED_STATE__(서버렌더), 2페이지+=페이지번호 클릭→페이지가 부르는 /products XHR 가로채기.
+    같은 엔드포인트라도 우리가 직접 fetch하면 429, 페이지가 부르면 200(요청 서명 차이)."""
+    into, bodies = {}, []
+
+    def on_resp(r):
+        try:
+            if not r.url.split("?")[0].endswith("/products"):    # 목록 endpoint만(추천/벤치 제외)
+                return
+            if "json" not in (r.headers or {}).get("content-type", ""):
+                return
+            bodies.append(r.json())
+        except Exception:
+            pass
+
+    page.on("response", on_resp)
+    try:
+        url = f"{base}/category/{cid}?st=TOTALSALE&dt=IMAGE&size=80"
+        page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        try:
+            page.wait_for_load_state("networkidle", timeout=12000)
+        except Exception:
+            pass
+        page.wait_for_timeout(1500)
+        st = _state_json(page)                       # 1페이지: 페이지에 박힌 state
+        if st:
+            _collect_products(st, src, into)
+        for body in bodies:                          # 초기 로드가 XHR이었던 경우도 흡수
+            _collect_products(body, src, into)
+        bodies.clear()
+        pagenum = 1
+        while pagenum < 30:                          # 안전 상한
+            if not _click_page_num(page, pagenum + 1):
+                break                                # 다음 페이지 버튼 없음 = 끝
+            page.wait_for_timeout(int(random.uniform(2500, 4500)))   # 사람 페이스 + XHR 응답 대기
+            before = len(into)
+            for body in bodies:
+                _collect_products(body, src, into)
+            bodies.clear()
+            if len(into) == before:                  # 신규 0건 = 마지막 페이지
+                break
+            pagenum += 1
+    except Exception as e:
+        if DEBUG:
+            print(f"    page_xhr_products 예외({src['vendor']}/{cid}): {e}", flush=True)
+    finally:
+        try:
+            page.remove_listener("response", on_resp)
+        except Exception:
+            pass
+    return list(into.values())
+
+
 def click_category_products(page, base, cid, src):
     """폴백: 카테고리 페이지에서 페이지번호 클릭하며 DOM 수집."""
     url = f"{base}/category/{cid}?st=TOTALSALE&dt=IMAGE&size=80"
@@ -411,7 +516,7 @@ def click_category_products(page, base, cid, src):
     return got
 
 
-def scrape_smartstore_all(sources, headful=False, profile=None):
+def scrape_smartstore_all(sources, headful=False, profile=None, real_chrome=False):
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
@@ -421,6 +526,12 @@ def scrape_smartstore_all(sources, headful=False, profile=None):
         launch = dict(headless=not headful, args=["--disable-blink-features=AutomationControlled"])
         ctx_opts = dict(user_agent=UA_BROWSER, locale="ko-KR", timezone_id="Asia/Seoul",
                         viewport={"width": 1280, "height": 1800})
+        stealth = STEALTH_JS
+        if real_chrome:                               # 진짜 Google Chrome로 위장(자동화 탐지 회피 시도)
+            launch["channel"] = "chrome"
+            launch["ignore_default_args"] = ["--enable-automation"]
+            ctx_opts.pop("user_agent", None)          # 네이티브 UA(버전 불일치 탐지 방지)
+            stealth = STEALTH_JS_LIGHT
         if profile:                                   # 로그인 세션 재사용(권장)
             ctx = pw.chromium.launch_persistent_context(profile, **launch, **ctx_opts)
             closer = ctx
@@ -428,7 +539,7 @@ def scrape_smartstore_all(sources, headful=False, profile=None):
             browser = pw.chromium.launch(**launch)
             ctx = browser.new_context(**ctx_opts)
             closer = browser
-        ctx.add_init_script(STEALTH_JS)
+        ctx.add_init_script(stealth)
         page = ctx.pages[0] if ctx.pages else ctx.new_page()
 
         try:                                          # 워밍업(쿠키 획득)
@@ -455,6 +566,17 @@ def scrape_smartstore_all(sources, headful=False, profile=None):
                 cats = store_category_links(page)
             except Exception:
                 cats = {}
+            if len(cats) == 0 and headful:               # 0개 = 스토어 아닌 CAPTCHA/검증 화면일 가능성(login_wait가 못 잡는 종류)
+                print(f"  ⚠ [{src['vendor']}] 카테고리 0개 — CAPTCHA/검증 화면일 수 있어요. "
+                      "열린 크롬 창에서 지금 풀어주세요. 45초 후 재시도…", flush=True)
+                time.sleep(45)
+                try:
+                    page.goto(entry, wait_until="domcontentloaded", timeout=30000)
+                    page.wait_for_timeout(2500)
+                    cats = store_category_links(page)
+                except Exception:
+                    pass
+                print(f"  [{src['vendor']}] 재시도 후 카테고리 {len(cats)}개", flush=True)
             spider = {cid: nm for cid, nm in cats.items() if cid != "ALL" and SPIDER_KW.search(nm)}
             print(f"  [{src['vendor']}] 카테고리 {len(cats)}개 | 거미류: "
                   + (" / ".join(sorted(set(spider.values()))) if spider else "없음"), flush=True)
@@ -466,10 +588,10 @@ def scrape_smartstore_all(sources, headful=False, profile=None):
                 ".match(/\"channelUid\":\"([^\"]+)\"/);return m?m[1]:null;}")
             seen, got, used_api = set(), [], False
             for cid in spider.keys():
-                items = api_category_products(page, channel_uid, cid, src) if channel_uid else []
+                items = page_xhr_products(page, base, cid, src)   # 페이지 자체 요청 타기(직접 API 미사용 → 429 회피)
                 if items:
                     used_api = True
-                else:                                          # API 실패 시 클릭 폴백
+                else:                                          # 실패 시 DOM 클릭 폴백
                     items = click_category_products(page, base, cid, src)
                 for it in items:
                     if it["url"] in seen:
@@ -619,6 +741,7 @@ def main():
     ap.add_argument("--profile", metavar="DIR", help="네이버 로그인 세션 재사용용 브라우저 프로필 폴더")
     ap.add_argument("--force", action="store_true", help="네이버 하루 1회 가드 무시")
     ap.add_argument("--store", metavar="HANDLE|업체", help="네이버 특정 스토어만 수집(부하분산 로테이션용). handle 또는 업체명 일부")
+    ap.add_argument("--real-chrome", action="store_true", help="번들 Chromium 대신 설치된 진짜 Google Chrome 사용(자동화 탐지 회피 시도)")
     args = ap.parse_args()
     DEBUG = args.debug
     now = datetime.datetime.now()
@@ -641,7 +764,7 @@ def main():
                       or args.store in s.get("vendor", "")]
             print("네이버 수집..." + (f" (한정: {', '.join(s['vendor'] for s in ss)})" if args.store else ""))
             attempted.add("네이버")
-            products += scrape_smartstore_all(ss, headful=args.headful, profile=args.profile)
+            products += scrape_smartstore_all(ss, headful=args.headful, profile=args.profile, real_chrome=args.real_chrome)
 
     channels = {ch: now_iso for ch in {p["channel"] for p in products}}
     if not args.no_merge:

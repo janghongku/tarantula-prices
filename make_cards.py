@@ -235,6 +235,7 @@ def main():
         win = [e for e in ev if e["date"] >= start]
     else:
         win = []
+    win = [e for e in win if "이벤트" not in (e.get("raw") or "") and "특가" not in (e.get("raw") or "")]  # 일시적 특가/이벤트 제외
     if render(win, OUT, urgent=args.urgent):
         print(f"카드 이미지 생성 → {os.path.basename(OUT)} ({len(win)}건)")
     else:
