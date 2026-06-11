@@ -43,7 +43,10 @@ graphs/
 snapshots/
 # 알림용 로컬 파일(커밋 금지: 웹훅엔 비밀 토큰 포함)
 _새변동.txt
+_크롤경고.txt
 notify_webhook.txt
+# 수집 경고 로그(로컬 진단용)
+scrape_err.log
 
 # macOS
 .DS_Store

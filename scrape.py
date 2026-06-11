@@ -60,6 +60,19 @@ HEADERS = {"User-Agent": UA_BOT, "Accept-Language": "ko-KR,ko;q=0.9"}
 
 PRICE_RE = re.compile(r"([0-9]{1,3}(?:,[0-9]{3})+|[0-9]{4,})\s*원?")
 DEBUG = False
+WARNINGS = []   # 수집 중 경고(부분수집·예외·차단) 누적 → 끝에 종합 판정 + outputs/scrape_err.log
+
+
+def warn(msg):
+    """조용히 삼키지 않기 — 경고를 화면·로그파일에 남기고 누적한다."""
+    WARNINGS.append(msg)
+    print("  ⚠ " + msg, flush=True)
+    try:
+        pathlib.Path("outputs").mkdir(exist_ok=True)
+        with open("outputs/scrape_err.log", "a", encoding="utf-8") as f:
+            f.write(f"{datetime.datetime.now().isoformat(timespec='seconds')}  {msg}\n")
+    except Exception:
+        pass
 
 # 네이버: 로그인된 본인 세션을 재사용하는 게 가장 안정적(차단 회피용 우회 아님).
 #   첫 실행:  python scrape.py --only smartstore --headful --profile .naver-profile
@@ -475,8 +488,7 @@ def page_xhr_products(page, base, cid, src):
                 break
             pagenum += 1
     except Exception as e:
-        if DEBUG:
-            print(f"    page_xhr_products 예외({src['vendor']}/{cid}): {e}", flush=True)
+        warn(f"네이버 카테고리 수집 예외 {src['vendor']}/{cid}: {e}")   # 침묵 금지
     finally:
         try:
             page.remove_listener("response", on_resp)
@@ -578,6 +590,8 @@ def scrape_smartstore_all(sources, headful=False, profile=None, real_chrome=Fals
                 except Exception:
                     pass
                 print(f"  [{src['vendor']}] 재시도 후 카테고리 {len(cats)}개", flush=True)
+                if len(cats) == 0:
+                    warn(f"{src['vendor']} 네이버 검증화면 추정(카테고리 0개) — 이번 수집 건너뜀")
             spider = {cid: nm for cid, nm in cats.items() if cid != "ALL" and SPIDER_KW.search(nm)}
             print(f"  [{src['vendor']}] 카테고리 {len(cats)}개 | 거미류: "
                   + (" / ".join(sorted(set(spider.values()))) if spider else "없음"), flush=True)
@@ -601,8 +615,8 @@ def scrape_smartstore_all(sources, headful=False, profile=None, real_chrome=Fals
             print(f"  [{src['vendor']} 네이버:{src['handle']}] {len(got)}건 (거미)"
                   + (" [API]" if used_api else " [DOM]"), flush=True)
             if i == 0 and not used_api:                  # 첫 스토어부터 API 차단([DOM]) = IP 레벨 차단 추정
-                print("  ⚠ 첫 스토어 API 차단 → IP 차단 판단. 네이버 전체 중단(DOM은 부정확 → 버리고 "
-                      "기존 데이터 유지). 며칠 쉬었다 재시도 권장.", flush=True)
+                warn("첫 스토어 차단 → 네이버 전체 중단(DOM 부정확 → 버리고 기존 유지). "
+                     "매장별 단독 재시도(--store) 권장.")
                 break                                    # got 안 더함 → 기존 네이버 데이터 그대로 보존
             out += got
         closer.close()
@@ -635,7 +649,7 @@ def merge_with_existing(new_products, attempted_channels, now_iso):
     # 새(부분) 데이터를 버리고 기존을 유지 → DOM 폴백/타임아웃으로 절반만 긁혀도 데이터 손실 안 함.
     broken = {k for k in new_cnt if old_cnt.get(k, 0) >= 20 and new_cnt[k] < old_cnt[k] * 0.6}
     if broken:
-        print(f"  ⚠ 부분수집 의심(기존 대비 60%↓) → 새 데이터 버리고 기존 유지: {sorted(broken)}")
+        warn(f"부분수집 의심(기존 대비 60%↓) → 새 데이터 버리고 기존 유지: {sorted(broken)}")
     merged = [p for p in new_products if (p.get("vendor"), p.get("channel")) not in broken]
     refreshed = {(p.get("vendor"), p.get("channel")) for p in merged}   # 정상 수집된 (업체,채널)만
     carried = 0
@@ -778,6 +792,20 @@ def main():
           f"). 가격변동 {changed}건.")
     if not products:
         print("  0건이면 --headful --debug 로 다시 돌리고 debug_* 파일을 확인.")
+
+    # ── 종합 판정 — 조용한 실패 방지(크롤이 깨졌는지 한눈에) ──
+    if WARNINGS:
+        print(f"\n⚠ 크롤 점검 필요 — 경고 {len(WARNINGS)}건 (로그: outputs/scrape_err.log)")
+        for w in WARNINGS:
+            print(f"   · {w}")
+        try:    # notify.py가 읽어 데스크톱 알림(무인 cron에서도 알아채게)
+            pathlib.Path("outputs").mkdir(exist_ok=True)
+            with open("outputs/_크롤경고.txt", "w", encoding="utf-8") as f:
+                f.write(f"크롤 경고 {len(WARNINGS)}건:\n" + "\n".join("· " + w for w in WARNINGS))
+        except Exception:
+            pass
+    else:
+        print("\n✅ 크롤 정상 — 경고 없음")
 
 
 if __name__ == "__main__":

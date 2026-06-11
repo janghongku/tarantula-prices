@@ -15,6 +15,7 @@ import os, json, subprocess, urllib.request, urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FLAG = os.path.join(HERE, "outputs", "_새변동.txt")
+CRAWL_FLAG = os.path.join(HERE, "outputs", "_크롤경고.txt")   # scrape.py가 수집 경고 시 남김
 WEBHOOK = os.path.join(HERE, "notify_webhook.txt")   # 설정 파일은 루트(찾기 쉽게)
 
 
@@ -51,6 +52,18 @@ def send_webhook(msg):
 
 
 def main():
+    # 크롤 경고 알림(가격변동과 별개 — 수집 실패/차단을 무인 상태에서도 알아채게)
+    if os.path.exists(CRAWL_FLAG):
+        cmsg = open(CRAWL_FLAG, encoding="utf-8").read().strip()
+        if cmsg:
+            mac_notify("🕷 거미 크롤 점검 필요", cmsg)
+            send_webhook("[거미 크롤 경고] " + cmsg)
+            print("크롤경고 알림:", cmsg)
+        try:
+            os.remove(CRAWL_FLAG)
+        except OSError:
+            pass
+
     if not os.path.exists(FLAG):
         return
     msg = open(FLAG, encoding="utf-8").read().strip()
