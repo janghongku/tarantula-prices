@@ -17,21 +17,13 @@ price_history.json에서 '가장 최근 변동일에 바뀐 상품'만 골라 �
    가볍게 동작하도록 설계 — 전 상품 캡처는 하지 않음.
 """
 import json, os, re, argparse, datetime
+from common import hist_key   # 단일 정의(common.py)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTDIR = os.path.join(HERE, "outputs")
 SNAPDIR = os.path.join(OUTDIR, "snapshots")
 PRICES = os.path.join(HERE, "prices.json")
 HIST = os.path.join(HERE, "price_history.json")
-
-
-def hist_key(url):
-    u = url or ""
-    host = re.sub(r"^https?://", "", u).split("/")[0]
-    if not host:
-        return u
-    m = re.search(r"/products/(\d+)", u) or re.search(r"/product/[^/]+/(\d+)", u)
-    return f"{host}/{m.group(1)}" if m else u
 
 
 def safe(s):

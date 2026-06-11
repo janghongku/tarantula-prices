@@ -237,7 +237,7 @@ function render(){
   $("list").innerHTML=items.length?items.map(p=>`
     <div class="row${p.soldout?' sold':''}">
       <div class="pname">
-        <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
+        <a href="${safeUrl(p.url)}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
         <span class="metaline"><span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>${soldBadge(p)}${lowBadge(p)}</span>
       </div>
       <div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}</div>
@@ -284,7 +284,7 @@ function renderGrouped(items,q){
       .map(([v,pr])=>`<span class="vd">${escapeHtml(v)} <b>${won(pr)}</b></span>`).join("");
     const rows=g.items.slice().sort((a,b)=>a.price-b.price).map(p=>`
       <div class="row${p.soldout?' sold':''}"><div class="pname">
-        <a href="${p.url||'#'}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
+        <a href="${safeUrl(p.url)}" target="_blank" rel="noopener nofollow">${escapeHtml(p.name)}</a>
         <span class="metaline"><span class="tag ${chCls(p.channel)}">${escapeHtml(p.vendor)} · <span class="ch">${p.channel}</span></span>${soldBadge(p)}${lowBadge(p)}</span>
       </div><div class="price">${won(p.price)}<small>원</small>${chgHtml(p)}</div></div>`).join("");
     const solo=g.vendors.length<2;
@@ -301,6 +301,8 @@ function renderGrouped(items,q){
 }
 
 function escapeHtml(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+// 긁어온 URL은 untrusted — http(s)만 허용하고 escape (javascript: 등 차단, 속성 탈출 방지)
+function safeUrl(u){u=String(u==null?"":u).trim();return /^https?:\/\//i.test(u)?escapeHtml(u):"#";}
 function chgHtml(p){
   if(p.prev==null||p.prev===p.price) return "";
   const up=p.price>p.prev, diff=Math.abs(p.price-p.prev), pct=p.prev?Math.round(diff/p.prev*100):0;

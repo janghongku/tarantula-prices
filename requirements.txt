@@ -1,0 +1,7 @@
+# 고정 의존성 — 환경 재현용. 설치: pip install -r requirements.txt
+# 버전은 2026-06 현재 동작 확인된 것. 올릴 땐 수집(scrape.py) 한 번 돌려 검증 후.
+requests==2.32.5
+beautifulsoup4==4.14.3
+playwright==1.60.0        # 네이버 수집(--real-chrome). 설치 후: playwright install chrome
+matplotlib==3.9.4         # 그래프/카드 이미지
+openpyxl==3.1.5           # 합본 엑셀(make_xlsx)

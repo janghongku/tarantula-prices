@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager as fm
 from matplotlib.patches import FancyBboxPatch
 from make_report import all_change_events, all_new_arrivals, ABBR, CH, STORE_ORDER, CH_ORDER
+from common import won   # 단일 정의(common.py)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTDIR = os.path.join(HERE, "outputs")
@@ -39,8 +40,7 @@ SECH = 0.58       # 섹션 헤더 높이
 STOREH = 0.40     # 판매처 헤더 높이
 
 
-def won(n):
-    return f"{int(n):,}"
+# won은 common.py (단일 정의)
 
 
 def crawl_date():

@@ -16,6 +16,7 @@
 """
 import json, csv, re, os, argparse, datetime
 from species_groups import clean_display
+from common import hist_key, won   # 단일 정의(common.py)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTDIR = os.path.join(HERE, "outputs")          # 생성물 폴더
@@ -34,14 +35,7 @@ def keyOf(p):
     return p.get("url") or (p["vendor"] + "␟" + p["name"])
 
 
-def hist_key(url):
-    """price_history.json 키 규칙(scrape.py와 동일): 상품번호 기반 안정키."""
-    u = url or ""
-    host = re.sub(r"^https?://", "", u).split("/")[0]
-    if not host:
-        return u
-    m = re.search(r"/products/(\d+)", u) or re.search(r"/product/[^/]+/(\d+)", u)
-    return f"{host}/{m.group(1)}" if m else u
+# hist_key는 common.py (단일 정의)
 
 
 clean_name = clean_display   # 종명 정제는 species_groups와 동일 함수(카드·사이트·CSV 일관)
@@ -206,10 +200,7 @@ def update_log(events):
 
 
 # ── 글(txt) 생성 ─────────────────────────────────────────────
-def won(n):
-    return format(int(n), ",")
-
-
+# won은 common.py (단일 정의)
 def gen_text(events, urgent=False):
     if not events:
         return None

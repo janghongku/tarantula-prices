@@ -27,6 +27,7 @@
 import re, json, time, random, argparse, datetime, pathlib
 import requests
 from bs4 import BeautifulSoup
+from common import hist_key, atomic_write   # 이력키·원자적쓰기 단일 정의(common.py)
 
 # ── opt-out 연락처(선택). 비워두면 UA에서 생략. 공개 배포 시 본인이 따로 만든 이메일을 넣어도 됨.
 CONTACT = ""
@@ -164,7 +165,7 @@ def scrape_cafe24(src):
                 name_el = li.select_one(".name") or a
                 name = re.sub(r"^상품명\s*:\s*", "", name_el.get_text(" ", strip=True)).strip()
                 price = cafe24_price(li)
-                if name and price:
+                if name and price and 100 <= price <= 50_000_000:   # 오파싱(0·배송비·거대값) 거름
                     seen.add(full)
                     prod = {"vendor": src["vendor"], "channel": src["channel"],
                             "name": name, "price": price, "url": full}
@@ -668,16 +669,7 @@ def recent_naver_hours(now):
         return None
 
 
-def hist_key(url):
-    """가격이력 키 — URL 대신 안정적인 상품번호 기반.
-    상품명을 바꾸거나 재등록해 URL(슬러그)이 변해도 같은 번호면 이력이 안 끊긴다.
-    네이버 .../products/{pid}, 자사몰 .../product/{슬러그}/{번호}/ 에서 번호 추출."""
-    u = url or ""
-    host = re.sub(r"^https?://", "", u).split("/")[0]
-    if not host:
-        return u
-    m = re.search(r"/products/(\d+)", u) or re.search(r"/product/[^/]+/(\d+)", u)
-    return f"{host}/{m.group(1)}" if m else u
+# hist_key는 common.py로 이동 — 이력키 단일 정의(여러 파일 드리프트 방지). 여기서 재정의 금지.
 
 
 _SPEC_LABELS = ("배송", "습성", "수명", "사육", "분양 개체", "개체 크기", "성체크기")
@@ -725,7 +717,7 @@ def apply_price_changes(products, now_iso):
             p["hist"] = h[-12:]                         # 그래프용
             changed += 1
     try:
-        hp.write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
+        atomic_write(HIST_FILE, json.dumps(hist, ensure_ascii=False))   # 원자적 — 쓰기중 종료에도 이력 보존
     except Exception:
         pass
     return changed
@@ -776,8 +768,7 @@ def main():
     products.sort(key=lambda p: (p.get("channel", ""), p.get("vendor", ""), p.get("url", "")))
 
     data = {"updated_at": now_iso, "channels": channels, "products": products}
-    with open(OUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    atomic_write(OUT_FILE, json.dumps(data, ensure_ascii=False, indent=2))   # 원자적 교체
 
     by_ch = {}
     for p in products:

@@ -17,6 +17,7 @@
 import json, re, sys, os
 from collections import defaultdict, Counter
 from datetime import datetime
+from common import atomic_write   # 원자적 쓰기(common.py)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTDIR = os.path.join(HERE, "outputs")          # 검수 산출물(groups/candidates)은 여기로
@@ -298,8 +299,9 @@ def cmd_map():
         for p in members:
             out[stable_id(p)] = {"i": key, "n": name, "s": meta[key]["sci"], "st": stage_of(p["name"]) or ""}
     path = os.path.join(HERE, "group_map.json")
-    json.dump({"generated_at": datetime.now().isoformat(timespec="seconds"), "map": out},
-              open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    atomic_write(path, json.dumps(
+        {"generated_at": datetime.now().isoformat(timespec="seconds"), "map": out},
+        ensure_ascii=False, separators=(",", ":")))
     multi = sum(1 for k, v in byid.items() if len({m["vendor"] for m in v}) >= 2)
     print(f"{len(out)}개 상품 매핑 / {len(byid)}개 그룹(업체2곳+ {multi}) → {path}")
 

@@ -24,6 +24,7 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager as fm
 from matplotlib.ticker import FuncFormatter
 from make_report import ABBR, CH      # 판매처/채널 약칭 (샵 이름 직접 노출 금지)
+from common import hist_key            # 단일 정의(common.py)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTDIR = os.path.join(HERE, "outputs")
@@ -54,13 +55,7 @@ def infer_stage(name, st=""):
     return ""
 
 
-def hist_key(url):
-    u = url or ""
-    host = re.sub(r"^https?://", "", u).split("/")[0]
-    if not host:
-        return u
-    m = re.search(r"/products/(\d+)", u) or re.search(r"/product/[^/]+/(\d+)", u)
-    return f"{host}/{m.group(1)}" if m else u
+# hist_key는 common.py (단일 정의)
 
 
 def _keyOf(p):
