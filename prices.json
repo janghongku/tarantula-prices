@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-11T02:54:42",
+  "updated_at": "2026-06-11T12:15:55",
   "channels": {
     "자사몰": "2026-06-11T02:54:42",
-    "네이버": "2026-06-11T02:05:02"
+    "네이버": "2026-06-11T12:15:55"
   },
   "products": [
     {
@@ -2325,7 +2325,8 @@
       "channel": "네이버",
       "name": "크세네스티스 테네브리스 유체 / 렛서 랫서 타란튤라 타란툴라 파충류 절지류샵 타사모 용품",
       "price": 95000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801559704"
+      "url": "https://smartstore.naver.com/tzblossom/products/8801559704",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -6190,7 +6191,8 @@
       "channel": "네이버",
       "name": "인디언 레인보우 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
       "price": 55000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10663138219"
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10663138219",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
