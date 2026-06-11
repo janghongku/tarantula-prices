@@ -15801,7 +15801,8 @@
       "channel": "자사몰",
       "name": "에버리티 어스타이거 유체 / Phormingochilus everetti",
       "price": 35000,
-      "url": "https://tarancenter.com/product/에버리티-어스타이거-유체-phormingochilus-everetti/1306/category/51/display/1/"
+      "url": "https://tarancenter.com/product/에버리티-어스타이거-유체-phormingochilus-everetti/1306/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -18954,13 +18955,6 @@
       "name": "인디언 오너멘탈 유체",
       "price": 10000,
       "url": "https://tarantulakorea.com/product/인디언-오너멘탈-유체/136/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "인디언레인보우 유체",
-      "price": 55000,
-      "url": "https://tarantulakorea.com/product/인디언레인보우-유체/81/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
