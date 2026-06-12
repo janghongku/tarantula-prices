@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-12T02:51:46",
+  "updated_at": "2026-06-12T14:43:07",
   "channels": {
-    "자사몰": "2026-06-12T02:51:46",
+    "자사몰": "2026-06-12T14:43:07",
     "네이버": "2026-06-12T10:15:48"
   },
   "products": [
@@ -7665,9 +7665,27 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "그린볼 / 유체",
-      "price": 15000,
+      "price": 19000,
       "url": "https://theraphosidae.co.kr/product/그린볼-유체/1707/category/24/display/1/",
-      "soldout": true
+      "prev": 15000,
+      "changed_on": "2026-06-12",
+      "hist": [
+        [
+          "2026-06-02",
+          15000
+        ],
+        [
+          "2026-06-12",
+          19000
+        ]
+      ]
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "나마쿠아랜드 실버바분 (ex.나마쿠엔시스) / 유체",
+      "price": 15000,
+      "url": "https://theraphosidae.co.kr/product/나마쿠아랜드-실버바분-ex나마쿠엔시스-유체/2032/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -7929,6 +7947,13 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
+      "name": "러스티 브라운 버드이터 / 유체",
+      "price": 30000,
+      "url": "https://theraphosidae.co.kr/product/러스티-브라운-버드이터-유체/2031/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
       "name": "럼동 타이거 / 12cm+-.암",
       "price": 60000,
       "url": "https://theraphosidae.co.kr/product/럼동-타이거-12cm-암/210/category/24/display/1/",
@@ -7963,8 +7988,7 @@
       "channel": "자사몰",
       "name": "레드 로즈헤어 / 유체",
       "price": 18500,
-      "url": "https://theraphosidae.co.kr/product/레드-로즈헤어-유체/958/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/레드-로즈헤어-유체/958/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -10684,8 +10708,20 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "자이언트 골덴니 / 유체",
-      "price": 4000,
-      "url": "https://theraphosidae.co.kr/product/자이언트-골덴니-유체/819/category/24/display/1/"
+      "price": 5000,
+      "url": "https://theraphosidae.co.kr/product/자이언트-골덴니-유체/819/category/24/display/1/",
+      "prev": 4000,
+      "changed_on": "2026-06-12",
+      "hist": [
+        [
+          "2026-06-02",
+          4000
+        ],
+        [
+          "2026-06-12",
+          5000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -11205,6 +11241,13 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
+      "name": "크세네스티스 spec. \"메가스코풀라\" (D.W) / 7-9cm.암컷",
+      "price": 320000,
+      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-메가스코풀라-dw-7-9cm암컷/2035/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
       "name": "크세네스티스 spec. \"메가스코풀라\" (D.W) / 8cm+-.한쌍",
       "price": 500000,
       "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-메가스코풀라-dw-8cm-한쌍/620/category/24/display/1/",
@@ -11413,6 +11456,13 @@
       "price": 500000,
       "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-화이트-12cm한쌍/755/category/24/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "크세네스티스 spec. \"화이트\" / 7-8cm.한쌍",
+      "price": 380000,
+      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-화이트-7-8cm한쌍/2034/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -12897,6 +12947,13 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
+      "name": "포르믹토푸스 cf.아트리코마투스 \"몬테 크리스티\" / 5-7cm.한쌍",
+      "price": 52000,
+      "url": "https://theraphosidae.co.kr/product/포르믹토푸스-cf아트리코마투스-몬테-크리스티-5-7cm한쌍/2033/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
       "name": "포르믹토푸스 cf.아트리코마투스 \"몬테 크리스티\" / 7cm+-.한쌍",
       "price": 85000,
       "url": "https://theraphosidae.co.kr/product/포르믹토푸스-cf아트리코마투스-몬테-크리스티-7cm-한쌍/1518/category/24/display/1/",
@@ -13312,14 +13369,6 @@
       "name": "하르팍티라 나마쿠엔시스 / 5cm+-.암컷",
       "price": 75000,
       "url": "https://theraphosidae.co.kr/product/하르팍티라-나마쿠엔시스-5cm-암컷/1678/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "하르팍티라 나마쿠엔시스 / 유체",
-      "price": 18000,
-      "url": "https://theraphosidae.co.kr/product/하르팍티라-나마쿠엔시스-유체/839/category/24/display/1/",
       "soldout": true
     },
     {
