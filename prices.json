@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-11T23:36:19",
+  "updated_at": "2026-06-12T10:15:48",
   "channels": {
     "자사몰": "2026-06-11T02:54:42",
-    "네이버": "2026-06-11T23:36:19"
+    "네이버": "2026-06-12T10:15:48"
   },
   "products": [
     {
@@ -1566,6 +1566,14 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
+      "name": "셀먼핑크버드이터 약 14cm 암컷 준성체 / 레슬 타란튤라 타란툴라 거미 키우기",
+      "price": 65000,
+      "url": "https://smartstore.naver.com/tzblossom/products/11738717734",
+      "soldout": true
+    },
+    {
+      "vendor": "더쥬 송파점",
+      "channel": "네이버",
       "name": "타이제브라 DCF 유체 / 타제 다크폼 타란튤라 곤충 거미 절지류 절사모 밀웜 귀뚜라미",
       "price": 5000,
       "url": "https://smartstore.naver.com/tzblossom/products/11746295456"
@@ -1584,6 +1592,14 @@
       "name": "오렌지마우스 유체 / 오마 프샬 타란튤라 타란툴라 거미 절지 전갈 지네 곤충 용품 키우기",
       "price": 15000,
       "url": "https://smartstore.naver.com/tzblossom/products/11761904868",
+      "soldout": true
+    },
+    {
+      "vendor": "더쥬 송파점",
+      "channel": "네이버",
+      "name": "블루 판케이 10cm+ 준성체 암수 한쌍 / 타란튤라 타란툴라 거미 키우기 절지류 곤충",
+      "price": 160000,
+      "url": "https://smartstore.naver.com/tzblossom/products/11780125317",
       "soldout": true
     },
     {
@@ -1628,6 +1644,14 @@
       "name": "카엥 크라찬 암컷 준성체 ~ 성체 [부절개체] / 칠로브라키스 타란튤라 타란툴라 거미",
       "price": 39000,
       "url": "https://smartstore.naver.com/tzblossom/products/11848913196",
+      "soldout": true
+    },
+    {
+      "vendor": "더쥬 송파점",
+      "channel": "네이버",
+      "name": "일렉트릭 블루 약 15cm 암컷 성체 초기 / 칠로브라키스 타란튤라 타란툴라 거미 키우기",
+      "price": 120000,
+      "url": "https://smartstore.naver.com/tzblossom/products/11861713694",
       "soldout": true
     },
     {
@@ -1762,6 +1786,13 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
+      "name": "데져트 블론디 10cm + 준성체 성체 암컷 / 타란튤라 거미 아포노펠마 절지류 데블",
+      "price": 220000,
+      "url": "https://smartstore.naver.com/tzblossom/products/12565997256"
+    },
+    {
+      "vendor": "더쥬 송파점",
+      "channel": "네이버",
       "name": "사바레드 유체 / 어스타이거 타란튤라 타란툴라 거미 키우기 곤충 절지류 용품 밀웜 파충류",
       "price": 95000,
       "url": "https://smartstore.naver.com/tzblossom/products/12811081251",
@@ -1781,6 +1812,14 @@
       "name": "바비아나 바분 유체 / 타란튤라 타란툴라 거미 키우기 곤충 절지류 용품 밀웜 파충류",
       "price": 30000,
       "url": "https://smartstore.naver.com/tzblossom/products/12823556077"
+    },
+    {
+      "vendor": "더쥬 송파점",
+      "channel": "네이버",
+      "name": "자이언트 차코 골덴니 약 8cm 암컷 / 타란튤라 타란툴라",
+      "price": 38000,
+      "url": "https://smartstore.naver.com/tzblossom/products/12827902724",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -1901,6 +1940,28 @@
       "name": "퍼플제브라 유체 / 타란튤라 타란툴라 거미 절지류 곤충 키우기 밀웜 타제 타이제브라",
       "price": 12000,
       "url": "https://smartstore.naver.com/tzblossom/products/13219312007"
+    },
+    {
+      "vendor": "더쥬 송파점",
+      "channel": "네이버",
+      "name": "넨뎁 어스 타이거 준성체 암컷 / 타란튤라 타란툴라 거미 곤충 키우기 밀웜 절지류 파충류",
+      "price": 65000,
+      "url": "https://smartstore.naver.com/tzblossom/products/13288771701"
+    },
+    {
+      "vendor": "더쥬 송파점",
+      "channel": "네이버",
+      "name": "베트남블루 준성체 암컷 / 칠로블루 거미 키우기 곤충 절지류 타란튤라 타란툴라 밀웜 용품",
+      "price": 45000,
+      "url": "https://smartstore.naver.com/tzblossom/products/13288774193"
+    },
+    {
+      "vendor": "더쥬 송파점",
+      "channel": "네이버",
+      "name": "베트남 실버 준성체 암컷 / 전갈 애완거미 타란툴라 타란튤라 지네 곤충 키우기 귀뚜라미",
+      "price": 80000,
+      "url": "https://smartstore.naver.com/tzblossom/products/13288777623",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -5747,13 +5808,6 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "네이버",
-      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
