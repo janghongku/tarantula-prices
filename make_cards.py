@@ -256,9 +256,8 @@ def main():
         print(f"신규입고 카드 → {os.path.basename(NEW)} ({len(arrwin)}건)")
     else:
         print("신규입고 없음 → 카드 생략")
-    # 고정 안내 배너(항상 생성, 날짜만 갱신)
-    idate = (max((e["date"] for e in win), default="") or max((e["date"] for e in ev), default="")
-             or datetime.date.today().isoformat()).replace("-", ".")
+    # 고정 안내 배너(항상 생성) — '확인일'(오늘 확인했다는 증표) 표시. 카드의 '확인' 날짜와 일치.
+    idate = crawl_date() or datetime.date.today().isoformat().replace("-", ".")
     render_intro(idate, INTRO)
     print(f"안내 배너 → {os.path.basename(INTRO)}")
 
