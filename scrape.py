@@ -579,17 +579,27 @@ def scrape_smartstore_all(sources, headful=False, profile=None, real_chrome=Fals
                 cats = store_category_links(page)
             except Exception:
                 cats = {}
-            if len(cats) == 0 and headful:               # 0개 = 스토어 아닌 CAPTCHA/검증 화면일 가능성(login_wait가 못 잡는 종류)
-                print(f"  ⚠ [{src['vendor']}] 카테고리 0개 — CAPTCHA/검증 화면일 수 있어요. "
-                      "열린 크롬 창에서 지금 풀어주세요. 45초 후 재시도…", flush=True)
-                time.sleep(45)
-                try:
-                    page.goto(entry, wait_until="domcontentloaded", timeout=30000)
-                    page.wait_for_timeout(2500)
-                    cats = store_category_links(page)
-                except Exception:
-                    pass
-                print(f"  [{src['vendor']}] 재시도 후 카테고리 {len(cats)}개", flush=True)
+            if len(cats) == 0 and headful:               # 0개 = CAPTCHA/검증 화면 가능성
+                # ⚠ navigate(goto)하면 사용자가 푸는 도중 페이지가 리셋됨 → '확인만' 하고 안 건드린다.
+                #   사용자가 CAPTCHA 풀면 네이버가 스토어로 자동 이동 → store_category_links가 감지.
+                for _try in range(10):                    # 15초마다 확인, ~2.5분. 풀리면 즉시 진행
+                    print(f"  ⚠ [{src['vendor']}] 카테고리 0개 — 크롬 창에서 CAPTCHA 풀어주세요 "
+                          f"(페이지 안 건드림 · 확인 {_try + 1}/10)…", flush=True)
+                    time.sleep(15)
+                    try:
+                        cats = store_category_links(page)   # 현재 페이지 재확인만(navigate 안 함)
+                    except Exception:
+                        pass
+                    if len(cats) > 0:
+                        print(f"  [{src['vendor']}] 통과! 카테고리 {len(cats)}개", flush=True)
+                        break
+                if len(cats) == 0:                        # 그래도 0이면 마지막으로 한 번 새로고침 시도
+                    try:
+                        page.goto(entry, wait_until="domcontentloaded", timeout=30000)
+                        page.wait_for_timeout(2500)
+                        cats = store_category_links(page)
+                    except Exception:
+                        pass
                 if len(cats) == 0:
                     warn(f"{src['vendor']} 네이버 검증화면 추정(카테고리 0개) — 이번 수집 건너뜀")
             spider = {cid: nm for cid, nm in cats.items() if cid != "ALL" and SPIDER_KW.search(nm)}
