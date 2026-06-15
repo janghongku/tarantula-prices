@@ -84,7 +84,8 @@ def render(events, out, urgent=False):
         return False
     lines, nup, ndn = build_lines(events)
     latest = max(e["date"] for e in events)
-    yy, mm, dd = map(int, latest.split("-")); wk = (dd - 1) // 7 + 1
+    _wd = (crawl_date() or "").replace(".", "-") or latest   # 주차는 '확인일'(크롤일) 기준
+    yy, mm, dd = map(int, _wd.split("-")); wk = (dd - 1) // 7 + 1
 
     head_h = 1.45
     foot_h = 0.5
@@ -153,7 +154,8 @@ def render_new(arrivals, out):
         return False
     lines = build_new_lines(arrivals)
     latest = max(a["date"] for a in arrivals)
-    yy, mm, dd = map(int, latest.split("-")); wk = (dd - 1) // 7 + 1
+    _wd = (crawl_date() or "").replace(".", "-") or latest   # 주차는 '확인일'(크롤일) 기준
+    yy, mm, dd = map(int, _wd.split("-")); wk = (dd - 1) // 7 + 1
     head_h = 1.45; foot_h = 0.5
     H = head_h + sum(h for *_, h in lines) + foot_h
     fig = plt.figure(figsize=(W, H), dpi=130); fig.patch.set_facecolor(BG)
