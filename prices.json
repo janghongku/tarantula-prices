@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-15T20:07:35",
+  "updated_at": "2026-06-15T17:04:37",
   "channels": {
-    "자사몰": "2026-06-15T03:28:43",
+    "자사몰": "2026-06-15T17:04:37",
     "네이버": "2026-06-15T20:07:35"
   },
   "products": [
@@ -16187,7 +16187,8 @@
       "channel": "자사몰",
       "name": "인디언 바이올렛 아성체 암컷 / Chilobrachys fimbriatus",
       "price": 60000,
-      "url": "https://tarancenter.com/product/인디언-바이올렛-아성체-암컷-chilobrachys-fimbriatus/878/category/51/display/1/"
+      "url": "https://tarancenter.com/product/인디언-바이올렛-아성체-암컷-chilobrachys-fimbriatus/878/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -16582,7 +16583,8 @@
       "channel": "자사몰",
       "name": "콜럼비안 자이언트 레드렉 암컷 준성체 15cm / Megaphobema robustum",
       "price": 130000,
-      "url": "https://tarancenter.com/product/콜럼비안-자이언트-레드렉-암컷-준성체-15cm-megaphobema-robustum/1536/category/51/display/1/"
+      "url": "https://tarancenter.com/product/콜럼비안-자이언트-레드렉-암컷-준성체-15cm-megaphobema-robustum/1536/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
