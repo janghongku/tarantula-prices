@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-16T19:34:26",
+  "updated_at": "2026-06-16T20:07:35",
   "channels": {
     "자사몰": "2026-06-15T17:04:37",
-    "네이버": "2026-06-16T19:34:26"
+    "네이버": "2026-06-16T20:07:35"
   },
   "products": [
     {
@@ -2722,6 +2722,7 @@
       "name": "안틸레스 핑크토 유체 / 타란튤라 타란툴라 거미 절지류 키우기 개미 곤충 용품 밀웜 전갈",
       "price": 10000,
       "url": "https://smartstore.naver.com/tzblossom/products/9912891973",
+      "soldout": true,
       "prev": 9000,
       "changed_on": "2026-06-13",
       "hist": [
@@ -3988,6 +3989,13 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
+      "name": "아마존 사파이어 핑크토 나무위성 타란튤라 유체",
+      "price": 25000,
+      "url": "https://smartstore.naver.com/tarancenter/products/13635363138"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "네이버",
       "name": "자이언트화이트니 타란튤라 애완거미 아성체 / 전갈 밀웜 귀뚜라미 애완곤충 희귀동물 키우기",
       "price": 20000,
       "url": "https://smartstore.naver.com/tarancenter/products/6066295129",
@@ -4156,9 +4164,20 @@
       "vendor": "타란센터",
       "channel": "네이버",
       "name": "구티사파이어오너멘탈 나무위성 타란튤라 애완거미 유체 / 거미 파란색 타란튤라입문",
-      "price": 30000,
+      "price": 25000,
       "url": "https://smartstore.naver.com/tarancenter/products/8974910652",
-      "soldout": true
+      "prev": 30000,
+      "changed_on": "2026-06-16",
+      "hist": [
+        [
+          "2026-06-02",
+          30000
+        ],
+        [
+          "2026-06-16",
+          25000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
