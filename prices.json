@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-16T20:07:35",
+  "updated_at": "2026-06-16T16:29:23",
   "channels": {
-    "자사몰": "2026-06-15T17:04:37",
+    "자사몰": "2026-06-16T16:29:23",
     "네이버": "2026-06-16T20:07:35"
   },
   "products": [
@@ -14007,6 +14007,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "구티사파이어 오너멘탈 유체 / Poecilotheria metallica",
+      "price": 25000,
+      "url": "https://tarancenter.com/product/구티사파이어-오너멘탈-유체-poecilotheria-metallica/1606/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "그람모스톨라 안트라키나 유체 / Grammostola anthracina",
       "price": 45000,
       "url": "https://tarancenter.com/product/그람모스톨라-안트라키나-유체-grammostola-anthracina/1040/category/51/display/1/",
@@ -15735,6 +15742,13 @@
       "price": 20000,
       "url": "https://tarancenter.com/product/아마존-사파이어-핑크토-옵션-크기선택-ybyrapora-diversipes/791/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "아마존 사파이어 핑크토 유체 / Ybyrapora diversipes",
+      "price": 25000,
+      "url": "https://tarancenter.com/product/아마존-사파이어-핑크토-유체-ybyrapora-diversipes/1605/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -18835,14 +18849,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "아마존 사파이어 핑크토 유체",
-      "price": 28000,
-      "url": "https://tarantulakorea.com/product/아마존-사파이어-핑크토-유체/280/category/67/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "아이보리 오너멘탈'로우랜드' 바라 유체",
       "price": 55000,
       "url": "https://tarantulakorea.com/product/아이보리-오너멘탈로우랜드-바라-유체/507/category/67/display/1/"
@@ -19043,14 +19049,6 @@
       "name": "옐로우 밴디드 버드이터 유체",
       "price": 30000,
       "url": "https://tarantulakorea.com/product/옐로우-밴디드-버드이터-유체/613/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "옐로우밴디드 핑크토 \"브라질\"유체",
-      "price": 38000,
-      "url": "https://tarantulakorea.com/product/옐로우밴디드-핑크토-브라질유체/424/category/67/display/1/",
-      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
