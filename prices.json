@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-17T02:58:13",
+  "updated_at": "2026-06-17T12:07:31",
   "channels": {
     "자사몰": "2026-06-17T02:58:13",
-    "네이버": "2026-06-16T20:07:35"
+    "네이버": "2026-06-17T12:07:31"
   },
   "products": [
     {
@@ -651,8 +651,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "라오스 골든 프린지드 / 타란튤라 타란툴라 애완거미 거미랑",
-      "price": 70000,
-      "url": "https://smartstore.naver.com/terrafactory/products/13568132829"
+      "price": 58000,
+      "url": "https://smartstore.naver.com/terrafactory/products/13568132829",
+      "prev": 70000,
+      "changed_on": "2026-06-17",
+      "hist": [
+        [
+          "2026-06-02",
+          70000
+        ],
+        [
+          "2026-06-17",
+          58000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -886,10 +898,10 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "그린볼 (그린보틀블루) / 타란튤라 새잡이거미 애완거미 희귀동물 곤충",
-      "price": 19000,
+      "price": 15000,
       "url": "https://smartstore.naver.com/terrafactory/products/5719135322",
-      "prev": 15000,
-      "changed_on": "2026-06-13",
+      "prev": 19000,
+      "changed_on": "2026-06-17",
       "hist": [
         [
           "2026-06-02",
@@ -898,6 +910,10 @@
         [
           "2026-06-13",
           19000
+        ],
+        [
+          "2026-06-17",
+          15000
         ]
       ]
     },
@@ -2105,9 +2121,21 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "셀먼 핑크 버드이터 유체 대 / 타란튤라 전갈 아시안포레스트 키우기 타란툴라 밀웜 용품",
-      "price": 3000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8764100886"
+      "name": "셀먼 핑크 버드이터 유체 특대 / 타란튤라 전갈 아시안포레스트 키우기 타란툴라 밀웜 용품",
+      "price": 4000,
+      "url": "https://smartstore.naver.com/tzblossom/products/8764100886",
+      "prev": 3000,
+      "changed_on": "2026-06-17",
+      "hist": [
+        [
+          "2026-06-02",
+          3000
+        ],
+        [
+          "2026-06-17",
+          4000
+        ]
+      ]
     },
     {
       "vendor": "더쥬 송파점",
@@ -2747,10 +2775,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "오렌지 어셈 바분 유체 특대 / 우잠바라 타란튤라 거미 절지류 밀웜 귀뚜라미 곤충 용품",
+      "name": "오렌지 어셈 바분 유체 대 / 우잠바라 타란튤라 거미 절지류 밀웜 귀뚜라미 곤충 용품",
       "price": 4000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9970830826",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tzblossom/products/9970830826"
     },
     {
       "vendor": "더쥬 송파점",
@@ -5921,6 +5948,13 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "네이버",
+      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
+      "price": 18000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
