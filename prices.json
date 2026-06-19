@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-18T14:53:08",
+  "updated_at": "2026-06-19T13:02:24",
   "channels": {
     "자사몰": "2026-06-18T14:53:08",
-    "네이버": "2026-06-18T20:10:51"
+    "네이버": "2026-06-19T13:02:24"
   },
   "products": [
     {
@@ -2208,7 +2208,8 @@
       "channel": "네이버",
       "name": "크세네스티스 블루 M 10탈피 암컷 성체 초기 / 타란튤라 타란툴라 거미 절지 렛서 랫서",
       "price": 300000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13636328338"
+      "url": "https://smartstore.naver.com/tzblossom/products/13636328338",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -6061,6 +6062,13 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "네이버",
+      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
+      "price": 18000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
