@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-18T14:53:08",
+  "updated_at": "2026-06-19T03:38:59",
   "channels": {
-    "자사몰": "2026-06-18T14:53:08",
+    "자사몰": "2026-06-19T03:38:59",
     "네이버": "2026-06-18T20:10:51"
   },
   "products": [
@@ -18100,6 +18100,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "고스트트리스파이더 유체",
+      "price": 18000,
+      "url": "https://tarantulakorea.com/product/고스트트리스파이더-유체/413/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "골든그레이 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/골든그레이-유체/195/category/24/display/1/"
@@ -18742,6 +18749,13 @@
       "name": "브론즈 바분 '나마퀜시스' 유체",
       "price": 18000,
       "url": "https://tarantulakorea.com/product/브론즈-바분-나마퀜시스-유체/463/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "브릭레드 핑크토 '비케고이 에콰도르' 유체",
+      "price": 40000,
+      "url": "https://tarantulakorea.com/product/브릭레드-핑크토-비케고이-에콰도르-유체/540/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
