@@ -47,6 +47,8 @@ _크롤경고.txt
 notify_webhook.txt
 # 수집 경고 로그(로컬 진단용)
 scrape_err.log
+# 매장별 차단 쿨다운 상태(로컬 — 머신마다 다름)
+naver_cooldown.json
 
 # macOS
 .DS_Store

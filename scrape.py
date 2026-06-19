@@ -529,6 +529,48 @@ def click_category_products(page, base, cid, src):
     return got
 
 
+# ── 차단 쿨다운: 매장이 검증화면/차단에 걸리면 N시간 건너뛴다. 막힌 매장 과다재시도(악순환) 방지 ──
+COOLDOWN_FILE = "outputs/naver_cooldown.json"
+COOLDOWN_HOURS = 3.0
+
+
+def _cooldown_load():
+    try:
+        return json.loads(pathlib.Path(COOLDOWN_FILE).read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def _cooldown_remaining(handle):
+    """해당 매장 차단 쿨다운 남은 시간(h). 0이면 크롤 가능."""
+    ts = _cooldown_load().get(handle)
+    if not ts:
+        return 0.0
+    try:
+        elapsed = (datetime.datetime.now() - datetime.datetime.fromisoformat(ts)).total_seconds() / 3600
+        return max(0.0, COOLDOWN_HOURS - elapsed)
+    except Exception:
+        return 0.0
+
+
+def _cooldown_set(handle):                 # 차단 발생 기록
+    d = _cooldown_load(); d[handle] = datetime.datetime.now().isoformat(timespec="seconds")
+    try:
+        pathlib.Path("outputs").mkdir(exist_ok=True)
+        atomic_write(COOLDOWN_FILE, json.dumps(d, ensure_ascii=False))
+    except Exception:
+        pass
+
+
+def _cooldown_clear(handle):               # 성공 → 해제
+    d = _cooldown_load()
+    if d.pop(handle, None) is not None:
+        try:
+            atomic_write(COOLDOWN_FILE, json.dumps(d, ensure_ascii=False))
+        except Exception:
+            pass
+
+
 def scrape_smartstore_all(sources, headful=False, profile=None, real_chrome=False):
     try:
         from playwright.sync_api import sync_playwright
@@ -562,6 +604,10 @@ def scrape_smartstore_all(sources, headful=False, profile=None, real_chrome=Fals
             pass
 
         for i, src in enumerate(sources):
+            rem = _cooldown_remaining(src['handle'])
+            if rem > 0:                                  # 차단 쿨다운 중 — 두드릴수록 더 막힘. 네이버 풀릴 시간 줌
+                print(f"  [{src['vendor']}] 차단 쿨다운 중 ({rem:.1f}h 남음) — 건너뜀(기존 데이터 유지)", flush=True)
+                continue
             if i:                                        # 스토어 사이 간격(무작위 90~180s) — 사람처럼 불규칙, 버스트 분산
                 time.sleep(random.uniform(90, 180))
             base = f"https://smartstore.naver.com/{src['handle']}"
@@ -572,7 +618,7 @@ def scrape_smartstore_all(sources, headful=False, profile=None, real_chrome=Fals
             except Exception as e:
                 print(f"  [{src['vendor']}] goto 실패: {e}"); continue
             if not _login_wait(page, src["vendor"], headful, entry):
-                print(f"  [{src['vendor']}] 네이버 차단 → 건너뜀"); continue
+                print(f"  [{src['vendor']}] 네이버 차단 → 건너뜀"); _cooldown_set(src['handle']); continue
 
             # 카테고리 메뉴에서 '거미' 카테고리만 고른다 (용품/먹이 제외)
             try:
@@ -602,6 +648,7 @@ def scrape_smartstore_all(sources, headful=False, profile=None, real_chrome=Fals
                         pass
                 if len(cats) == 0:
                     warn(f"{src['vendor']} 네이버 검증화면 추정(카테고리 0개) — 이번 수집 건너뜀")
+                    _cooldown_set(src['handle'])       # 차단 → 쿨다운(이후 N시간 건너뜀)
             spider = {cid: nm for cid, nm in cats.items() if cid != "ALL" and SPIDER_KW.search(nm)}
             print(f"  [{src['vendor']}] 카테고리 {len(cats)}개 | 거미류: "
                   + (" / ".join(sorted(set(spider.values()))) if spider else "없음"), flush=True)
@@ -624,6 +671,10 @@ def scrape_smartstore_all(sources, headful=False, profile=None, real_chrome=Fals
                     seen.add(it["url"]); got.append(it)
             print(f"  [{src['vendor']} 네이버:{src['handle']}] {len(got)}건 (거미)"
                   + (" [API]" if used_api else " [DOM]"), flush=True)
+            if got:                                      # 성공 → 쿨다운 해제 / 0건(검증 재차단 추정) → 쿨다운
+                _cooldown_clear(src['handle'])
+            else:
+                _cooldown_set(src['handle'])
             if i == 0 and not used_api:                  # 첫 스토어부터 API 차단([DOM]) = IP 레벨 차단 추정
                 warn("첫 스토어 차단 → 네이버 전체 중단(DOM 부정확 → 버리고 기존 유지). "
                      "매장별 단독 재시도(--store) 권장.")
