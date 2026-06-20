@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-20T12:08:58",
+  "updated_at": "2026-06-20T13:46:09",
   "channels": {
-    "자사몰": "2026-06-20T02:42:52",
+    "자사몰": "2026-06-20T13:46:09",
     "네이버": "2026-06-20T12:08:58"
   },
   "products": [
@@ -15548,7 +15548,8 @@
       "channel": "자사몰",
       "name": "상이헤 아일랜드 블랙 (ex.니겔멈) 암컷 준성체 12cm+ / Lampropelma nigerrimum",
       "price": 90000,
-      "url": "https://tarancenter.com/product/상이헤-아일랜드-블랙-ex니겔멈-암컷-준성체-12cm-lampropelma-nigerrimum/1541/category/51/display/1/"
+      "url": "https://tarancenter.com/product/상이헤-아일랜드-블랙-ex니겔멈-암컷-준성체-12cm-lampropelma-nigerrimum/1541/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
