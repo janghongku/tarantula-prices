@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-20T02:42:52",
+  "updated_at": "2026-06-20T12:08:58",
   "channels": {
     "자사몰": "2026-06-20T02:42:52",
-    "네이버": "2026-06-19T20:07:33"
+    "네이버": "2026-06-20T12:08:58"
   },
   "products": [
     {
@@ -1274,14 +1274,6 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "카오속 타이거 유체 대 / 타란툴라 타란튤라 곤충 거미 절지류 절사모 밀웜 귀뚜라미 용품",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10104292356",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "브라질리안 블랙 유체 / 브블 타란툴라 타란튤라 곤충 거미 절지류 파충류 밀웜 용품",
       "price": 65000,
       "url": "https://smartstore.naver.com/tzblossom/products/10105506910"
@@ -2210,6 +2202,13 @@
       "price": 300000,
       "url": "https://smartstore.naver.com/tzblossom/products/13636328338",
       "soldout": true
+    },
+    {
+      "vendor": "더쥬 송파점",
+      "channel": "네이버",
+      "name": "팜포베테우스 듀란 유체 / 타란튤라 타란툴라 거미 절지류 용품 입양 밀웜 분양 배회성",
+      "price": 30000,
+      "url": "https://smartstore.naver.com/tzblossom/products/13638386657"
     },
     {
       "vendor": "더쥬 송파점",
@@ -6084,13 +6083,6 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "네이버",
-      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
