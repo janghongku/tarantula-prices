@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-20T12:08:58",
+  "updated_at": "2026-06-20T23:07:35",
   "channels": {
     "자사몰": "2026-06-20T02:42:52",
-    "네이버": "2026-06-20T12:08:58"
+    "네이버": "2026-06-20T23:07:35"
   },
   "products": [
     {
@@ -1864,7 +1864,6 @@
       "name": "타이제브라 암컷 성체 초기 / 타제 타란튤라 곤충 거미 절지류 절사모 밀웜 귀뚜라미 사육",
       "price": 40000,
       "url": "https://smartstore.naver.com/tzblossom/products/12206581665",
-      "soldout": true,
       "prev": 50000,
       "changed_on": "2026-06-18",
       "hist": [
@@ -2121,8 +2120,20 @@
       "vendor": "더쥬 송파점",
       "channel": "네이버",
       "name": "벤듈라 타이거 준성체 암컷 / 전갈 키우기 곤충 관찰 파충류 절지류 타란튤라 거미 타사모",
-      "price": 70000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13424068047"
+      "price": 45000,
+      "url": "https://smartstore.naver.com/tzblossom/products/13424068047",
+      "prev": 70000,
+      "changed_on": "2026-06-20",
+      "hist": [
+        [
+          "2026-06-02",
+          70000
+        ],
+        [
+          "2026-06-20",
+          45000
+        ]
+      ]
     },
     {
       "vendor": "더쥬 송파점",
@@ -2209,6 +2220,13 @@
       "name": "팜포베테우스 듀란 유체 / 타란튤라 타란툴라 거미 절지류 용품 입양 밀웜 분양 배회성",
       "price": 30000,
       "url": "https://smartstore.naver.com/tzblossom/products/13638386657"
+    },
+    {
+      "vendor": "더쥬 송파점",
+      "channel": "네이버",
+      "name": "팜포베테우스 마스카라 아성체 암컷 / 거미 타란툴라 타란튤라 밀웜 귀뚜라미 절지류 용품",
+      "price": 48000,
+      "url": "https://smartstore.naver.com/tzblossom/products/13638796051"
     },
     {
       "vendor": "더쥬 송파점",
@@ -3976,7 +3994,8 @@
       "channel": "네이버",
       "name": "니겔멈 어스타이거 암컷 준성체 13cm+",
       "price": 90000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13495440258"
+      "url": "https://smartstore.naver.com/tarancenter/products/13495440258",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
