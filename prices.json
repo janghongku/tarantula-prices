@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-21T13:53:25",
+  "updated_at": "2026-06-22T01:23:14",
   "channels": {
     "자사몰": "2026-06-21T13:53:25",
-    "네이버": "2026-06-21T20:07:05"
+    "네이버": "2026-06-22T01:23:14"
   },
   "products": [
     {
@@ -2599,7 +2599,8 @@
       "channel": "네이버",
       "name": "샬렘 오너멘탈 유체 / 타란튤라 타란툴라 거미 절지류 전갈 지네 키우기 곤충 입양 분양",
       "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9344153412"
+      "url": "https://smartstore.naver.com/tzblossom/products/9344153412",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
