@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-21T12:07:37",
+  "updated_at": "2026-06-21T20:07:05",
   "channels": {
     "자사몰": "2026-06-20T02:42:52",
-    "네이버": "2026-06-21T12:07:37"
+    "네이버": "2026-06-21T20:07:05"
   },
   "products": [
     {
@@ -5985,8 +5985,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "코발트 블루 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
-      "price": 10000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10622008659"
+      "price": 4000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10622008659",
+      "prev": 10000,
+      "changed_on": "2026-06-21",
+      "hist": [
+        [
+          "2026-06-02",
+          10000
+        ],
+        [
+          "2026-06-21",
+          4000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
