@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-20T23:07:35",
+  "updated_at": "2026-06-21T02:59:10",
   "channels": {
-    "자사몰": "2026-06-20T02:42:52",
+    "자사몰": "2026-06-21T02:59:10",
     "네이버": "2026-06-20T23:07:35"
   },
   "products": [
@@ -18478,6 +18478,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "말레이시안 블루 / 말블 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/말레이시안-블루-말블-유체/105/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "말레이시안 퍼플피머 유체",
       "price": 35000,
       "url": "https://tarantulakorea.com/product/말레이시안-퍼플피머-유체/635/category/66/display/1/"
@@ -20125,8 +20132,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "하리본 타이거 유체",
-      "price": 30000,
-      "url": "https://tarantulakorea.com/product/하리본-타이거-유체/446/category/67/display/1/"
+      "price": 20000,
+      "url": "https://tarantulakorea.com/product/하리본-타이거-유체/446/category/67/display/1/",
+      "prev": 30000,
+      "changed_on": "2026-06-21",
+      "hist": [
+        [
+          "2026-06-02",
+          30000
+        ],
+        [
+          "2026-06-21",
+          20000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
