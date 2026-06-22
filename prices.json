@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-22T03:29:56",
+  "updated_at": "2026-06-22T20:07:37",
   "channels": {
     "자사몰": "2026-06-22T03:29:56",
-    "네이버": "2026-06-22T12:07:04"
+    "네이버": "2026-06-22T20:07:37"
   },
   "products": [
     {
@@ -2176,7 +2176,8 @@
       "channel": "네이버",
       "name": "팜포베테우스 플람미페라 유체 / 타란튤라 타란툴라 거미 절지류 용품 입양 밀웜 분양",
       "price": 60000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13472699023"
+      "url": "https://smartstore.naver.com/tzblossom/products/13472699023",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -5459,8 +5460,7 @@
       "channel": "네이버",
       "name": "말레이시안 블루 말블 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
       "price": 25000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10588276851",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10588276851"
     },
     {
       "vendor": "타란툴라코리아",
@@ -6119,13 +6119,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "네이버",
       "name": "브론즈바분, 나마퀜시스 바분 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625878981"
@@ -6334,7 +6327,8 @@
       "channel": "네이버",
       "name": "탄자니아 체스트넛 바분 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
       "price": 30000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10640755887"
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10640755887",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -7142,8 +7136,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "하리본 타이거 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
-      "price": 30000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/12299131643"
+      "price": 20000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/12299131643",
+      "prev": 30000,
+      "changed_on": "2026-06-22",
+      "hist": [
+        [
+          "2026-06-02",
+          30000
+        ],
+        [
+          "2026-06-22",
+          20000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
