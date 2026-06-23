@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-22T16:42:38",
+  "updated_at": "2026-06-23T02:36:41",
   "channels": {
-    "자사몰": "2026-06-22T16:42:38",
+    "자사몰": "2026-06-23T02:36:41",
     "네이버": "2026-06-22T20:07:37"
   },
   "products": [
@@ -18441,6 +18441,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "렛서블루 M라인 스파이더링 / 직거래 분양만 가능합니다.",
+      "price": 130000,
+      "url": "https://tarantulakorea.com/product/렛서블루-m라인-스파이더링-직거래-분양만-가능합니다/226/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "로부스텀 타이거 \"프레이저힐\" 유체",
       "price": 40000,
       "url": "https://tarantulakorea.com/product/로부스텀-타이거-프레이저힐-유체/220/category/66/display/1/"
@@ -19983,6 +19990,13 @@
       "name": "팜포베테우스 백파이어 ex페테르시 유체",
       "price": 65000,
       "url": "https://tarantulakorea.com/product/팜포베테우스-백파이어-ex페테르시-유체/453/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "팜포베테우스 볼리비안 스틸리블루 '빅블랙' 유체",
+      "price": 60000,
+      "url": "https://tarantulakorea.com/product/팜포베테우스-볼리비안-스틸리블루-빅블랙-유체/228/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
