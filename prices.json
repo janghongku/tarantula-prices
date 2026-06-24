@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-24T12:07:35",
+  "updated_at": "2026-06-24T20:07:39",
   "channels": {
     "자사몰": "2026-06-24T02:37:26",
-    "네이버": "2026-06-24T12:07:35"
+    "네이버": "2026-06-24T20:07:39"
   },
   "products": [
     {
@@ -2858,7 +2858,8 @@
       "channel": "네이버",
       "name": "카메룬 레드 바분 유체 / 타란튤라 카레바 거미 절지류 절사모 밀웜 귀뚜라미 곤충 입양",
       "price": 4000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9866081373"
+      "url": "https://smartstore.naver.com/tzblossom/products/9866081373",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -3055,7 +3056,8 @@
       "channel": "네이버",
       "name": "페루퍼플 핑크토 타란튤라 애완거미 유체 / 타란툴라 애완곤충 곤충키우기",
       "price": 15000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10771097607"
+      "url": "https://smartstore.naver.com/tarancenter/products/10771097607",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -3258,7 +3260,8 @@
       "channel": "네이버",
       "name": "셀먼핑크버드이터 타란튤라 애완거미 유체(중) / 타란툴라 타란튤라입문 전갈 곤충 희귀동물",
       "price": 7000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10985929329"
+      "url": "https://smartstore.naver.com/tarancenter/products/10985929329",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -6106,13 +6109,6 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "네이버",
-      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
