@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-24T20:07:39",
+  "updated_at": "2026-06-24T14:12:27",
   "channels": {
-    "자사몰": "2026-06-24T02:37:26",
+    "자사몰": "2026-06-24T14:12:27",
     "네이버": "2026-06-24T20:07:39"
   },
   "products": [
@@ -15682,7 +15682,8 @@
       "channel": "자사몰",
       "name": "셀먼 핑크 버드이터 유체(중) / Lasiodora parahybana",
       "price": 7000,
-      "url": "https://tarancenter.com/product/셀먼-핑크-버드이터-유체중-lasiodora-parahybana/608/category/51/display/1/"
+      "url": "https://tarancenter.com/product/셀먼-핑크-버드이터-유체중-lasiodora-parahybana/608/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -17736,7 +17737,8 @@
       "channel": "자사몰",
       "name": "페루퍼플 핑크토 유체 / Avicularia juruensis (morpho-type2)",
       "price": 15000,
-      "url": "https://tarancenter.com/product/페루퍼플-핑크토-유체-avicularia-juruensis-morpho-type2/1441/category/51/display/1/"
+      "url": "https://tarancenter.com/product/페루퍼플-핑크토-유체-avicularia-juruensis-morpho-type2/1441/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
