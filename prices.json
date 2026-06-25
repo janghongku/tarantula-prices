@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-25T02:38:38",
+  "updated_at": "2026-06-25T12:07:41",
   "channels": {
     "자사몰": "2026-06-25T02:38:38",
-    "네이버": "2026-06-24T20:07:39"
+    "네이버": "2026-06-25T12:07:41"
   },
   "products": [
     {
@@ -2685,9 +2685,20 @@
       "vendor": "더쥬 송파점",
       "channel": "네이버",
       "name": "하리본 어스타이거 유체 / 타란튤라 곤충 개미 지네 전갈 거미 절지류 절사모 키우기 밀웜",
-      "price": 14000,
+      "price": 20000,
       "url": "https://smartstore.naver.com/tzblossom/products/9728514366",
-      "soldout": true
+      "prev": 14000,
+      "changed_on": "2026-06-25",
+      "hist": [
+        [
+          "2026-06-02",
+          14000
+        ],
+        [
+          "2026-06-25",
+          20000
+        ]
+      ]
     },
     {
       "vendor": "더쥬 송파점",
@@ -3511,7 +3522,8 @@
       "channel": "네이버",
       "name": "킹바분 아프리카 왕거미 버로우성 타란튤라 유체",
       "price": 15000,
-      "url": "https://smartstore.naver.com/tarancenter/products/11403711064"
+      "url": "https://smartstore.naver.com/tarancenter/products/11403711064",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -5153,8 +5165,7 @@
       "channel": "네이버",
       "name": "팜포베테우스 볼리비아 스틸리블루 빅블랙 유체 / 타란튤라 타란툴라 거미 배회성 절지동물 곤충",
       "price": 60000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10578166387",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10578166387"
     },
     {
       "vendor": "타란툴라코리아",
