@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-25T20:07:31",
+  "updated_at": "2026-06-25T14:10:07",
   "channels": {
-    "자사몰": "2026-06-25T02:38:38",
+    "자사몰": "2026-06-25T14:10:07",
     "네이버": "2026-06-25T20:07:31"
   },
   "products": [
@@ -10390,14 +10390,6 @@
       "name": "아포노펠마 spec. \"코유카\" / 유체(대)",
       "price": 110000,
       "url": "https://theraphosidae.co.kr/product/아포노펠마-spec-코유카-유체대/1326/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "아포노펠마 spec. \"히달고\" 오렌지 / 유체(대)",
-      "price": 280000,
-      "url": "https://theraphosidae.co.kr/product/아포노펠마-spec-히달고-오렌지-유체대/1632/category/24/display/1/",
       "soldout": true
     },
     {
