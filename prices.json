@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-25T12:07:41",
+  "updated_at": "2026-06-25T20:07:31",
   "channels": {
     "자사몰": "2026-06-25T02:38:38",
-    "네이버": "2026-06-25T12:07:41"
+    "네이버": "2026-06-25T20:07:31"
   },
   "products": [
     {
@@ -1903,7 +1903,8 @@
       "channel": "네이버",
       "name": "코르디엘란 블루 유체 특대 / 타란튤라 타란툴라 거미 절지류 키우기 밀웜 귀뚜라미 용품",
       "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/12484740930"
+      "url": "https://smartstore.naver.com/tzblossom/products/12484740930",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
