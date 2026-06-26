@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-26T02:41:48",
+  "updated_at": "2026-06-26T12:07:49",
   "channels": {
     "자사몰": "2026-06-26T02:41:48",
-    "네이버": "2026-06-25T20:07:31"
+    "네이버": "2026-06-26T12:07:49"
   },
   "products": [
     {
@@ -716,6 +716,13 @@
     {
       "vendor": "거미랑",
       "channel": "네이버",
+      "name": "로스 툭스틀라스 시나몬 / 타란튤라 타란툴라 애완거미 거미랑",
+      "price": 85000,
+      "url": "https://smartstore.naver.com/terrafactory/products/13643188792"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "네이버",
       "name": "브라질리안 블루 타란툴라 / 애완거미 타란튤라 대왕거미 희귀동물 곤충",
       "price": 5000,
       "url": "https://smartstore.naver.com/terrafactory/products/5225271041",
@@ -880,10 +887,10 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "레드 로즈헤어 / 타란튤라 새잡이거미 애완거미 타란툴라 곤충",
-      "price": 9500,
+      "price": 6000,
       "url": "https://smartstore.naver.com/terrafactory/products/5342385841",
-      "prev": 15000,
-      "changed_on": "2026-06-17",
+      "prev": 9500,
+      "changed_on": "2026-06-26",
       "hist": [
         [
           "2026-06-02",
@@ -892,6 +899,10 @@
         [
           "2026-06-17",
           9500
+        ],
+        [
+          "2026-06-26",
+          6000
         ]
       ]
     },
@@ -1125,8 +1136,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "말레이시안 어스타이거 / 타란튤라 분양 새잡이거미 버드이터 애완곤충",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/terrafactory/products/6022709175"
+      "price": 19000,
+      "url": "https://smartstore.naver.com/terrafactory/products/6022709175",
+      "prev": 25000,
+      "changed_on": "2026-06-26",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-06-26",
+          19000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -6121,6 +6144,13 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "네이버",
+      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
+      "price": 18000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
