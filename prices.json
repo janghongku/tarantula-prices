@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-28T12:07:07",
+  "updated_at": "2026-06-28T23:40:43",
   "channels": {
     "자사몰": "2026-06-28T02:47:07",
-    "네이버": "2026-06-28T12:07:07"
+    "네이버": "2026-06-28T23:40:43"
   },
   "products": [
     {
@@ -1631,8 +1631,20 @@
       "vendor": "더쥬 송파점",
       "channel": "네이버",
       "name": "골든제브라뷰티 유체 특대 / 타란튤라 거미 절지류 파충류 곤충 밀웜 키우기 파충류 용품",
-      "price": 14000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11476500132"
+      "price": 19000,
+      "url": "https://smartstore.naver.com/tzblossom/products/11476500132",
+      "prev": 14000,
+      "changed_on": "2026-06-28",
+      "hist": [
+        [
+          "2026-06-02",
+          14000
+        ],
+        [
+          "2026-06-28",
+          19000
+        ]
+      ]
     },
     {
       "vendor": "더쥬 송파점",
@@ -2095,8 +2107,20 @@
       "vendor": "더쥬 송파점",
       "channel": "네이버",
       "name": "골든제브라뷰티 유체 / 타란튤라 거미 절지류 파충류 곤충 밀웜 키우기 파충류 귀뚜라미",
-      "price": 8000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13132491964"
+      "price": 10000,
+      "url": "https://smartstore.naver.com/tzblossom/products/13132491964",
+      "prev": 8000,
+      "changed_on": "2026-06-28",
+      "hist": [
+        [
+          "2026-06-02",
+          8000
+        ],
+        [
+          "2026-06-28",
+          10000
+        ]
+      ]
     },
     {
       "vendor": "더쥬 송파점",
@@ -2368,7 +2392,8 @@
       "channel": "네이버",
       "name": "말레이시안 어스 타이거 유체 / 말지타 타란툴라 타란튤라 거미 키우기 파충류 절지류 곤충",
       "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8771262681"
+      "url": "https://smartstore.naver.com/tzblossom/products/8771262681",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -2887,7 +2912,8 @@
       "channel": "네이버",
       "name": "우잠바라 오렌지바분 DCF 보츠와나/짐바브웨(B/Z)﻿ 유체 / 타란튤라 어셈 다크폼",
       "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728833663"
+      "url": "https://smartstore.naver.com/tzblossom/products/9728833663",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
