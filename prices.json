@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-28T02:21:27",
+  "updated_at": "2026-06-28T02:47:07",
   "channels": {
-    "자사몰": "2026-06-26T02:41:48",
+    "자사몰": "2026-06-28T02:47:07",
     "네이버": "2026-06-28T02:21:27"
   },
   "products": [
@@ -11621,7 +11621,8 @@
       "channel": "자사몰",
       "name": "크세네스티스 spec. \"메가스코풀라\" D.W / 유체",
       "price": 180000,
-      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-메가스코풀라-dw-유체/1655/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-메가스코풀라-dw-유체/1655/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -12413,7 +12414,8 @@
       "channel": "자사몰",
       "name": "트릭소펠마 퀴아네올룸 \"레드\" / 준성체+.암컷",
       "price": 250000,
-      "url": "https://theraphosidae.co.kr/product/트릭소펠마-퀴아네올룸-레드-준성체암컷/2002/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/트릭소펠마-퀴아네올룸-레드-준성체암컷/2002/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -13580,7 +13582,8 @@
       "channel": "자사몰",
       "name": "프살모포에우스 빅토리 / 유체",
       "price": 35000,
-      "url": "https://theraphosidae.co.kr/product/프살모포에우스-빅토리-유체/1795/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/프살모포에우스-빅토리-유체/1795/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
