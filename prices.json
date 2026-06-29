@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-29T16:34:12",
+  "updated_at": "2026-06-29T20:07:02",
   "channels": {
     "자사몰": "2026-06-29T02:47:35",
-    "네이버": "2026-06-29T16:30:23"
+    "네이버": "2026-06-29T20:07:02"
   },
   "products": [
     {
@@ -723,6 +723,13 @@
     {
       "vendor": "거미랑",
       "channel": "네이버",
+      "name": "아포노펠마 초콜렛 / 타란튤라 타란툴라 애완거미 거미랑",
+      "price": 125000,
+      "url": "https://smartstore.naver.com/terrafactory/products/13646327385"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "네이버",
       "name": "브라질리안 블루 타란툴라 / 애완거미 타란튤라 대왕거미 희귀동물 곤충",
       "price": 5000,
       "url": "https://smartstore.naver.com/terrafactory/products/5225271041",
@@ -840,9 +847,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "골든블루렉 바분 / 애완거미 타란튤라 대왕거미 희귀동물 곤충",
-      "price": 15000,
+      "price": 25000,
       "url": "https://smartstore.naver.com/terrafactory/products/5230363526",
-      "soldout": true
+      "prev": 15000,
+      "changed_on": "2026-06-29",
+      "hist": [
+        [
+          "2026-06-02",
+          15000
+        ],
+        [
+          "2026-06-29",
+          25000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -4592,7 +4610,8 @@
       "channel": "네이버",
       "name": "브라질리안 드워프 핑크렉 유체 / 타란튤라 타란툴라 거미 배회성 절지동물 곤충",
       "price": 20000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10556067295"
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10556067295",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
