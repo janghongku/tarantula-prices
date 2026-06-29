@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-29T20:07:02",
+  "updated_at": "2026-06-29T15:34:36",
   "channels": {
-    "자사몰": "2026-06-29T02:47:35",
+    "자사몰": "2026-06-29T15:34:36",
     "네이버": "2026-06-29T20:07:02"
   },
   "products": [
@@ -7845,16 +7845,7 @@
       "channel": "자사몰",
       "name": "골든블루렉 바분 / 유체",
       "price": 25000,
-      "url": "https://theraphosidae.co.kr/product/골든블루렉-바분-유체/1622/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "골든블루렉 바분 / 유체(대)",
-      "price": 38000,
-      "url": "https://theraphosidae.co.kr/product/골든블루렉-바분-유체대/1623/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/골든블루렉-바분-유체/1622/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -8238,26 +8229,9 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "데져트 블론디 \"뉴 리버\" / 유체",
-      "price": 55000,
-      "url": "https://theraphosidae.co.kr/product/데져트-블론디-뉴-리버-유체/1443/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
       "name": "데져트 블론디 / 유체",
       "price": 35000,
-      "url": "https://theraphosidae.co.kr/product/데져트-블론디-유체/1431/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "데져트 블론디 / 유체(대)",
-      "price": 65000,
-      "url": "https://theraphosidae.co.kr/product/데져트-블론디-유체대/1586/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/데져트-블론디-유체/2037/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -8550,6 +8524,13 @@
       "price": 45000,
       "url": "https://theraphosidae.co.kr/product/로부스툼-타이거-네게리-셈빌란-유체/901/category/24/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "로스 툭스틀라스 시나몬 / 유체",
+      "price": 85000,
+      "url": "https://theraphosidae.co.kr/product/로스-툭스틀라스-시나몬-유체/2039/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -10462,6 +10443,13 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
+      "name": "아포노펠마 spec. \"초콜렛\" / 유체",
+      "price": 125000,
+      "url": "https://theraphosidae.co.kr/product/아포노펠마-spec-초콜렛-유체/2038/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
       "name": "아포노펠마 spec. \"코유카\" / 유체",
       "price": 110000,
       "url": "https://theraphosidae.co.kr/product/아포노펠마-spec-코유카-유체/1241/category/24/display/1/",
@@ -11262,8 +11250,7 @@
       "channel": "자사몰",
       "name": "카메룬 레드바분 / 유체",
       "price": 5000,
-      "url": "https://theraphosidae.co.kr/product/카메룬-레드바분-유체/1147/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/카메룬-레드바분-유체/1147/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -13836,15 +13823,14 @@
       "channel": "자사몰",
       "name": "하리본 타이거 / 유체",
       "price": 20000,
-      "url": "https://theraphosidae.co.kr/product/하리본-타이거-유체/1564/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/하리본-타이거-유체/1564/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "하티하티 타이거 / 유체",
-      "price": 6000,
-      "url": "https://theraphosidae.co.kr/product/하티하티-타이거-유체/1217/category/24/display/1/"
+      "price": 7000,
+      "url": "https://theraphosidae.co.kr/product/하티하티-타이거-유체/2036/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -14985,7 +14971,8 @@
       "channel": "자사몰",
       "name": "바히아 스칼렛 버드이터 유체 (옵션 크기선택) / Lasiodora klugi",
       "price": 4000,
-      "url": "https://tarancenter.com/product/바히아-스칼렛-버드이터-유체-옵션-크기선택-lasiodora-klugi/446/category/51/display/1/"
+      "url": "https://tarancenter.com/product/바히아-스칼렛-버드이터-유체-옵션-크기선택-lasiodora-klugi/446/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
