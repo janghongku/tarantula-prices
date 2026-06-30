@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-29T15:34:36",
+  "updated_at": "2026-06-30T02:41:46",
   "channels": {
-    "자사몰": "2026-06-29T15:34:36",
+    "자사몰": "2026-06-30T02:41:46",
     "네이버": "2026-06-29T20:07:02"
   },
   "products": [
@@ -14814,7 +14814,8 @@
       "channel": "자사몰",
       "name": "메탈릭 그린피머 아성체 / Thrixopelma Sp. \"Sullana\"",
       "price": 15000,
-      "url": "https://tarancenter.com/product/메탈릭-그린피머-아성체-thrixopelma-sp-sullana/598/category/51/display/1/"
+      "url": "https://tarancenter.com/product/메탈릭-그린피머-아성체-thrixopelma-sp-sullana/598/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
