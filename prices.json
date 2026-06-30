@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-30T20:07:21",
+  "updated_at": "2026-06-30T14:03:21",
   "channels": {
-    "자사몰": "2026-06-30T02:41:46",
+    "자사몰": "2026-06-30T14:03:21",
     "네이버": "2026-06-30T20:07:21"
   },
   "products": [
@@ -16748,7 +16748,8 @@
       "channel": "자사몰",
       "name": "카엥크라찬 준성체~성체 암컷 / Chilobrachys Sp. \"Kaeng krachan\"",
       "price": 45000,
-      "url": "https://tarancenter.com/product/카엥크라찬-준성체성체-암컷-chilobrachys-sp-kaeng-krachan/1454/category/51/display/1/"
+      "url": "https://tarancenter.com/product/카엥크라찬-준성체성체-암컷-chilobrachys-sp-kaeng-krachan/1454/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
