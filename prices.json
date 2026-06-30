@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-30T02:41:46",
+  "updated_at": "2026-06-30T12:25:49",
   "channels": {
     "자사몰": "2026-06-30T02:41:46",
-    "네이버": "2026-06-29T20:07:02"
+    "네이버": "2026-06-30T12:25:49"
   },
   "products": [
     {
@@ -3236,7 +3236,8 @@
       "channel": "네이버",
       "name": "메탈릭그린피머 타란튤라 애완거미 아성체 / 타란툴라 전갈 거미 벼메뚜기 밀웜 등각류",
       "price": 15000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10833679303"
+      "url": "https://smartstore.naver.com/tarancenter/products/10833679303",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -3363,7 +3364,8 @@
       "channel": "네이버",
       "name": "바히아스칼렛 버드이터 애완거미 타란튤라유체 (소) / 타란툴라 타란튤라입문 전갈 희귀동물",
       "price": 4000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10986134442"
+      "url": "https://smartstore.naver.com/tarancenter/products/10986134442",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
