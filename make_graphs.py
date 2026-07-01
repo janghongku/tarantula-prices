@@ -72,61 +72,10 @@ def safe_filename(s):
     return re.sub(r'[^\w가-힣]+', '_', s).strip('_')[:70]
 
 
-def peer_reference(p, gm, byurl):
-    """같은 종을 파는 '다른 샵'들의 시세. 같은 단계 추정·품절 제외·샵별 최저가.
-    반환: {stage, lo, hi, median, shops:[(약칭,가격)...], matched(bool)} 또는 None."""
-    g0 = gm.get(p.get("url", ""), {})
-    gid = g0.get("i")
-    if not gid:
-        return None
-    stg = infer_stage(p.get("name", ""), g0.get("st", ""))
-    by_vendor = defaultdict(list)               # vendor -> [(price, stage), ...]
-    for url, g in gm.items():
-        if g.get("i") != gid:
-            continue
-        q = byurl.get(url)
-        if not q or q.get("vendor") == p.get("vendor"):   # 다른 샵만
-            continue
-        if q.get("soldout"):                               # 품절 제외(살 수 없는 가격)
-            continue
-        pr = q.get("price")
-        if not pr:
-            continue
-        by_vendor[q["vendor"]].append((pr, infer_stage(q.get("name", ""), g.get("st", ""))))
-    reps, matched = {}, False
-    for v, lst in by_vendor.items():
-        same = [pr for pr, s in lst if stg and s == stg]
-        if same:
-            matched = True
-            reps[v] = min(same)
-        else:
-            reps[v] = min(pr for pr, _ in lst)   # 단계 못맞추면 그 샵 전체 최저가
-    if not reps:
-        return None
-    vals = sorted(reps.values())
-    return {
-        "stage": stg,
-        "lo": vals[0], "hi": vals[-1],
-        "median": int(statistics.median(vals)),
-        "shops": sorted(((ABBR.get(v, v), pr) for v, pr in reps.items()), key=lambda x: x[1]),
-        "matched": matched,
-    }
-
-
-def draw_trend(ax, name, sub, pts, compact=False, peer=None):
+def draw_trend(ax, name, sub, pts, compact=False):
     xs = list(range(len(pts)))
     labels = [d[5:].replace('-', '/') for d, _ in pts]
     prices = [pr for _, pr in pts]
-
-    # ── 타 샵 시세: 띠(가격대) + 점선(중앙값) — 빨간 선 뒤에 깔기 ──
-    if peer:
-        if peer["hi"] > peer["lo"]:
-            ax.axhspan(peer["lo"], peer["hi"], color=CBAND, alpha=0.11, zorder=0, lw=0)
-        ax.axhline(peer["median"], ls=(0, (5, 4)), color=CPEER,
-                   lw=1.0 if compact else 1.2, zorder=1)
-        lbl = f"타샵 {peer['median']:,}" if compact else f"타 판매처 시세 {peer['median']:,}"
-        ax.text(-0.22, peer["median"], lbl, color="#3c4a57",
-                fontsize=7 if compact else 8.5, va="bottom", ha="left", zorder=4)
 
     ax.plot(xs, prices, '-o', color=CRED, linewidth=1.7 if compact else 2.2,
             markersize=4.5 if compact else 7, markerfacecolor="white",
@@ -137,18 +86,17 @@ def draw_trend(ax, name, sub, pts, compact=False, peer=None):
     ax.set_xticks(xs)
     ax.set_xticklabels(labels)
     ax.set_xlim(-0.3, len(pts) - 0.7)
-    title = f"{name}  ·  {sub}" if not compact else f"{name}  ({sub})"
-    ax.set_title(title, fontsize=10.5 if compact else 13, fontweight="bold", pad=8)
+    ax.set_title(name, fontsize=11 if compact else 14, fontweight="bold", pad=8)   # 종명은 위
+    ax.set_xlabel(sub, fontsize=9 if compact else 11.5, fontweight="bold",         # 가게는 그래프 아래
+                  color="#6b6357", labelpad=7 if compact else 9)
     if not compact:
         ax.set_ylabel("표시 가격")
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{int(v):,}"))
     ax.tick_params(labelsize=8 if compact else 10)
     ax.grid(True, axis="y", alpha=0.3)
 
-    # y축 범위: 빨간 선 + 타 샵 가격대 모두 보이도록(라벨 여백 포함)
+    # y축 범위: 빨간 선이 라벨 여백 포함해 보이도록
     ys = list(prices)
-    if peer:
-        ys += [peer["lo"], peer["hi"], peer["median"]]
     ymin, ymax = min(ys), max(ys)
     span = (ymax - ymin) or max(ymax * 0.2, 1)
     ax.set_ylim(ymin - span * 0.16, ymax + span * 0.30)
@@ -156,17 +104,11 @@ def draw_trend(ax, name, sub, pts, compact=False, peer=None):
         ax.spines[sp].set_visible(False)
 
 
-def save_individual(name, sub, pts, out, peer=None):
-    fig, ax = plt.subplots(figsize=(7.2, 4.0), dpi=130)
-    draw_trend(ax, name, sub, pts, peer=peer)
-    # 하단: 타 판매처별 가격 작게(약칭)
-    if peer and peer.get("shops"):
-        tag = "같은 단계 추정" if peer.get("matched") else "단계 혼합"
-        shops = "   ".join(f"{ab} {pr:,}" for ab, pr in peer["shops"][:8])
-        fig.text(0.012, 0.015, f"타 판매처 시세({tag}):  {shops}",
-                 ha="left", va="bottom", fontsize=8.2, color="#566")
-    fig.text(0.99, 0.015, "한국 타란튤라 판매가 기록 프로젝트", ha="right", va="bottom", fontsize=7, color="#aaa")
-    fig.tight_layout(rect=[0, 0.045, 1, 1])
+def save_individual(name, sub, pts, out):
+    fig, ax = plt.subplots(figsize=(7.2, 4.3), dpi=130)
+    draw_trend(ax, name, sub, pts)
+    fig.text(0.99, 0.012, "한국 타란튤라 판매가 기록 프로젝트", ha="right", va="bottom", fontsize=7, color="#aaa")
+    fig.tight_layout(rect=[0, 0.02, 1, 1])
     fig.savefig(out, facecolor="white")
     plt.close(fig)
 
@@ -178,10 +120,10 @@ def save_montage(items, out):
     fig = plt.figure(figsize=(7.0 * cols, 3.4 * rows + 0.6), dpi=120)
     fig.patch.set_facecolor("white")
     fig.suptitle("가격 추이 · 2회 이상 변동", fontsize=16, fontweight="bold", y=0.995)
-    for i, (name, sub, pts, peer) in enumerate(items):
+    for i, (name, sub, pts) in enumerate(items):
         ax = fig.add_subplot(rows, cols, i + 1)
-        draw_trend(ax, name, sub, pts, compact=True, peer=peer)
-    fig.text(0.99, 0.004, "빨강=해당 판매처 · 점선/띠=타 판매처 시세 · 국내 공개 표시가",
+        draw_trend(ax, name, sub, pts, compact=True)
+    fig.text(0.99, 0.004, "빨강=해당 판매처 표시가 · 국내 공개 표시가",
              ha="right", va="bottom", fontsize=7.5, color="#aaa")
     fig.tight_layout(rect=[0, 0.015, 1, 0.97])
     fig.savefig(out, facecolor="white")
@@ -197,21 +139,14 @@ def main():
 
     if args.demo:
         demo = [
-            ("발할라 어스타이거", "ㅌㄹㅅㅌ / N스토어", [["2026-05-20", 50000], ["2026-06-03", 35000]],
-             {"stage": "유체", "lo": 35000, "hi": 65000, "median": 35000, "matched": True,
-              "shops": [("ㄱㅁㄹ", 35000), ("ㄷㅈㅅㅍ", 35000), ("ㅌㅋ", 65000)]}),
-            ("코스타리칸 레드렉", "ㄱㅁㄹ / N스토어", [["2026-05-12", 120000], ["2026-05-25", 139000], ["2026-06-01", 165000]],
-             {"stage": "성체", "lo": 130000, "hi": 180000, "median": 150000, "matched": True,
-              "shops": [("ㅌㅋ", 130000), ("ㅌㄹㅅㅌ", 170000), ("ㄷㅈㅅㅍ", 180000)]}),
-            ("바히아 퍼플레드", "ㅌㅋ / N스토어", [["2026-05-15", 18000], ["2026-05-22", 25000], ["2026-06-01", 38000]],
-             {"stage": "유체", "lo": 20000, "hi": 30000, "median": 25000, "matched": True,
-              "shops": [("ㄱㅁㄹ", 20000), ("ㅌㄹㅅㅌ", 30000)]}),
-            ("킹바분", "ㅌㅋ / N스토어", [["2026-05-11", 13000], ["2026-05-20", 11000], ["2026-05-30", 15000], ["2026-06-01", 18000]],
-             None),
+            ("발할라 어스타이거", "ㅌㄹㅅㅌ / N스토어", [["2026-05-20", 50000], ["2026-06-03", 35000]]),
+            ("코스타리칸 레드렉", "ㄱㅁㄹ / N스토어", [["2026-05-12", 120000], ["2026-05-25", 139000], ["2026-06-01", 165000]]),
+            ("바히아 퍼플레드", "ㅌㅋ / N스토어", [["2026-05-15", 18000], ["2026-05-22", 25000], ["2026-06-01", 38000]]),
+            ("킹바분", "ㅌㅋ / N스토어", [["2026-05-11", 13000], ["2026-05-20", 11000], ["2026-05-30", 15000], ["2026-06-01", 18000]]),
         ]
         save_montage(demo, MONTAGE)
-        for name, sub, pts, peer in demo:
-            save_individual(name, sub, pts, os.path.join(GRAPHDIR, safe_filename(name) + ".png"), peer=peer)
+        for name, sub, pts in demo:
+            save_individual(name, sub, pts, os.path.join(GRAPHDIR, safe_filename(name) + ".png"))
         print("데모 모음 →", MONTAGE, "/ 개별 →", GRAPHDIR)
         return
 
@@ -228,25 +163,24 @@ def main():
     for hk, pts in hist.items():
         if len(pts) - 1 < args.min_changes:
             continue
+        if pts[0][1] == pts[-1][1]:          # V자 완전복귀(첫값=끝값, 순변동0) → 제외
+            continue
         p = by_key.get(hk)
         if not p:
             continue
         name = species_name(p, gm)
         sub = f"{ABBR.get(p['vendor'], p['vendor'])} / {CH.get(p['channel'], p['channel'])}"   # 약칭만
-        peer = peer_reference(p, gm, by_url)
         save_individual(name, sub, pts,
-                        os.path.join(GRAPHDIR, safe_filename(f"{name}_{p['vendor']}_{p['channel']}") + ".png"),
-                        peer=peer)
-        items.append((name, sub, pts, peer))
+                        os.path.join(GRAPHDIR, safe_filename(f"{name}_{p['vendor']}_{p['channel']}") + ".png"))
+        items.append((name, sub, pts))
 
     items.sort(key=lambda x: -len(x[2]))
     print(f"개별 그래프 {len(items)}개 → {GRAPHDIR}/")
     if items:
         save_montage(items, MONTAGE)
         print(f"모음 1장 → {os.path.basename(MONTAGE)}")
-        for name, _, pts, peer in items:
-            tip = f" · 타샵시세 {peer['median']:,}" if peer else ""
-            print(f"  · {name} ({len(pts) - 1}회 변동{tip})")
+        for name, _, pts in items:
+            print(f"  · {name} ({len(pts) - 1}회 변동)")
     else:
         if os.path.exists(MONTAGE):
             os.remove(MONTAGE)
