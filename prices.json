@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-01T20:07:03",
+  "updated_at": "2026-07-01T14:17:20",
   "channels": {
-    "자사몰": "2026-07-01T02:47:52",
+    "자사몰": "2026-07-01T14:17:20",
     "네이버": "2026-07-01T20:04:52"
   },
   "products": [
@@ -18799,14 +18799,6 @@
       "name": "발할라 타이거 유체",
       "price": 65000,
       "url": "https://tarantulakorea.com/product/발할라-타이거-유체/504/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "버간디 골리앗 유체 / 재입고 예정",
-      "price": 90000,
-      "url": "https://tarantulakorea.com/product/버간디-골리앗-유체-재입고-예정/323/category/24/display/1/",
-      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
