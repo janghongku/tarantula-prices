@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-07-02T02:37:26",
+  "updated_at": "2026-07-02T12:07:32",
   "channels": {
     "자사몰": "2026-07-02T02:37:26",
-    "네이버": "2026-07-01T20:04:52"
+    "네이버": "2026-07-02T12:07:32"
   },
   "products": [
     {
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "호치민 타이거 / 타란튤라 타란툴라 애완거미 아시안포레스트",
-      "price": 7000,
+      "price": 10000,
       "url": "https://smartstore.naver.com/terrafactory/products/10705092036",
-      "prev": 10000,
-      "changed_on": "2026-06-17",
+      "prev": 7000,
+      "changed_on": "2026-07-02",
       "hist": [
         [
           "2026-06-02",
@@ -21,6 +21,10 @@
         [
           "2026-06-17",
           7000
+        ],
+        [
+          "2026-07-02",
+          10000
         ]
       ]
     },
@@ -35,8 +39,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "블랙 어스타이거 하이난 / 타란튤라 타란툴라 애완거미 아시안포레스트",
-      "price": 32000,
-      "url": "https://smartstore.naver.com/terrafactory/products/10705136490"
+      "price": 21000,
+      "url": "https://smartstore.naver.com/terrafactory/products/10705136490",
+      "prev": 32000,
+      "changed_on": "2026-07-02",
+      "hist": [
+        [
+          "2026-06-02",
+          32000
+        ],
+        [
+          "2026-07-02",
+          21000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -563,8 +579,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "라농 블루 / 타란튤라 타란툴라 애완거미 거미랑",
-      "price": 6000,
-      "url": "https://smartstore.naver.com/terrafactory/products/13443025034"
+      "price": 15000,
+      "url": "https://smartstore.naver.com/terrafactory/products/13443025034",
+      "prev": 6000,
+      "changed_on": "2026-07-02",
+      "hist": [
+        [
+          "2026-06-02",
+          6000
+        ],
+        [
+          "2026-07-02",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -596,8 +624,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "바크마 타이거 / 타란튤라 타란툴라 애완거미 거미랑",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/terrafactory/products/13447292311"
+      "price": 8000,
+      "url": "https://smartstore.naver.com/terrafactory/products/13447292311",
+      "prev": 15000,
+      "changed_on": "2026-07-02",
+      "hist": [
+        [
+          "2026-06-02",
+          15000
+        ],
+        [
+          "2026-07-02",
+          8000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -610,24 +650,48 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "테라포시다에 아도베 / 타란튤라 타란툴라 애완거미 거미랑",
-      "price": 79000,
-      "url": "https://smartstore.naver.com/terrafactory/products/13448605543"
+      "price": 85000,
+      "url": "https://smartstore.naver.com/terrafactory/products/13448605543",
+      "prev": 79000,
+      "changed_on": "2026-07-02",
+      "hist": [
+        [
+          "2026-06-02",
+          79000
+        ],
+        [
+          "2026-07-02",
+          85000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "테라포시다에 키무 / 타란튤라 타란툴라 애완거미 거미랑",
-      "price": 79000,
-      "url": "https://smartstore.naver.com/terrafactory/products/13448613270"
+      "price": 85000,
+      "url": "https://smartstore.naver.com/terrafactory/products/13448613270",
+      "prev": 79000,
+      "changed_on": "2026-07-02",
+      "hist": [
+        [
+          "2026-06-02",
+          79000
+        ],
+        [
+          "2026-07-02",
+          85000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "뉴기니아 블랙퓨리 / 타란튤라 타란툴라 애완거미 거미랑",
-      "price": 19000,
+      "price": 25000,
       "url": "https://smartstore.naver.com/terrafactory/products/13567607840",
-      "prev": 25000,
-      "changed_on": "2026-06-10",
+      "prev": 19000,
+      "changed_on": "2026-07-02",
       "hist": [
         [
           "2026-06-02",
@@ -636,6 +700,10 @@
         [
           "2026-06-10",
           19000
+        ],
+        [
+          "2026-07-02",
+          25000
         ]
       ]
     },
@@ -643,10 +711,10 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "뉴기니아 러스트오렌지 / 타란튤라 타란툴라 애완거미 거미랑",
-      "price": 19000,
+      "price": 25000,
       "url": "https://smartstore.naver.com/terrafactory/products/13567610964",
-      "prev": 25000,
-      "changed_on": "2026-06-10",
+      "prev": 19000,
+      "changed_on": "2026-07-02",
       "hist": [
         [
           "2026-06-02",
@@ -655,6 +723,10 @@
         [
           "2026-06-10",
           19000
+        ],
+        [
+          "2026-07-02",
+          25000
         ]
       ]
     },
@@ -920,10 +992,10 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "레드 로즈헤어 / 타란튤라 새잡이거미 애완거미 타란툴라 곤충",
-      "price": 6000,
+      "price": 9500,
       "url": "https://smartstore.naver.com/terrafactory/products/5342385841",
-      "prev": 9500,
-      "changed_on": "2026-06-26",
+      "prev": 6000,
+      "changed_on": "2026-07-02",
       "hist": [
         [
           "2026-06-02",
@@ -936,6 +1008,10 @@
         [
           "2026-06-26",
           6000
+        ],
+        [
+          "2026-07-02",
+          9500
         ]
       ]
     },
@@ -958,8 +1034,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "판케이 타이거 블루 / 타란튤라 새잡이거미 애완거미 희귀동물 곤충",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/terrafactory/products/5492010969"
+      "price": 13000,
+      "url": "https://smartstore.naver.com/terrafactory/products/5492010969",
+      "prev": 25000,
+      "changed_on": "2026-07-02",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-07-02",
+          13000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -1819,10 +1907,21 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "더쥬 송파점 6월 절지류 랜덤박스 / 상품 설명에 기재되어진 타란튤라 중 1마리가 랜덤으로 발송되어집니다 / 교환, 환불, 취소 불가품목이오니 신중한 구매바랍니다.",
-      "price": 15000,
+      "name": "더쥬 송파점 7월 절지류 랜덤박스 / 상품 설명에 기재되어진 타란튤라 중 1마리가 랜덤으로 발송되어집니다 / 교환, 환불, 취소 불가품목이오니 신중한 구매바랍니다.",
+      "price": 9900,
       "url": "https://smartstore.naver.com/tzblossom/products/11821343821",
-      "soldout": true
+      "prev": 15000,
+      "changed_on": "2026-07-02",
+      "hist": [
+        [
+          "2026-06-10",
+          15000
+        ],
+        [
+          "2026-07-02",
+          9900
+        ]
+      ]
     },
     {
       "vendor": "더쥬 송파점",
@@ -4595,7 +4694,7 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(6월 이벤트) 킬로브라키스 카엥 크라찬 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
+      "name": "킬로브라키스 카엥 크라찬 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
       "price": 8000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10555966214",
       "prev": 4000,
@@ -4742,11 +4841,11 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(6월 이벤트) 보석거미 안틸레스 핑크토 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
-      "price": 15000,
+      "name": "보석거미 안틸레스 핑크토 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
+      "price": 10000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10561085534",
-      "prev": 5000,
-      "changed_on": "2026-07-01",
+      "prev": 15000,
+      "changed_on": "2026-07-02",
       "hist": [
         [
           "2026-06-02",
@@ -4759,6 +4858,10 @@
         [
           "2026-07-01",
           15000
+        ],
+        [
+          "2026-07-02",
+          10000
         ]
       ]
     },
@@ -4823,7 +4926,7 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(6월 이벤트) 아포노펠마 다이아몬드백 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
+      "name": "아포노펠마 다이아몬드백 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
       "price": 25000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10562402266",
       "prev": 10000,
@@ -5016,7 +5119,7 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(6월 이벤트) 팜포베테우스 마찰라 유체 / 타란튤라 타란툴라 거미 배회성 절지동물 곤충",
+      "name": "팜포베테우스 마찰라 유체 / 타란튤라 타란툴라 거미 배회성 절지동물 곤충",
       "price": 30000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10571542631",
       "prev": 25000,
@@ -5620,7 +5723,7 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(6월 이벤트) 인도의 푸른 별 구티 오너멘탈 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
+      "name": "인도의 푸른 별 구티 오너멘탈 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
       "price": 30000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10592441619",
       "prev": 25000,
@@ -5684,7 +5787,7 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(6월 이벤트) 흑표범 슬라웨시 블랙 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
+      "name": "흑표범 슬라웨시 블랙 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
       "price": 30000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10593230045",
       "prev": 25000,
@@ -5763,7 +5866,7 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(6월 이벤트) 프샬 멕시코 하프 앤 하프 빅토리 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
+      "name": "프샬 멕시코 하프 앤 하프 빅토리 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
       "price": 35000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10596223960",
       "prev": 25000,
@@ -6061,7 +6164,7 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(6월 이벤트) 아프리카 혼드 바분 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
+      "name": "아프리카 혼드 바분 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
       "price": 3500,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10621730188",
       "prev": 2500,
@@ -6138,7 +6241,7 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(6월 이벤트) 스트레이트 혼드바분 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
+      "name": "스트레이트 혼드바분 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
       "price": 5000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10622065790",
       "prev": 2500,
@@ -6253,6 +6356,13 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "네이버",
+      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
+      "price": 18000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
@@ -6471,7 +6581,7 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(6월 이벤트) 블랙 어스 타이거 유체 (반출지 하이난) / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
+      "name": "블랙 어스 타이거 유체 (반출지 하이난) / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
       "price": 30000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10640779943",
       "prev": 20000,
