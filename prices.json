@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-02T12:07:32",
+  "updated_at": "2026-07-02T21:07:44",
   "channels": {
     "자사몰": "2026-07-02T02:37:26",
-    "네이버": "2026-07-02T12:07:32"
+    "네이버": "2026-07-02T21:07:44"
   },
   "products": [
     {
@@ -3937,7 +3937,8 @@
       "channel": "네이버",
       "name": "유체 대 시리즈 / 팜포베테우스 산토도밍고 골리앗 배회성 타란튤라",
       "price": 85000,
-      "url": "https://smartstore.naver.com/tarancenter/products/12597652800"
+      "url": "https://smartstore.naver.com/tarancenter/products/12597652800",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -4001,7 +4002,8 @@
       "channel": "네이버",
       "name": "팜포베테우스 마나비 배회성 타란튤라 유체",
       "price": 50000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13036906087"
+      "url": "https://smartstore.naver.com/tarancenter/products/13036906087",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
