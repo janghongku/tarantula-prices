@@ -44,9 +44,30 @@ def chab(ch):
     return "N" if ch == "네이버" else "자사"
 
 
+def load_products_asof(end_date):
+    """기간 말 시점의 상품 스냅샷(git). 이벤트/특가 이름 필터를 '그 당시 이름'으로 적용하기 위함 —
+    행사 종료 후 가게가 '(6월 이벤트)' 접두어를 떼면 현재명 필터가 새서 이벤트가가 결산에 유입된다.
+    git 조회 실패 시 현재 prices.json으로 폴백."""
+    import subprocess, datetime
+    nxt = (datetime.date.fromisoformat(end_date) + datetime.timedelta(days=1)).isoformat()
+    try:
+        h = subprocess.run(["git", "-C", HERE, "log", "--before", nxt + "T00:00:00", "-1", "--format=%H", "--", "prices.json"],
+                           capture_output=True, text=True, timeout=10).stdout.strip()
+        if h:
+            raw = subprocess.run(["git", "-C", HERE, "show", f"{h}:prices.json"],
+                                 capture_output=True, text=True, timeout=10).stdout
+            prods = json.loads(raw)["products"]
+            print(f"  (상품명 스냅샷: {h[:7]} — {end_date} 당시 이름으로 이벤트 필터 적용)")
+            return prods
+    except Exception:
+        pass
+    print("  (경고: git 스냅샷 실패 → 현재 상품명으로 필터)")
+    return json.load(open(os.path.join(HERE, "prices.json"), encoding="utf-8"))["products"]
+
+
 def compute(base_date, end_date):
     """[base_date, end_date] 기간의 순변동. base=기준일 시점가(그 날짜 이하 마지막 점), end=종료일 시점가."""
-    prods = json.load(open(os.path.join(HERE, "prices.json"), encoding="utf-8"))["products"]
+    prods = load_products_asof(end_date)
     hist = json.load(open(os.path.join(HERE, "price_history.json"), encoding="utf-8"))
     bykey = {common.hist_key(p["url"]): p for p in prods if p.get("url")}
     movers = []

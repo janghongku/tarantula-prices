@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-02T21:07:44",
+  "updated_at": "2026-07-02T21:40:13",
   "channels": {
-    "자사몰": "2026-07-02T02:37:26",
-    "네이버": "2026-07-02T21:07:44"
+    "자사몰": "2026-07-02T21:37:05",
+    "네이버": "2026-07-02T21:40:13"
   },
   "products": [
     {
@@ -17654,7 +17654,8 @@
       "channel": "자사몰",
       "name": "팜포베테우스 Sp. \"마나비\" / Pamphobeteus Sp. \"Manabi\"",
       "price": 50000,
-      "url": "https://tarancenter.com/product/팜포베테우스-sp-마나비-pamphobeteus-sp-manabi/1448/category/51/display/1/"
+      "url": "https://tarancenter.com/product/팜포베테우스-sp-마나비-pamphobeteus-sp-manabi/1448/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -17765,7 +17766,8 @@
       "channel": "자사몰",
       "name": "팜포베테우스 Sp. \"산토도밍고 골리앗\" 유체 대 / Pamphobeteus Sp. \"Santo domingo\" Goliath",
       "price": 85000,
-      "url": "https://tarancenter.com/product/팜포베테우스-sp-산토도밍고-골리앗-유체-대-pamphobeteus-sp-santo-domingo-goliath/1377/category/51/display/1/"
+      "url": "https://tarancenter.com/product/팜포베테우스-sp-산토도밍고-골리앗-유체-대-pamphobeteus-sp-santo-domingo-goliath/1377/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
