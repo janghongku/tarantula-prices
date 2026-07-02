@@ -4,20 +4,15 @@
 2회 이상 가격변동된 거미의 추이 그래프.
   - 개별 PNG  → graphs/<거미>.png
   - 모음 1장  → 가격추이_모음.png  (그리드, 글에 카드+이 1장 첨부용)
-(1회 변동은 제외)
-
-★ 시세 비교: 각 그래프에 '같은 종을 파는 다른 샵들'의 시세를 함께 표시한다.
-   - 같은 종(group_map) · 같은 성장단계(유체/준성체/성체 추정) · 품절 제외 · 다른 샵만
-   - 샵별 대표가(그 샵의 최저가) → 연한 띠(가격대 min~max) + 점선(중앙값)
-   - 이 판매처가 '내렸다'고 해도 원래 다른 데가 그 가격이면 한눈에 보이게.
+(1회 변동 제외 · 단기 왕복(7일 이내 완전복귀)은 노이즈로 보고 제외 —
+ 한 달짜리 세일 사이클처럼 오래 걸린 복귀는 실제 가격 여정이라 유지)
 
 실행:
   python3 make_graphs.py            # 실제 데이터
-  python3 make_graphs.py --demo     # 합성 예시(모음·시세표시 모양 확인)
+  python3 make_graphs.py --demo     # 합성 예시(모음 모양 확인)
   python3 make_graphs.py --min-changes 3
 """
-import json, os, re, argparse, statistics
-from collections import defaultdict
+import json, os, re, argparse, datetime
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -38,24 +33,6 @@ for _c in ("AppleGothic", "Apple SD Gothic Neo", "NanumGothic", "Malgun Gothic")
         break
 plt.rcParams["axes.unicode_minus"] = False
 CRED = "#c0392b"          # 이 판매처(변동) 선
-CPEER = "#5b6b7a"         # 타 샵 시세 점선
-CBAND = "#7f8fa6"         # 타 샵 가격대 띠
-
-# ── 성장단계 추정 (가격은 단계별로 천차만별 → 같은 단계끼리 비교해야 의미) ──
-STAGE_KW = ["준성체", "아성체", "성숙", "성체", "유체", "유생", "스파이더링", "슬링", "베이비", "베비"]
-STAGE_NORM = {"유생": "유체", "슬링": "스파이더링", "베이비": "스파이더링", "베비": "스파이더링", "성숙": "성체"}
-
-
-def infer_stage(name, st=""):
-    """st 필드 우선, 없으면 상품명에서 단계 키워드 추정. ('준성체'를 '성체'보다 먼저 검사)"""
-    for src in (st or "", name or ""):
-        for kw in STAGE_KW:
-            if kw in src:
-                return STAGE_NORM.get(kw, kw)
-    return ""
-
-
-# hist_key는 common.py (단일 정의)
 
 
 def _keyOf(p):
@@ -157,14 +134,23 @@ def main():
     except Exception:
         gm = {}
     by_key = {hist_key(p["url"]): p for p in prods if p.get("url")}
-    by_url = {p["url"]: p for p in prods if p.get("url")}
+
+    # 이전 실행 잔여물 정리(이름 바뀐 상품·데모 산출물·자격 잃은 그래프가 안 섞이게)
+    if os.path.isdir(GRAPHDIR):
+        for f in os.listdir(GRAPHDIR):
+            if f.endswith(".png"):
+                os.remove(os.path.join(GRAPHDIR, f))
 
     items = []
     for hk, pts in hist.items():
         if len(pts) - 1 < args.min_changes:
             continue
-        if pts[0][1] == pts[-1][1]:          # V자 완전복귀(첫값=끝값, 순변동0) → 제외
-            continue
+        # 단기 왕복만 제외: 첫값으로 복귀했고 그 여정(첫 변동→복귀)이 7일 이내면 노이즈로 봄.
+        # 한 달짜리 세일 사이클(이벤트 인하→종료 복귀)은 실제 가격 여정이라 그래프 유지.
+        if pts[0][1] == pts[-1][1]:
+            dur = (datetime.date.fromisoformat(pts[-1][0]) - datetime.date.fromisoformat(pts[1][0])).days
+            if dur <= 7:
+                continue
         p = by_key.get(hk)
         if not p:
             continue
