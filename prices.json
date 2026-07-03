@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-03T12:21:06",
+  "updated_at": "2026-07-04T04:38:21",
   "channels": {
     "자사몰": "2026-07-03T02:12:51",
-    "네이버": "2026-07-03T12:00:04"
+    "네이버": "2026-07-04T02:09:06"
   },
   "products": [
     {
@@ -3133,33 +3133,9 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "버마초코 블랙 애완거미 유체 / Chilobrachys dyscolus black",
-      "price": 8000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10169246938",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "본네티나 Sp 카멜라 애완거미 유체 / Bonnetina Sp Chamela",
-      "price": 30000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10169260272",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
       "name": "타이제브라 버로우성 타란튤라 유체",
       "price": 10000,
       "url": "https://smartstore.naver.com/tarancenter/products/10169323247"
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "이젠다미바분 애완거미 타란튤라 유체 / 희귀동물 밀웜 귀뚜라미 전갈 등각류 버드이터 지네",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10169334802",
-      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -3171,14 +3147,6 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "콜럼비안 자이언트레드렉 콜자렉 애완거미 타란튤라 유체 / 타란툴라 타란튤라분양 희귀동물",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10169355782",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
       "name": "유체 대 시리즈 / 그린보틀블루 그린볼 배회성 타란튤라 애완거미",
       "price": 25000,
       "url": "https://smartstore.naver.com/tarancenter/products/10560927755"
@@ -3186,33 +3154,9 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "데져트블론디 타란튤라 애완거미 유체 / 곤충 타란툴라 희귀애완동물",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10561000272",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "말레이시안어스타이거 말지타 타란튤라 애완거미 유체 / 희귀동물 밀웜 귀뚜라미 곤충 키우기",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10561023531",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
       "name": "팜포베테우스 마스카라 타란튤라 애완거미 유체 / 분양 입양 입문종 초보 대형종",
       "price": 25000,
       "url": "https://smartstore.naver.com/tarancenter/products/10567256705",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "크세네스티스 블루 타란튤라 애완거미 유체 / 렛서블루 타란툴라 희귀애완동물 곤충기르기",
-      "price": 140000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10567307930",
       "soldout": true
     },
     {
@@ -4360,46 +4304,6 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "자이언트화이트니 타란튤라 애완거미 아성체 / 전갈 밀웜 귀뚜라미 애완곤충 희귀동물 키우기",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/tarancenter/products/6066295129",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "과테말라 타이거럼프 타란튤라 애완거미 유체 대사이즈 / 애완곤충 밀웜 전갈 지네곤충키우기",
-      "price": 10000,
-      "url": "https://smartstore.naver.com/tarancenter/products/6113856239",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "자이언트 골덴니 타란튤라 아성체 소사이즈 / 애완거미 밀웜 애완곤충 타란툴라 전갈 지네",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tarancenter/products/6113949633",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "자이언트블론디 애완거미 타란튤라 아성체 / 타란툴라 애완곤충 희귀애완동물 밀웜 귀뚜라미",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/tarancenter/products/6822280304",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "스트라이프레드럼프 타란튤라 애완거미 아성체 / 밀웜 귀뚜라미 전갈 애완곤충 희귀동물키우기",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/tarancenter/products/6822299647",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
       "name": "트리니다드 쉐브론 나무위성 타란튤라 애완거미 유체",
       "price": 5000,
       "url": "https://smartstore.naver.com/tarancenter/products/6829903721",
@@ -4419,22 +4323,6 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "블루팽 타란튤라 애완거미 유체 / 희귀동물 거미 곤충키우기 밀웜 귀뚜라미 풀무치 타란툴라",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tarancenter/products/6829934181",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "싱가폴 블루 타란튤라 애완거미 유체 / Omothymus violaceopes",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tarancenter/products/6830021843",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
       "name": "유체 대 시리즈 / 버미즈브라운 버로우성 타란튤라 애완거미",
       "price": 10000,
       "url": "https://smartstore.naver.com/tarancenter/products/6830054943"
@@ -4449,14 +4337,6 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "핑크풋골리앗버드이터 타란튤라 애완거미 유체 / 곤충키우기 새잡이거미 밀웜 귀뚜라미 메뚜기",
-      "price": 39000,
-      "url": "https://smartstore.naver.com/tarancenter/products/7139854983",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
       "name": "유체 대 시리즈 / 베트남실버 버로우성 타란튤라 애완거미",
       "price": 20000,
       "url": "https://smartstore.naver.com/tarancenter/products/7139954462"
@@ -4467,61 +4347,6 @@
       "name": "일렉트릭블루 타란튤라 애완거미 유체 / 배회성 버로우성 애완곤충 귀뚜라미 밀웜 등각류 전갈",
       "price": 25000,
       "url": "https://smartstore.naver.com/tarancenter/products/7141421321",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "코발트블루 버로우성 타란튤라 애완거미 유체 / 곤충키우기 귀뚜라미 밀웜 사육장",
-      "price": 10000,
-      "url": "https://smartstore.naver.com/tarancenter/products/8273743020"
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "입문용 전갈 아시안포레스트 3-4탈피 아성체 / 습계전갈 애완용 절지동물 타란튤라",
-      "price": 12000,
-      "url": "https://smartstore.naver.com/tarancenter/products/8273992579",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "콜럼비안 렛서블랙 애완거미 유체 / Xenesthis immanis",
-      "price": 100000,
-      "url": "https://smartstore.naver.com/tarancenter/products/8521479343",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "크세네스티스 인테르메디아 타란튤라 애완거미 5탈피 한쌍 / 아마존 거미 타란툴라 밀웜",
-      "price": 300000,
-      "url": "https://smartstore.naver.com/tarancenter/products/8570772150",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "도미니카 스틸리블루 애완거미 타란튤라 유체 / 키우기 밀웜 귀뚜라미 전갈 곤충 희귀동물",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tarancenter/products/8643334812",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "크세네스티스 테네브리스 타란튤라 애완거미 유체 / 타란툴라 밀웜 귀뚜라미 곤충키우기 전갈",
-      "price": 120000,
-      "url": "https://smartstore.naver.com/tarancenter/products/8670908465",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "브릭레드 핑크토 타란튤라 애완거미 유체 / 희귀동물 거미 곤충 타란튤라키우기 밀웜 풀무치",
-      "price": 45000,
-      "url": "https://smartstore.naver.com/tarancenter/products/8863231835",
       "soldout": true
     },
     {
@@ -4542,30 +4367,6 @@
           25000
         ]
       ]
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "펌킨패치 타란튤라 애완거미 유체 / 타란튤라 타란툴라 거미 곤충키우기 귀뚜라미 밀웜",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tarancenter/products/8979268570",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "렛서고아머스타드 타란튤라 애완거미 유체(대) / 거미 밀웜 귀뚜라미 전갈 곤충키우기",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tarancenter/products/8979311844",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "팜포베테우스 Sp. '산토도밍고' 스몰 7cm 암컷 (4~5탈피 추정) / Pamphobeteus Sp. 'Santo Domingo' small",
-      "price": 180000,
-      "url": "https://smartstore.naver.com/tarancenter/products/9645859917",
-      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
