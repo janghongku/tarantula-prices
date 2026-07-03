@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-03T02:12:51",
+  "updated_at": "2026-07-03T13:48:32",
   "channels": {
-    "자사몰": "2026-07-03T02:12:51",
+    "자사몰": "2026-07-03T13:48:32",
     "네이버": "2026-07-02T21:40:13"
   },
   "products": [
@@ -11798,7 +11798,8 @@
       "channel": "자사몰",
       "name": "크세네스티스 spec. \"메가스코풀라\" (D.W) / 7-9cm.암컷",
       "price": 320000,
-      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-메가스코풀라-dw-7-9cm암컷/2035/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-메가스코풀라-dw-7-9cm암컷/2035/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -13506,7 +13507,8 @@
       "channel": "자사몰",
       "name": "포르믹토푸스 cf.아트리코마투스 \"몬테 크리스티\" / 5-7cm.한쌍",
       "price": 52000,
-      "url": "https://theraphosidae.co.kr/product/포르믹토푸스-cf아트리코마투스-몬테-크리스티-5-7cm한쌍/2033/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/포르믹토푸스-cf아트리코마투스-몬테-크리스티-5-7cm한쌍/2033/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
