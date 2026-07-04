@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-04T04:38:21",
+  "updated_at": "2026-07-04T02:11:33",
   "channels": {
-    "자사몰": "2026-07-03T02:12:51",
-    "네이버": "2026-07-04T02:09:06"
+    "자사몰": "2026-07-04T02:11:33",
+    "네이버": "2026-07-02T21:40:13"
   },
   "products": [
     {
@@ -8206,7 +8206,8 @@
       "channel": "자사몰",
       "name": "데져트 블론디 / 준성체+(9~12cm+-).성별선택",
       "price": 250000,
-      "url": "https://theraphosidae.co.kr/product/데져트-블론디-준성체912cm-성별선택/1777/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/데져트-블론디-준성체912cm-성별선택/1777/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -9655,7 +9656,8 @@
       "channel": "자사몰",
       "name": "사바 블루 타이거 / 유체",
       "price": 55000,
-      "url": "https://theraphosidae.co.kr/product/사바-블루-타이거-유체/2025/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/사바-블루-타이거-유체/2025/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -10754,9 +10756,9 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "오렌지 프린지드 \"칼리만탄 바랏\" / 준성체+(14~18cm+-).암컷 *01.23 재입고 되었습니다.",
+      "name": "오렌지 프린지드 \"칼리만탄 바랏\" / 준성체+(14~18cm+-).암컷",
       "price": 85000,
-      "url": "https://theraphosidae.co.kr/product/오렌지-프린지드-칼리만탄-바랏-준성체1418cm-암컷-0123-재입고-되었습니다/1754/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/오렌지-프린지드-칼리만탄-바랏-준성체1418cm-암컷/1754/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -11337,9 +11339,9 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "코스타리칸 레드렉 \"라고 데 카키\" 다크 폼 / 유체 *12.20, 소량 재입고",
+      "name": "코스타리칸 레드렉 \"라고 데 카키\" 다크 폼 / 유체",
       "price": 165000,
-      "url": "https://theraphosidae.co.kr/product/코스타리칸-레드렉-라고-데-카키-다크-폼-유체-1220-소량-재입고/1969/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/코스타리칸-레드렉-라고-데-카키-다크-폼-유체/1969/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -11789,7 +11791,8 @@
       "channel": "자사몰",
       "name": "크세네스티스 spec. \"카우카\" / 유체",
       "price": 350000,
-      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-카우카-유체/1386/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-카우카-유체/1386/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -12372,7 +12375,8 @@
       "channel": "자사몰",
       "name": "트릭소펠마 spec. \"카하마르카\" / 준성체.암컷",
       "price": 160000,
-      "url": "https://theraphosidae.co.kr/product/트릭소펠마-spec-카하마르카-준성체암컷/2005/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/트릭소펠마-spec-카하마르카-준성체암컷/2005/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
