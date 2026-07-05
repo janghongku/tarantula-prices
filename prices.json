@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-04T13:07:24",
+  "updated_at": "2026-07-05T02:27:16",
   "channels": {
-    "자사몰": "2026-07-04T13:07:24",
+    "자사몰": "2026-07-05T02:27:16",
     "네이버": "2026-07-04T20:07:36"
   },
   "products": [
@@ -18631,16 +18631,16 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "골든어스타이거 '다크폼' 유체",
+      "name": "골든블루렉바분 스파이더링",
       "price": 20000,
-      "url": "https://tarantulakorea.com/product/골든어스타이거-다크폼-유체/735/category/66/display/1/"
+      "url": "https://tarantulakorea.com/product/골든블루렉바분-스파이더링/158/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "골든어스타이거 '다크폼' 유체",
       "price": 20000,
-      "url": "https://tarantulakorea.com/product/골든어스타이거-다크폼-유체/735/category/66/display/2/"
+      "url": "https://tarantulakorea.com/product/골든어스타이거-다크폼-유체/735/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -18760,6 +18760,27 @@
       "name": "뉴기니아 블랙피머 퓨리 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/뉴기니아-블랙피머-퓨리-유체/745/category/24/display/2/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "니겔멈 타이거 유체",
+      "price": 12000,
+      "url": "https://tarantulakorea.com/product/니겔멈-타이거-유체/110/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "다니엘스쿠일 스파이더링",
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/다니엘스쿠일-스파이더링/751/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "다니엘스쿠일 스파이더링",
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/다니엘스쿠일-스파이더링/751/category/66/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -19263,8 +19284,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "브론즈 바분 '나마퀜시스' 유체",
-      "price": 18000,
-      "url": "https://tarantulakorea.com/product/브론즈-바분-나마퀜시스-유체/463/category/66/display/1/"
+      "price": 15000,
+      "url": "https://tarantulakorea.com/product/브론즈-바분-나마퀜시스-유체/463/category/66/display/1/",
+      "prev": 18000,
+      "changed_on": "2026-07-05",
+      "hist": [
+        [
+          "2026-06-02",
+          18000
+        ],
+        [
+          "2026-07-05",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -19522,6 +19555,13 @@
       "name": "아이보리오너멘탈'로우랜드' 유체",
       "price": 55000,
       "url": "https://tarantulakorea.com/product/아이보리오너멘탈로우랜드-유체/222/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "아크카야 타이거 스파이더링",
+      "price": 18000,
+      "url": "https://tarantulakorea.com/product/아크카야-타이거-스파이더링/301/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -20485,8 +20525,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "페루퍼플 핑크토 유체",
-      "price": 20000,
-      "url": "https://tarantulakorea.com/product/페루퍼플-핑크토-유체/269/category/67/display/1/"
+      "price": 15000,
+      "url": "https://tarantulakorea.com/product/페루퍼플-핑크토-유체/269/category/67/display/1/",
+      "prev": 20000,
+      "changed_on": "2026-07-05",
+      "hist": [
+        [
+          "2026-06-02",
+          20000
+        ],
+        [
+          "2026-07-05",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
