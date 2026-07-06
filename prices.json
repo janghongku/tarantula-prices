@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-06T02:31:39",
+  "updated_at": "2026-07-06T12:08:59",
   "channels": {
     "자사몰": "2026-07-06T02:31:39",
-    "네이버": "2026-07-05T20:07:14"
+    "네이버": "2026-07-06T12:08:59"
   },
   "products": [
     {
@@ -4243,7 +4243,8 @@
       "channel": "네이버",
       "name": "콜럼비안 자이언트 레드렉 15cm 암컷 준성체",
       "price": 150000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13486484600"
+      "url": "https://smartstore.naver.com/tarancenter/products/13486484600",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -6532,6 +6533,13 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "네이버",
+      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
+      "price": 18000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
