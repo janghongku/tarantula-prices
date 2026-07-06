@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-06T20:07:39",
+  "updated_at": "2026-07-06T15:17:11",
   "channels": {
-    "자사몰": "2026-07-06T02:31:39",
+    "자사몰": "2026-07-06T15:17:11",
     "네이버": "2026-07-06T20:07:39"
   },
   "products": [
@@ -11648,7 +11648,8 @@
       "channel": "자사몰",
       "name": "칼즈배드 그린 (ex.가벨리) / 준성체+(7~11cm).한쌍",
       "price": 520000,
-      "url": "https://theraphosidae.co.kr/product/칼즈배드-그린-ex가벨리-준성체711cm한쌍/1964/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/칼즈배드-그린-ex가벨리-준성체711cm한쌍/1964/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -18758,13 +18759,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "뉴기니아 블랙피머 퓨리 유체",
-      "price": 25000,
-      "url": "https://tarantulakorea.com/product/뉴기니아-블랙피머-퓨리-유체/745/category/24/display/2/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "니겔멈 타이거 유체",
       "price": 12000,
       "url": "https://tarantulakorea.com/product/니겔멈-타이거-유체/110/category/67/display/1/"
@@ -19546,6 +19540,20 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "아르헨티나 자이언트 블랙럼프 '발코즈나' 유체",
+      "price": 40000,
+      "url": "https://tarantulakorea.com/product/아르헨티나-자이언트-블랙럼프-발코즈나-유체/752/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "아르헨티나 자이언트 블랙럼프 '발코즈나' 유체",
+      "price": 40000,
+      "url": "https://tarantulakorea.com/product/아르헨티나-자이언트-블랙럼프-발코즈나-유체/752/category/24/display/2/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "아이보리 오너멘탈'로우랜드' 바라 유체",
       "price": 55000,
       "url": "https://tarantulakorea.com/product/아이보리-오너멘탈로우랜드-바라-유체/507/category/67/display/1/"
@@ -19711,6 +19719,20 @@
       "name": "에메랄드 스켈레톤 유체",
       "price": 40000,
       "url": "https://tarantulakorea.com/product/에메랄드-스켈레톤-유체/458/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "에슐러스 마니카타 골드 유체",
+      "price": 75000,
+      "url": "https://tarantulakorea.com/product/에슐러스-마니카타-골드-유체/753/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "에슐러스 마니카타 골드 유체",
+      "price": 75000,
+      "url": "https://tarantulakorea.com/product/에슐러스-마니카타-골드-유체/753/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -20101,13 +20123,6 @@
       "name": "크세 화이트 M라인 유체",
       "price": 150000,
       "url": "https://tarantulakorea.com/product/크세-화이트-m라인-유체/743/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "크세 화이트 M라인 유체",
-      "price": 150000,
-      "url": "https://tarantulakorea.com/product/크세-화이트-m라인-유체/743/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
