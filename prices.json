@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-07T20:07:03",
+  "updated_at": "2026-07-07T14:13:29",
   "channels": {
-    "자사몰": "2026-07-07T02:27:06",
+    "자사몰": "2026-07-07T14:13:29",
     "네이버": "2026-07-07T20:07:03"
   },
   "products": [
@@ -16157,9 +16157,21 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
-      "name": "스트라이프 레드럼프 유체 / Vitalius chromatus",
-      "price": 5000,
-      "url": "https://tarancenter.com/product/스트라이프-레드럼프-유체-vitalius-chromatus/1403/category/51/display/1/"
+      "name": "스트라이프 레드럼프 유체 대 / Vitalius chromatus",
+      "price": 15000,
+      "url": "https://tarancenter.com/product/스트라이프-레드럼프-유체-대-vitalius-chromatus/1403/category/51/display/1/",
+      "prev": 5000,
+      "changed_on": "2026-07-07",
+      "hist": [
+        [
+          "2026-06-02",
+          5000
+        ],
+        [
+          "2026-07-07",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -18456,9 +18468,21 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
-      "name": "호치민 어스 타이거 DCF 유체 / Ornithoctoninae sp. \"Ho Chi Minh\" DCF",
-      "price": 25000,
-      "url": "https://tarancenter.com/product/호치민-어스-타이거-dcf-유체-ornithoctoninae-sp-ho-chi-minh-dcf/994/category/51/display/1/"
+      "name": "호치민 어스 타이거 DCF 아성체 / Ornithoctoninae sp. \"Ho Chi Minh\" DCF",
+      "price": 40000,
+      "url": "https://tarancenter.com/product/호치민-어스-타이거-dcf-아성체-ornithoctoninae-sp-ho-chi-minh-dcf/994/category/51/display/1/",
+      "prev": 25000,
+      "changed_on": "2026-07-07",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-07-07",
+          40000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -18530,9 +18554,21 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "골든블루렉바분 스파이더링",
-      "price": 20000,
-      "url": "https://tarantulakorea.com/product/골든블루렉바분-스파이더링/158/category/66/display/1/"
+      "name": "골든블루렉바분 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/골든블루렉바분-유체/158/category/66/display/1/",
+      "prev": 20000,
+      "changed_on": "2026-07-07",
+      "hist": [
+        [
+          "2026-07-05",
+          20000
+        ],
+        [
+          "2026-07-07",
+          25000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -18663,16 +18699,16 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "다니엘스쿠일 스파이더링",
+      "name": "다니엘스쿠일 유체",
       "price": 35000,
-      "url": "https://tarantulakorea.com/product/다니엘스쿠일-스파이더링/751/category/66/display/1/"
+      "url": "https://tarantulakorea.com/product/다니엘스쿠일-유체/751/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "다니엘스쿠일 스파이더링",
+      "name": "다니엘스쿠일 유체",
       "price": 35000,
-      "url": "https://tarantulakorea.com/product/다니엘스쿠일-스파이더링/751/category/66/display/2/"
+      "url": "https://tarantulakorea.com/product/다니엘스쿠일-유체/751/category/66/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -19465,9 +19501,9 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "아크카야 타이거 스파이더링",
+      "name": "아크카야 타이거 유체",
       "price": 18000,
-      "url": "https://tarantulakorea.com/product/아크카야-타이거-스파이더링/301/category/67/display/1/"
+      "url": "https://tarantulakorea.com/product/아크카야-타이거-유체/301/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
