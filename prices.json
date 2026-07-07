@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-07T02:27:06",
+  "updated_at": "2026-07-07T15:01:25",
   "channels": {
     "자사몰": "2026-07-07T02:27:06",
-    "네이버": "2026-07-06T20:07:39"
+    "네이버": "2026-07-07T15:01:25"
   },
   "products": [
     {
@@ -2764,7 +2764,8 @@
       "channel": "네이버",
       "name": "도미니카 퍼플 유체 / EX카우투스 타란튤라 거미 포믹토푸스 절지류 키우기 입양 용품",
       "price": 20000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801359191"
+      "url": "https://smartstore.naver.com/tzblossom/products/8801359191",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -2819,7 +2820,8 @@
       "channel": "네이버",
       "name": "크세네스티스 브라이트 M 유체 / 렛서 랫서 절지류 타란튤라 타란툴라 거미 키우기 절사모",
       "price": 140000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801603407"
+      "url": "https://smartstore.naver.com/tzblossom/products/8801603407",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -3082,7 +3084,8 @@
       "channel": "네이버",
       "name": "크세네스티스 메가스코풀라 DW 유체 / 타란튤라 거미 절지류 타란툴라 절사모 귀뚜라미",
       "price": 180000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728798225"
+      "url": "https://smartstore.naver.com/tzblossom/products/9728798225",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -3271,7 +3274,8 @@
       "channel": "네이버",
       "name": "유체 대 시리즈 / 그린보틀블루 그린볼 배회성 타란튤라 애완거미",
       "price": 25000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10560927755"
+      "url": "https://smartstore.naver.com/tarancenter/products/10560927755",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -3702,7 +3706,8 @@
       "channel": "네이버",
       "name": "포트홀바분 타란튤라 유체 / 애완거미 희귀동물 곤충키우기 밀웜 귀뚜라미 전갈 거미 메뚜기",
       "price": 10000,
-      "url": "https://smartstore.naver.com/tarancenter/products/11176088509"
+      "url": "https://smartstore.naver.com/tarancenter/products/11176088509",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -3814,7 +3819,8 @@
       "channel": "네이버",
       "name": "부톤어스타이거 타란튤라 유체 / 애완거미 희귀동물 곤충키우기 밀웜 귀뚜라미 전갈 메뚜기",
       "price": 15000,
-      "url": "https://smartstore.naver.com/tarancenter/products/11471905952"
+      "url": "https://smartstore.naver.com/tarancenter/products/11471905952",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -3828,7 +3834,8 @@
       "channel": "네이버",
       "name": "볼리비안핑크 차코나 배회성타란튤라 유체 / 애완거미 희귀동물 곤충키우기 밀웜 귀뚜라미 전갈",
       "price": 35000,
-      "url": "https://smartstore.naver.com/tarancenter/products/11823038489"
+      "url": "https://smartstore.naver.com/tarancenter/products/11823038489",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -3969,7 +3976,8 @@
       "channel": "네이버",
       "name": "짐바브웨 그레이바분 버로우성 타란튤라 애완거미 유체 / 곤충키우기 귀뚜라미 밀웜 사육장",
       "price": 15000,
-      "url": "https://smartstore.naver.com/tarancenter/products/12070530539"
+      "url": "https://smartstore.naver.com/tarancenter/products/12070530539",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -4005,7 +4013,8 @@
       "channel": "네이버",
       "name": "아크카야 어스타이거 타란튤라 애완거미 유체 / 애완곤충 희귀동물 절지류 전갈 지네 키우기",
       "price": 25000,
-      "url": "https://smartstore.naver.com/tarancenter/products/12391477515"
+      "url": "https://smartstore.naver.com/tarancenter/products/12391477515",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -4120,57 +4129,9 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "매홍손 밤부스 타이거 나무위성 버로우성 타란튤라 암컷 준성체",
-      "price": 70000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13155701345",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
       "name": "타일랜드 블랙 빅블랙 타이거 버로우성 타란튤라 암컷 준성체",
       "price": 60000,
       "url": "https://smartstore.naver.com/tarancenter/products/13155728141"
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "타일랜드 블랙 어스타이거 노멀 버로우성 타란튤라 암컷 준성체",
-      "price": 60000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13155771444",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "킬로브라쉬스 카엥 크라찬 배회성 버로우성 타란튤라 암컷 성체급",
-      "price": 45000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13155795980",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "킬로브라쉬스 베트남블루 배회성 버로우성 타란튤라 암컷 준성체",
-      "price": 45000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13155825600",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "킬로브라쉬스 후아히니 버드이터 배회성 버로우성 타란튤라 암컷 성체급",
-      "price": 45000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13155856253",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "타이타이거 버로우성 타란튤라 암컷 준성체",
-      "price": 60000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13155874314",
-      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -4211,22 +4172,6 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "스트레이트 혼드바분 스혼바 타란튤라 아성체 암수 한쌍",
-      "price": 40000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13446670196",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "바크마 어스타이거 버로우성 타란튤라 아성체 암수 한쌍",
-      "price": 60000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13446710485",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
       "name": "유체 대 시리즈 / 어셈오렌지바분 타란튤라 애완거미",
       "price": 10000,
       "url": "https://smartstore.naver.com/tarancenter/products/13446726037"
@@ -4241,57 +4186,9 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "콜럼비안 자이언트 레드렉 15cm 암컷 준성체",
-      "price": 150000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13486484600",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "그람모스톨라 그로사 10cm+ 암컷 준성체",
-      "price": 100000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13486491824",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "그레이스모크 13cm 암컷 준성체",
-      "price": 180000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13486495596",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "자이언트 화이트니 14cm 암컷 준성체",
-      "price": 80000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13486498141",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "모잠비크 혼드바분 암컷 성체 13cm",
-      "price": 80000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13486501370",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
       "name": "보르네오블랙 어스타이거 준성체 암컷 11cm+",
       "price": 90000,
       "url": "https://smartstore.naver.com/tarancenter/products/13495436624"
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "니겔멈 어스타이거 암컷 준성체 13cm+",
-      "price": 90000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13495440258",
-      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -4313,14 +4210,6 @@
       "name": "팜포베테우스 플람미페라 배회성 대형종 타란튤라 유체",
       "price": 60000,
       "url": "https://smartstore.naver.com/tarancenter/products/13499232726"
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "버미즈브라운 버로우성 타란튤라 암컷 성체급 15cm",
-      "price": 70000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13506957787",
-      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -4356,22 +4245,6 @@
       "name": "라오스 트랩도어 땅지타 버로우성 타란튤라 유체",
       "price": 20000,
       "url": "https://smartstore.naver.com/tarancenter/products/13523653141"
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "트리니다드 쉐브론 나무위성 타란튤라 암컷 준성체 초",
-      "price": 60000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13527998868",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "스트레이트 혼드바분 스혼바 타란튤라 암컷 성체급",
-      "price": 60000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13528011846",
-      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -4412,41 +4285,58 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "아프리칸 혼드바분 배회성 버로우성 타란튤라 준성체 암컷",
-      "price": 50000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13621750261",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "썬타이거 나무위성 타란튤라 10cm 준성체 암컷",
-      "price": 60000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13621752710",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "샬렘오너멘탈 나무위성 타란튤라 10cm+ 준성체 암컷",
-      "price": 120000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13621756169",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
-      "name": "아마조니카 나무위성 타란튤라 8cm 아성체 암컷",
-      "price": 150000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13621760053",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "네이버",
       "name": "아마존 사파이어 핑크토 나무위성 타란튤라 유체",
       "price": 25000,
       "url": "https://smartstore.naver.com/tarancenter/products/13635363138"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "네이버",
+      "name": "퍼플제브라 버로우성 타란튤라 유체",
+      "price": 15000,
+      "url": "https://smartstore.naver.com/tarancenter/products/13655488905"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "네이버",
+      "name": "그레이스모크 배회성 타란튤라 유체",
+      "price": 35000,
+      "url": "https://smartstore.naver.com/tarancenter/products/13655495327"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "네이버",
+      "name": "빈투언 어스타이거 버로우성 타란튤라 유체",
+      "price": 25000,
+      "url": "https://smartstore.naver.com/tarancenter/products/13655497411"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "네이버",
+      "name": "유체 대 시리즈 / 스트라이프 레드럼프 배회성 타란튤라",
+      "price": 15000,
+      "url": "https://smartstore.naver.com/tarancenter/products/13655512084"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "네이버",
+      "name": "우타이타니 어스타이거 버로우성 타란튤라",
+      "price": 15000,
+      "url": "https://smartstore.naver.com/tarancenter/products/13655516182"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "네이버",
+      "name": "하티하티 어스타이거 버로우성 나무위성 타란튤라 유체",
+      "price": 7000,
+      "url": "https://smartstore.naver.com/tarancenter/products/13655519317"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "네이버",
+      "name": "호치민 어스타이거 DCF 버로우성 타란튤라 아성체",
+      "price": 40000,
+      "url": "https://smartstore.naver.com/tarancenter/products/13655537528"
     },
     {
       "vendor": "타란센터",
