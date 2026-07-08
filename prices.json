@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-08T12:07:36",
+  "updated_at": "2026-07-08T13:47:15",
   "channels": {
-    "자사몰": "2026-07-08T02:01:08",
+    "자사몰": "2026-07-08T13:47:15",
     "네이버": "2026-07-08T12:07:36"
   },
   "products": [
@@ -14396,7 +14396,8 @@
       "channel": "자사몰",
       "name": "고스트 오너멘탈 아성체 / Poecilotheria vittata",
       "price": 50000,
-      "url": "https://tarancenter.com/product/고스트-오너멘탈-아성체-poecilotheria-vittata/993/category/51/display/1/"
+      "url": "https://tarancenter.com/product/고스트-오너멘탈-아성체-poecilotheria-vittata/993/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -14830,9 +14831,21 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
-      "name": "라농블루 (ex.사우스 춤폰타이거) 타이거 암컷 아성체 7cm / Ornithoctonus Sp. \"Ranong blue\"",
-      "price": 35000,
-      "url": "https://tarancenter.com/product/라농블루-ex사우스-춤폰타이거-타이거-암컷-아성체-7cm-ornithoctonus-sp-ranong-blue/1568/category/51/display/1/"
+      "name": "라농블루 (ex.사우스 춤폰타이거) 타이거 암컷 준성체 10cm+ - / Ornithoctonus Sp. \"Ranong blue\"",
+      "price": 50000,
+      "url": "https://tarancenter.com/product/라농블루-ex사우스-춤폰타이거-타이거-암컷-준성체-10cm-ornithoctonus-sp-ranong-blue/1568/category/51/display/1/",
+      "prev": 35000,
+      "changed_on": "2026-07-08",
+      "hist": [
+        [
+          "2026-06-02",
+          35000
+        ],
+        [
+          "2026-07-08",
+          50000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -15509,9 +15522,21 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
-      "name": "보르네오 네온블루렉 (ex.비루페스) 준성체 암컷 10cm / Birupes simoroxigorum",
-      "price": 100000,
-      "url": "https://tarancenter.com/product/보르네오-네온블루렉-ex비루페스-준성체-암컷-10cm-birupes-simoroxigorum/1564/category/51/display/1/"
+      "name": "보르네오 네온블루렉 (ex.비루페스) 준성체 암수한쌍 10cm~ / Birupes simoroxigorum",
+      "price": 160000,
+      "url": "https://tarancenter.com/product/보르네오-네온블루렉-ex비루페스-준성체-암수한쌍-10cm-birupes-simoroxigorum/1564/category/51/display/1/",
+      "prev": 100000,
+      "changed_on": "2026-07-08",
+      "hist": [
+        [
+          "2026-06-02",
+          100000
+        ],
+        [
+          "2026-07-08",
+          160000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -16678,6 +16703,13 @@
       "price": 70000,
       "url": "https://tarancenter.com/product/오렌지-프린지드-폰티아낙-준성체-암컷-cyriopagopus-doriae-pontianak/1472/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "오렌지프린지드 \"칼리만탄 바랏\" 암컷 준성체 / Melopoeus doriae \"Kalimantan Barat\"",
+      "price": 85000,
+      "url": "https://tarancenter.com/product/오렌지프린지드-칼리만탄-바랏-암컷-준성체-melopoeus-doriae-kalimantan-barat/1615/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -18265,6 +18297,13 @@
       "price": 40000,
       "url": "https://tarancenter.com/product/푸카이파-핑크토-유체-avicularia-sp-pucallpa/1293/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "푸카이파 핑크토 유체 / Avicularia Sp. \"Pucallpa\"",
+      "price": 25000,
+      "url": "https://tarancenter.com/product/푸카이파-핑크토-유체-avicularia-sp-pucallpa/1616/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
