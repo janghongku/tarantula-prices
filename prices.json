@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-08T12:07:36",
+  "updated_at": "2026-07-08T23:16:04",
   "channels": {
     "자사몰": "2026-07-08T02:01:08",
-    "네이버": "2026-07-08T12:07:36"
+    "네이버": "2026-07-08T23:16:04"
   },
   "products": [
     {
@@ -1571,9 +1571,20 @@
       "vendor": "더쥬 송파점",
       "channel": "네이버",
       "name": "골리앗 핑크토 유체 / 타란튤라 타란툴라 곤충 거미 절지류 귀뚜라미 키우기 사육 전갈",
-      "price": 25000,
+      "price": 15000,
       "url": "https://smartstore.naver.com/tzblossom/products/10246773942",
-      "soldout": true
+      "prev": 25000,
+      "changed_on": "2026-07-08",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-07-08",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "더쥬 송파점",
@@ -1642,7 +1653,8 @@
       "channel": "네이버",
       "name": "팜포베테우스 미라도르 유체 특대 / 타란튤라 거미 아시안포레스트 타란툴라 전갈 절지류 타사모",
       "price": 68000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10333867598"
+      "url": "https://smartstore.naver.com/tzblossom/products/10333867598",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -1730,8 +1742,20 @@
       "vendor": "더쥬 송파점",
       "channel": "네이버",
       "name": "블루 판케이 타이거 유체 / 어스타이거 키우기 지타 관찰 파충류 절지류 타란튤라 거미",
-      "price": 21000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10635352561"
+      "price": 15000,
+      "url": "https://smartstore.naver.com/tzblossom/products/10635352561",
+      "prev": 21000,
+      "changed_on": "2026-07-08",
+      "hist": [
+        [
+          "2026-06-02",
+          21000
+        ],
+        [
+          "2026-07-08",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "더쥬 송파점",
@@ -2468,7 +2492,8 @@
       "channel": "네이버",
       "name": "팜포베테우스 플람미페라 유체 / 타란튤라 타란툴라 거미 절지류 용품 입양 밀웜 분양",
       "price": 60000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13472699023"
+      "url": "https://smartstore.naver.com/tzblossom/products/13472699023",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
