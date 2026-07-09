@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-09T21:47:19",
+  "updated_at": "2026-07-09T14:39:57",
   "channels": {
-    "자사몰": "2026-07-09T02:13:30",
+    "자사몰": "2026-07-09T14:39:57",
     "네이버": "2026-07-09T21:47:19"
   },
   "products": [
@@ -16651,7 +16651,8 @@
       "channel": "자사몰",
       "name": "크세네스티스 Sp. \"브라이트\" 유체 / Xenesthis Sp. \"Bright\"",
       "price": 140000,
-      "url": "https://tarancenter.com/product/크세네스티스-sp-브라이트-유체-xenesthis-sp-bright/1410/category/51/display/1/"
+      "url": "https://tarancenter.com/product/크세네스티스-sp-브라이트-유체-xenesthis-sp-bright/1410/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
