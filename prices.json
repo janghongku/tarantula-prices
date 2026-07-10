@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-10T20:38:30",
+  "updated_at": "2026-07-10T14:06:03",
   "channels": {
-    "자사몰": "2026-07-10T02:13:48",
+    "자사몰": "2026-07-10T14:06:03",
     "네이버": "2026-07-10T20:38:30"
   },
   "products": [
@@ -19013,6 +19013,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "레드슬레이트 오너멘탈 유체",
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/레드슬레이트-오너멘탈-유체/324/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "레드아일랜드 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/레드아일랜드-유체/163/category/24/display/1/"
@@ -19093,6 +19100,20 @@
       "name": "리오그란데골드 '텍사스' 유체",
       "price": 65000,
       "url": "https://tarantulakorea.com/product/리오그란데골드-텍사스-유체/423/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "마호가니 트리 스파이더 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/마호가니-트리-스파이더-유체/654/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "마호가니 트리 스파이더 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/마호가니-트리-스파이더-유체/654/category/67/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -19185,13 +19206,6 @@
       "name": "민다나오 센트럴 타이거 유체",
       "price": 60000,
       "url": "https://tarantulakorea.com/product/민다나오-센트럴-타이거-유체/626/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "민다나오 센트럴 타이거 유체",
-      "price": 60000,
-      "url": "https://tarantulakorea.com/product/민다나오-센트럴-타이거-유체/626/category/67/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -19346,6 +19360,13 @@
       "name": "보아비스타 핑크토 유체",
       "price": 35000,
       "url": "https://tarantulakorea.com/product/보아비스타-핑크토-유체/523/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "볼리비안 스틸리블루 \"리오우르밤바\" 유체",
+      "price": 70000,
+      "url": "https://tarantulakorea.com/product/볼리비안-스틸리블루-리오우르밤바-유체/380/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -20601,6 +20622,13 @@
       "name": "팜포베테우스 볼리비안 스틸리블루 '빅블랙' 유체",
       "price": 60000,
       "url": "https://tarantulakorea.com/product/팜포베테우스-볼리비안-스틸리블루-빅블랙-유체/228/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "팜포베테우스 볼리비안 스틸리블루 '이퀴토스' 스파이더링 / 직거래 분양만 가능",
+      "price": 55000,
+      "url": "https://tarantulakorea.com/product/팜포베테우스-볼리비안-스틸리블루-이퀴토스-스파이더링-직거래-분양만-가능/503/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
