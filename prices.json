@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-10T14:06:03",
+  "updated_at": "2026-07-11T01:59:11",
   "channels": {
-    "자사몰": "2026-07-10T14:06:03",
+    "자사몰": "2026-07-11T01:59:11",
     "네이버": "2026-07-10T20:38:30"
   },
   "products": [
@@ -19865,13 +19865,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "에메랄드 스켈레톤 유체",
-      "price": 40000,
-      "url": "https://tarantulakorea.com/product/에메랄드-스켈레톤-유체/458/category/66/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "에슐러스 마니카타 골드 유체",
       "price": 75000,
       "url": "https://tarantulakorea.com/product/에슐러스-마니카타-골드-유체/753/category/24/display/1/"
@@ -20143,13 +20136,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "콜롬비아 자이언트 레드렉 유체",
-      "price": 35000,
-      "url": "https://tarantulakorea.com/product/콜롬비아-자이언트-레드렉-유체/122/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "콜롬비안 브라운 \"포티스\" 유체",
       "price": 45000,
       "url": "https://tarantulakorea.com/product/콜롬비안-브라운-포티스-유체/539/category/24/display/1/"
@@ -20276,9 +20262,9 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "크세네스티스 spec. '파우나' 스파이더링 / 직거래 분양만 가능",
+      "name": "크세네스티스 spec. '파우나' 유체",
       "price": 300000,
-      "url": "https://tarantulakorea.com/product/크세네스티스-spec-파우나-스파이더링-직거래-분양만-가능/544/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/크세네스티스-spec-파우나-유체/544/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
