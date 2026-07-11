@@ -17613,7 +17613,8 @@
       "channel": "자사몰",
       "name": "타이 골든 프린지드 (ex.버미즈블랙) 암컷 준성체 9~10cm / Ornithoctonus aureotibialis",
       "price": 40000,
-      "url": "https://tarancenter.com/product/타이-골든-프린지드-ex버미즈블랙-암컷-준성체-910cm-ornithoctonus-aureotibialis/1569/category/51/display/1/"
+      "url": "https://tarancenter.com/product/타이-골든-프린지드-ex버미즈블랙-암컷-준성체-910cm-ornithoctonus-aureotibialis/1569/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -19703,6 +19704,25 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "아마존 사파이어 핑크토 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/아마존-사파이어-핑크토-유체/280/category/67/display/1/",
+      "prev": 28000,
+      "changed_on": "2026-07-11",
+      "hist": [
+        [
+          "2026-06-02",
+          28000
+        ],
+        [
+          "2026-07-11",
+          25000
+        ]
+      ]
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "아이보리 오너멘탈'로우랜드' 바라 유체",
       "price": 55000,
       "url": "https://tarantulakorea.com/product/아이보리-오너멘탈로우랜드-바라-유체/507/category/67/display/1/"
@@ -20493,6 +20513,29 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "[특가] 페루퍼플 핑크토 유체",
+      "price": 10000,
+      "url": "https://tarantulakorea.com/product/특가-페루퍼플-핑크토-유체/269/category/67/display/1/",
+      "prev": 15000,
+      "changed_on": "2026-07-11",
+      "hist": [
+        [
+          "2026-06-02",
+          20000
+        ],
+        [
+          "2026-07-05",
+          15000
+        ],
+        [
+          "2026-07-11",
+          10000
+        ]
+      ]
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "티그리스 오너멘탈 '타이거' 유체",
       "price": 35000,
       "url": "https://tarantulakorea.com/product/티그리스-오너멘탈-타이거-유체/140/category/67/display/1/"
@@ -20678,25 +20721,6 @@
       "name": "페루비안 블론디 유체",
       "price": 35000,
       "url": "https://tarantulakorea.com/product/페루비안-블론디-유체/631/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "페루퍼플 핑크토 유체",
-      "price": 15000,
-      "url": "https://tarantulakorea.com/product/페루퍼플-핑크토-유체/269/category/67/display/1/",
-      "prev": 20000,
-      "changed_on": "2026-07-05",
-      "hist": [
-        [
-          "2026-06-02",
-          20000
-        ],
-        [
-          "2026-07-05",
-          15000
-        ]
-      ]
     },
     {
       "vendor": "타란툴라코리아",
