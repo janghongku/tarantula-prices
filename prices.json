@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-14T12:07:48",
+  "updated_at": "2026-07-14T20:07:29",
   "channels": {
     "자사몰": "2026-07-14T01:50:19",
-    "네이버": "2026-07-14T12:07:48"
+    "네이버": "2026-07-14T20:07:29"
   },
   "products": [
     {
@@ -2559,7 +2559,8 @@
       "channel": "네이버",
       "name": "팜포베테우스 에콰도르 퍼플 유체 / 타란튤라 타란툴라 거미 절지류 용품 입양 밀웜 분양",
       "price": 30000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13644157100"
+      "url": "https://smartstore.naver.com/tzblossom/products/13644157100",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
