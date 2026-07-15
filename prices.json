@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-15T20:07:17",
+  "updated_at": "2026-07-15T13:20:40",
   "channels": {
-    "자사몰": "2026-07-15T01:46:57",
+    "자사몰": "2026-07-15T13:20:40",
     "네이버": "2026-07-15T20:07:17"
   },
   "products": [
@@ -16242,6 +16242,13 @@
       "price": 70000,
       "url": "https://tarancenter.com/product/샬렘오너멘탈-10cm-암컷-준성체-초-poecilotheria-formosa/1215/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "세리코펠마 Sp. \"다리엔\" 유체 / Sericopelma Sp. \"Darien\"",
+      "price": 25000,
+      "url": "https://tarancenter.com/product/세리코펠마-sp-다리엔-유체-sericopelma-sp-darien/1619/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
