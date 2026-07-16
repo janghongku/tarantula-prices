@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-16T01:56:55",
+  "updated_at": "2026-07-16T22:50:54",
   "channels": {
     "자사몰": "2026-07-16T01:56:55",
-    "네이버": "2026-07-15T20:07:17"
+    "네이버": "2026-07-16T22:50:54"
   },
   "products": [
     {
@@ -1543,14 +1543,6 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "콜롬비안 자이언트 레드렉 유체 / 타란튤라 콜자렉 거미 절지류 절사모 밀웜 귀뚜라미 아포",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10105511673",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "타일랜드 블랙 (빅블랙) 유체 특대 / 타블 타란튤라 거미 절지류 절사모 밀웜 귀뚜라미",
       "price": 18000,
       "url": "https://smartstore.naver.com/tzblossom/products/10177972079"
@@ -1568,14 +1560,6 @@
       "name": "베트남 하이랜드 유체 특대 / 타란튤라 타란툴라 곤충 거미 절지류 절사모 밀웜 키우기",
       "price": 15000,
       "url": "https://smartstore.naver.com/tzblossom/products/10177978829",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "칠로 사우스 타일랜드 블루 아성체 / 타란튤라 타란툴라 곤충 거미 절지류 귀뚜라미 키우기",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10246764837",
       "soldout": true
     },
     {
@@ -1600,14 +1584,6 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "빅토리 유체 / 멕시칸하프 타란튤라 타란툴라 곤충 거미 절지류 귀뚜라미 키우기 사육 전갈",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10302835676",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "티그리스 오너멘탈 유체 / 타란튤라 타란툴라 거미 키우기 곤충 전갈 절지류 절사모 타사모",
       "price": 35000,
       "url": "https://smartstore.naver.com/tzblossom/products/10302883443",
@@ -1616,15 +1592,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "퍼플트리스파이더 유체 / 타란튤라 타란툴라 거미 키우기 곤충 절지류 절사모 타사모 용품",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10318487525",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "팜포베테우스 리오우르밤바 유체 / 타란튤라 타란툴라 키우기 빅블랙 절지류 절사모 볼비",
+      "name": "관용명 : 팜포베테우스 볼리비안 스틸리블루 리오 우르밤바 학명 : Pamphobeteus cf)antinous \"Rio Urubamba\" 분양 개체 크기 : 2~3탈피 유체 - 가장 크게 자라난다고 알려져 있는 팜포베테우스인 볼리비아 스틸리블루 중에서도 가장 거대하게 큰다는 월드셀러 벤자민 웨버의 덧붙힘 소개가 있을 정도로 거대함의 대명사인 \"리오 우르밤바\" 로컬의 볼비입니다. 안티노오스 계열 타란툴라들은 명확한 동종, 이종 여부가 증명되어지지는 않았지만 국내외 브리더분들의 데이터로는 다른 로컬리티의 계열끼리는 브리딩 성공사례도 없",
       "price": 80000,
       "url": "https://smartstore.naver.com/tzblossom/products/10318506973",
       "soldout": true
@@ -1635,14 +1603,6 @@
       "name": "바히아 스칼렛 버드이터 유체 대 / 타란튤라 타란툴라 거미 키우기 곤충 절지류 밀웜",
       "price": 4000,
       "url": "https://smartstore.naver.com/tzblossom/products/10322969799"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "니겔멈 유체 / 상이헤 아일랜드 블랙 타란튤라 타란툴라 거미 키우기 어스타이거 절지류",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10326239919",
-      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -1662,33 +1622,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "팜포베테우스 미라도르 유체 특대 / 타란튤라 거미 아시안포레스트 타란툴라 전갈 절지류 타사모",
+      "name": "관용명 : 팜포베테우스 미라도르 / 미라도르 자이언트 버드이터 학명 : Pamphobeteus sp. \"Mirador\" 분양 개체 크기 : 3~4탈피+- - 팜포베테우스 미라도르 신규 입고되었습니다. 여타 팜포베테우스 속 타란툴라들보다 크기가 약간 작은 종으로 20cm에는 못 미치는 타란툴라입니다. 허나, 울트라마리너스 정도로 작은 소형팜포베테우스는 아니며 10cm대 후반의 다른 초대형의 팜포베테우스보다 \"비교적\" 작은 팜포입니다. 수컷 준~완성체로 진입하면서의 발색이 약간 포믹포푸스 속의 골든그레이 느낌이 나는 금가루를 뿌려 놓은",
       "price": 68000,
       "url": "https://smartstore.naver.com/tzblossom/products/10333867598",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "레드 판케이 타이거 유체 / RCF 타란튤라 거미 아시안포레스트 타란툴라 절지류 타사모",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10345468660",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "하이난 차이니즈 어스 타이거 (차지타) 유체 / 타란튤라 거미 키우기 절지류 골지타 곤충",
-      "price": 12000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10345476698",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "팜포베테우스 마찰라 유체 / 마챨라 타란튤라 거미 아시안포레스트 타란툴라 절지류 파충류",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10430269249",
       "soldout": true
     },
     {
@@ -1701,7 +1637,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "펜넬헤울릿티 유체 / 타란튤라 거미 아시안포레스트 타란툴라 절지류 타사모 파충류 나무지타",
+      "name": "관용명 : 펜넬헤울릿티 학명 : Phormingochilus pennellhewletti 분양 개체 크기 : 1탈피 유체 - 교목성 어스타이거 끝판왕 중 하나인 펜넬헤울릿티입니다. 등갑 무늬가 여타 교목성 어스타이거와 전혀 다르게 매우 독특합니다. 브리딩 시도는 여러 번 해 보았는데 알집조차도 못 본 개인적으로 맞지 않는 종인지 세계 하비시장에서 정말 오랜 기간 동안 분양가 방어를 하는 것으로 보아 원래 어려운 종인지 개인적으로 좋은 기억은 없었던 어스타이거입니다. 드물게 20cm를 넘는 개체이 등장하기도 하지만 15~17cm정도까",
       "price": 70000,
       "url": "https://smartstore.naver.com/tzblossom/products/10456920278",
       "soldout": true
@@ -1716,16 +1652,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "안카샤 픽타 유체 / 키우기 타이거럼프 파충류 절지류 타란튤라 타란툴라 거미 타사모",
+      "name": "관용명 : 안카샤 픽타 학명 : Anqasha picta 분양 개체 크기 : 4탈피++ 유체 특대 - 페루에 서식하는 10cm 미만의 소형종입니다. 해외 타란툴라 하비시장에서 상당히 고가로 소개되어진 바 있는 타란툴라입니다. 국내에는 다소 생소한 타란툴라로 신종으로 착각하기 쉬운 종이나 1900년대 초반에 발견되어진 종으로 최초 발견 당시 펌킨패치가 대표적인 속인 Hapalopus 속으로 등재되었고 작년 안카샤 속으로 재편성되었습니다. 여타 펌킨패치, 엘레강스, 리테, 남미 소형종의 유체 사이즈가 2~3mm정도의 초소형인 반면 해당",
       "price": 65000,
       "url": "https://smartstore.naver.com/tzblossom/products/10635204522"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "벤듈라 타이거 유체 / 전갈 키우기 곤충 관찰 파충류 절지류 타란튤라 거미 타사모 지네",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10635208599"
     },
     {
       "vendor": "더쥬 송파점",
@@ -1737,7 +1666,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "사바블루 유체 / 키우기 곤충 관찰 파충류 절지류 타란튤라 거미 타사모 어스타이거 지타",
+      "name": "관용명 : 사바 블루 타이거 학명 : Phormingochilus sp. \"Sabah Blue\" 분양 개체 크기 : 3~4탈피+- 유체 대 - 교목성 어스 타이거 중에서 가장 아름다운 종 중 하나인 사바블루입니다. 포르밍고칠루스 속 답게 대형으로 성장하며 인도네시아 사바하(Sabah) 주에 서식합니다. 관용 명칭이 사바 레드와 비슷하여 사바 레드와 단순 컬러 차이로 오인될 수 있으나 전혀 다른 종으로. 오히려 에버리티 타이거와 흡사한 점이 많은 타란툴라입니다. 국내 뛰어난 브리더분들 덕분에 타 국가 샵들과 비교해도 손색 없을 정도로",
       "price": 55000,
       "url": "https://smartstore.naver.com/tzblossom/products/10635224744",
       "soldout": true
@@ -1745,7 +1674,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "파코라 유체 특대 / 전갈 키우기 곤충 관찰 파충류 절지류 타란튤라 거미 밀웜 귀뚜라미",
+      "name": "관용명 : 파코라 학명 : Theraphosidae sp. \"Pacora\" 분양 개체 크기 : 6탈피 ++ 3~4cm+ 유체 특대 - 페루 신종 임시명칭 \"파코라\" 입니다. 세계적으로 정보가 없는 타란툴라로 추측성 첨언만 남길 수 밖에 없는 점 매우 아쉽습니다. 개인적으로 일전 국내 소개되어졌던 \"만다린\" 과 발색은 전혀 다르나 굉장히 흡사한 점이 많다고 생각되어집니다. 발색과 등갑 패턴 자체는 얼핏 보면 크세네스티스와 유사 해 보입니다. 최소 15cm 이상 성장해 줄 수 있을것이라고 하고 라시오도리데스(Lasiodorides)와",
       "price": 85000,
       "url": "https://smartstore.naver.com/tzblossom/products/10635230545"
     },
@@ -1771,7 +1700,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "버건디 골리앗 버드이터 유체 / 세계에서 가장 큰 거미 키우기 절지류 타란튤라 타란툴라",
+      "name": "관용명 : 버건디 골리앗 버드이터 학명 : Theraphosa stirmi 분양 개체 크기 : 1탈피 유체 - 핑크풋 골리앗, 버건디 골리앗, 블론디 골리앗, 수리남 블론디 골리앗 버드이터(Theraphosa) 속 4종 중에 하나인 지구상 현존하는 타란툴라 중 가장 크다고 알려진 버건디 골리앗 입니다. 성체시 보통 25cm 전후로 성장하며 초대형의 개체는 간혹 30cm에 육박하는 해외 사례도 들려오는 새잡이거미입니다. 모든 타란툴라를 통틀어 먹성이 가장 좋은 편이며 탈피 시 마다 눈에 띄게 성장하여 사육하는 재미가 있는 거미입니다.",
       "price": 80000,
       "url": "https://smartstore.naver.com/tzblossom/products/10752554838",
       "soldout": true
@@ -1806,23 +1735,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "에버리티 타이거 유체 특대 / 거미 키우기 절지류 타란튤라 타란툴라 파충류 곤충 용품",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10787992491",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "포믹토푸스 오리엔트 유체 / 거미 키우기 절지류 타란튤라 타란툴라 파충류 곤충 전갈 밀웜",
-      "price": 30000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10820516276",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "팜포베테우스 오리아나 유체 / 절지류 거미 키우기 파충류 타란튤라 밀웜 귀뚜라미 타사모",
+      "name": "관용명 : 팜포베테우스 오리아나 학명 : Pamphobeteus sp. \"Oreana\" 분양 개체 크기 : 1탈피 유체 - 얼핏 보면 빅블랙을 연상시키는 에콰도르 원산지의 팜포베테우스 신종 오리아나입니다. 카스카다 계열과 흡사한 체형을 띄며 올블랙의 발색에 럼프 부분에 붉은 빛 강모가 특색인 팜포베테우스입니다. *메인 사진은 성체 Google 펌 이미지입니다. 분양되어지는 개체는 유체 ~ 아성체 입니다.",
       "price": 75000,
       "url": "https://smartstore.naver.com/tzblossom/products/10936665173",
       "soldout": true
@@ -1830,51 +1743,21 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "메탈릭 핑크토 유체 / 절지류 거미 키우기 파충류 타란튤라 밀웜 귀뚜라미 타사모 파충류",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11003518319",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "미들 이스트 블랙 이집트 유체 / 타란튤라 거미 키우기 귀뚜라미 곤충 밀웜 사육 관찰",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11179990422",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "코발트 레드럼프 RCF 유체 특대 / 타란튤라 거미 키우기 귀뚜라미 곤충 파충류 절지류",
+      "name": "관용명 : 코발트 레드럼프 레드폼, 코발트블루 레드럼프 레드폼 학명 : Thrixopelma cyaneolum RCF 분양 개체 크기 : 5탈피+- 유체 특대 - 코발트블루(C.lividum)보다 더욱 짙은 푸른빛 발색에 복부(럼프) 부분 불타는듯한 강하고 빽빽한 강모가 특색인 배회성 타란툴라입니다. 트릭소펠마 속 중에서 과거부터 현재까지 꾸준히 고가에 분양되어지며 해당 속에서 가장 인기있는, 가장 아름다운 타란툴라가 아닐까 합니다. 최근, RCF와 BCF로 나뉘어 반출되어지고 있으며 기존 국내 유통되어지던 개체들이 RCF 개체군이",
       "price": 55000,
       "url": "https://smartstore.naver.com/tzblossom/products/11180005006"
     },
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "코발트 레드럼프 BCF 유체 특대 / 코발트블루럼프 타란튤라 거미 키우기 귀뚜라미 절지류",
+      "name": "관용명 : 코발트 레드럼프 블루폼, 코발트블루 레드럼프 블루폼 학명 : Thrixopelma cyaneolum BCF 분양 개체 크기 : 5탈피+- 유체 특대 - 코발트블루(C.lividum)보다 더욱 짙은 푸른빛 발색에 복부(럼프) 부분 불타는듯한 강하고 빽빽한 강모가 특색인 배회성 타란툴라입니다. 트릭소펠마 속 중에서 과거부터 현재까지 꾸준히 고가에 분양되어지며 해당 속에서 가장 인기있는, 가장 아름다운 타란툴라가 아닐까 합니다. 최근, RCF와 BCF로 나뉘어 반출되어지고 있으며 기존 국내 유통되어지던 개체들이 RCF 개체군이",
       "price": 55000,
       "url": "https://smartstore.naver.com/tzblossom/products/11180007459"
     },
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "트릭소펠마 세비야 유체 특대 / 타란튤라 거미 키우기 귀뚜라미 곤충 밀웜 절지류 용품",
-      "price": 55000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11180010480"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "페루비안 블론드 유체 특대 / 타란튤라 거미 키우기 귀뚜라미 곤충 밀웜 파충류 절지류",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11180016798"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "팜포베테우스 메가카라팍스 유체 특대 / 타란튤라 거미 키우기 귀뚜라미 곤충 파충류 절지류",
+      "name": "관용명 : 팜포베테우스 메가카라팍스 학명 : Pamphobeteus sp. \"Megacarapax\" 분양 개체 크기 : 3~4탈피+- - 현재까지 유통되어지던 팜포베테우스와 조금은 상이한 새로운 계열의 팜포베테우스인 '메가카라팍스' 입니다. 임시명 메가카라팍스는 해당 종 성체들의 거대한 등갑에서 유래된 이름으로 완숙한 성체의 경우 흔히 골리앗 버드이터나 안티노우스 계열 팜포베테우스들처럼 우람한 덩치와 거대한 골격. 큼직한 체장을 자랑한다고 합니다. 발견되는 지역은 에콰도르 북동부 '몬타나' 인근이며 높은 해발고도와 안데스 산맥과 아",
       "price": 125000,
       "url": "https://smartstore.naver.com/tzblossom/products/11180038079",
       "soldout": true
@@ -1882,15 +1765,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "브라질리안 드워프 브론즈 유체 / 엑실리스 타란튤라 거미 키우기 귀뚜라미 곤충 절지류",
-      "price": 10000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11375486476",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "팜포베테우스 페마 유체 / 타란튤라 거미 절지류 파충류 곤충 밀웜 키우기 파충류 타란툴라",
+      "name": "관용명 : 팜포베테우스 페마 학명 : Pamphobeteus sp. \"Pema\" 분양 개체 크기 : 1탈피 유체 - 팜포베테우스 속 신종 \"SP 페마\" 입니다. 일전 입고에 분양중이던 팜포베테우스 오레아나와 동일 시기 유럽 시장에 최초 소개되었던 종으로 국외에서는 가장 인기있는 신종 중 하나였던 페마입니다. 올블랙에 크세네스티스를 닮은 발색과 펜촉으로 분양가 또한 상당한 고가에 유통되어졌던 종이나 대한민국 하비시장에는 전 세계를 통틀어 가장 저렴한 소비자 분양가로 소개되어진 타란툴라입니다. 강인한 생명력과 큰 크기, 아름다운 발색으",
       "price": 95000,
       "url": "https://smartstore.naver.com/tzblossom/products/11476400427",
       "soldout": true
@@ -1917,14 +1792,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "볼리비안 핑크 유체 특대 / 타란튤라 거미 절지류 곤충 밀웜 키우기 파충류 타란툴라",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11476503196"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "크세네스티스 로우화이트 유체 / 타란튤라 거미 절지류 파충류 렛서 랫서 타란툴라 키우기",
+      "name": "관용명 : 크세네스티스 로우화이트 B 학명 : Xenesthis sp. \"Low White\" B 분양 개체 크기 : 3탈피+ 유체 - B라인 크세네스티스 로우화이트 신규 입고되었습니다. 크세네스티스 속 타란툴라 중 다리 경간이 (크기) 가장 긴 편에 속하는 타란툴라로 여타 크세네스티스 속 타란툴라와 확연히 대비될 정도로 길쭉한 체형이 특색입니다. 성체급 개체의 특유의 위협자세인 소위 문어자세를 취하고 있을때의 모습을 직접 보면 정말 '길다' 라는 표현이 알맞습니다. 완숙한 성체 암컷의 발색이 브라이트(X.sp\"Bright\"), 라이",
       "price": 140000,
       "url": "https://smartstore.naver.com/tzblossom/products/11476529952",
       "soldout": true
@@ -1932,7 +1800,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "크세네스티스 카우카 유체 / 타란튤라 거미 절지류 파충류 렛서 랫서 타란툴라 키우기 곤충",
+      "name": "관용명 : 크세네스티스 카우카 학명 : Xenesthis sp. \"Cauca\" 분양 개체 크기 : 4탈피+- 유체 - 크세네스티스 속 신종 \"카우카\" 신규 입고되었습니다. 신종 답게 알려진 정보가 거의 없는 종으로 크세네스티스 파우나와 밀접한 관계가 있는 종으로 사료된다고 합니다. 허나 등갑 스타버스트가 보다 꽉 찬 느낌을 가지고 있으며 여타 크세네스티스 종들과의 차이점으로는 성장 단계에서 준성체에 접어들기 전까지 앞 1,2번째 다리 쌍과 뒤 3,4번째 다리 쌍의 채색이 아포노펠마 속 다이아몬드백처럼 서로 다른 발색을 띄는 고유 특",
       "price": 350000,
       "url": "https://smartstore.naver.com/tzblossom/products/11476533032",
       "soldout": true
@@ -1940,48 +1808,10 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "레드트리스파이더 유체 / 타란튤라 거미 절지류 파충류 타란툴라 키우기 곤충 용품 분양샵",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11598341757"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "베로니카 타이거 유체 / 타란튤라 거미 절지류 파충류 렛서 랫서 타란툴라 키우기 곤충",
-      "price": 9000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11624237456",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "블루팽 스켈레톤 유체 / 타란튤라 거미 절지류 파충류 타란툴라 키우기 곤충 전갈 타란튤라",
-      "price": 40000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11699254324",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "타일랜드 블랙 유체 / 타블 타란튤라 곤충 거미 절지류 절사모 밀웜 귀뚜라미 키우기 게코",
-      "price": 16000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11714413459",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "소코트라 아일랜드 블루바분 약 12cm 암컷 성체 초기 / 블바 타란튤라 거미 키우기",
+      "name": "메인 사진 실 분양개체로 산란 경험 없는 성체 초기의 암컷 성체입니다. 관용명 : 소코트라 아일랜드 블루 바분 학명 : Monocentropus balfouri 분양 개체 크기 : 12cm 암컷 성체 초기 - 합사 사육으로 유명한 블루바분입니다. 푸른빛의 흡사 키위와 같은 외형을 지닌 거미입니다. 어린왕자를 연상시키는 자연 환경인 예멘의 소코트라 섬에 서식하는 타란툴라이며 건조한 환경을 선호합니다. 콜로니로 대량 사육시 매력을 느낄 수 있는 종입니다. 타란툴라 중 거의 유일하게 정상적인 합사 사육이 가능한 종으로 어미가 새끼들을 업",
       "price": 80000,
       "url": "https://smartstore.naver.com/tzblossom/products/11733148073",
       "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "하프로펠마 다미 유체 / 거미 키우기 절지류 타란튤라 타란툴라 파충류 지타 어스타이거",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11738102065"
     },
     {
       "vendor": "더쥬 송파점",
@@ -2001,17 +1831,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "크세네스티스 인터메디아 트루히오 4탈피 아성체 한쌍 / 렛서 랫서 타란튤라 거미 절지류",
+      "name": "관용명 : 크세네스티스 인터메디아 / 아마존 자이언트 블루블럼 학명 : Xenesthis intermedia (Trujillo) 분양 개체 크기 : 4탈피 아성체 한 쌍 - 크세네스티스 (이하 렛서) 속 타란툴라 거의 모두가 미동정 XSp 개체군인 반면 인터메디아는 정말 몇 안되는 매우 오래 전 정식 학명 부여받은 타란튤라입니다. 미분류 기존 인터메디아와 홀로타입인 트루히오 트루히오와 매우 근접한 발레라 메리다1 메리다2 라 아줄리타 등등 가장 많은 로컬리티 분류가 이루어지는 렛서입니다. 분양하는 개체는 트루히오 산지 개체입니다.",
       "price": 240000,
       "url": "https://smartstore.naver.com/tzblossom/products/11751770552",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "오렌지마우스 유체 / 오마 프샬 타란튤라 타란툴라 거미 절지 전갈 지네 곤충 용품 키우기",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11761904868",
       "soldout": true
     },
     {
@@ -2020,33 +1842,6 @@
       "name": "블루 판케이 10cm+ 준성체 암수 한쌍 / 타란튤라 타란툴라 거미 키우기 절지류 곤충",
       "price": 160000,
       "url": "https://smartstore.naver.com/tzblossom/products/11780125317",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "골든어스타이거 (빈투언) 유체 / 타란튤라 거미 절지류 곤충 키우기 밀웜 귀뚜라미 골지타",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11789259427",
-      "prev": 12000,
-      "changed_on": "2026-06-18",
-      "hist": [
-        [
-          "2026-06-02",
-          12000
-        ],
-        [
-          "2026-06-18",
-          15000
-        ]
-      ]
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "욕돈 타이거 유체 / 요크돈 타란튤라 거미 절지류 곤충 키우기 밀웜 귀뚜라미 지타 어스",
-      "price": 28000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11789453301",
       "soldout": true
     },
     {
@@ -2109,25 +1904,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "실버그레이 유체 / 코스탈리스 타란튤라 타란툴라 거미 절지류 곤충 키우기 지타 어스타이거",
-      "price": 8000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11884190463",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "아포노펠마 리오그란데 골드 텍사스 5cm 암컷 준성체 / 타란튤라 타란툴라 절사모 거미",
+      "name": "메인 사진 실 분양개체로 암컷 준성체 단일 품목입니다. 관용명 : 리오그란데 골드 학명 : Aphonopelma moderatum (Texas) 분양 개체 크기 : 5cm+- 준성체 암컷 - 가장 아름다운, 가장 인기많은 고가의 아포노펠마 종 중 하나인 리오그란데 골드입니다. 리오그란데 골드는 하비시장에서 분양되어지는 거의 대다수의 개체가 텍사스 산지 개체로 분양하는 개체 또한 미국 텍사스 산지의 개체입니다. * 성체 Google 펌 이미지입니다. 분양되어지는 개체는 준성체 암컷입니다.",
       "price": 320000,
       "url": "https://smartstore.naver.com/tzblossom/products/11907353307",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "포믹토푸스 레드아일랜드 유체 / 거미 키우기 절지류 타란튤라 타란툴라 곤충 전갈 밀웜",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11958178320",
       "soldout": true
     },
     {
@@ -2141,15 +1920,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "가이아나 핑크토 유체 / 거미 키우기 절지류 타란튤라 타란툴라 곤충 전갈 밀웜 기아나",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11963519676",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "크세네스티스 블루 B / 타란튤라 타란툴라 거미 절지 전갈 지네 곤충 사슴벌레 렛서 랫서",
+      "name": "관용명 : 크세네스티스 블루 / 렛서블루 / 자이언트 블루블럼 학명 : Xenesthis sp. \"Blue\" 분양 개체 크기 : 1탈피 유체 - B라인 렛서 블루입니다. 아이러니하게도 다른 라인에서의 브리딩 성공 사례가 있으면서도 모든 크세네스티스 종 중에서 M라인과 B라인의 차이가 가장 두드러지는 종이 아닐까 합니다. 개체 차이를 배제하고 평균치에 관한 견해는 B라인의 성체가 조금 더 다크한 느낌이고 M라인의 성체는 등갑의 스타버스트가 비교적 훨씬 더 꽉 찬 느낌을 줍니다. 크세네스티스 속 타란툴라중 유일하게 푸른 빛을 띄는 종입",
       "price": 140000,
       "url": "https://smartstore.naver.com/tzblossom/products/12034290911",
       "soldout": true
@@ -2157,17 +1928,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "포믹토푸스 블루아줄 유체 / 거미 키우기 절지류 타란튤라 타란툴라 파충류 곤충 분양 입양",
+      "name": "관용명 : 블루아줄 학명 : Phormictopus sp. \"Blue Azul\" 분양 개체 크기 : 1탈피 - 포믹토푸스 속 중 고가에 위치해 있는 블루아줄입니다. 푸른빛이 감도는 포믹토푸스 속 타란툴라로 여타 포믹토푸스 해당 속 종들이 그렇듯 20cm 이상 대형으로 성장하며 같은 남미 대형종들인 팜포베테우스, 크세네스티스, 메가포베마 등 과는 다르게 털을 날리고 소극적이지 않고 사납고 공격적이며 매우 강인합니다. 먹성 또한 굉장히 뛰어나나 먹는 양과 주기에 비해서는 성장속도는 느린 편입니다. 성체까지 성장 기간이 평균적으로 3년정",
       "price": 60000,
       "url": "https://smartstore.naver.com/tzblossom/products/12054613747"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "우타이타니 유체 / 지타 어스타이거 타란튤라 거미 곤충 키우기 파충류 용품 밀웜 절지류",
-      "price": 7000,
-      "url": "https://smartstore.naver.com/tzblossom/products/12076434241",
-      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -2187,13 +1950,6 @@
           40000
         ]
       ]
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "쿠르즈하르 유체 / 거미 키우기 절지류 타란튤라 타란툴라 파충류 곤충 전갈 밀웜 용품",
-      "price": 23000,
-      "url": "https://smartstore.naver.com/tzblossom/products/12239356632"
     },
     {
       "vendor": "더쥬 송파점",
@@ -2225,30 +1981,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "퍼플제브라 유체 특대 / 타란튤라 타란툴라 거미 절지류 곤충 키우기 밀웜 타제 타이제브라",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/12484736662"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "코르디엘란 블루 유체 특대 / 타란튤라 타란툴라 거미 절지류 키우기 밀웜 귀뚜라미 용품",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/12484740930",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "후리아나 핑크토 유체 / 미사와이 타란튤라 타란툴라 거미 키우기 곤충 절지류 용품 밀웜",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/12484750494",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "팜포베테우스 산토도밍고 골리앗 유체 / 타란튤라 타란툴라 거미 키우기 곤충 절지류 용품",
+      "name": "관용명 : 팜포베테우스 산토도밍고 골리앗 학명 : Pamphobeteus sp. \"Goliath\" (Santo Domingo) 분양 개체 크기 : 2~3탈피 - 과거 타란툴라 하비시장 초창기 굉장히 오래 전 유통되어지던 크고 멋있는 팜포베테우스 골리앗으로 불리우던 개체군인 (구)팜포 골리앗으로 추정, 가장 가까운 개체군으로 추측되어지는 에콰도르 산토도밍고에 서식하는 대형의 올블랙 팜포베테우스입니다. 해당 개체군과 서식지를 공유하는 소형 팜포베테우스인 '산토도밍고 스몰' 과는 전혀 다른 종으로 초대형으로 자라나는 팜포베테우스입니다.",
       "price": 75000,
       "url": "https://smartstore.naver.com/tzblossom/products/12484755027"
     },
@@ -2262,7 +1995,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "사바레드 유체 / 어스타이거 타란튤라 타란툴라 거미 키우기 곤충 절지류 용품 밀웜 파충류",
+      "name": "관용명 : 사바레드 학명 : Phormingochilus sp. \"Sabah Red\" 분양 개체 크기 : 1탈피 유체 - 교목성 어스 타이거 중에서 가장 아름다운 종 중 하나인 사바레드입니다. 포르밍고칠루스 속 답게 대형으로 성장하며 말레이시아 보르네오 사바하(Sabah) 주에 서식합니다. 매장 자체 번식 개체로 동일 속의 사바 드워프 다음으로 현 시점 보르네오 교목성 어스타이거 중 가장 희소하며 최고가에 위치하여 있습니다. *성체 Google 펌 이미지입니다. 분양되어지는 개체는 유체 ~ 아성체 입니다. 배송정보 배송 방법 : 택",
       "price": 95000,
       "url": "https://smartstore.naver.com/tzblossom/products/12811081251",
       "soldout": true
@@ -2278,13 +2011,6 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "바비아나 바분 유체 / 타란튤라 타란툴라 거미 키우기 곤충 절지류 용품 밀웜 파충류",
-      "price": 30000,
-      "url": "https://smartstore.naver.com/tzblossom/products/12823556077"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "자이언트 차코 골덴니 약 8cm 암컷 / 타란튤라 타란툴라",
       "price": 38000,
       "url": "https://smartstore.naver.com/tzblossom/products/12827902724",
@@ -2293,35 +2019,14 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "오렌지 프린지드 도리에 칼리만탄 약 15cm 준성체 암컷 / 타란튤라 오프 거미 절지류",
+      "name": "관용명 : 오렌지 프린지드 / 도리에 학명 : Cyriopagopus cf)doriae 분양 개체 크기 : 15cm+- 준성체 암컷 - 정말 오래전부터 극악의 인공 번식 난이도로 유명한 오렌지프린지드입니다. 20cm이상 성장 가능한 초대형 버로우성 어스타이거로 현존하는 버로우성 어스타이거 중 가장 크게 성장합니다. 굉장히 광범위한 서식지에서 발견되어지는 타란툴라입니다. 빠르고 사납습니다. * 메인 사진은 참고용 성체의 Google 이미지입니다. 실 분양개체는 준성체 ~ 성체급 암컷입니다. 배송정보 배송 방법 : 택배 배송 지역 :",
       "price": 75000,
       "url": "https://smartstore.naver.com/tzblossom/products/12880252977"
     },
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "골든어스타이거 다크폼 DCF (손라) 유체 / 타란튤라 거미 절지류 밀웜 귀뚜라미 골지타",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/tzblossom/products/12965099018"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "트릭소펠마 하이랜드 블루 유체 / 절지류 거미 타란튤라 타란툴라 키우기 귀뚜라미 밀웜",
-      "price": 65000,
-      "url": "https://smartstore.naver.com/tzblossom/products/12965105711"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "팜포베테우스 투칸 유체 / 타란튤라 거미 절지류 파충류 곤충 밀웜 키우기 파충류 타란툴라",
-      "price": 75000,
-      "url": "https://smartstore.naver.com/tzblossom/products/12965113346"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "크세네스티스 라이트 DW / 타란튤라 타란툴라 거미 절지 전갈 지네 파충류 렛서 랫서",
+      "name": "관용명 : 크세네스티스 라이트 학명 : Xenesthis sp. \"Light\" DW 분양 개체 크기 : 2탈피 유체 - 크세네스티스 속 내 최고가에 유통되는 종 중 하나인 Sp. 라이트입니다. 최근 유통 시작되어진 여타 최고가 크세네스티스들과 다르게 굉장히 오랜 기간동안 분양 금액대를 유지하고 있습니다. 유통 초기 Sp. 브라이트와의 동정키에 대해 모호함이 있었으나 브라이트보다 더욱 밝고 암컷에게도 피머 초입 부분에 핑크색 발색이 돌며 브라이트, 화이트 계열에 비해 뚜렷하게 꽉 찬 핑크색 등갑이 특색입니다. ※ 메인 사진은 성체 G",
       "price": 300000,
       "url": "https://smartstore.naver.com/tzblossom/products/12965122794"
     },
@@ -2335,7 +2040,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "이브 (카파덴시스) 준성체 초기 / 절지류 타란튤라 타란툴라 키우기 파충류 브쥬 용품",
+      "name": "관용명 : 이브 / 카파덴시스 / 라포사 학명 : Typhochlaena chapadensis 분양 개체 크기 : 2~3cm 아~준성체 - 브라질리안 쥬얼의 사촌 격인 이브입니다. 유통초기 Sp. Eve로 유통되어진 종으로 4cm까지 성장 가능한 종으로 해당 속 내 가장 크게 성장한다고 알려져 있습니다. 해당 종 현재 카파덴시스로 Typhochlaena chapadensis 정식학명 부여받았습니다. 마찬가지로, 브라질 원산지의 타란툴라이며 나무껍질 내에 트랩을 만들어 마치 교목성 트랩도어의 생활 양상을 띄기에 사육 세팅에 코르크보드",
       "price": 950000,
       "url": "https://smartstore.naver.com/tzblossom/products/12965142831",
       "soldout": true
@@ -2343,14 +2048,14 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "사바 드워프 유체 / 절지류 거미 타란튤라 타란툴라 키우기 귀뚜라미 밀웜 파충류 전갈",
+      "name": "관용명 : 사바 드워프 학명 : Phormingochilus sp. \"Sabah Dwarf\" 분양 개체 크기 : 1탈피 유체 - 사바블루, 사바레드와 함께 사바하 주에 서식하는 대표적인 교목성 어스타이거 3종 중 가장 희소성 높은 사바 드워프입니다, 20cm가까이 자라나는 사바 블루, 레드보다는 작으나 중형 어스타이거로 드워프라는 관용 명칭과는 다르게 15cm이상 성장 가능합니다. 전 세계적으로 매우 적은 수량의 개체만 유통되어지고 있습니다, *메인 사진은 성체 Google 펌 이미지입니다. 분양되어지는 개체는 유체 ~ 아성체 입니",
       "price": 135000,
       "url": "https://smartstore.naver.com/tzblossom/products/12986966087"
     },
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "안티쿠나 에라두라 유체 / 절지류 거미 타란튤라 타란툴라 키우기 귀뚜라미 밀웜 파충류",
+      "name": "관용명 : 에라두라 학명 : Antikuna sp. \"Herradura\" 분양 개체 크기 : 1탈피 유체 - 페루 원산지 타란튤라 \"에라두라\" 입니다. 매우 생소한 안티쿠나 속의 타란튤라로 극소수만 유통되어지고 있는 동일 속의 안티쿠나 파이어써클과(안데스 파이어서클) 유사한 성체 생김새로 에라두라 유체의 경우 불피누스, 스크로파 계열과 남미 배회성 유체들이 섞인 듯 한 약간의 외형적 공통점이 있습니다. 전신이 진한 푸른빛의 타란툴라로 소량 입고되었습니다. *메인 사진은 성체 Google 펌 이미지입니다. 분양되어지는 개체는 유체 ~",
       "price": 105000,
       "url": "https://smartstore.naver.com/tzblossom/products/13023227451",
       "soldout": true
@@ -2358,30 +2063,23 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "키무 유체 / 절지류 거미 타란튤라 타란툴라 키우기 귀뚜라미 밀웜 파충류 용품 전갈",
+      "name": "관용명 : 키무 학명 : Theraphosidae sp. \"Chimu\" 분양 개체 크기 : 1탈피 유체 - 페루 원산지 타란튤라 '키무' 입니다. 미동정 중대형 배회성 타란튤라로 18cm 가까이 성장 가능한 것으로 알려져 있습니다. 서식지인 페루 서부 해안가 키무 지명으로 임시명명되어지고있으며 다크한 청동빛 메탈릭한 발색이 특색인 종으로 1탈피 유체의 크기는 여타 남비 대형 배회 라시오도라의 유체 크기와 흡사한 0.5cm를 약간 넘어갈 정도로 작습니다. *메인 사진은 성체 Google 펌 이미지입니다. 분양되어지는 개체는 유체 ~",
       "price": 85000,
       "url": "https://smartstore.naver.com/tzblossom/products/13023249781"
     },
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "아도베 유체 / 절지류 거미 타란튤라 타란툴라 키우기 귀뚜라미 밀웜 파충류 용품 전갈",
+      "name": "관용명 : 아도베 학명 : Theraphosidae sp. \"Adobe\" 분양 개체 크기 : 1탈피 유체 - 페루 원산지 타란튤라 \"아도베\" 입니다. 10cm 초중반까지 성장 가능한 중소형 남미 배회성 타란툴라로 현재까지 종은 커녕 속(Sp) 분류에서도 명확한 기준 없는 미동정 종이지만 개인적인 견해로는 소개 당시 페루블론드의 Lasiodorides polycuspulatus 상위 호환 격 다크 버전 같다는 느낌을 받았습니다. 마찬가지로 유체의 크기가 0.5cm+ 작은 편입니다. *메인 사진은 성체 Google 펌 이미지입니다. 분",
       "price": 75000,
       "url": "https://smartstore.naver.com/tzblossom/products/13023294100"
     },
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "오스카 유체 / 절지류 거미 타란튤라 타란툴라 키우기 귀뚜라미 밀웜 파충류 용품 오스카르",
+      "name": "관용명 : 오스카 학명 : Theraphosidae sp. \"Oscar\" 분양 개체 크기 : 2~3탈피 유체 - 페루 원산지 타란튤라 \"오스카\" 입니다. 10cm 초반까지 성장 가능한 중소형 남미 배회성 타란툴라로 트릭소펠마 계열로 추측되며 해외 하비시장에서도 트릭소펠마 속의 타란튤라로 보는 견해가 지배적입니다. 유럽 시장에서는 트릭소펠마 중 가장 고가에 유통되어지는 하이랜드 블루와 함께 100달러 안팎의 고가의 동일한 분양 가격대를 형성하고 있으며 추후 트릭소펠마 편성 시 일전 소개되었던 하이랜드 블루와 함께 해당 속 내 최고가",
       "price": 65000,
       "url": "https://smartstore.naver.com/tzblossom/products/13023296947"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "페루블루 버드이터 (라구나스) 유체 / 절지류 거미 타란튤라 타란툴라 키우기 파충류 용품",
-      "price": 22000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13032288592"
     },
     {
       "vendor": "더쥬 송파점",
@@ -2412,16 +2110,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "팜포베테우스 다크 유체 / 타란툴라 타란튤라 밀웜 귀뚜라미 절지류 곤충 용품 키우기",
+      "name": "관용명 : 팜포베테우스 다크 학명 : Pamphobeteus sp. \"Dark\" 분양 개체 크기 : 3탈피+ 유체 - 에콰도르 마나비 남부에서 발견되어지는 팜포베테우스입니다. 스코풀라를 비롯하여 대체로 블랙 톤의 어두운 발색을 띄는 타란툴라입니다. 마스카라와 가장 많이 비교되어지는 종으로 마스카라는 타 지역에 비해 매우 넓은 마나비 주 북부에 서식하고 있으며 다크는 남단부에서 발견되어지는 종으로 여타 팜포베테우스 타란툴라들과 다르게 같은 개체군 내에서 발색 차이가 광범위한 마스카라 집단에서 그중 어두운 채색의 마스카라 개체군과 흡사",
       "price": 55000,
       "url": "https://smartstore.naver.com/tzblossom/products/13219303965"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "퍼플제브라 유체 / 타란튤라 타란툴라 거미 절지류 곤충 키우기 밀웜 타제 타이제브라",
-      "price": 12000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13219312007"
     },
     {
       "vendor": "더쥬 송파점",
@@ -2448,7 +2139,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "아포노펠마 스테인닥네리 준성체 한쌍 / 거미 키우기 절지류 타란튤라 타란툴라 밀웜 용품",
+      "name": "관용명 : 스테인닥네리 학명 : Aphonopelma steindachneri 분양 개체 크기 : 12cm+- 준성체 한 쌍 - 브라질리안 블랙을 연상시키는 올블랙의 아포노펠마 '스테인닥네리' 입니다. 15cm안팎으로 성장하는 중형종으로 아주 미세한 붉은 빛 강모가 전신에 매우 약하게 분포합니다. 굉장히 희소성 높은 타란튤라로 해외 하비시장과 견주어도 손색 없을 만한 오히려 더욱 저렴한 분양가에 소개합니다. 해당 속 마니아분들께는 충분한 가치가 있을 것으로 사료됩니다. 분양하는 개체는 준성체급 쌍 단위입니다. * 메인 사진은 실 분",
       "price": 880000,
       "url": "https://smartstore.naver.com/tzblossom/products/13361323375"
     },
@@ -2474,30 +2165,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "그레이스모크 유체 / 타란튤라 타란툴라 거미 절지류 곤충 키우기 밀웜 용품 분양 입양 샵",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13424087330"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "도미니카 에메랄드 유체 / 포믹토푸스 풀그린 타란튤라 타란툴라 거미 절지 용품 분양 입양",
-      "price": 40000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13424091497"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "크세네스티스 이매니즈 숏헤어 유체 / 타란튤라 절지류 파충류샵 렛서 랫서 임마니스 타사모",
+      "name": "관용명 : 콜롬비안 렛서블랙, 크세네스티스 임마니스(이매니즈) 숏헤어 학명 : Xenesthis cf)immanis (Short Hair Type) 분양 개체 크기 : 1탈피 - 크세네스티스를 대표하는 종 중 하나인 이매니즈의 숏헤어 타입입니다. 이매니즈는 초대형으로 성장하는 해당 제네스티스 속 중에서도 가장 크게 성장하는 편이라 알려져 있고 몇 안되는 정식 학명 부여되어진 렛서입니다. 과거부터 현재까지 유통되어지고 있는 X. 이매니즈와 관련이 있는 개체군은 1. 롱헤어타입 2. 롱헤어타입(블랙파이어) 3. 숏헤어타입 4. 롱헤어타",
       "price": 90000,
       "url": "https://smartstore.naver.com/tzblossom/products/13424113089"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "에슐러스 발파라이소 브론즈 자이언트 유체 / 타란튤라 타란툴라 거미 절지류 용품 입양",
-      "price": 88000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13469470230"
     },
     {
       "vendor": "더쥬 송파점",
@@ -2510,27 +2180,6 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "시암사투 어스타이거 유체 / 땅지타 타란튤라 타란툴라 거미 절지류 용품 분양 입양 밀웜",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13538801402"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "라오스 트랩도어 유체 / 어스타이거 땅지타 타란튤라 타란툴라 거미 절지류 용품 분양 입양",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13538821102"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "가본 드워프 바분 유체 / 가봉바분 가보넨시스 타란튤라 거미 키우기 용품 절지류 타란툴라",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13545434514"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "아포노펠마 무레이 유체 / 멕시칸 제이드 푸에고 타란튤라 타란툴라 거미 절지류 입양 분양",
       "price": 220000,
       "url": "https://smartstore.naver.com/tzblossom/products/13627513966"
@@ -2538,17 +2187,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "크세네스티스 블루 M 10탈피 암컷 성체 초기 / 타란튤라 타란툴라 거미 절지 렛서 랫서",
+      "name": "관용명 : 크세네스티스 블루 / 렛서블루 / 자이언트 블루블럼 학명 : Xenesthis sp. \"Blue\" M 분양 개체 크기 : 10탈피 암컷 성체 초기 - M라인 크세 블루입니다. 아이러니하게도 다른 라인에서의 브리딩 성공 사례가 있으면서도 모든 크세네스티스 종 중에서 M라인과 B라인의 차이가 가장 두드러지는 종이 아닐까 합니다. 개체 차이를 배제하고 평균치에 관한 견해는 B라인의 성체가 조금 더 다크한 느낌이고 M라인의 성체는 등갑의 스타버스트가 비교적 훨씬 더 꽉 찬 느낌을 줍니다. 크세네스티스 속 타란툴라중 유일하게 푸른",
       "price": 300000,
       "url": "https://smartstore.naver.com/tzblossom/products/13636328338",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "팜포베테우스 듀란 유체 / 타란튤라 타란툴라 거미 절지류 용품 입양 밀웜 분양 배회성",
-      "price": 30000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13638386657",
       "soldout": true
     },
     {
@@ -2557,14 +2198,6 @@
       "name": "팜포베테우스 마스카라 아성체 암컷 / 거미 타란툴라 타란튤라 밀웜 귀뚜라미 절지류 용품",
       "price": 48000,
       "url": "https://smartstore.naver.com/tzblossom/products/13638796051",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "팜포베테우스 에콰도르 퍼플 유체 / 타란튤라 타란툴라 거미 절지류 용품 입양 밀웜 분양",
-      "price": 30000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13644157100",
       "soldout": true
     },
     {
@@ -2593,14 +2226,6 @@
           4000
         ]
       ]
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "스트레이트 혼드 바분 유체 / 스혼바 타란튤라 타란툴라 거미 키우기 곤충 채집 장수풍뎅이",
-      "price": 6000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8764110343",
-      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -2635,25 +2260,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "과테말라 타이거럼프 유체 / 타란튤라 타란툴라 전갈 지네 절지류 곤충 키우기 밀웜 타럼",
-      "price": 10000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8764162622",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "로즈헤어 유체 / 타란툴라 타란튤라 키우기 전갈 관찰 파충류 절지류 사육 채집통 귀뚜라미",
       "price": 13000,
       "url": "https://smartstore.naver.com/tzblossom/products/8764174594"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "골든블루렉바분 유체 / 골블바 골블렉 타란튤라 어셈 파충류 절지류 곤충 키우기 사육 관찰",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8764178511",
-      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -2681,36 +2290,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "푸에르토리칸 핑크토 유체 / 전갈 애완거미 타란툴라 타란튤라 곤충 키우기 절지류 용품",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8771289373",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "짐바브웨 그레이 바분 유체 특대 / 혼드바분 타란튤라 거미 키우기 전갈 곤충 절지류 용품",
       "price": 12000,
       "url": "https://smartstore.naver.com/tzblossom/products/8801110626"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "캐리비안 다이아몬드 유체 / 라스티 타란튤라 타란툴라 절지류 타사모 거미 키우기 파충류",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801181732",
-      "prev": 18000,
-      "changed_on": "2026-06-15",
-      "hist": [
-        [
-          "2026-06-02",
-          18000
-        ],
-        [
-          "2026-06-15",
-          15000
-        ]
-      ]
     },
     {
       "vendor": "더쥬 송파점",
@@ -2730,40 +2312,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "골든그레이 버드이터 유체 / 포믹토 타란튤라 타란툴라 거미 키우기 사육 곤충 관찰 밀웜",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801207633",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "인디언 바이올렛 유체 / 칠로 인바 타란튤라 타란툴라 거미 키우기 관찰 사육 밀웜 절지류",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801212805",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "사우스 춤폰 (라농 블루) 타이거 유체 / 거미 타란툴라 타란튤라 절지류 밀웜 지타 입양",
-      "price": 14000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801229064"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "레드슬레이트 오너멘탈 유체 / 레슬 거미 키우기 절지류 타란튤라 타란툴라 곤충 밀웜 입양",
       "price": 35000,
       "url": "https://smartstore.naver.com/tzblossom/products/8801236213",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "트리니다드 핑크 유체 / 타란튤라 타란툴라 거미 키우기 전갈 지네 밀웜 귀뚜라미 곤충",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801241024",
       "soldout": true
     },
     {
@@ -2806,25 +2357,10 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "올리웨이라이 엔칸타다 유체 특대 / 타란튤라 타란툴라 핑크토 키우기 거미 절지류 절사모",
-      "price": 40000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801321557",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "레드 스트라이프 핑크토 유체 / 레스핑 타란튤라 거미 절지류 밀웜 귀뚜라미 키우기 타사모",
       "price": 19000,
       "url": "https://smartstore.naver.com/tzblossom/products/8801334895",
       "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "포믹토푸스 사바나 유체 / 타란튤라 타란툴라 거미 키우기 관찰 학습 곤충 밀웜 절지류",
-      "price": 30000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801357429"
     },
     {
       "vendor": "더쥬 송파점",
@@ -2861,22 +2397,6 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "인디언 레인보우 유체 / 인레 타란튤라 타란툴라 거미 키우기 절지류 곤충 파충류 귀뚜라미",
-      "price": 45000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801522880",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "브릭 레드 핑크토 유체 (비케고이 에콰도르) / 타란튤라 타란툴라 절지류 애완거미 키우기",
-      "price": 45000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801527154",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "크세네스티스 테네브리스 유체 / 렛서 랫서 타란튤라 타란툴라 파충류 절지류샵 타사모 용품",
       "price": 95000,
       "url": "https://smartstore.naver.com/tzblossom/products/8801559704",
@@ -2901,7 +2421,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "크세네스티스 블루 M / 타란튤라 타란툴라 거미 절지 전갈 지네 곤충 사슴벌레 렛서 랫서",
+      "name": "관용명 : 크세네스티스 블루 / 렛서블루 / 자이언트 블루블럼 학명 : Xenesthis sp. \"Blue\" 분양 개체 크기 : 2탈피 유체 - M라인 크세 블루입니다. 아이러니하게도 다른 라인에서의 브리딩 성공 사례가 있으면서도 모든 크세네스티스 종 중에서 M라인과 B라인의 차이가 가장 두드러지는 종이 아닐까 합니다. 개체 차이를 배제하고 평균치에 관한 견해는 B라인의 성체가 조금 더 다크한 느낌이고 M라인의 성체는 등갑의 스타버스트가 비교적 훨씬 더 꽉 찬 느낌을 줍니다. 크세네스티스 속 타란툴라중 유일하게 푸른 빛을 띄는 종입",
       "price": 140000,
       "url": "https://smartstore.naver.com/tzblossom/products/9344080168",
       "soldout": true
@@ -2924,31 +2444,7 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "베네쥬엘라 썬타이거 유체 / 썬타 타란튤라 타란툴라 거미 절지 전갈 지네 곤충 사슴벌레",
-      "price": 10000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9344132586",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "호치민 타이거 DCF 유체 / 센티패드 타란툴라 타란튤라 아시안포레스트 지네 전갈 거미",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9344138075",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "샬렘 오너멘탈 유체 / 타란튤라 타란툴라 거미 절지류 전갈 지네 키우기 곤충 입양 분양",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9344153412",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "보르네오 네온 블루렉 비루페스 준성체 암컷 / 타란튤라 타란툴라 거미 전갈 지네 절지류",
+      "name": "관용명 : 보르네오 네온 블루렉, 비루페스 학명 : Birupes simoroxigorum 분양 개체 크기 : 7~12cm 준성체 암컷 - 네온 블루렉 이라는 이름이 개체 실 발색을 정말 잘 표현 해 주는 오묘한 발색의 아름다운 타란툴라입니다. 단일 속명을 사용하고 있으며, 3,4년전만 해도 40만원을 호가하는 초고가 레어 타란툴라였으나 현재에는 많이 저렴해졌습니다. 브리딩 난이도가 높은 편에 속하며 성장할수록, 성체에 가까워 질 수록 먹성이 꽤나 줄어드는 타란툴라입니다. 굉장히 빠르니 초보 사육자분들께서는 사육에 주의가 필요합니다",
       "price": 85000,
       "url": "https://smartstore.naver.com/tzblossom/products/9344158684",
       "soldout": true
@@ -2959,22 +2455,6 @@
       "name": "자바옐로우니 블랙 12cm+- 준성체 암컷 / 타란튤라 타란툴라 거미 용품 절지류 곤충",
       "price": 45000,
       "url": "https://smartstore.naver.com/tzblossom/products/9344169389",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "보르네오 블랙 유체 / 보블 타란튤라 타란툴라 거미 절지류 전갈 지네 곤충 키우기 밀웜",
-      "price": 7000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9344182165",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "그린보틀블루 (그린볼) 유체 / 타란툴라 타란튤라 아시안포레스트 지네 전갈 거미 절지류",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9344209402",
       "soldout": true
     },
     {
@@ -3036,43 +2516,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "하리본 어스타이거 유체 / 타란튤라 곤충 개미 지네 전갈 거미 절지류 절사모 키우기 밀웜",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728514366",
-      "prev": 14000,
-      "changed_on": "2026-06-25",
-      "hist": [
-        [
-          "2026-06-02",
-          14000
-        ],
-        [
-          "2026-06-25",
-          20000
-        ]
-      ]
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "브라질리안 쥬얼 유체 / 브쥬 타란튤라 타란툴라 핑크토 거미 키우기 곤충 파충류 절지류",
       "price": 140000,
       "url": "https://smartstore.naver.com/tzblossom/products/9728537248"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "브라질리안 드워프 블루 뷰티 유체 특대 / 타란튤라 거미 키우기 관찰 사육 곤충 타란툴라",
-      "price": 40000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728549118",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "우잠바라 오렌지 바분 TCF 유체 / 타란튤라 타란툴라 절지류 전갈 지네 티피컬 어셈",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728575992"
     },
     {
       "vendor": "더쥬 송파점",
@@ -3085,23 +2531,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "차콜 어스 타이거 (부톤 타이거) 유체 / 타란튤라 타란툴라 거미 절지류 곤충 지타",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728633393"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "팜포베테우스 마나비 유체 / 타란튤라 타란툴라 거미 절지류 용품 밀웜 귀뚜라미 파충류",
+      "name": "관용명 : 팜포베테우스 마나비 학명 : Pamphobeteus sp. \"Manabi\" 분양 개체 크기 : 1탈피 - 에콰도르 미동정 팜포베테우스 중 에콰도르 마나비(Manabi) 주에서 채집되어지는 타란툴라입니다. 팜포베테에우스 티그리스와(P.sp.Tigris) 매우 근접한 서식지 및 발색 습성 특징 등 유사한 부분이 많으며 유전적으로도 밀접한 관계이지 않을까 개인적으로 추측합니다. 올블랙의 초대형 에콰도르 팜포베테우스로 모든 여타 에콰도르 팜포베테우스들이 그렇 듯 사육하는 재미가 최고인 종 입니다. 유명한 월드셀러의 본인이 봤던",
       "price": 50000,
       "url": "https://smartstore.naver.com/tzblossom/products/9728643166"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "우잠바라 오렌지 바분 BCF (Tete) 유체 / 어셈 브라운폼 테테 타란튤라 절지류",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728666313"
     },
     {
       "vendor": "더쥬 송파점",
@@ -3113,40 +2545,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "트릭소펠마 카하마르카 오렌지 유체 / 절지류 거미 타란튤라 타란툴라 키우기 귀뚜라미 밀웜",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728680391",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "리오그란데 골드 유체 / 타란튤라 타란툴라 거미 절지류 전갈 지네 곤충 사슴벌레 키우기",
+      "name": "관용명 : 리오그란데 골드 학명 : Aphonopelma moderatum 분양 개체 크기 : 2~3 탈피 유체 - 가장 아름다운, 가장 인기많은, 가장 고가의 아포노펠마 종 중 하나인 리오그란데 골드입니다. 매우 순하며 소심합니다. 성체시 6~8cm까지 성장하는 소형 타란툴라로 체감 성장속도는 아포노 특유의 느린 성장속도에 작은 성체 크기 덕에 매우 느린 편입니다. *성체 Google 펌 이미지입니다. 분양되어지는 개체는 유체 ~ 아성체 입니다.",
       "price": 65000,
       "url": "https://smartstore.naver.com/tzblossom/products/9728684590"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "말레이시안 블루 유체 / 타란튤라 타란툴라 거미 절지류 전갈 지네 곤충 말블 싱블 밀웜",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728699787",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "오악사카 아성체 / 타란튤라 타란툴라 거미 절지류 전갈 지네 곤충 사슴벌레 키우기 용품",
-      "price": 34000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728706461"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "세리코펠마 다리엔 유체 특대 / 타란튤라 타란툴라 거미 절지류 전갈 지네 곤충 키우기",
-      "price": 50000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728767884",
-      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -3155,13 +2556,6 @@
       "price": 180000,
       "url": "https://smartstore.naver.com/tzblossom/products/9728798225",
       "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "브론즈 바분 유체 / 타란튤라 타란툴라 거미 절지류 밀웜 나마쿠엔시스 나마퀜시스 입양",
-      "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728806452"
     },
     {
       "vendor": "더쥬 송파점",
@@ -3207,33 +2601,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "포트홀 바분﻿ 유체 특대 / 타란튤라 아시안포레스트 지네 전갈 거미 절지류 절사모 용품",
-      "price": 10000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728837488",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "루푸스 타이거 유체 / 센티패드 타란튤라 아시안포레스트 지네 전갈 거미 절지류 키우기",
       "price": 5000,
       "url": "https://smartstore.naver.com/tzblossom/products/9728847108"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "카메룬 레드 바분 유체 / 타란튤라 카레바 거미 절지류 절사모 밀웜 귀뚜라미 곤충 입양",
-      "price": 4000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9866081373",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "수마트라 타이거 유체 / 타란툴라 타란튤라 전갈 거미 절지류 절사모 지타 파충류 용품",
-      "price": 45000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9875598995",
-      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -3257,25 +2627,9 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
-      "name": "팜포베테우스 망가네그라 유체 / 타란튤라 아시안포레스트 거미 절지류 절사모 밀웜 귀뚜라미",
-      "price": 40000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9970812626",
-      "soldout": true
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
       "name": "오렌지 어셈 바분 유체 대 / 우잠바라 타란튤라 거미 절지류 밀웜 귀뚜라미 곤충 용품",
       "price": 4000,
       "url": "https://smartstore.naver.com/tzblossom/products/9970830826"
-    },
-    {
-      "vendor": "더쥬 송파점",
-      "channel": "네이버",
-      "name": "하티하티 유체 / 타란튤라 아시안포레스트 거미 절지류 절사모 밀웜 귀뚜라미 구피 열대어",
-      "price": 5000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9970842629",
-      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
