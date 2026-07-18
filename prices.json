@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-18T13:06:32",
+  "updated_at": "2026-07-18T12:58:09",
   "channels": {
-    "자사몰": "2026-07-18T01:50:26",
+    "자사몰": "2026-07-18T12:58:09",
     "네이버": "2026-07-18T13:06:32"
   },
   "products": [
@@ -9800,7 +9800,8 @@
       "channel": "자사몰",
       "name": "보르네오 블랙 / 유체",
       "price": 12000,
-      "url": "https://theraphosidae.co.kr/product/보르네오-블랙-유체/1550/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/보르네오-블랙-유체/1550/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -10248,7 +10249,8 @@
       "channel": "자사몰",
       "name": "상히에 아일랜드 블랙 / 유체",
       "price": 13000,
-      "url": "https://theraphosidae.co.kr/product/상히에-아일랜드-블랙-유체/1537/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/상히에-아일랜드-블랙-유체/1537/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -10756,7 +10758,8 @@
       "channel": "자사몰",
       "name": "아위쿨라리아 메리아나이 (ex.타라포토) / 유체",
       "price": 45000,
-      "url": "https://theraphosidae.co.kr/product/아위쿨라리아-메리아나이-ex타라포토-유체/1500/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/아위쿨라리아-메리아나이-ex타라포토-유체/1500/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -11727,7 +11730,8 @@
       "channel": "자사몰",
       "name": "차이니즈 어스타이거 \"하이난\" / 준성체+.암컷",
       "price": 65000,
-      "url": "https://theraphosidae.co.kr/product/차이니즈-어스타이거-하이난-준성체암컷/2014/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/차이니즈-어스타이거-하이난-준성체암컷/2014/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
