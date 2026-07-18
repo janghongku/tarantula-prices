@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-18T01:50:26",
+  "updated_at": "2026-07-18T13:06:32",
   "channels": {
     "자사몰": "2026-07-18T01:50:26",
-    "네이버": "2026-07-17T20:23:08"
+    "네이버": "2026-07-18T13:06:32"
   },
   "products": [
     {
@@ -1114,8 +1114,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "오렌지 프린지드 칼리만탄 바랏 / 타란튤라 새잡이거미 애완거미 희귀동물 곤충",
-      "price": 30000,
-      "url": "https://smartstore.naver.com/terrafactory/products/5466823366"
+      "price": 21000,
+      "url": "https://smartstore.naver.com/terrafactory/products/5466823366",
+      "prev": 30000,
+      "changed_on": "2026-07-18",
+      "hist": [
+        [
+          "2026-06-02",
+          30000
+        ],
+        [
+          "2026-07-18",
+          21000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
