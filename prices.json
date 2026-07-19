@@ -19650,8 +19650,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "샬렘 오너멘탈 유체",
-      "price": 30000,
-      "url": "https://tarantulakorea.com/product/샬렘-오너멘탈-유체/281/category/67/display/1/"
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/샬렘-오너멘탈-유체/281/category/67/display/1/",
+      "prev": 30000,
+      "changed_on": "2026-07-19",
+      "hist": [
+        [
+          "2026-06-02",
+          30000
+        ],
+        [
+          "2026-07-19",
+          25000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
