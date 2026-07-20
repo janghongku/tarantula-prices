@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-20T20:07:33",
+  "updated_at": "2026-07-20T13:52:20",
   "channels": {
-    "자사몰": "2026-07-19T02:00:27",
+    "자사몰": "2026-07-20T13:52:20",
     "네이버": "2026-07-20T20:07:33"
   },
   "products": [
@@ -18753,6 +18753,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "헤라클레스 바분 유체 / Hysterocrates hercules",
+      "price": 3000,
+      "url": "https://tarancenter.com/product/헤라클레스-바분-유체-hysterocrates-hercules/1620/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "헤라클레스 바분 유체 대~아성체급 / Hysterocrates hercules",
       "price": 10000,
       "url": "https://tarancenter.com/product/헤라클레스-바분-유체-대아성체급-hysterocrates-hercules/770/category/51/display/1/",
@@ -18843,8 +18850,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "가이아나 핑크토 유체",
-      "price": 25000,
-      "url": "https://tarantulakorea.com/product/가이아나-핑크토-유체/500/category/67/display/1/"
+      "price": 20000,
+      "url": "https://tarantulakorea.com/product/가이아나-핑크토-유체/500/category/67/display/1/",
+      "prev": 25000,
+      "changed_on": "2026-07-20",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-07-20",
+          20000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -19829,6 +19848,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "아마조니카 핑크토'마나우스'  유체",
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/아마조니카-핑크토마나우스-유체/279/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "아마존 사파이어 핑크토 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/아마존-사파이어-핑크토-유체/280/category/67/display/1/",
@@ -19914,7 +19940,8 @@
       "channel": "자사몰",
       "name": "악테온'다크폼' 유체 / spec. 산타카타리나 섬 악테온",
       "price": 80000,
-      "url": "https://tarantulakorea.com/product/악테온다크폼-유체-spec-산타카타리나-섬-악테온/682/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/악테온다크폼-유체-spec-산타카타리나-섬-악테온/682/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -20012,14 +20039,16 @@
       "channel": "자사몰",
       "name": "에슐러스 마니카타 골드 유체",
       "price": 75000,
-      "url": "https://tarantulakorea.com/product/에슐러스-마니카타-골드-유체/753/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/에슐러스-마니카타-골드-유체/753/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "에슐러스 마니카타 골드 유체",
       "price": 75000,
-      "url": "https://tarantulakorea.com/product/에슐러스-마니카타-골드-유체/753/category/24/display/2/"
+      "url": "https://tarantulakorea.com/product/에슐러스-마니카타-골드-유체/753/category/24/display/2/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
