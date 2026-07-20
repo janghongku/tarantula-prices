@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-20T12:07:41",
+  "updated_at": "2026-07-20T20:07:33",
   "channels": {
     "자사몰": "2026-07-19T02:00:27",
-    "네이버": "2026-07-20T12:07:41"
+    "네이버": "2026-07-20T20:07:33"
   },
   "products": [
     {
@@ -1586,8 +1586,20 @@
       "vendor": "더쥬 송파점",
       "channel": "네이버",
       "name": "럼동 타이거 유체 / 타란튤라 타란툴라 곤충 거미 절지류 절사모 밀웜 귀뚜라미 키우기",
-      "price": 10000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10177976106"
+      "price": 12000,
+      "url": "https://smartstore.naver.com/tzblossom/products/10177976106",
+      "prev": 10000,
+      "changed_on": "2026-07-20",
+      "hist": [
+        [
+          "2026-06-02",
+          10000
+        ],
+        [
+          "2026-07-20",
+          12000
+        ]
+      ]
     },
     {
       "vendor": "더쥬 송파점",
@@ -1637,8 +1649,7 @@
       "channel": "네이버",
       "name": "티그리스 오너멘탈 유체 / 타란튤라 타란툴라 거미 키우기 곤충 전갈 절지류 절사모 타사모",
       "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10302883443",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tzblossom/products/10302883443"
     },
     {
       "vendor": "더쥬 송파점",
@@ -1676,7 +1687,8 @@
       "channel": "네이버",
       "name": "스트라이프 레드럼프 유체 대 / 스레 브라질리안 레드앤화이트 타란튤라 거미 키우기 용품",
       "price": 5000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10326345470"
+      "url": "https://smartstore.naver.com/tzblossom/products/10326345470",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -2089,6 +2101,7 @@
       "name": "더쥬 송파점 7월 절지류 랜덤박스 / 상품 설명에 기재되어진 타란튤라 중 1마리가 랜덤으로 발송되어집니다 / 교환, 환불, 취소 불가품목이오니 신중한 구매바랍니다.",
       "price": 9900,
       "url": "https://smartstore.naver.com/tzblossom/products/11821343821",
+      "soldout": true,
       "prev": 15000,
       "changed_on": "2026-07-02",
       "hist": [
@@ -2455,7 +2468,8 @@
       "channel": "네이버",
       "name": "넨뎁 어스 타이거 준성체 암컷 / 타란튤라 타란툴라 거미 곤충 키우기 밀웜 절지류 파충류",
       "price": 65000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13288771701"
+      "url": "https://smartstore.naver.com/tzblossom/products/13288771701",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -3114,7 +3128,8 @@
       "channel": "네이버",
       "name": "차콜 어스 타이거 (부톤 타이거) 유체 / 타란튤라 타란툴라 거미 절지류 곤충 지타",
       "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728633393"
+      "url": "https://smartstore.naver.com/tzblossom/products/9728633393",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -3747,10 +3762,9 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "헤라클레스바분 버로우성 타란튤라 유체 / 애완거미 아프리카대표종 곤충키우기 밀웜 귀뚜라미",
+      "name": "헤라클레스바분 버로우성 타란튤라 유체 애완거미",
       "price": 3000,
-      "url": "https://smartstore.naver.com/tarancenter/products/11167470172",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tarancenter/products/11167470172"
     },
     {
       "vendor": "타란센터",
@@ -4265,7 +4279,8 @@
       "channel": "네이버",
       "name": "유체 대 시리즈 / 킹바분 아프리카 왕거미 버로우성 타란튤라",
       "price": 30000,
-      "url": "https://smartstore.naver.com/tarancenter/products/13446460719"
+      "url": "https://smartstore.naver.com/tarancenter/products/13446460719",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -6637,13 +6652,6 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "네이버",
-      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
