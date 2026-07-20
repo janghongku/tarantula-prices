@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-19T23:57:12",
+  "updated_at": "2026-07-20T12:07:41",
   "channels": {
     "자사몰": "2026-07-19T02:00:27",
-    "네이버": "2026-07-19T23:57:12"
+    "네이버": "2026-07-20T12:07:41"
   },
   "products": [
     {
@@ -3214,7 +3214,8 @@
       "channel": "네이버",
       "name": "구티 사파이어 오너멘탈 유체 / 타란튤라 거미 키우기 곤충 파충류 용품 절지류 타란툴라",
       "price": 30000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728823762"
+      "url": "https://smartstore.naver.com/tzblossom/products/9728823762",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -5998,10 +5999,9 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "샬렘 오너멘탈 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
+      "name": "(7월 이벤트) 샬렘 오너멘탈 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
       "price": 15000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10593043443",
-      "soldout": true,
       "prev": 30000,
       "changed_on": "2026-07-04",
       "hist": [
@@ -8120,7 +8120,8 @@
       "channel": "네이버",
       "name": "에슐러스 마니카타 골드 유체 / 타란튤라 타란툴라 거미 절지동물 애완곤충 곤충",
       "price": 75000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/13656457625"
+      "url": "https://smartstore.naver.com/tarantulakorea/products/13656457625",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
