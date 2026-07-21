@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-21T12:07:44",
+  "updated_at": "2026-07-21T20:07:33",
   "channels": {
     "자사몰": "2026-07-21T01:59:25",
-    "네이버": "2026-07-21T12:07:44"
+    "네이버": "2026-07-21T20:07:33"
   },
   "products": [
     {
@@ -2798,8 +2798,7 @@
       "channel": "네이버",
       "name": "레드슬레이트 오너멘탈 유체 / 레슬 거미 키우기 절지류 타란튤라 타란툴라 곤충 밀웜 입양",
       "price": 35000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801236213",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tzblossom/products/8801236213"
     },
     {
       "vendor": "더쥬 송파점",
