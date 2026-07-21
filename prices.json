@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-21T01:59:25",
+  "updated_at": "2026-07-21T12:07:44",
   "channels": {
     "자사몰": "2026-07-21T01:59:25",
-    "네이버": "2026-07-20T20:07:33"
+    "네이버": "2026-07-21T12:07:44"
   },
   "products": [
     {
@@ -1180,14 +1180,16 @@
       "channel": "네이버",
       "name": "팜포베테우스 마스카라 / 타란튤라 새잡이거미 애완거미 희귀동물 곤충",
       "price": 25000,
-      "url": "https://smartstore.naver.com/terrafactory/products/5499765965"
+      "url": "https://smartstore.naver.com/terrafactory/products/5499765965",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "팜포베테우스 마찰라 / 타란튤라 새잡이거미 애완거미 희귀동물 곤충",
       "price": 30000,
-      "url": "https://smartstore.naver.com/terrafactory/products/5499771135"
+      "url": "https://smartstore.naver.com/terrafactory/products/5499771135",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -5925,8 +5927,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "가이아나 핑크토 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
-      "price": 25000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10588414892"
+      "price": 20000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10588414892",
+      "prev": 25000,
+      "changed_on": "2026-07-21",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-07-21",
+          20000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -6339,9 +6353,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "핑크토 최대 사이즈 아마조니카 마나우스 핑크토 유체 타란툴라 나무위성 절지동물 거미 곤충",
-      "price": 40000,
+      "price": 35000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10609477428",
-      "soldout": true
+      "prev": 40000,
+      "changed_on": "2026-07-21",
+      "hist": [
+        [
+          "2026-06-02",
+          40000
+        ],
+        [
+          "2026-07-21",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
