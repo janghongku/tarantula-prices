@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-22T01:58:10",
+  "updated_at": "2026-07-22T17:15:30",
   "channels": {
     "자사몰": "2026-07-22T01:58:10",
-    "네이버": "2026-07-21T20:07:33"
+    "네이버": "2026-07-22T17:15:30"
   },
   "products": [
     {
@@ -686,8 +686,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "칼리만탄 브라우니 / 타란튤라 타란툴라 애완거미 거미랑",
-      "price": 19000,
-      "url": "https://smartstore.naver.com/terrafactory/products/13448512395"
+      "price": 13000,
+      "url": "https://smartstore.naver.com/terrafactory/products/13448512395",
+      "prev": 19000,
+      "changed_on": "2026-07-22",
+      "hist": [
+        [
+          "2026-06-02",
+          19000
+        ],
+        [
+          "2026-07-22",
+          13000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -6676,6 +6688,13 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "네이버",
+      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
+      "price": 18000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
