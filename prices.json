@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-22T13:26:30",
+  "updated_at": "2026-07-23T02:05:34",
   "channels": {
-    "자사몰": "2026-07-22T13:26:30",
+    "자사몰": "2026-07-23T02:05:34",
     "네이버": "2026-07-22T20:07:26"
   },
   "products": [
@@ -14945,7 +14945,8 @@
       "channel": "자사몰",
       "name": "그린보틀블루 (그린볼) 유체 대 / Chromatopelma cyaneopubescens",
       "price": 25000,
-      "url": "https://tarancenter.com/product/그린보틀블루-그린볼-유체-대-chromatopelma-cyaneopubescens/1335/category/51/display/1/"
+      "url": "https://tarancenter.com/product/그린보틀블루-그린볼-유체-대-chromatopelma-cyaneopubescens/1335/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
