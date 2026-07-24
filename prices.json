@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-24T11:06:51",
+  "updated_at": "2026-07-24T23:39:17",
   "channels": {
     "자사몰": "2026-07-23T02:05:34",
-    "네이버": "2026-07-24T11:06:51"
+    "네이버": "2026-07-24T23:39:17"
   },
   "products": [
     {
@@ -888,6 +888,13 @@
     {
       "vendor": "거미랑",
       "channel": "네이버",
+      "name": "바크마 타이거 준성체 / 타란튤라 타란툴라 애완거미 거미랑",
+      "price": 50000,
+      "url": "https://smartstore.naver.com/terrafactory/products/13680316899"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "네이버",
       "name": "브라질리안 블루 타란툴라 / 애완거미 타란튤라 대왕거미 희귀동물 곤충",
       "price": 5000,
       "url": "https://smartstore.naver.com/terrafactory/products/5225271041",
@@ -1134,10 +1141,10 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "오렌지 프린지드 칼리만탄 바랏 / 타란튤라 새잡이거미 애완거미 희귀동물 곤충",
-      "price": 21000,
+      "price": 30000,
       "url": "https://smartstore.naver.com/terrafactory/products/5466823366",
-      "prev": 30000,
-      "changed_on": "2026-07-18",
+      "prev": 21000,
+      "changed_on": "2026-07-24",
       "hist": [
         [
           "2026-06-02",
@@ -1146,6 +1153,10 @@
         [
           "2026-07-18",
           21000
+        ],
+        [
+          "2026-07-24",
+          30000
         ]
       ]
     },
@@ -1521,10 +1532,16 @@
     {
       "vendor": "거미랑",
       "channel": "네이버",
-      "name": "브라질리안 옐로우 밴디드 핑크토 브라질 / 애완거미 희귀동물 애완용거미 타란튤라 대왕거미",
+      "name": "아마조니카 핑크토 / 애완거미 희귀동물 사슴벌레 타란튤라 대왕거미",
       "price": 35000,
-      "url": "https://smartstore.naver.com/terrafactory/products/7547192979",
-      "soldout": true
+      "url": "https://smartstore.naver.com/terrafactory/products/7546552301"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "네이버",
+      "name": "브라질리안 옐로우 밴디드 핑크토 브라질 / 희귀동물 애완용거미 타란튤라",
+      "price": 35000,
+      "url": "https://smartstore.naver.com/terrafactory/products/7547192979"
     },
     {
       "vendor": "거미랑",
