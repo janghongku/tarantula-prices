@@ -8208,6 +8208,25 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
+      "name": "[20마리 한정 할인판매] 칼리만탄 브라우니 / 유체 *07.24일 재입고",
+      "price": 9500,
+      "url": "https://theraphosidae.co.kr/product/20마리-한정-할인판매-칼리만탄-브라우니-유체-0724일-재입고/2018/category/24/display/1/",
+      "prev": 19000,
+      "changed_on": "2026-07-24",
+      "hist": [
+        [
+          "2026-06-02",
+          19000
+        ],
+        [
+          "2026-07-24",
+          9500
+        ]
+      ]
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
       "name": "[2차 재입고] 골드 밴디드 스타버스트 (ex. Ami sp \"Panama\") / 유체",
       "price": 40000,
       "url": "https://theraphosidae.co.kr/product/2차-재입고-골드-밴디드-스타버스트-ex-ami-sp-panama-유체/835/category/24/display/1/",
@@ -8724,18 +8743,9 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "넨뎁 타이거 / 유체",
-      "price": 15000,
-      "url": "https://theraphosidae.co.kr/product/넨뎁-타이거-유체/1621/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "넨뎁 타이거 / 준성체+",
-      "price": 75000,
-      "url": "https://theraphosidae.co.kr/product/넨뎁-타이거-준성체/1706/category/24/display/1/",
-      "soldout": true
+      "name": "남눙 타이거 / 유체",
+      "price": 10000,
+      "url": "https://theraphosidae.co.kr/product/남눙-타이거-유체/2049/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -9210,17 +9220,9 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "마그누스 타이거 / 아성체(5-8cm).성별선택",
-      "price": 95000,
-      "url": "https://theraphosidae.co.kr/product/마그누스-타이거-아성체5-8cm성별선택/2001/category/24/display/1/"
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
       "name": "마그누스 타이거 / 유체",
       "price": 50000,
-      "url": "https://theraphosidae.co.kr/product/마그누스-타이거-유체/2000/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/마그누스-타이거-유체/2000/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -9546,49 +9548,16 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "바크마 타이거 / 14-15cm+-.암컷",
-      "price": 60000,
-      "url": "https://theraphosidae.co.kr/product/바크마-타이거-14-15cm-암컷/138/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "바크마 타이거 / 15cm+-.암컷",
-      "price": 60000,
-      "url": "https://theraphosidae.co.kr/product/바크마-타이거-15cm-암컷/1426/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "바크마 타이거 DCF / 유체",
-      "price": 20000,
-      "url": "https://theraphosidae.co.kr/product/바크마-타이거-dcf-유체/1672/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
       "name": "바크마 타이거 / 유체",
-      "price": 15000,
-      "url": "https://theraphosidae.co.kr/product/바크마-타이거-유체/1673/category/24/display/1/"
+      "price": 8000,
+      "url": "https://theraphosidae.co.kr/product/바크마-타이거-유체/2048/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "바크마 타이거 / 유체",
-      "price": 28000,
-      "url": "https://theraphosidae.co.kr/product/바크마-타이거-유체/56/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "바크마 타이거 / 유체(대)&아성체 *밝은 형태의 개체군",
-      "price": 28000,
-      "url": "https://theraphosidae.co.kr/product/바크마-타이거-유체대아성체-밝은-형태의-개체군/976/category/24/display/1/",
-      "soldout": true
+      "name": "바크마 타이거 / 준성체+.암컷",
+      "price": 50000,
+      "url": "https://theraphosidae.co.kr/product/바크마-타이거-준성체암컷/2047/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -9741,9 +9710,20 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "베트남 실버 / 유체",
-      "price": 12000,
+      "price": 10000,
       "url": "https://theraphosidae.co.kr/product/베트남-실버-유체/1346/category/24/display/1/",
-      "soldout": true
+      "prev": 12000,
+      "changed_on": "2026-07-24",
+      "hist": [
+        [
+          "2026-06-02",
+          12000
+        ],
+        [
+          "2026-07-24",
+          10000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -9779,8 +9759,20 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "베트남 하이랜드 / 유체",
-      "price": 15000,
-      "url": "https://theraphosidae.co.kr/product/베트남-하이랜드-유체/1787/category/24/display/1/"
+      "price": 12000,
+      "url": "https://theraphosidae.co.kr/product/베트남-하이랜드-유체/1787/category/24/display/1/",
+      "prev": 15000,
+      "changed_on": "2026-07-24",
+      "hist": [
+        [
+          "2026-06-02",
+          15000
+        ],
+        [
+          "2026-07-24",
+          12000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -10077,9 +10069,20 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "브라질리안 옐로우 밴디드 핑크토 (브라질) / 유체",
-      "price": 65000,
+      "price": 35000,
       "url": "https://theraphosidae.co.kr/product/브라질리안-옐로우-밴디드-핑크토-브라질-유체/1497/category/24/display/1/",
-      "soldout": true
+      "prev": 65000,
+      "changed_on": "2026-07-24",
+      "hist": [
+        [
+          "2026-06-02",
+          65000
+        ],
+        [
+          "2026-07-24",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -10734,9 +10737,20 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "아마조니카 핑크토 \"마나우스\" / 유체",
-      "price": 40000,
+      "price": 35000,
       "url": "https://theraphosidae.co.kr/product/아마조니카-핑크토-마나우스-유체/1499/category/24/display/1/",
-      "soldout": true
+      "prev": 40000,
+      "changed_on": "2026-07-24",
+      "hist": [
+        [
+          "2026-06-02",
+          40000
+        ],
+        [
+          "2026-07-24",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -11166,8 +11180,20 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "안틸레스 핑크토 / 유체",
-      "price": 15000,
-      "url": "https://theraphosidae.co.kr/product/안틸레스-핑크토-유체/1581/category/24/display/1/"
+      "price": 10000,
+      "url": "https://theraphosidae.co.kr/product/안틸레스-핑크토-유체/1581/category/24/display/1/",
+      "prev": 15000,
+      "changed_on": "2026-07-24",
+      "hist": [
+        [
+          "2026-06-02",
+          15000
+        ],
+        [
+          "2026-07-24",
+          10000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -11363,9 +11389,9 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "오렌지 프린지드 \"칼리만탄 바랏\"  / 유체",
+      "name": "오렌지 프린지드 \"칼리만탄 바랏\"  / 유체 *07.24일 재입고",
       "price": 30000,
-      "url": "https://theraphosidae.co.kr/product/오렌지-프린지드-칼리만탄-바랏-유체/1033/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/오렌지-프린지드-칼리만탄-바랏-유체-0724일-재입고/1033/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -11844,13 +11870,6 @@
       "price": 20000,
       "url": "https://theraphosidae.co.kr/product/카오-속-타이거-유체/1799/category/24/display/1/",
       "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "칼리만탄 브라우니 / 유체",
-      "price": 19000,
-      "url": "https://theraphosidae.co.kr/product/칼리만탄-브라우니-유체/2018/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -13840,14 +13859,6 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "페루 퍼플 핑크토 / 유체",
-      "price": 15000,
-      "url": "https://theraphosidae.co.kr/product/페루-퍼플-핑크토-유체/1317/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
       "name": "페루블루 버드이터 (ex.라구나스) / 유체",
       "price": 22000,
       "url": "https://theraphosidae.co.kr/product/페루블루-버드이터-ex라구나스-유체/1823/category/24/display/1/"
@@ -14133,8 +14144,20 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "푸카이파 핑크토 / 유체",
-      "price": 25000,
-      "url": "https://theraphosidae.co.kr/product/푸카이파-핑크토-유체/1565/category/24/display/1/"
+      "price": 14000,
+      "url": "https://theraphosidae.co.kr/product/푸카이파-핑크토-유체/1565/category/24/display/1/",
+      "prev": 25000,
+      "changed_on": "2026-07-24",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-07-24",
+          14000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -19528,6 +19551,14 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "벵갈오너멘탈 유체",
+      "price": 45000,
+      "url": "https://tarantulakorea.com/product/벵갈오너멘탈-유체/139/category/67/display/1/",
+      "soldout": true
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "보네티나 탄제리 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/보네티나-탄제리-유체/618/category/24/display/1/"
@@ -19807,6 +19838,13 @@
       "name": "쉐브론 유체",
       "price": 12000,
       "url": "https://tarantulakorea.com/product/쉐브론-유체/116/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "스리랑카 오너멘탈 유체",
+      "price": 30000,
+      "url": "https://tarantulakorea.com/product/스리랑카-오너멘탈-유체/506/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -20150,6 +20188,13 @@
       "name": "옐로우 밴디드 버드이터 유체",
       "price": 30000,
       "url": "https://tarantulakorea.com/product/옐로우-밴디드-버드이터-유체/613/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "옐로우백 오너멘탈 유체",
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/옐로우백-오너멘탈-유체/421/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21025,6 +21070,13 @@
       "name": "피더렉바분 '페더렉' 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/피더렉바분-페더렉-유체/321/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "피더스니 오너멘탈 '고스트' 유체",
+      "price": 20000,
+      "url": "https://tarantulakorea.com/product/피더스니-오너멘탈-고스트-유체/137/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
