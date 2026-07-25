@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-24T23:39:17",
+  "updated_at": "2026-07-25T02:00:09",
   "channels": {
-    "자사몰": "2026-07-23T02:05:34",
+    "자사몰": "2026-07-25T02:00:09",
     "네이버": "2026-07-24T23:39:17"
   },
   "products": [
@@ -8212,14 +8212,14 @@
       "price": 9500,
       "url": "https://theraphosidae.co.kr/product/20마리-한정-할인판매-칼리만탄-브라우니-유체-0724일-재입고/2018/category/24/display/1/",
       "prev": 19000,
-      "changed_on": "2026-07-24",
+      "changed_on": "2026-07-25",
       "hist": [
         [
           "2026-06-02",
           19000
         ],
         [
-          "2026-07-24",
+          "2026-07-25",
           9500
         ]
       ]
@@ -9713,14 +9713,14 @@
       "price": 10000,
       "url": "https://theraphosidae.co.kr/product/베트남-실버-유체/1346/category/24/display/1/",
       "prev": 12000,
-      "changed_on": "2026-07-24",
+      "changed_on": "2026-07-25",
       "hist": [
         [
           "2026-06-02",
           12000
         ],
         [
-          "2026-07-24",
+          "2026-07-25",
           10000
         ]
       ]
@@ -9762,14 +9762,14 @@
       "price": 12000,
       "url": "https://theraphosidae.co.kr/product/베트남-하이랜드-유체/1787/category/24/display/1/",
       "prev": 15000,
-      "changed_on": "2026-07-24",
+      "changed_on": "2026-07-25",
       "hist": [
         [
           "2026-06-02",
           15000
         ],
         [
-          "2026-07-24",
+          "2026-07-25",
           12000
         ]
       ]
@@ -10072,14 +10072,14 @@
       "price": 35000,
       "url": "https://theraphosidae.co.kr/product/브라질리안-옐로우-밴디드-핑크토-브라질-유체/1497/category/24/display/1/",
       "prev": 65000,
-      "changed_on": "2026-07-24",
+      "changed_on": "2026-07-25",
       "hist": [
         [
           "2026-06-02",
           65000
         ],
         [
-          "2026-07-24",
+          "2026-07-25",
           35000
         ]
       ]
@@ -10740,14 +10740,14 @@
       "price": 35000,
       "url": "https://theraphosidae.co.kr/product/아마조니카-핑크토-마나우스-유체/1499/category/24/display/1/",
       "prev": 40000,
-      "changed_on": "2026-07-24",
+      "changed_on": "2026-07-25",
       "hist": [
         [
           "2026-06-02",
           40000
         ],
         [
-          "2026-07-24",
+          "2026-07-25",
           35000
         ]
       ]
@@ -11183,14 +11183,14 @@
       "price": 10000,
       "url": "https://theraphosidae.co.kr/product/안틸레스-핑크토-유체/1581/category/24/display/1/",
       "prev": 15000,
-      "changed_on": "2026-07-24",
+      "changed_on": "2026-07-25",
       "hist": [
         [
           "2026-06-02",
           15000
         ],
         [
-          "2026-07-24",
+          "2026-07-25",
           10000
         ]
       ]
@@ -14147,14 +14147,14 @@
       "price": 14000,
       "url": "https://theraphosidae.co.kr/product/푸카이파-핑크토-유체/1565/category/24/display/1/",
       "prev": 25000,
-      "changed_on": "2026-07-24",
+      "changed_on": "2026-07-25",
       "hist": [
         [
           "2026-06-02",
           25000
         ],
         [
-          "2026-07-24",
+          "2026-07-25",
           14000
         ]
       ]
@@ -19004,6 +19004,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "골리앗 핑크토 유체",
+      "price": 15000,
+      "url": "https://tarantulakorea.com/product/골리앗-핑크토-유체/232/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "구티 사파이어 오너멘탈 유체",
       "price": 30000,
       "url": "https://tarantulakorea.com/product/구티-사파이어-오너멘탈-유체/141/category/67/display/1/"
@@ -19505,6 +19512,13 @@
       "name": "버미즈블랙 '타이골든 프린지드' 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/버미즈블랙-타이골든-프린지드-유체/272/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "베네슈엘라 핑크토 유체",
+      "price": 15000,
+      "url": "https://tarantulakorea.com/product/베네슈엘라-핑크토-유체/253/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
