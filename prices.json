@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-25T02:00:09",
+  "updated_at": "2026-07-25T12:16:44",
   "channels": {
     "자사몰": "2026-07-25T02:00:09",
-    "네이버": "2026-07-24T23:39:17"
+    "네이버": "2026-07-25T12:16:44"
   },
   "products": [
     {
@@ -6710,6 +6710,13 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "네이버",
+      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
+      "price": 18000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
