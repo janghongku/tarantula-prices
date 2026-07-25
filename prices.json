@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-25T21:26:03",
+  "updated_at": "2026-07-25T13:07:50",
   "channels": {
-    "자사몰": "2026-07-25T02:00:09",
+    "자사몰": "2026-07-25T13:07:50",
     "네이버": "2026-07-25T21:26:03"
   },
   "products": [
@@ -10079,6 +10079,7 @@
       "name": "브라질리안 옐로우 밴디드 핑크토 (브라질) / 유체",
       "price": 35000,
       "url": "https://theraphosidae.co.kr/product/브라질리안-옐로우-밴디드-핑크토-브라질-유체/1497/category/24/display/1/",
+      "soldout": true,
       "prev": 65000,
       "changed_on": "2026-07-25",
       "hist": [
@@ -18965,6 +18966,20 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "골든 스프라이프 '타일랜드' 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/골든-스프라이프-타일랜드-유체/754/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "골든 스프라이프 '타일랜드' 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/골든-스프라이프-타일랜드-유체/754/category/67/display/2/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "골든그레이 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/골든그레이-유체/195/category/24/display/1/"
@@ -19201,6 +19216,20 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "람프로펠마 sp. 녹스 유체",
+      "price": 45000,
+      "url": "https://tarantulakorea.com/product/람프로펠마-sp-녹스-유체/755/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "람프로펠마 sp. 녹스 유체",
+      "price": 45000,
+      "url": "https://tarantulakorea.com/product/람프로펠마-sp-녹스-유체/755/category/67/display/2/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "랑카위 타이거 유체",
       "price": 28000,
       "url": "https://tarantulakorea.com/product/랑카위-타이거-유체/619/category/67/display/1/"
@@ -19337,13 +19366,6 @@
       "name": "마호가니 트리 스파이더 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/마호가니-트리-스파이더-유체/654/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "마호가니 트리 스파이더 유체",
-      "price": 25000,
-      "url": "https://tarantulakorea.com/product/마호가니-트리-스파이더-유체/654/category/67/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -19888,13 +19910,6 @@
       "name": "슬라웨시 차콜 유체",
       "price": 20000,
       "url": "https://tarantulakorea.com/product/슬라웨시-차콜-유체/644/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "슬라웨시 차콜 유체",
-      "price": 20000,
-      "url": "https://tarantulakorea.com/product/슬라웨시-차콜-유체/644/category/67/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
