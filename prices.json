@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-26T02:04:48",
+  "updated_at": "2026-07-26T13:00:55",
   "channels": {
     "자사몰": "2026-07-26T02:04:48",
-    "네이버": "2026-07-25T21:26:03"
+    "네이버": "2026-07-26T13:00:55"
   },
   "products": [
     {
@@ -1226,10 +1226,10 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "그린보틀블루 / 그린볼 / 타란튤라 타란툴라",
-      "price": 19000,
+      "price": 13000,
       "url": "https://smartstore.naver.com/terrafactory/products/5719135322",
-      "prev": 15000,
-      "changed_on": "2026-06-13",
+      "prev": 19000,
+      "changed_on": "2026-07-26",
       "hist": [
         [
           "2026-06-02",
@@ -1238,6 +1238,10 @@
         [
           "2026-06-13",
           19000
+        ],
+        [
+          "2026-07-26",
+          13000
         ]
       ]
     },
@@ -1803,7 +1807,8 @@
       "channel": "네이버",
       "name": "말레이시안 퍼플 피머 3cm+ 유체 특대 / 호기 말퍼플 키우기 곤충 절지류 타란튤라",
       "price": 15000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10635218607"
+      "url": "https://smartstore.naver.com/tzblossom/products/10635218607",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
