@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-27T20:07:35",
+  "updated_at": "2026-07-27T14:15:26",
   "channels": {
-    "자사몰": "2026-07-27T02:12:24",
+    "자사몰": "2026-07-27T14:15:26",
     "네이버": "2026-07-27T20:07:35"
   },
   "products": [
@@ -20275,6 +20275,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "에콰퍼플 핑크토 유체",
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/에콰퍼플-핑크토-유체/157/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "엑실리스 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/엑실리스-유체/344/category/24/display/1/"
@@ -20901,6 +20908,13 @@
       "name": "티그리스 오너멘탈 '타이거' 유체",
       "price": 35000,
       "url": "https://tarantulakorea.com/product/티그리스-오너멘탈-타이거-유체/140/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "파나마블론디 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/파나마블론디-유체/113/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
