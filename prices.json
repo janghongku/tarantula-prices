@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-27T15:58:58",
+  "updated_at": "2026-07-27T20:07:35",
   "channels": {
     "자사몰": "2026-07-27T02:12:24",
-    "네이버": "2026-07-26T21:48:28"
+    "네이버": "2026-07-27T20:07:35"
   },
   "products": [
     {
@@ -896,9 +896,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "브라질리안 블루 타란툴라 / 애완거미 타란튤라 대왕거미 희귀동물 곤충",
-      "price": 5000,
+      "price": 9500,
       "url": "https://smartstore.naver.com/terrafactory/products/5225271041",
-      "soldout": true
+      "prev": 5000,
+      "changed_on": "2026-07-27",
+      "hist": [
+        [
+          "2026-06-02",
+          5000
+        ],
+        [
+          "2026-07-27",
+          9500
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -3183,7 +3194,8 @@
       "channel": "네이버",
       "name": "우잠바라 오렌지 바분 BCF (Tete) 유체 / 어셈 브라운폼 테테 타란튤라 절지류",
       "price": 18000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9728666313"
+      "url": "https://smartstore.naver.com/tzblossom/products/9728666313",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -6227,9 +6239,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "피더스니 오너멘탈 고스트 오너멘탈 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
-      "price": 35000,
+      "price": 20000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10596585534",
-      "soldout": true
+      "prev": 35000,
+      "changed_on": "2026-07-27",
+      "hist": [
+        [
+          "2026-06-02",
+          35000
+        ],
+        [
+          "2026-07-27",
+          20000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -6419,8 +6442,7 @@
       "channel": "네이버",
       "name": "옐로우백 오너멘탈 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
       "price": 35000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10613437812",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10613437812"
     },
     {
       "vendor": "타란툴라코리아",
@@ -6716,13 +6738,6 @@
       "name": "수랏타니 타이거 유체 / 타란튤라 타란툴라 버로우성 거미 절지동물 곤충",
       "price": 18000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625839337"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "네이버",
-      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
     },
     {
       "vendor": "타란툴라코리아",
@@ -7206,9 +7221,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "골리앗 핑크토 (브라질) 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
-      "price": 25000,
+      "price": 10000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10707791003",
-      "soldout": true
+      "prev": 25000,
+      "changed_on": "2026-07-27",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-07-27",
+          10000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -7260,9 +7286,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "스리랑카 오너멘탈 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
-      "price": 35000,
+      "price": 30000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10816782369",
-      "soldout": true
+      "prev": 35000,
+      "changed_on": "2026-07-27",
+      "hist": [
+        [
+          "2026-06-02",
+          35000
+        ],
+        [
+          "2026-07-27",
+          30000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -7945,9 +7982,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "베네수엘라 핑크토 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
-      "price": 25000,
+      "price": 15000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/12692579193",
-      "soldout": true
+      "prev": 25000,
+      "changed_on": "2026-07-27",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-07-27",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -8201,6 +8249,20 @@
       "price": 75000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/13656457625",
       "soldout": true
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "네이버",
+      "name": "골든 스프라이프 타일랜드 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
+      "price": 25000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/13684231419"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "네이버",
+      "name": "람프로펠마 sp. 녹스 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
+      "price": 45000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/13684238908"
     },
     {
       "vendor": "거미랑",
