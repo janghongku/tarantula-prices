@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-28T01:53:05",
+  "updated_at": "2026-07-28T20:04:35",
   "channels": {
     "자사몰": "2026-07-28T01:53:05",
-    "네이버": "2026-07-27T20:07:35"
+    "네이버": "2026-07-28T20:04:35"
   },
   "products": [
     {
@@ -1797,7 +1797,8 @@
       "channel": "네이버",
       "name": "아이보리 오너멘탈 로우랜드 유체 / 로우보리 타란튤라 거미 타란툴라 절지류 타사모 용품",
       "price": 55000,
-      "url": "https://smartstore.naver.com/tzblossom/products/10587874176"
+      "url": "https://smartstore.naver.com/tzblossom/products/10587874176",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -3011,7 +3012,8 @@
       "channel": "네이버",
       "name": "인디언 오너멘탈 유체 / 타란튤라 타란툴라 거미 절지 전갈 지네 곤충 사슴벌레 키우기",
       "price": 7000,
-      "url": "https://smartstore.naver.com/tzblossom/products/9344124349"
+      "url": "https://smartstore.naver.com/tzblossom/products/9344124349",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
