@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-27T14:15:26",
+  "updated_at": "2026-07-28T01:53:05",
   "channels": {
-    "자사몰": "2026-07-27T14:15:26",
+    "자사몰": "2026-07-28T01:53:05",
     "네이버": "2026-07-27T20:07:35"
   },
   "products": [
@@ -19726,13 +19726,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "브라질리안 블랙 앤 화이트 유체",
-      "price": 15000,
-      "url": "https://tarantulakorea.com/product/브라질리안-블랙-앤-화이트-유체/233/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "브라질리안 블루 '사지마이' 유체",
       "price": 9000,
       "url": "https://tarantulakorea.com/product/브라질리안-블루-사지마이-유체/199/category/24/display/1/"
@@ -20277,7 +20270,8 @@
       "channel": "자사몰",
       "name": "에콰퍼플 핑크토 유체",
       "price": 35000,
-      "url": "https://tarantulakorea.com/product/에콰퍼플-핑크토-유체/157/category/67/display/1/"
+      "url": "https://tarantulakorea.com/product/에콰퍼플-핑크토-유체/157/category/67/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -20819,13 +20813,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "트리니다드핑크 유체",
-      "price": 25000,
-      "url": "https://tarantulakorea.com/product/트리니다드핑크-유체/412/category/66/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "트릭소펠마 spec. 세비야",
       "price": 55000,
       "url": "https://tarantulakorea.com/product/트릭소펠마-spec-세비야/130/category/24/display/1/"
@@ -21202,13 +21189,6 @@
       "name": "핑크제브라 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/핑크제브라-유체/685/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "핑크풋 골리앗 유체",
-      "price": 65000,
-      "url": "https://tarantulakorea.com/product/핑크풋-골리앗-유체/133/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
