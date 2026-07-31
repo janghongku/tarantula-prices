@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-31T20:07:16",
+  "updated_at": "2026-07-31T13:47:20",
   "channels": {
-    "자사몰": "2026-07-31T02:06:05",
+    "자사몰": "2026-07-31T13:47:20",
     "네이버": "2026-07-31T20:07:16"
   },
   "products": [
@@ -8971,10 +8971,9 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "골리앗 핑크토 \"브라질\" (ex.Avicularia braunshauseni)",
-      "price": 25000,
-      "url": "https://theraphosidae.co.kr/product/골리앗-핑크토-브라질-exavicularia-braunshauseni/1854/category/24/display/1/",
-      "soldout": true
+      "name": "골리앗 핑크토 \"브라질\" / 유체",
+      "price": 15000,
+      "url": "https://theraphosidae.co.kr/product/골리앗-핑크토-브라질-유체/2051/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -9419,13 +9418,6 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "레드 로즈헤어 / 유체",
-      "price": 18500,
-      "url": "https://theraphosidae.co.kr/product/레드-로즈헤어-유체/958/category/24/display/1/"
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
       "name": "레드 스켈레톤 / 8-10cm+-.암컷",
       "price": 140000,
       "url": "https://theraphosidae.co.kr/product/레드-스켈레톤-8-10cm-암컷/1736/category/24/display/1/",
@@ -9581,14 +9573,6 @@
       "name": "로스 툭스틀라스 시나몬 / 유체",
       "price": 85000,
       "url": "https://theraphosidae.co.kr/product/로스-툭스틀라스-시나몬-유체/2039/category/24/display/1/"
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "로즈헤어 / 유체",
-      "price": 15000,
-      "url": "https://theraphosidae.co.kr/product/로즈헤어-유체/1265/category/24/display/1/",
-      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -10978,8 +10962,7 @@
       "channel": "자사몰",
       "name": "셀먼핑크 버드이터 / 유체",
       "price": 4000,
-      "url": "https://theraphosidae.co.kr/product/셀먼핑크-버드이터-유체/233/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/셀먼핑크-버드이터-유체/233/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -11242,8 +11225,7 @@
       "channel": "자사몰",
       "name": "아마존 사파이어 핑크토 / 유체",
       "price": 25000,
-      "url": "https://theraphosidae.co.kr/product/아마존-사파이어-핑크토-유체/1573/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/아마존-사파이어-핑크토-유체/2053/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -12312,10 +12294,9 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "칠리안 로즈헤어 / 유체",
-      "price": 18000,
-      "url": "https://theraphosidae.co.kr/product/칠리안-로즈헤어-유체/1562/category/24/display/1/",
-      "soldout": true
+      "name": "칠리안 로즈헤어 RCF / 유체",
+      "price": 15000,
+      "url": "https://theraphosidae.co.kr/product/칠리안-로즈헤어-rcf-유체/2050/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -13154,6 +13135,13 @@
       "price": 250000,
       "url": "https://theraphosidae.co.kr/product/킹바분-준성체암컷/551/category/24/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "타라포토 핑크토 / 유체 *1탈피 재입고 되었습니다.",
+      "price": 45000,
+      "url": "https://theraphosidae.co.kr/product/타라포토-핑크토-유체-1탈피-재입고-되었습니다/2052/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -15192,14 +15180,6 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
-      "name": "고스트 오너멘탈 아성체 / Poecilotheria vittata",
-      "price": 50000,
-      "url": "https://tarancenter.com/product/고스트-오너멘탈-아성체-poecilotheria-vittata/993/category/51/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "자사몰",
       "name": "고스트 트리 스파이더 유체 / Amazonius burgessi",
       "price": 25000,
       "url": "https://tarancenter.com/product/고스트-트리-스파이더-유체-amazonius-burgessi/723/category/51/display/1/",
@@ -15515,7 +15495,15 @@
       "channel": "자사몰",
       "name": "넨뎁 어스타이거 유체 / Cyriopagopus Sp. \"Nhen dep\"",
       "price": 15000,
-      "url": "https://tarancenter.com/product/넨뎁-어스타이거-유체-cyriopagopus-sp-nhen-dep/854/category/51/display/1/"
+      "url": "https://tarancenter.com/product/넨뎁-어스타이거-유체-cyriopagopus-sp-nhen-dep/854/category/51/display/1/",
+      "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "넨뎁 어스타이거 유체 / Melopoeus Sp. \"Nhen dep\"",
+      "price": 15000,
+      "url": "https://tarancenter.com/product/넨뎁-어스타이거-유체-melopoeus-sp-nhen-dep/1626/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -16888,10 +16876,29 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
-      "name": "셀먼 핑크 버드이터 유체(중) / Lasiodora parahybana",
-      "price": 7000,
-      "url": "https://tarancenter.com/product/셀먼-핑크-버드이터-유체중-lasiodora-parahybana/608/category/51/display/1/",
-      "soldout": true
+      "name": "셀먼 핑크 버드이터 유체 / Lasiodora parahybana",
+      "price": 5000,
+      "url": "https://tarancenter.com/product/셀먼-핑크-버드이터-유체-lasiodora-parahybana/1623/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "셀먼 핑크 버드이터 유체 / Lasiodora parahybana",
+      "price": 5000,
+      "url": "https://tarancenter.com/product/셀먼-핑크-버드이터-유체-lasiodora-parahybana/608/category/51/display/1/",
+      "soldout": true,
+      "prev": 7000,
+      "changed_on": "2026-07-31",
+      "hist": [
+        [
+          "2026-06-02",
+          7000
+        ],
+        [
+          "2026-07-31",
+          5000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -17196,6 +17203,13 @@
       "price": 50000,
       "url": "https://tarancenter.com/product/아이보리-오너멘탈-로우랜드-ex로우보리-유체-poecilotheria-bara-lowland/1091/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "아이보리 오너멘탈 '로우랜드' (ex.로우보리) 유체 / Poecilotheria bara 'Lowland'",
+      "price": 50000,
+      "url": "https://tarancenter.com/product/아이보리-오너멘탈-로우랜드-ex로우보리-유체-poecilotheria-bara-lowland/1625/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -18148,6 +18162,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "크세네스티스 Sp. \"브라이트\" 유체 / Xenesthis Sp. \"Bright\"",
+      "price": 140000,
+      "url": "https://tarancenter.com/product/크세네스티스-sp-브라이트-유체-xenesthis-sp-bright/1622/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "크세네스티스 Sp. \"블루\" 7탈피 암컷 / Xenesthis Sp. \"Blue\" Line B",
       "price": 230000,
       "url": "https://tarancenter.com/product/크세네스티스-sp-블루-7탈피-암컷-xenesthis-sp-blue-line-b/1166/category/51/display/1/",
@@ -18491,10 +18512,10 @@
       "vendor": "타란센터",
       "channel": "자사몰",
       "name": "트리니다드 쉐브론 유체 / Psalmopoeus cambridgei",
-      "price": 5000,
+      "price": 10000,
       "url": "https://tarancenter.com/product/트리니다드-쉐브론-유체-psalmopoeus-cambridgei/1407/category/51/display/1/",
-      "prev": 20000,
-      "changed_on": "2026-06-09",
+      "prev": 5000,
+      "changed_on": "2026-07-31",
       "hist": [
         [
           "2026-06-02",
@@ -18503,6 +18524,10 @@
         [
           "2026-06-09",
           5000
+        ],
+        [
+          "2026-07-31",
+          10000
         ]
       ]
     },
@@ -19209,6 +19234,33 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "피더스니 오너멘탈 유체 / Poecilotheria vittata",
+      "price": 25000,
+      "url": "https://tarancenter.com/product/피더스니-오너멘탈-유체-poecilotheria-vittata/1624/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "피더스니 오너멘탈 유체 / Poecilotheria vittata",
+      "price": 25000,
+      "url": "https://tarancenter.com/product/피더스니-오너멘탈-유체-poecilotheria-vittata/993/category/51/display/1/",
+      "soldout": true,
+      "prev": 50000,
+      "changed_on": "2026-07-31",
+      "hist": [
+        [
+          "2026-06-02",
+          50000
+        ],
+        [
+          "2026-07-31",
+          25000
+        ]
+      ]
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "피치 어스 타이거 (루푸스) 유체 / Aspinochilus rufus",
       "price": 5000,
       "url": "https://tarancenter.com/product/피치-어스-타이거-루푸스-유체-aspinochilus-rufus/111/category/51/display/1/",
@@ -19901,14 +19953,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "멕시칸 제이드 푸에고 '무레이' 유체",
-      "price": 220000,
-      "url": "https://tarantulakorea.com/product/멕시칸-제이드-푸에고-무레이-유체/499/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "멘도사 유체",
       "price": 80000,
       "url": "https://tarantulakorea.com/product/멘도사-유체/688/category/24/display/1/"
@@ -19989,6 +20033,13 @@
       "name": "발파라이소 자이언트 브론즈 유체",
       "price": 96000,
       "url": "https://tarantulakorea.com/product/발파라이소-자이언트-브론즈-유체/748/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "발파라이소 자이언트 브론즈 유체",
+      "price": 96000,
+      "url": "https://tarantulakorea.com/product/발파라이소-자이언트-브론즈-유체/748/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -20198,14 +20249,6 @@
       "name": "블러드렉 유체",
       "price": 30000,
       "url": "https://tarantulakorea.com/product/블러드렉-유체/490/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "블론디 골리앗 유체",
-      "price": 95000,
-      "url": "https://tarantulakorea.com/product/블론디-골리앗-유체/392/category/24/display/1/",
-      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -20640,22 +20683,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "에슐러스 마니카타 골드 유체",
-      "price": 75000,
-      "url": "https://tarantulakorea.com/product/에슐러스-마니카타-골드-유체/753/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "에슐러스 마니카타 골드 유체",
-      "price": 75000,
-      "url": "https://tarantulakorea.com/product/에슐러스-마니카타-골드-유체/753/category/24/display/2/",
-      "soldout": true
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "에슐러스'그린' 유체",
       "price": 55000,
       "url": "https://tarantulakorea.com/product/에슐러스그린-유체/687/category/24/display/1/"
@@ -20716,6 +20743,13 @@
       "name": "옐로우&블루보틀 유체",
       "price": 45000,
       "url": "https://tarantulakorea.com/product/옐로우블루보틀-유체/491/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "오너멘탈바분 유체",
+      "price": 5000,
+      "url": "https://tarantulakorea.com/product/오너멘탈바분-유체/82/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -20786,6 +20820,13 @@
       "name": "인디언레인보우 유체",
       "price": 55000,
       "url": "https://tarantulakorea.com/product/인디언레인보우-유체/81/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "자바 브라운 유체",
+      "price": 20000,
+      "url": "https://tarantulakorea.com/product/자바-브라운-유체/758/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21455,9 +21496,9 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "팜포베테우스 볼리비안 스틸리블루 '이퀴토스' 스파이더링 / 직거래 분양만 가능",
+      "name": "팜포베테우스 볼리비안 스틸리블루 '이퀴토스' 유체",
       "price": 55000,
-      "url": "https://tarantulakorea.com/product/팜포베테우스-볼리비안-스틸리블루-이퀴토스-스파이더링-직거래-분양만-가능/503/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/팜포베테우스-볼리비안-스틸리블루-이퀴토스-유체/503/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
