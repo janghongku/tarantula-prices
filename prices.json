@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-30T13:42:25",
+  "updated_at": "2026-07-31T02:06:05",
   "channels": {
-    "자사몰": "2026-07-30T13:42:25",
+    "자사몰": "2026-07-31T02:06:05",
     "네이버": "2026-07-30T19:12:57"
   },
   "products": [
@@ -8617,25 +8617,6 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "[20마리 한정 할인판매] 칼리만탄 브라우니 / 유체 *07.24일 재입고",
-      "price": 9500,
-      "url": "https://theraphosidae.co.kr/product/20마리-한정-할인판매-칼리만탄-브라우니-유체-0724일-재입고/2018/category/24/display/1/",
-      "prev": 19000,
-      "changed_on": "2026-07-25",
-      "hist": [
-        [
-          "2026-06-02",
-          19000
-        ],
-        [
-          "2026-07-25",
-          9500
-        ]
-      ]
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
       "name": "[2차 재입고] 골드 밴디드 스타버스트 (ex. Ami sp \"Panama\") / 유체",
       "price": 40000,
       "url": "https://theraphosidae.co.kr/product/2차-재입고-골드-밴디드-스타버스트-ex-ami-sp-panama-유체/835/category/24/display/1/",
@@ -12280,6 +12261,29 @@
       "price": 20000,
       "url": "https://theraphosidae.co.kr/product/카오-속-타이거-유체/1799/category/24/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "칼리만탄 브라우니 / 유체 *07.24일 재입고",
+      "price": 19000,
+      "url": "https://theraphosidae.co.kr/product/칼리만탄-브라우니-유체-0724일-재입고/2018/category/24/display/1/",
+      "prev": 9500,
+      "changed_on": "2026-07-31",
+      "hist": [
+        [
+          "2026-06-02",
+          19000
+        ],
+        [
+          "2026-07-25",
+          9500
+        ],
+        [
+          "2026-07-31",
+          19000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
