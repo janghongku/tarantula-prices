@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-31T02:06:05",
+  "updated_at": "2026-07-31T17:05:21",
   "channels": {
     "자사몰": "2026-07-31T02:06:05",
-    "네이버": "2026-07-30T19:12:57"
+    "네이버": "2026-07-31T17:05:21"
   },
   "products": [
     {
@@ -793,10 +793,10 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "라오스 골든 프린지드 / 타란튤라 타란툴라 애완거미 거미랑",
-      "price": 58000,
+      "price": 70000,
       "url": "https://smartstore.naver.com/terrafactory/products/13568132829",
-      "prev": 70000,
-      "changed_on": "2026-06-17",
+      "prev": 58000,
+      "changed_on": "2026-07-31",
       "hist": [
         [
           "2026-06-02",
@@ -805,6 +805,10 @@
         [
           "2026-06-17",
           58000
+        ],
+        [
+          "2026-07-31",
+          70000
         ]
       ]
     },
@@ -891,6 +895,13 @@
       "name": "바크마 타이거 준성체 / 타란튤라 타란툴라 애완거미 거미랑",
       "price": 50000,
       "url": "https://smartstore.naver.com/terrafactory/products/13680316899"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "네이버",
+      "name": "브라질리안 레드헤디드 / 타란튤라 타란툴라 애완거미 거미랑",
+      "price": 15000,
+      "url": "https://smartstore.naver.com/terrafactory/products/13689487173"
     },
     {
       "vendor": "거미랑",
@@ -1348,8 +1359,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "하티하티 타이거 / 타란튤라 새잡이거미 애완거미 희귀동물 곤충",
-      "price": 5000,
-      "url": "https://smartstore.naver.com/terrafactory/products/5757635833"
+      "price": 4000,
+      "url": "https://smartstore.naver.com/terrafactory/products/5757635833",
+      "prev": 5000,
+      "changed_on": "2026-07-31",
+      "hist": [
+        [
+          "2026-06-02",
+          5000
+        ],
+        [
+          "2026-07-31",
+          4000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -2179,8 +2202,20 @@
       "vendor": "더쥬 송파점",
       "channel": "네이버",
       "name": "코발트블루 유체 / 타란튤라 거미 절지류 곤충 키우기 밀웜 귀뚜라미 지타 어스타이거",
-      "price": 3000,
-      "url": "https://smartstore.naver.com/tzblossom/products/11841105067"
+      "price": 5000,
+      "url": "https://smartstore.naver.com/tzblossom/products/11841105067",
+      "prev": 3000,
+      "changed_on": "2026-07-31",
+      "hist": [
+        [
+          "2026-06-02",
+          3000
+        ],
+        [
+          "2026-07-31",
+          5000
+        ]
+      ]
     },
     {
       "vendor": "더쥬 송파점",
@@ -2722,7 +2757,8 @@
       "channel": "네이버",
       "name": "멕시칸 블러드렉 암컷 준성체 / 타란튤라 타란툴라 거미 절지류",
       "price": 200000,
-      "url": "https://smartstore.naver.com/tzblossom/products/13686039758"
+      "url": "https://smartstore.naver.com/tzblossom/products/13686039758",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -4842,6 +4878,13 @@
       "name": "세리코펠마 다리엔 배회성 타란튤라 유체",
       "price": 25000,
       "url": "https://smartstore.naver.com/tarancenter/products/13665405244"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "네이버",
+      "name": "넨뎁 어스타이거 버로우성 타란튤라 유체",
+      "price": 15000,
+      "url": "https://smartstore.naver.com/tarancenter/products/13688285504"
     },
     {
       "vendor": "타란센터",
