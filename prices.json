@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-07-31T17:05:21",
+  "updated_at": "2026-07-31T20:07:16",
   "channels": {
     "자사몰": "2026-07-31T02:06:05",
-    "네이버": "2026-07-31T17:05:21"
+    "네이버": "2026-07-31T20:07:16"
   },
   "products": [
     {
@@ -3246,6 +3246,13 @@
     {
       "vendor": "더쥬 송파점",
       "channel": "네이버",
+      "name": "크세네스티스 브라이트 FO1 / 타란툴라 타란튤라 렛서 랫서 전갈 거미 절지류 입양",
+      "price": 150000,
+      "url": "https://smartstore.naver.com/tzblossom/products/9343710882"
+    },
+    {
+      "vendor": "더쥬 송파점",
+      "channel": "네이버",
       "name": "팜파스 트웨니 레드 (그로사) 유체 / 타란튤라 타란툴라 거미 절지류 전갈 지네 곤충",
       "price": 35000,
       "url": "https://smartstore.naver.com/tzblossom/products/9343719052",
@@ -3860,10 +3867,9 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "아이보리 오너멘탈 로우보리 타란튤라 애완거미 유체 / 타란툴라 전갈 지네 아시안포레스트",
+      "name": "아이보리 오너멘탈 로우랜드 (로우보리) 나무위성 타란튤라 애완거미 유체",
       "price": 50000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10774772115",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tarancenter/products/10774772115"
     },
     {
       "vendor": "타란센터",
@@ -3976,10 +3982,9 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "크세네스티스 브라이트 타란튤라 애완거미 유체 초대형종",
+      "name": "크세네스티스 렛서 브라이트 타란튤라 애완거미 유체 대형종",
       "price": 140000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10958142762",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tarancenter/products/10958142762"
     },
     {
       "vendor": "타란센터",
@@ -4051,10 +4056,21 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "셀먼핑크버드이터 타란튤라 애완거미 유체(중) / 타란툴라 타란튤라입문 전갈 곤충 희귀동물",
-      "price": 7000,
+      "name": "셀먼핑크버드이터 배회성 타란튤라 입문종 애완거미 유체",
+      "price": 5000,
       "url": "https://smartstore.naver.com/tarancenter/products/10985929329",
-      "soldout": true
+      "prev": 7000,
+      "changed_on": "2026-07-31",
+      "hist": [
+        [
+          "2026-06-02",
+          7000
+        ],
+        [
+          "2026-07-31",
+          5000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -4889,6 +4905,13 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
+      "name": "피더스니 오너멘탈 나무위성 타란튤라 유체",
+      "price": 25000,
+      "url": "https://smartstore.naver.com/tarancenter/products/13689799396"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "네이버",
       "name": "자이언트화이트니 타란튤라 애완거미 아성체 / 전갈 밀웜 귀뚜라미 애완곤충 희귀동물 키우기",
       "price": 20000,
       "url": "https://smartstore.naver.com/tarancenter/products/6066295129",
@@ -4930,10 +4953,10 @@
       "vendor": "타란센터",
       "channel": "네이버",
       "name": "트리니다드 쉐브론 나무위성 타란튤라 애완거미 유체",
-      "price": 5000,
+      "price": 10000,
       "url": "https://smartstore.naver.com/tarancenter/products/6829903721",
-      "prev": 20000,
-      "changed_on": "2026-06-10",
+      "prev": 5000,
+      "changed_on": "2026-07-31",
       "hist": [
         [
           "2026-06-02",
@@ -4942,6 +4965,10 @@
         [
           "2026-06-10",
           5000
+        ],
+        [
+          "2026-07-31",
+          10000
         ]
       ]
     },
