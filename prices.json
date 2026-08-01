@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-01T13:30:09",
+  "updated_at": "2026-08-01T13:02:35",
   "channels": {
-    "자사몰": "2026-08-01T02:07:14",
+    "자사몰": "2026-08-01T13:02:35",
     "네이버": "2026-08-01T13:30:09"
   },
   "products": [
@@ -9488,14 +9488,6 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "레드 로즈헤어 / 아성체(5cm+)",
-      "price": 35000,
-      "url": "https://theraphosidae.co.kr/product/레드-로즈헤어-아성체5cm/1750/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
       "name": "레드 스켈레톤 / 8-10cm+-.암컷",
       "price": 140000,
       "url": "https://theraphosidae.co.kr/product/레드-스켈레톤-8-10cm-암컷/1736/category/24/display/1/",
@@ -10510,10 +10502,9 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "브라질리안 레드헤드 (ex. 봄바 호리다) / 유체",
-      "price": 18000,
-      "url": "https://theraphosidae.co.kr/product/브라질리안-레드헤드-ex-봄바-호리다-유체/1224/category/24/display/1/",
-      "soldout": true
+      "name": "브라질리안 레드헤드 (ex.봄바) / 유체",
+      "price": 15000,
+      "url": "https://theraphosidae.co.kr/product/브라질리안-레드헤드-ex봄바-유체/2054/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -10529,14 +10520,6 @@
       "name": "브라질리안 레드헤드 / 준성체+.암컷",
       "price": 85000,
       "url": "https://theraphosidae.co.kr/product/브라질리안-레드헤드-준성체암컷/2013/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "브라질리안 레드헤드(ex.봄바 호리다) / 유체(대)",
-      "price": 45000,
-      "url": "https://theraphosidae.co.kr/product/브라질리안-레드헤드ex봄바-호리다-유체대/1297/category/24/display/1/",
       "soldout": true
     },
     {
@@ -12365,9 +12348,27 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "칠레뷰티 (ex.콘셉시온) / 유체",
-      "price": 40000,
+      "price": 35000,
       "url": "https://theraphosidae.co.kr/product/칠레뷰티-ex콘셉시온-유체/1890/category/24/display/1/",
-      "soldout": true
+      "prev": 40000,
+      "changed_on": "2026-08-01",
+      "hist": [
+        [
+          "2026-06-02",
+          40000
+        ],
+        [
+          "2026-08-01",
+          35000
+        ]
+      ]
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "칠리안 로즈헤어 RCF / 아성체+(4.5~6.5cm+)",
+      "price": 35000,
+      "url": "https://theraphosidae.co.kr/product/칠리안-로즈헤어-rcf-아성체4565cm/2055/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -15266,6 +15267,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "골든 그레이 버드이터 유체 / Phormictopus auratus",
+      "price": 15000,
+      "url": "https://tarancenter.com/product/골든-그레이-버드이터-유체-phormictopus-auratus/1631/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "골든 블루렉 바분 유체 / Harpactira pulchripes",
       "price": 25000,
       "url": "https://tarancenter.com/product/골든-블루렉-바분-유체-harpactira-pulchripes/1304/category/51/display/1/",
@@ -15326,6 +15334,13 @@
       "price": 25000,
       "url": "https://tarancenter.com/product/골든그레이-버드이터-유체-phormictopus-auratus/732/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "골든블루렉 바분 유체 / Harpactira pulchripes",
+      "price": 25000,
+      "url": "https://tarancenter.com/product/골든블루렉-바분-유체-harpactira-pulchripes/1632/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -15526,6 +15541,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "그린보틀블루 (그린볼) 유체 / Chromatopelma cyaneopubescens",
+      "price": 20000,
+      "url": "https://tarancenter.com/product/그린보틀블루-그린볼-유체-chromatopelma-cyaneopubescens/1628/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "그린보틀블루 (그린볼) 유체 대 / Chromatopelma cyaneopubescens",
       "price": 25000,
       "url": "https://tarancenter.com/product/그린보틀블루-그린볼-유체-대-chromatopelma-cyaneopubescens/1335/category/51/display/1/",
@@ -15613,6 +15635,13 @@
       "price": 35000,
       "url": "https://tarancenter.com/product/데져트-블론디-유체-aphonopelma-chalcodes/1074/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "데져트 블론디 유체 / Aphonopelma chalcodes",
+      "price": 35000,
+      "url": "https://tarancenter.com/product/데져트-블론디-유체-aphonopelma-chalcodes/1630/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -16282,6 +16311,13 @@
       "name": "베트남 골든 스트라이프 유체 / Selenocosmia kovariki",
       "price": 20000,
       "url": "https://tarancenter.com/product/베트남-골든-스트라이프-유체-selenocosmia-kovariki/1380/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "베트남 블루 유체 / Chilobrachys Sp. \"Vietnam blue\"",
+      "price": 5000,
+      "url": "https://tarancenter.com/product/베트남-블루-유체-chilobrachys-sp-vietnam-blue/1633/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -17821,6 +17857,13 @@
       "vendor": "타란센터",
       "channel": "자사몰",
       "name": "자이언트 골덴니 유체 / Grammostola pulchripes",
+      "price": 5000,
+      "url": "https://tarancenter.com/product/자이언트-골덴니-유체-grammostola-pulchripes/1627/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "자이언트 골덴니 유체 / Grammostola pulchripes",
       "price": 4000,
       "url": "https://tarancenter.com/product/자이언트-골덴니-유체-grammostola-pulchripes/300/category/51/display/1/",
       "soldout": true
@@ -18347,6 +18390,13 @@
       "price": 25000,
       "url": "https://tarancenter.com/product/킬로브라쉬스-sp-일렉트릭블루-아성체소-5cm-chilobrachys-sp-electric-blue/670/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "킬로브라쉬스 Sp. \"카엥 크라찬\" 유체 / Chilobrachys Sp. \"Kaeng krachan\"",
+      "price": 5000,
+      "url": "https://tarancenter.com/product/킬로브라쉬스-sp-카엥-크라찬-유체-chilobrachys-sp-kaeng-krachan/1629/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -20472,13 +20522,6 @@
       "name": "쉐브론 유체",
       "price": 12000,
       "url": "https://tarantulakorea.com/product/쉐브론-유체/116/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "스리랑카 오너멘탈 유체",
-      "price": 30000,
-      "url": "https://tarantulakorea.com/product/스리랑카-오너멘탈-유체/506/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
