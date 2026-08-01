@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-01T02:07:14",
+  "updated_at": "2026-08-01T13:30:09",
   "channels": {
     "자사몰": "2026-08-01T02:07:14",
-    "네이버": "2026-07-31T20:07:16"
+    "네이버": "2026-08-01T13:30:09"
   },
   "products": [
     {
@@ -76,8 +76,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "킹바분 타란튤라 / 타란튤라 타란툴라 애완거미 애완곤충 충왕전",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/terrafactory/products/10756314907"
+      "price": 9000,
+      "url": "https://smartstore.naver.com/terrafactory/products/10756314907",
+      "prev": 18000,
+      "changed_on": "2026-08-01",
+      "hist": [
+        [
+          "2026-06-02",
+          18000
+        ],
+        [
+          "2026-08-01",
+          9000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -147,10 +159,10 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "그레이터 혼드바분 와일드폼 유체 / 타란툴라 타란튤라 애완거미 거미 배회성",
-      "price": 9000,
+      "price": 15000,
       "url": "https://smartstore.naver.com/terrafactory/products/10797628050",
-      "prev": 15000,
-      "changed_on": "2026-07-08",
+      "prev": 9000,
+      "changed_on": "2026-08-01",
       "hist": [
         [
           "2026-06-02",
@@ -159,6 +171,10 @@
         [
           "2026-07-08",
           9000
+        ],
+        [
+          "2026-08-01",
+          15000
         ]
       ]
     },
@@ -743,10 +759,10 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "뉴기니아 블랙퓨리 / 타란튤라 타란툴라 애완거미 거미랑",
-      "price": 16000,
+      "price": 25000,
       "url": "https://smartstore.naver.com/terrafactory/products/13567607840",
-      "prev": 25000,
-      "changed_on": "2026-07-15",
+      "prev": 16000,
+      "changed_on": "2026-08-01",
       "hist": [
         [
           "2026-06-02",
@@ -763,6 +779,10 @@
         [
           "2026-07-15",
           16000
+        ],
+        [
+          "2026-08-01",
+          25000
         ]
       ]
     },
@@ -906,6 +926,13 @@
     {
       "vendor": "거미랑",
       "channel": "네이버",
+      "name": "골리앗 핑크토 브라질 / 타란튤라 타란툴라 애완거미 거미랑",
+      "price": 15000,
+      "url": "https://smartstore.naver.com/terrafactory/products/13690169980"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "네이버",
       "name": "브라질리안 블루 타란툴라 / 애완거미 타란튤라 대왕거미 희귀동물 곤충",
       "price": 9500,
       "url": "https://smartstore.naver.com/terrafactory/products/5225271041",
@@ -1029,10 +1056,10 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "자이언트 골덴니 / 애완거미 타란튤라 대왕거미 희귀동물 곤충",
-      "price": 5000,
+      "price": 2700,
       "url": "https://smartstore.naver.com/terrafactory/products/5230249898",
-      "prev": 3500,
-      "changed_on": "2026-06-30",
+      "prev": 5000,
+      "changed_on": "2026-08-01",
       "hist": [
         [
           "2026-06-02",
@@ -1041,6 +1068,10 @@
         [
           "2026-06-30",
           5000
+        ],
+        [
+          "2026-08-01",
+          2700
         ]
       ]
     },
@@ -1410,8 +1441,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "골든 어스타이거 (케방) / 타란튤라 새잡이거미 애완거미 희귀동물 곤충",
-      "price": 20000,
-      "url": "https://smartstore.naver.com/terrafactory/products/5852955793"
+      "price": 14000,
+      "url": "https://smartstore.naver.com/terrafactory/products/5852955793",
+      "prev": 20000,
+      "changed_on": "2026-08-01",
+      "hist": [
+        [
+          "2026-06-02",
+          20000
+        ],
+        [
+          "2026-08-01",
+          14000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -1497,10 +1540,10 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "타이제브라 유체 / 타란튤라 애완거미 버드이터 새잡이거미",
-      "price": 3500,
+      "price": 5000,
       "url": "https://smartstore.naver.com/terrafactory/products/6507879577",
-      "prev": 5000,
-      "changed_on": "2026-07-04",
+      "prev": 3500,
+      "changed_on": "2026-08-01",
       "hist": [
         [
           "2026-06-02",
@@ -1509,6 +1552,10 @@
         [
           "2026-07-04",
           3500
+        ],
+        [
+          "2026-08-01",
+          5000
         ]
       ]
     },
@@ -1531,8 +1578,20 @@
       "vendor": "거미랑",
       "channel": "네이버",
       "name": "셀먼핑크 버드이터 / 타란튤라 타란툴라 새잡이거미",
-      "price": 2000,
-      "url": "https://smartstore.naver.com/terrafactory/products/7514511691"
+      "price": 2500,
+      "url": "https://smartstore.naver.com/terrafactory/products/7514511691",
+      "prev": 2000,
+      "changed_on": "2026-08-01",
+      "hist": [
+        [
+          "2026-06-02",
+          2000
+        ],
+        [
+          "2026-08-01",
+          2500
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -3772,18 +3831,28 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "유체 대 시리즈 / 그린보틀블루 그린볼 배회성 타란튤라 애완거미",
-      "price": 25000,
+      "name": "그린보틀블루 그린볼 배회성 타란튤라 애완거미 유체",
+      "price": 20000,
       "url": "https://smartstore.naver.com/tarancenter/products/10560927755",
-      "soldout": true
+      "prev": 25000,
+      "changed_on": "2026-08-01",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-08-01",
+          20000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
       "channel": "네이버",
       "name": "데져트블론디 타란튤라 애완거미 유체 / 곤충 타란툴라 희귀애완동물",
       "price": 35000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10561000272",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tarancenter/products/10561000272"
     },
     {
       "vendor": "타란센터",
@@ -3876,8 +3945,7 @@
       "channel": "네이버",
       "name": "골든그레이 버드이터 타란튤라 애완거미 유체 / 타란툴라 왕거미 애완곤충 전갈 지네 키우기",
       "price": 15000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10775047299",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tarancenter/products/10775047299"
     },
     {
       "vendor": "타란센터",
@@ -4041,10 +4109,21 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
-      "name": "자이언트 골덴니 타란튤라 애완거미 유체 / 타란튤라분양 타란튤라입문 전갈 곤충 희귀동물",
-      "price": 4000,
+      "name": "자이언트 골덴니 배회성 타란튤라 애완거미 유체",
+      "price": 5000,
       "url": "https://smartstore.naver.com/tarancenter/products/10985651342",
-      "soldout": true
+      "prev": 4000,
+      "changed_on": "2026-08-01",
+      "hist": [
+        [
+          "2026-06-02",
+          4000
+        ],
+        [
+          "2026-08-01",
+          5000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -4470,8 +4549,7 @@
       "channel": "네이버",
       "name": "골든블루렉바분 버로우 배회성 타란튤라 애완거미 유체 / 곤충키우기 귀뚜라미 밀웜 사육장",
       "price": 25000,
-      "url": "https://smartstore.naver.com/tarancenter/products/12070395942",
-      "soldout": true
+      "url": "https://smartstore.naver.com/tarancenter/products/12070395942"
     },
     {
       "vendor": "타란센터",
