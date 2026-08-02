@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-01T20:55:28",
+  "updated_at": "2026-08-02T02:03:56",
   "channels": {
-    "자사몰": "2026-08-01T02:07:14",
+    "자사몰": "2026-08-02T02:03:56",
     "네이버": "2026-08-01T20:55:28"
   },
   "products": [
@@ -12403,14 +12403,14 @@
       "price": 35000,
       "url": "https://theraphosidae.co.kr/product/칠레뷰티-ex콘셉시온-유체/1890/category/24/display/1/",
       "prev": 40000,
-      "changed_on": "2026-08-01",
+      "changed_on": "2026-08-02",
       "hist": [
         [
           "2026-06-02",
           40000
         ],
         [
-          "2026-08-01",
+          "2026-08-02",
           35000
         ]
       ]
@@ -20574,6 +20574,14 @@
       "name": "쉐브론 유체",
       "price": 12000,
       "url": "https://tarantulakorea.com/product/쉐브론-유체/116/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "스리랑카 오너멘탈 유체",
+      "price": 30000,
+      "url": "https://tarantulakorea.com/product/스리랑카-오너멘탈-유체/506/category/67/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
