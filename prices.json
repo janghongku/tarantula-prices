@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-02T02:03:56",
+  "updated_at": "2026-08-02T13:04:47",
   "channels": {
-    "자사몰": "2026-08-02T02:03:56",
+    "자사몰": "2026-08-02T13:04:47",
     "네이버": "2026-08-01T20:55:28"
   },
   "products": [
@@ -11722,7 +11722,8 @@
       "channel": "자사몰",
       "name": "안티쿠나 spec. \"파이어\" / 유체",
       "price": 95000,
-      "url": "https://theraphosidae.co.kr/product/안티쿠나-spec-파이어-유체/2030/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/안티쿠나-spec-파이어-유체/2030/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -13140,7 +13141,8 @@
       "channel": "자사몰",
       "name": "킬란티카 spec. \"칼리\" (ex. T.spec \"Kali\") / 유체(대)",
       "price": 45000,
-      "url": "https://theraphosidae.co.kr/product/킬란티카-spec-칼리-ex-tspec-kali-유체대/1310/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/킬란티카-spec-칼리-ex-tspec-kali-유체대/1310/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
