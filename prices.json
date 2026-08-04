@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-04T12:07:32",
+  "updated_at": "2026-08-04T20:07:32",
   "channels": {
     "자사몰": "2026-08-04T01:51:35",
-    "네이버": "2026-08-04T12:07:32"
+    "네이버": "2026-08-04T20:07:32"
   },
   "products": [
     {
@@ -3248,7 +3248,8 @@
       "channel": "네이버",
       "name": "포믹토푸스 사바나 유체 / 타란튤라 타란툴라 거미 키우기 관찰 학습 곤충 밀웜 절지류",
       "price": 30000,
-      "url": "https://smartstore.naver.com/tzblossom/products/8801357429"
+      "url": "https://smartstore.naver.com/tzblossom/products/8801357429",
+      "soldout": true
     },
     {
       "vendor": "더쥬 송파점",
@@ -5041,6 +5042,13 @@
     {
       "vendor": "타란센터",
       "channel": "네이버",
+      "name": "민다나오 센트럴 타이거 나무위성 타란튤라 유체",
+      "price": 30000,
+      "url": "https://smartstore.naver.com/tarancenter/products/13698389290"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "네이버",
       "name": "자이언트화이트니 타란튤라 애완거미 아성체 / 전갈 밀웜 귀뚜라미 애완곤충 희귀동물 키우기",
       "price": 20000,
       "url": "https://smartstore.naver.com/tarancenter/products/6066295129",
@@ -5382,10 +5390,10 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "킬로브라키스 카엥 크라찬 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
-      "price": 8000,
+      "price": 5000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10555966214",
-      "prev": 4000,
-      "changed_on": "2026-07-01",
+      "prev": 8000,
+      "changed_on": "2026-08-04",
       "hist": [
         [
           "2026-06-02",
@@ -5398,6 +5406,10 @@
         [
           "2026-07-01",
           8000
+        ],
+        [
+          "2026-08-04",
+          5000
         ]
       ]
     },
@@ -5850,8 +5862,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "포믹토푸스 도미니카 퍼플 유체 / 타란튤라 타란툴라 거미 배회성 절지동물 곤충",
-      "price": 35000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10571813438"
+      "price": 30000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10571813438",
+      "prev": 35000,
+      "changed_on": "2026-08-04",
+      "hist": [
+        [
+          "2026-06-02",
+          35000
+        ],
+        [
+          "2026-08-04",
+          30000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -5897,8 +5921,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "세리코펠마 다리엔 유체 / 타란튤라 타란툴라 거미 배회성 절지동물 곤충",
-      "price": 40000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10572327497"
+      "price": 25000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10572327497",
+      "prev": 40000,
+      "changed_on": "2026-08-04",
+      "hist": [
+        [
+          "2026-06-02",
+          40000
+        ],
+        [
+          "2026-08-04",
+          25000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -6007,8 +6043,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "페루비안 블랙 앤 화이트 리테 유체 / 타란튤라 타란툴라 거미 배회성 절지동물 곤충",
-      "price": 40000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10573781703"
+      "price": 45000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10573781703",
+      "prev": 40000,
+      "changed_on": "2026-08-04",
+      "hist": [
+        [
+          "2026-06-02",
+          40000
+        ],
+        [
+          "2026-08-04",
+          45000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -6065,11 +6113,11 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(방문수령만 가능) 팜포베테우스 볼리비안 스틸리블루 이퀴토스 스파이더링 / 타란튤라 타란툴라 거미 배회성 절지동물 곤충",
-      "price": 55000,
+      "name": "팜포베테우스 볼리비안 스틸리블루 이퀴토스 유체 / 타란튤라 타란툴라 거미 절지동물 곤충",
+      "price": 60000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10578099205",
-      "prev": 65000,
-      "changed_on": "2026-07-12",
+      "prev": 55000,
+      "changed_on": "2026-08-04",
       "hist": [
         [
           "2026-06-02",
@@ -6078,6 +6126,10 @@
         [
           "2026-07-12",
           55000
+        ],
+        [
+          "2026-08-04",
+          60000
         ]
       ]
     },
@@ -6247,11 +6299,11 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "(방문수령만 가능) 크세네스티스 블루(M라인) 스파이더링 / 타란튤라 타란툴라 거미 배회성 절지동물 곤충",
-      "price": 130000,
+      "name": "크세네스티스 블루 렛서블루 M라인 유체 타란튤라 타란툴라 거미 배회성 절지동물 곤충",
+      "price": 140000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10580976810",
-      "prev": 140000,
-      "changed_on": "2026-07-12",
+      "prev": 130000,
+      "changed_on": "2026-08-04",
       "hist": [
         [
           "2026-06-02",
@@ -6260,6 +6312,10 @@
         [
           "2026-07-12",
           130000
+        ],
+        [
+          "2026-08-04",
+          140000
         ]
       ]
     },
@@ -6311,8 +6367,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "트리니다드 쉐브론 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
-      "price": 12000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10584491543"
+      "price": 8000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10584491543",
+      "prev": 12000,
+      "changed_on": "2026-08-04",
+      "hist": [
+        [
+          "2026-06-02",
+          12000
+        ],
+        [
+          "2026-08-04",
+          8000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -6624,10 +6692,10 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "샬렘 오너멘탈 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
-      "price": 30000,
+      "price": 20000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10593043443",
-      "prev": 15000,
-      "changed_on": "2026-08-01",
+      "prev": 30000,
+      "changed_on": "2026-08-04",
       "hist": [
         [
           "2026-06-02",
@@ -6640,6 +6708,10 @@
         [
           "2026-08-01",
           30000
+        ],
+        [
+          "2026-08-04",
+          20000
         ]
       ]
     },
@@ -6814,10 +6886,10 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "브릭레드 핑크토 비케고이 에콰도르 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
-      "price": 40000,
+      "price": 45000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10596637179",
-      "prev": 45000,
-      "changed_on": "2026-06-19",
+      "prev": 40000,
+      "changed_on": "2026-08-04",
       "hist": [
         [
           "2026-06-02",
@@ -6826,6 +6898,10 @@
         [
           "2026-06-19",
           40000
+        ],
+        [
+          "2026-08-04",
+          45000
         ]
       ]
     },
@@ -6918,10 +6994,10 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "사바블루 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
-      "price": 55000,
+      "price": 50000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10604173330",
-      "prev": 40000,
-      "changed_on": "2026-07-09",
+      "prev": 55000,
+      "changed_on": "2026-08-04",
       "hist": [
         [
           "2026-06-02",
@@ -6934,6 +7010,10 @@
         [
           "2026-07-09",
           55000
+        ],
+        [
+          "2026-08-04",
+          50000
         ]
       ]
     },
@@ -7011,8 +7091,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "민다니오 센트럴 타이거 유체 / 타란튤라 타란툴라 거미 나무위성 절지동물 곤충",
-      "price": 60000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10613696776"
+      "price": 35000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10613696776",
+      "prev": 60000,
+      "changed_on": "2026-08-04",
+      "hist": [
+        [
+          "2026-06-02",
+          60000
+        ],
+        [
+          "2026-08-04",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -7085,8 +7177,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "모잠비크 혼드 바분 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
-      "price": 8000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10621700674"
+      "price": 5000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10621700674",
+      "prev": 8000,
+      "changed_on": "2026-08-04",
+      "hist": [
+        [
+          "2026-06-02",
+          8000
+        ],
+        [
+          "2026-08-04",
+          5000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -7311,13 +7415,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "럼동 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10625857059"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "네이버",
       "name": "브론즈바분, 나마퀜시스 바분 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
       "price": 15000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/10625878981",
@@ -7401,8 +7498,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "소코트라 아일랜드 블루바분 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
-      "price": 18000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10629395155"
+      "price": 15000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10629395155",
+      "prev": 18000,
+      "changed_on": "2026-08-04",
+      "hist": [
+        [
+          "2026-06-02",
+          18000
+        ],
+        [
+          "2026-08-04",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -7518,7 +7627,8 @@
       "channel": "네이버",
       "name": "보르네오 네온블루 비루페스 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
       "price": 28000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/10640702614"
+      "url": "https://smartstore.naver.com/tarantulakorea/products/10640702614",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -8275,8 +8385,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "아포노펠마 블루프론트 유체 / 타란튤라 타란툴라 거미 배회성 절지동물 애완곤충 곤충",
-      "price": 38000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/12032249869"
+      "price": 35000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/12032249869",
+      "prev": 38000,
+      "changed_on": "2026-08-04",
+      "hist": [
+        [
+          "2026-06-02",
+          38000
+        ],
+        [
+          "2026-08-04",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -8342,8 +8464,20 @@
       "vendor": "타란툴라코리아",
       "channel": "네이버",
       "name": "발할라 타이거 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
-      "price": 65000,
-      "url": "https://smartstore.naver.com/tarantulakorea/products/12241807402"
+      "price": 35000,
+      "url": "https://smartstore.naver.com/tarantulakorea/products/12241807402",
+      "prev": 65000,
+      "changed_on": "2026-08-04",
+      "hist": [
+        [
+          "2026-06-02",
+          65000
+        ],
+        [
+          "2026-08-04",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -8517,7 +8651,7 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "네이버",
-      "name": "퀴리오코스무스 아우에 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
+      "name": "퀴리오코스무스 아우에리 유체 / 타란튤라 타란툴라 거미 버로우성 절지동물 곤충",
       "price": 38000,
       "url": "https://smartstore.naver.com/tarantulakorea/products/12577879594",
       "soldout": true
