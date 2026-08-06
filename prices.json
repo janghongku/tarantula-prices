@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-06T12:07:41",
+  "updated_at": "2026-08-06T20:07:38",
   "channels": {
     "자사몰": "2026-08-06T01:54:00",
-    "네이버": "2026-08-06T12:07:41"
+    "네이버": "2026-08-06T20:07:38"
   },
   "products": [
     {
@@ -4189,7 +4189,8 @@
       "channel": "네이버",
       "name": "어셈오렌지바분 타란튤라 애완거미 유체 / 타란툴라 타란튤라입문 전갈 곤충 희귀동물키우기",
       "price": 4000,
-      "url": "https://smartstore.naver.com/tarancenter/products/10985714219"
+      "url": "https://smartstore.naver.com/tarancenter/products/10985714219",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
