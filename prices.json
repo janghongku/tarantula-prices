@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-06T20:07:38",
+  "updated_at": "2026-08-06T13:47:03",
   "channels": {
-    "자사몰": "2026-08-06T01:54:00",
+    "자사몰": "2026-08-06T13:47:03",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20780,6 +20780,25 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "블루프론트 유체",
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/블루프론트-유체/699/category/24/display/1/",
+      "prev": 38000,
+      "changed_on": "2026-08-04",
+      "hist": [
+        [
+          "2026-06-02",
+          38000
+        ],
+        [
+          "2026-08-04",
+          35000
+        ]
+      ]
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "비리디스 유체",
       "price": 40000,
       "url": "https://tarantulakorea.com/product/비리디스-유체/695/category/66/display/1/"
@@ -21443,7 +21462,8 @@
       "channel": "자사몰",
       "name": "칠레뷰티 '컨셉시온' 유체",
       "price": 35000,
-      "url": "https://tarantulakorea.com/product/칠레뷰티-컨셉시온-유체/678/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/칠레뷰티-컨셉시온-유체/678/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -21561,25 +21581,6 @@
       "name": "코스타리카 레드렉 '메소멜라스' 유체",
       "price": 165000,
       "url": "https://tarantulakorea.com/product/코스타리카-레드렉-메소멜라스-유체/727/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "코스타리카 블루프론트 유체",
-      "price": 35000,
-      "url": "https://tarantulakorea.com/product/코스타리카-블루프론트-유체/699/category/24/display/1/",
-      "prev": 38000,
-      "changed_on": "2026-08-04",
-      "hist": [
-        [
-          "2026-06-02",
-          38000
-        ],
-        [
-          "2026-08-04",
-          35000
-        ]
-      ]
     },
     {
       "vendor": "타란툴라코리아",
