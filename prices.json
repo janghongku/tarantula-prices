@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-07T02:16:34",
+  "updated_at": "2026-08-07T12:45:05",
   "channels": {
-    "자사몰": "2026-08-07T02:16:34",
+    "자사몰": "2026-08-07T12:45:05",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -11529,6 +11529,13 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
+      "name": "아르헨티나 자이언트 블랙럼프 / 유체",
+      "price": 40000,
+      "url": "https://theraphosidae.co.kr/product/아르헨티나-자이언트-블랙럼프-유체/2056/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
       "name": "아마조니카 핑크토 \"마나우스\" / 유체",
       "price": 35000,
       "url": "https://theraphosidae.co.kr/product/아마조니카-핑크토-마나우스-유체/1499/category/24/display/1/",
@@ -12319,9 +12326,9 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "우잠바라 바분 \"RCF\" / 유체",
-      "price": 4000,
-      "url": "https://theraphosidae.co.kr/product/우잠바라-바분-rcf-유체/289/category/24/display/1/"
+      "name": "우잠바라 바분 RCF / 유체",
+      "price": 3000,
+      "url": "https://theraphosidae.co.kr/product/우잠바라-바분-rcf-유체/2061/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -14686,6 +14693,13 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "페더렉 바분 / 유체",
+      "price": 15000,
+      "url": "https://theraphosidae.co.kr/product/페더렉-바분-유체/2060/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "페더렉 바분 / 유체",
       "price": 18000,
       "url": "https://theraphosidae.co.kr/product/페더렉-바분-유체/219/category/24/display/1/",
       "soldout": true
@@ -14759,6 +14773,13 @@
       "price": 270000,
       "url": "https://theraphosidae.co.kr/product/페루비안-스틸리블루-빅-블랙-준성체암/148/category/24/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "페루비안 퍼플 바이올렛 (ex.모라) / 유체",
+      "price": 95000,
+      "url": "https://theraphosidae.co.kr/product/페루비안-퍼플-바이올렛-ex모라-유체/2057/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -15306,18 +15327,24 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "하팔로트레무스 spec. 노브 / 9cm+.암컷",
-      "price": 250000,
-      "url": "https://theraphosidae.co.kr/product/하팔로트레무스-spec-노브-9cm암컷/1704/category/24/display/1/",
+      "name": "하팔로트레무스 spec. \"블루\" / 준성체.한쌍 (암: 9cm+-, 수: 4~6cm)",
+      "price": 550000,
+      "url": "https://theraphosidae.co.kr/product/하팔로트레무스-spec-블루-준성체한쌍-암-9cm-수-46cm/1508/category/24/display/1/",
       "soldout": true
     },
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "하팔로트레무스 spec. \"블루\" / 준성체.한쌍 (암: 9cm+-, 수: 4~6cm)",
-      "price": 550000,
-      "url": "https://theraphosidae.co.kr/product/하팔로트레무스-spec-블루-준성체한쌍-암-9cm-수-46cm/1508/category/24/display/1/",
-      "soldout": true
+      "name": "하팔로트레무스 spec. \"푸마\" / 아성체+, 준성체+-.한쌍 (크기선택)",
+      "price": 450000,
+      "url": "https://theraphosidae.co.kr/product/하팔로트레무스-spec-푸마-아성체-준성체-한쌍-크기선택/2062/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "하팔로트레무스 spec. \"푸마\" / 유체(대)~아성체+-",
+      "price": 90000,
+      "url": "https://theraphosidae.co.kr/product/하팔로트레무스-spec-푸마-유체대아성체/2058/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
