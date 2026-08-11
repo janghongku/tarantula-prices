@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-11T01:08:53",
+  "updated_at": "2026-08-11T12:46:19",
   "channels": {
-    "자사몰": "2026-08-11T01:08:53",
+    "자사몰": "2026-08-11T12:46:19",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21455,6 +21455,13 @@
       "name": "자이언트 골덴니 유체",
       "price": 3000,
       "url": "https://tarantulakorea.com/product/자이언트-골덴니-유체/118/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "자이언트그린 핑크토 '퀴타라 리버' 유체",
+      "price": 30000,
+      "url": "https://tarantulakorea.com/product/자이언트그린-핑크토-퀴타라-리버-유체/395/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
