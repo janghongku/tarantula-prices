@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-15T00:49:51",
+  "updated_at": "2026-08-15T12:21:57",
   "channels": {
-    "자사몰": "2026-08-15T00:49:51",
+    "자사몰": "2026-08-15T12:21:57",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -9508,7 +9508,8 @@
       "channel": "자사몰",
       "name": "나마쿠아랜드 실버바분 (ex.나마쿠엔시스) / 유체",
       "price": 15000,
-      "url": "https://theraphosidae.co.kr/product/나마쿠아랜드-실버바분-ex나마쿠엔시스-유체/2032/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/나마쿠아랜드-실버바분-ex나마쿠엔시스-유체/2032/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -12871,7 +12872,8 @@
       "channel": "자사몰",
       "name": "코스타리칸 제브라 \"니카라구아\" 블루 / 유체",
       "price": 25000,
-      "url": "https://theraphosidae.co.kr/product/코스타리칸-제브라-니카라구아-블루-유체/1594/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/코스타리칸-제브라-니카라구아-블루-유체/1594/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -21190,18 +21192,9 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "악테온 유체",
-      "price": 75000,
-      "url": "https://tarantulakorea.com/product/악테온-유체/393/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "악테온'다크폼' 유체 / spec. 산타카타리나 섬 악테온",
       "price": 80000,
-      "url": "https://tarantulakorea.com/product/악테온다크폼-유체-spec-산타카타리나-섬-악테온/682/category/24/display/1/",
-      "soldout": true
+      "url": "https://tarantulakorea.com/product/악테온다크폼-유체-spec-산타카타리나-섬-악테온/682/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21752,7 +21745,8 @@
       "channel": "자사몰",
       "name": "크세네스티스 spec. '파우나' 유체",
       "price": 300000,
-      "url": "https://tarantulakorea.com/product/크세네스티스-spec-파우나-유체/544/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/크세네스티스-spec-파우나-유체/544/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
