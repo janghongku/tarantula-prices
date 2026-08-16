@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-16T00:52:24",
+  "updated_at": "2026-08-16T12:23:56",
   "channels": {
-    "자사몰": "2026-08-16T00:52:24",
+    "자사몰": "2026-08-16T12:23:56",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21194,7 +21194,8 @@
       "channel": "자사몰",
       "name": "악테온'다크폼' 유체 / spec. 산타카타리나 섬 악테온",
       "price": 80000,
-      "url": "https://tarantulakorea.com/product/악테온다크폼-유체-spec-산타카타리나-섬-악테온/682/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/악테온다크폼-유체-spec-산타카타리나-섬-악테온/682/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
