@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-20T00:49:10",
+  "updated_at": "2026-08-20T12:32:36",
   "channels": {
-    "자사몰": "2026-08-20T00:49:10",
+    "자사몰": "2026-08-20T12:32:36",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21204,7 +21204,8 @@
       "channel": "자사몰",
       "name": "악테온 유체",
       "price": 75000,
-      "url": "https://tarantulakorea.com/product/악테온-유체/393/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/악테온-유체/393/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
