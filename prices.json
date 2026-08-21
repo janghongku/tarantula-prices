@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-21T00:53:13",
+  "updated_at": "2026-08-21T12:31:48",
   "channels": {
-    "자사몰": "2026-08-21T00:53:13",
+    "자사몰": "2026-08-21T12:31:48",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20473,13 +20473,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "멘도사 유체",
-      "price": 80000,
-      "url": "https://tarantulakorea.com/product/멘도사-유체/688/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "모잠비크 혼드바분 유체",
       "price": 5000,
       "url": "https://tarantulakorea.com/product/모잠비크-혼드바분-유체/365/category/66/display/1/",
@@ -21882,20 +21875,6 @@
       "name": "테라포시다이 spec. \"파코라\" 유체",
       "price": 95000,
       "url": "https://tarantulakorea.com/product/테라포시다이-spec-파코라-유체/667/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "텍사스브라운 유체",
-      "price": 40000,
-      "url": "https://tarantulakorea.com/product/텍사스브라운-유체/605/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "텍사스탄 유체",
-      "price": 25000,
-      "url": "https://tarantulakorea.com/product/텍사스탄-유체/405/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
