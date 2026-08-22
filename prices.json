@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-22T00:49:04",
+  "updated_at": "2026-08-22T12:23:12",
   "channels": {
-    "자사몰": "2026-08-22T00:49:04",
+    "자사몰": "2026-08-22T12:23:12",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20018,8 +20018,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "구티 사파이어 오너멘탈 유체",
-      "price": 30000,
-      "url": "https://tarantulakorea.com/product/구티-사파이어-오너멘탈-유체/141/category/67/display/1/"
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/구티-사파이어-오너멘탈-유체/141/category/67/display/1/",
+      "prev": 30000,
+      "changed_on": "2026-08-22",
+      "hist": [
+        [
+          "2026-06-02",
+          30000
+        ],
+        [
+          "2026-08-22",
+          25000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -20039,8 +20051,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "그레이스모크 유체",
-      "price": 35000,
-      "url": "https://tarantulakorea.com/product/그레이스모크-유체/296/category/24/display/1/"
+      "price": 30000,
+      "url": "https://tarantulakorea.com/product/그레이스모크-유체/296/category/24/display/1/",
+      "prev": 35000,
+      "changed_on": "2026-08-22",
+      "hist": [
+        [
+          "2026-06-02",
+          35000
+        ],
+        [
+          "2026-08-22",
+          30000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -20439,8 +20463,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "매홍손타이거 유체",
-      "price": 30000,
-      "url": "https://tarantulakorea.com/product/매홍손타이거-유체/462/category/67/display/1/"
+      "price": 20000,
+      "url": "https://tarantulakorea.com/product/매홍손타이거-유체/462/category/67/display/1/",
+      "prev": 30000,
+      "changed_on": "2026-08-22",
+      "hist": [
+        [
+          "2026-06-02",
+          30000
+        ],
+        [
+          "2026-08-22",
+          20000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -20786,8 +20822,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "블랙어스타이거 / 블지타 '하이난' 유체",
-      "price": 30000,
-      "url": "https://tarantulakorea.com/product/블랙어스타이거-블지타-하이난-유체/342/category/66/display/1/"
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/블랙어스타이거-블지타-하이난-유체/342/category/66/display/1/",
+      "prev": 30000,
+      "changed_on": "2026-08-22",
+      "hist": [
+        [
+          "2026-06-02",
+          30000
+        ],
+        [
+          "2026-08-22",
+          25000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -20799,9 +20847,21 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "블루보틀 유체",
-      "price": 45000,
-      "url": "https://tarantulakorea.com/product/블루보틀-유체/409/category/24/display/1/"
+      "name": "블루보틀 유체 대",
+      "price": 55000,
+      "url": "https://tarantulakorea.com/product/블루보틀-유체-대/409/category/24/display/1/",
+      "prev": 45000,
+      "changed_on": "2026-08-22",
+      "hist": [
+        [
+          "2026-06-02",
+          45000
+        ],
+        [
+          "2026-08-22",
+          55000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -21112,15 +21172,39 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "아이보리 오너멘탈'로우랜드' 바라 유체",
-      "price": 55000,
-      "url": "https://tarantulakorea.com/product/아이보리-오너멘탈로우랜드-바라-유체/507/category/67/display/1/"
+      "price": 50000,
+      "url": "https://tarantulakorea.com/product/아이보리-오너멘탈로우랜드-바라-유체/507/category/67/display/1/",
+      "prev": 55000,
+      "changed_on": "2026-08-22",
+      "hist": [
+        [
+          "2026-06-02",
+          55000
+        ],
+        [
+          "2026-08-22",
+          50000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "아이보리오너멘탈'로우랜드' 유체",
-      "price": 55000,
-      "url": "https://tarantulakorea.com/product/아이보리오너멘탈로우랜드-유체/222/category/67/display/1/"
+      "price": 50000,
+      "url": "https://tarantulakorea.com/product/아이보리오너멘탈로우랜드-유체/222/category/67/display/1/",
+      "prev": 55000,
+      "changed_on": "2026-08-22",
+      "hist": [
+        [
+          "2026-06-02",
+          55000
+        ],
+        [
+          "2026-08-22",
+          50000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -21351,13 +21435,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "옐로우&블루보틀 유체",
-      "price": 45000,
-      "url": "https://tarantulakorea.com/product/옐로우블루보틀-유체/491/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "오너멘탈바분 유체",
       "price": 5000,
       "url": "https://tarantulakorea.com/product/오너멘탈바분-유체/82/category/66/display/1/"
@@ -21548,8 +21625,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "캐리비안 다이아몬드 유체",
-      "price": 18000,
-      "url": "https://tarantulakorea.com/product/캐리비안-다이아몬드-유체/396/category/67/display/1/"
+      "price": 15000,
+      "url": "https://tarantulakorea.com/product/캐리비안-다이아몬드-유체/396/category/67/display/1/",
+      "prev": 18000,
+      "changed_on": "2026-08-22",
+      "hist": [
+        [
+          "2026-06-02",
+          18000
+        ],
+        [
+          "2026-08-22",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -21691,8 +21780,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "크세 브라이트 M라인 유체",
-      "price": 150000,
-      "url": "https://tarantulakorea.com/product/크세-브라이트-m라인-유체/227/category/24/display/1/"
+      "price": 140000,
+      "url": "https://tarantulakorea.com/product/크세-브라이트-m라인-유체/227/category/24/display/1/",
+      "prev": 150000,
+      "changed_on": "2026-08-22",
+      "hist": [
+        [
+          "2026-06-02",
+          150000
+        ],
+        [
+          "2026-08-22",
+          140000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -21831,15 +21932,39 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "타일랜드블랙 유체",
-      "price": 18000,
-      "url": "https://tarantulakorea.com/product/타일랜드블랙-유체/268/category/66/display/1/"
+      "price": 15000,
+      "url": "https://tarantulakorea.com/product/타일랜드블랙-유체/268/category/66/display/1/",
+      "prev": 18000,
+      "changed_on": "2026-08-22",
+      "hist": [
+        [
+          "2026-06-02",
+          18000
+        ],
+        [
+          "2026-08-22",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "타일랜드블랙\"빅블랙\"",
-      "price": 18000,
-      "url": "https://tarantulakorea.com/product/타일랜드블랙빅블랙/383/category/66/display/1/"
+      "price": 15000,
+      "url": "https://tarantulakorea.com/product/타일랜드블랙빅블랙/383/category/66/display/1/",
+      "prev": 18000,
+      "changed_on": "2026-08-22",
+      "hist": [
+        [
+          "2026-06-02",
+          18000
+        ],
+        [
+          "2026-08-22",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -22220,13 +22345,6 @@
       "name": "포믹토푸스 블루아줄 유체",
       "price": 60000,
       "url": "https://tarantulakorea.com/product/포믹토푸스-블루아줄-유체/475/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "포믹토푸스 사바나 '레드' 유체",
-      "price": 30000,
-      "url": "https://tarantulakorea.com/product/포믹토푸스-사바나-레드-유체/569/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
