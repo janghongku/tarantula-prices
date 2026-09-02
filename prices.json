@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-01T15:52:10",
+  "updated_at": "2026-09-02T02:17:55",
   "channels": {
-    "자사몰": "2026-09-01T15:52:10",
+    "자사몰": "2026-09-02T02:17:55",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20083,9 +20083,10 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "그린볼 유체 / 그린보틀블루",
+      "name": "그린볼 유체 / 그린보틀블루 임시품절 (현재 스파이더링으로 9월 둘째주 유체 업데이트)",
       "price": 15000,
-      "url": "https://tarantulakorea.com/product/그린볼-유체-그린보틀블루/142/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/그린볼-유체-그린보틀블루-임시품절-현재-스파이더링으로-9월-둘째주-유체-업데이트/142/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -20755,13 +20756,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "브라질리안 블루 '사지마이' 유체",
-      "price": 9000,
-      "url": "https://tarantulakorea.com/product/브라질리안-블루-사지마이-유체/199/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "브라질리안 쥬얼 유체",
       "price": 140000,
       "url": "https://tarantulakorea.com/product/브라질리안-쥬얼-유체/436/category/67/display/1/"
@@ -20803,10 +20797,10 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "브릭레드 핑크토 '비케고이 에콰도르' 유체",
-      "price": 45000,
+      "price": 40000,
       "url": "https://tarantulakorea.com/product/브릭레드-핑크토-비케고이-에콰도르-유체/540/category/67/display/1/",
-      "prev": 40000,
-      "changed_on": "2026-08-04",
+      "prev": 45000,
+      "changed_on": "2026-09-02",
       "hist": [
         [
           "2026-06-19",
@@ -20815,6 +20809,10 @@
         [
           "2026-08-04",
           45000
+        ],
+        [
+          "2026-09-02",
+          40000
         ]
       ]
     },
@@ -20983,13 +20981,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "세르타네하 유체",
-      "price": 35000,
-      "url": "https://tarantulakorea.com/product/세르타네하-유체/677/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "센데리 혼드바분 유체",
       "price": 20000,
       "url": "https://tarantulakorea.com/product/센데리-혼드바분-유체/246/category/66/display/1/"
@@ -21087,13 +21078,6 @@
       "name": "슬라웨시블랙 유체",
       "price": 30000,
       "url": "https://tarantulakorea.com/product/슬라웨시블랙-유체/213/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "실라카 바분 유체",
-      "price": 40000,
-      "url": "https://tarantulakorea.com/product/실라카-바분-유체/683/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21228,13 +21212,6 @@
       "name": "아프리카 골든바분'주노디' 유체",
       "price": 20000,
       "url": "https://tarantulakorea.com/product/아프리카-골든바분주노디-유체/84/category/66/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "아프리카 레드럼프 바분 '논스타우트렉' [암컷확정]",
-      "price": 140000,
-      "url": "https://tarantulakorea.com/product/아프리카-레드럼프-바분-논스타우트렉-암컷확정/661/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21396,8 +21373,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "엘레강스 유체",
-      "price": 20000,
-      "url": "https://tarantulakorea.com/product/엘레강스-유체/190/category/66/display/1/"
+      "price": 15000,
+      "url": "https://tarantulakorea.com/product/엘레강스-유체/190/category/66/display/1/",
+      "prev": 20000,
+      "changed_on": "2026-09-02",
+      "hist": [
+        [
+          "2026-06-02",
+          20000
+        ],
+        [
+          "2026-09-02",
+          15000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -22232,13 +22221,6 @@
       "name": "퍼플트리스파이더 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/퍼플트리스파이더-유체/418/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "펌킨패치'라지' 유체",
-      "price": 22000,
-      "url": "https://tarantulakorea.com/product/펌킨패치라지-유체/211/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
