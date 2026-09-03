@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-03T02:24:48",
+  "updated_at": "2026-09-03T15:34:39",
   "channels": {
-    "자사몰": "2026-09-03T02:24:48",
+    "자사몰": "2026-09-03T15:34:39",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -16128,8 +16128,7 @@
       "channel": "자사몰",
       "name": "레드로즈헤어 유체 / Grammostola rosea \"RCF\"",
       "price": 20000,
-      "url": "https://tarancenter.com/product/레드로즈헤어-유체-grammostola-rosea-rcf/1318/category/51/display/1/",
-      "soldout": true
+      "url": "https://tarancenter.com/product/레드로즈헤어-유체-grammostola-rosea-rcf/1318/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -19110,9 +19109,20 @@
       "vendor": "타란센터",
       "channel": "자사몰",
       "name": "팜파스 트웨니레드 (ex.그로사) 유체 / Grammostola grossa",
-      "price": 30000,
+      "price": 45000,
       "url": "https://tarancenter.com/product/팜파스-트웨니레드-ex그로사-유체-grammostola-grossa/1123/category/51/display/1/",
-      "soldout": true
+      "prev": 30000,
+      "changed_on": "2026-09-03",
+      "hist": [
+        [
+          "2026-06-02",
+          30000
+        ],
+        [
+          "2026-09-03",
+          45000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -19537,8 +19547,7 @@
       "channel": "자사몰",
       "name": "포믹토푸스 Sp. \"사바나\" 유체 / Phormictopus Sp. \"Sabana\"",
       "price": 30000,
-      "url": "https://tarancenter.com/product/포믹토푸스-sp-사바나-유체-phormictopus-sp-sabana/1398/category/51/display/1/",
-      "soldout": true
+      "url": "https://tarancenter.com/product/포믹토푸스-sp-사바나-유체-phormictopus-sp-sabana/1398/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -19807,6 +19816,13 @@
       "price": 40000,
       "url": "https://tarancenter.com/product/하티하티-어스타이거-10cm-준성체-암컷-cyriopagopus-sp-hati-hati/1149/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "하팔로트레무스 Sp. \"푸마\" 유체(대) / Hapalotremus Sp. \"Puma\"",
+      "price": 90000,
+      "url": "https://tarancenter.com/product/하팔로트레무스-sp-푸마-유체대-hapalotremus-sp-puma/1643/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
