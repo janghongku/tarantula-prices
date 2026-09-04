@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-04T02:19:59",
+  "updated_at": "2026-09-04T15:32:43",
   "channels": {
-    "자사몰": "2026-09-04T02:19:59",
+    "자사몰": "2026-09-04T15:32:43",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -19450,6 +19450,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "페루비안 화이트 파우더 유체(대) / Hapalotremus Sp. \"Puma\"",
+      "price": 90000,
+      "url": "https://tarancenter.com/product/페루비안-화이트-파우더-유체대-hapalotremus-sp-puma/1643/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "페루퍼플 핑크토 유체 / Avicularia juruensis (morpho-type2)",
       "price": 10000,
       "url": "https://tarancenter.com/product/페루퍼플-핑크토-유체-avicularia-juruensis-morpho-type2/1104/category/51/display/1/",
@@ -19816,13 +19823,6 @@
       "price": 40000,
       "url": "https://tarancenter.com/product/하티하티-어스타이거-10cm-준성체-암컷-cyriopagopus-sp-hati-hati/1149/category/51/display/1/",
       "soldout": true
-    },
-    {
-      "vendor": "타란센터",
-      "channel": "자사몰",
-      "name": "하팔로트레무스 Sp. \"푸마\" 유체(대) / Hapalotremus Sp. \"Puma\"",
-      "price": 90000,
-      "url": "https://tarancenter.com/product/하팔로트레무스-sp-푸마-유체대-hapalotremus-sp-puma/1643/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
