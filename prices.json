@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-07T02:13:48",
+  "updated_at": "2026-09-07T16:59:12",
   "channels": {
-    "자사몰": "2026-09-07T02:13:48",
+    "자사몰": "2026-09-07T16:59:12",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -17375,6 +17375,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "소코트라 아일랜드 블루바분 유체 / Monocentropus balfouri",
+      "price": 15000,
+      "url": "https://tarancenter.com/product/소코트라-아일랜드-블루바분-유체-monocentropus-balfouri/1647/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "소코트라 아일랜드 블루바분 유체 (대) / Monocentropus balfouri",
       "price": 15000,
       "url": "https://tarancenter.com/product/소코트라-아일랜드-블루바분-유체-대-monocentropus-balfouri/910/category/51/display/1/",
@@ -18789,6 +18796,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "타이 드워프 유체 / Phlogiellus Sp. \"Thailand dwarf\"",
+      "price": 5000,
+      "url": "https://tarancenter.com/product/타이-드워프-유체-phlogiellus-sp-thailand-dwarf/1646/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "타이 제브라 유체 / Cyriopagopus albostriatus",
       "price": 20000,
       "url": "https://tarancenter.com/product/타이-제브라-유체-cyriopagopus-albostriatus/509/category/51/display/1/",
@@ -18829,7 +18843,8 @@
       "channel": "자사몰",
       "name": "타이제브라 아성체 암컷 7cm / Melopoeus albostriatus",
       "price": 35000,
-      "url": "https://tarancenter.com/product/타이제브라-아성체-암컷-7cm-melopoeus-albostriatus/1565/category/51/display/1/"
+      "url": "https://tarancenter.com/product/타이제브라-아성체-암컷-7cm-melopoeus-albostriatus/1565/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -20099,10 +20114,21 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "그린볼 유체 / 그린보틀블루 임시품절 (현재 스파이더링으로 9월 둘째주 유체 업데이트)",
-      "price": 15000,
-      "url": "https://tarantulakorea.com/product/그린볼-유체-그린보틀블루-임시품절-현재-스파이더링으로-9월-둘째주-유체-업데이트/142/category/24/display/1/",
-      "soldout": true
+      "name": "그린볼 유체",
+      "price": 18000,
+      "url": "https://tarantulakorea.com/product/그린볼-유체/142/category/24/display/1/",
+      "prev": 15000,
+      "changed_on": "2026-09-07",
+      "hist": [
+        [
+          "2026-06-02",
+          15000
+        ],
+        [
+          "2026-09-07",
+          18000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -20461,6 +20487,13 @@
       "name": "말레이시안 블루 / 말블 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/말레이시안-블루-말블-유체/105/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "말레이시안 지구 타이거 '말지타' 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/말레이시안-지구-타이거-말지타-유체/108/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21487,7 +21520,8 @@
       "channel": "자사몰",
       "name": "인디언 오너멘탈 유체",
       "price": 10000,
-      "url": "https://tarantulakorea.com/product/인디언-오너멘탈-유체/136/category/67/display/1/"
+      "url": "https://tarantulakorea.com/product/인디언-오너멘탈-유체/136/category/67/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
