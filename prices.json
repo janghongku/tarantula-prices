@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-07T16:59:12",
+  "updated_at": "2026-09-08T02:26:06",
   "channels": {
-    "자사몰": "2026-09-07T16:59:12",
+    "자사몰": "2026-09-08T02:26:06",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21103,6 +21103,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "스템프 트렙도어 준-성체 암컷",
+      "price": 45000,
+      "url": "https://tarantulakorea.com/product/스템프-트렙도어-준-성체-암컷/690/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "스트레이트 혼드 바분 유체",
       "price": 5000,
       "url": "https://tarantulakorea.com/product/스트레이트-혼드-바분-유체/86/category/66/display/1/"
@@ -21318,7 +21325,8 @@
       "channel": "자사몰",
       "name": "안틸레스 핑크토 유체",
       "price": 10000,
-      "url": "https://tarantulakorea.com/product/안틸레스-핑크토-유체/123/category/67/display/1/"
+      "url": "https://tarantulakorea.com/product/안틸레스-핑크토-유체/123/category/67/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -21395,7 +21403,8 @@
       "channel": "자사몰",
       "name": "에슐러스'그린' 유체",
       "price": 55000,
-      "url": "https://tarantulakorea.com/product/에슐러스그린-유체/687/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/에슐러스그린-유체/687/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
