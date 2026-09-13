@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-13T02:29:31",
+  "updated_at": "2026-09-13T15:24:35",
   "channels": {
-    "자사몰": "2026-09-13T02:29:31",
+    "자사몰": "2026-09-13T15:24:35",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20409,7 +20409,8 @@
       "channel": "자사몰",
       "name": "렛서블루 M라인 유체",
       "price": 130000,
-      "url": "https://tarantulakorea.com/product/렛서블루-m라인-유체/226/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/렛서블루-m라인-유체/226/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -21244,13 +21245,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "아포노펠마 '초콜렛' 유체",
-      "price": 125000,
-      "url": "https://tarantulakorea.com/product/아포노펠마-초콜렛-유체/762/category/24/display/2/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "아포노펠마 크리니루품 \"코스타리카\" 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/아포노펠마-크리니루품-코스타리카-유체/765/category/24/display/1/"
@@ -21877,13 +21871,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "킬로브라키스 spec. \"후난\" 암컷확정",
-      "price": 85000,
-      "url": "https://tarantulakorea.com/product/킬로브라키스-spec-후난-암컷확정/756/category/24/display/2/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "킬리만자로 머스타트 바분 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/킬리만자로-머스타트-바분-유체/292/category/66/display/1/"
@@ -22313,6 +22300,34 @@
       "name": "페루비안 블론디 유체",
       "price": 35000,
       "url": "https://tarantulakorea.com/product/페루비안-블론디-유체/631/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "페루비안 퍼플 바이올렛 유체",
+      "price": 95000,
+      "url": "https://tarantulakorea.com/product/페루비안-퍼플-바이올렛-유체/770/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "페루비안 퍼플 바이올렛 유체",
+      "price": 95000,
+      "url": "https://tarantulakorea.com/product/페루비안-퍼플-바이올렛-유체/770/category/24/display/2/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "페루비안 화이트 파우더 유체",
+      "price": 90000,
+      "url": "https://tarantulakorea.com/product/페루비안-화이트-파우더-유체/771/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "페루비안 화이트 파우더 유체",
+      "price": 90000,
+      "url": "https://tarantulakorea.com/product/페루비안-화이트-파우더-유체/771/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
