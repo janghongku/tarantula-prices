@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-13T15:24:35",
+  "updated_at": "2026-09-14T02:45:54",
   "channels": {
-    "자사몰": "2026-09-13T15:24:35",
+    "자사몰": "2026-09-14T02:45:54",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -13301,7 +13301,8 @@
       "channel": "자사몰",
       "name": "크세네스티스 spec. \"화이트\" / 7-8cm.한쌍",
       "price": 380000,
-      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-화이트-7-8cm한쌍/2034/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-화이트-7-8cm한쌍/2034/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
