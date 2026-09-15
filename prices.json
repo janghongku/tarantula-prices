@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-15T02:48:36",
+  "updated_at": "2026-09-15T15:59:57",
   "channels": {
-    "자사몰": "2026-09-15T02:48:36",
+    "자사몰": "2026-09-15T15:59:57",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20488,7 +20488,8 @@
       "channel": "자사몰",
       "name": "말레이시안 블루 / 말블 유체",
       "price": 25000,
-      "url": "https://tarantulakorea.com/product/말레이시안-블루-말블-유체/105/category/67/display/1/"
+      "url": "https://tarantulakorea.com/product/말레이시안-블루-말블-유체/105/category/67/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
