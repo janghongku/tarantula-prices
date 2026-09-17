@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-16T15:53:20",
+  "updated_at": "2026-09-17T02:47:46",
   "channels": {
-    "자사몰": "2026-09-16T15:53:20",
+    "자사몰": "2026-09-17T02:47:46",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20486,14 +20486,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "말레이시안 블루 / 말블 유체",
-      "price": 25000,
-      "url": "https://tarantulakorea.com/product/말레이시안-블루-말블-유체/105/category/67/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "말레이시안 지구 타이거 '말지타' 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/말레이시안-지구-타이거-말지타-유체/108/category/67/display/1/"
@@ -21155,9 +21147,10 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "싱가폴블루 유체",
+      "name": "싱가폴블루 유체 (재입고예정)",
       "price": 28000,
-      "url": "https://tarantulakorea.com/product/싱가폴블루-유체/106/category/67/display/1/",
+      "url": "https://tarantulakorea.com/product/싱가폴블루-유체-재입고예정/106/category/67/display/1/",
+      "soldout": true,
       "prev": 25000,
       "changed_on": "2026-06-09",
       "hist": [
