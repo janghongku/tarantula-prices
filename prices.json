@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-18T15:34:11",
+  "updated_at": "2026-09-19T02:33:45",
   "channels": {
-    "자사몰": "2026-09-18T15:34:11",
+    "자사몰": "2026-09-19T02:33:45",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -22088,8 +22088,7 @@
       "channel": "자사몰",
       "name": "파나마블론디 유체",
       "price": 25000,
-      "url": "https://tarantulakorea.com/product/파나마블론디-유체/113/category/67/display/1/",
-      "soldout": true
+      "url": "https://tarantulakorea.com/product/파나마블론디-유체/113/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -22131,7 +22130,8 @@
       "channel": "자사몰",
       "name": "팜포베테우스 spec. 산토도밍고 골리앗 유체",
       "price": 75000,
-      "url": "https://tarantulakorea.com/product/팜포베테우스-spec-산토도밍고-골리앗-유체/723/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/팜포베테우스-spec-산토도밍고-골리앗-유체/723/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -22173,7 +22173,8 @@
       "channel": "자사몰",
       "name": "팜포베테우스 마스카라 유체",
       "price": 30000,
-      "url": "https://tarantulakorea.com/product/팜포베테우스-마스카라-유체/146/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/팜포베테우스-마스카라-유체/146/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -22281,11 +22282,11 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "페루비안 블랙 앤 화이트 '리테' 유체",
-      "price": 45000,
-      "url": "https://tarantulakorea.com/product/페루비안-블랙-앤-화이트-리테-유체/322/category/24/display/1/",
-      "prev": 40000,
-      "changed_on": "2026-08-04",
+      "name": "페루비안 블랙 앤 화이트 '리테' 유체 대",
+      "price": 55000,
+      "url": "https://tarantulakorea.com/product/페루비안-블랙-앤-화이트-리테-유체-대/322/category/24/display/1/",
+      "prev": 45000,
+      "changed_on": "2026-09-19",
       "hist": [
         [
           "2026-06-02",
@@ -22294,6 +22295,10 @@
         [
           "2026-08-04",
           45000
+        ],
+        [
+          "2026-09-19",
+          55000
         ]
       ]
     },
