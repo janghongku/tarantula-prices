@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-22T02:43:54",
+  "updated_at": "2026-09-22T16:02:53",
   "channels": {
-    "자사몰": "2026-09-22T02:43:54",
+    "자사몰": "2026-09-22T16:02:53",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -16364,7 +16364,8 @@
       "channel": "자사몰",
       "name": "메탈릭 핑크토 유체 / Avicularia metallica",
       "price": 25000,
-      "url": "https://tarancenter.com/product/메탈릭-핑크토-유체-avicularia-metallica/1320/category/51/display/1/"
+      "url": "https://tarancenter.com/product/메탈릭-핑크토-유체-avicularia-metallica/1320/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -18719,6 +18720,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "크세네스티스 인테르메디아 (아마존 블루블럼) 유체 / Xenesthis intermedia",
+      "price": 110000,
+      "url": "https://tarancenter.com/product/크세네스티스-인테르메디아-아마존-블루블럼-유체-xenesthis-intermedia/1657/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "킬로브라쉬스 Sp. \"사우스타일랜드 블루\" 유체 / Chilobrachys Sp. \"South thailand BLUE\"",
       "price": 35000,
       "url": "https://tarancenter.com/product/킬로브라쉬스-sp-사우스타일랜드-블루-유체-chilobrachys-sp-south-thailand-blue/1052/category/51/display/1/",
@@ -19538,7 +19546,8 @@
       "channel": "자사몰",
       "name": "포르밍고칠루스 Sp. \"사바블루\" 유체 / Phormingochilus Sp. \"Sabah blue\"",
       "price": 55000,
-      "url": "https://tarancenter.com/product/포르밍고칠루스-sp-사바블루-유체-phormingochilus-sp-sabah-blue/1389/category/51/display/1/"
+      "url": "https://tarancenter.com/product/포르밍고칠루스-sp-사바블루-유체-phormingochilus-sp-sabah-blue/1389/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -20493,6 +20502,14 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "말레이시안 어스타이거 \"네게리셈빌란\" 유체",
+      "price": 45000,
+      "url": "https://tarantulakorea.com/product/말레이시안-어스타이거-네게리셈빌란-유체/545/category/67/display/1/",
+      "soldout": true
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "말레이시안 지구 타이거 '말지타' 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/말레이시안-지구-타이거-말지타-유체/108/category/67/display/1/"
@@ -20550,13 +20567,6 @@
       "name": "멕시칸 스타우트렉 \"푸에블라\" 유체",
       "price": 95000,
       "url": "https://tarantulakorea.com/product/멕시칸-스타우트렉-푸에블라-유체/766/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "멕시칸 스타우트렉 \"푸에블라\" 유체",
-      "price": 95000,
-      "url": "https://tarantulakorea.com/product/멕시칸-스타우트렉-푸에블라-유체/766/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -20740,13 +20750,6 @@
       "name": "베트남어스타이거 '베지타' 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/베트남어스타이거-베지타-유체/742/category/66/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "베트남어스타이거 '베지타' 유체",
-      "price": 15000,
-      "url": "https://tarantulakorea.com/product/베트남어스타이거-베지타-유체/742/category/66/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21105,6 +21108,14 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "스켈레톤 유체",
+      "price": 50000,
+      "url": "https://tarantulakorea.com/product/스켈레톤-유체/212/category/66/display/1/",
+      "soldout": true
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "스템프 트렙도어 준-성체 암컷",
       "price": 45000,
       "url": "https://tarantulakorea.com/product/스템프-트렙도어-준-성체-암컷/690/category/66/display/1/"
@@ -21250,13 +21261,6 @@
       "name": "아포노펠마 크리니루품 \"코스타리카\" 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/아포노펠마-크리니루품-코스타리카-유체/765/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "아포노펠마 크리니루품 \"코스타리카\" 유체",
-      "price": 15000,
-      "url": "https://tarantulakorea.com/product/아포노펠마-크리니루품-코스타리카-유체/765/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21838,6 +21842,20 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "크세 인터메디아 '투르히오' 유체",
+      "price": 100000,
+      "url": "https://tarantulakorea.com/product/크세-인터메디아-투르히오-유체/776/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "크세 인터메디아 '투르히오' 유체",
+      "price": 100000,
+      "url": "https://tarantulakorea.com/product/크세-인터메디아-투르히오-유체/776/category/24/display/2/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "크세 테네브리스 유체",
       "price": 95000,
       "url": "https://tarantulakorea.com/product/크세-테네브리스-유체/261/category/24/display/1/"
@@ -21862,6 +21880,20 @@
       "name": "킬로 사이욕 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/킬로-사이욕-유체/670/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "킬로브라키스 spec. \"트로피칼 블루\" 유체",
+      "price": 220000,
+      "url": "https://tarantulakorea.com/product/킬로브라키스-spec-트로피칼-블루-유체/777/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "킬로브라키스 spec. \"트로피칼 블루\" 유체",
+      "price": 220000,
+      "url": "https://tarantulakorea.com/product/킬로브라키스-spec-트로피칼-블루-유체/777/category/66/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -22121,6 +22153,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "팜포베테우스 spec. \"레드\" 에콰도르 유체",
+      "price": 125000,
+      "url": "https://tarantulakorea.com/product/팜포베테우스-spec-레드-에콰도르-유체/669/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "팜포베테우스 spec. 미라도르 유체",
       "price": 68000,
       "url": "https://tarantulakorea.com/product/팜포베테우스-spec-미라도르-유체/724/category/24/display/1/"
@@ -22132,6 +22171,20 @@
       "price": 75000,
       "url": "https://tarantulakorea.com/product/팜포베테우스-spec-산토도밍고-골리앗-유체/723/category/24/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "팜포베테우스 spec. \"우스치\" 유체",
+      "price": 100000,
+      "url": "https://tarantulakorea.com/product/팜포베테우스-spec-우스치-유체/775/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "팜포베테우스 spec. \"우스치\" 유체",
+      "price": 100000,
+      "url": "https://tarantulakorea.com/product/팜포베테우스-spec-우스치-유체/775/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
