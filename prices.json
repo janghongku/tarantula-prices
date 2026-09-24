@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-24T02:33:42",
+  "updated_at": "2026-09-24T16:15:22",
   "channels": {
-    "자사몰": "2026-09-24T02:33:42",
+    "자사몰": "2026-09-24T16:15:22",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -18352,6 +18352,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "카사나레 트리스파이더 유체 / Tapinauchenius Sp. \"Casanare\"",
+      "price": 30000,
+      "url": "https://tarancenter.com/product/카사나레-트리스파이더-유체-tapinauchenius-sp-casanare/1659/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "카엥크라찬 준성체~성체 암컷 / Chilobrachys Sp. \"Kaeng krachan\"",
       "price": 45000,
       "url": "https://tarancenter.com/product/카엥크라찬-준성체성체-암컷-chilobrachys-sp-kaeng-krachan/1454/category/51/display/1/",
@@ -19801,6 +19808,13 @@
       "price": 60000,
       "url": "https://tarancenter.com/product/핑크풋-골리앗-버드이터-유체-사이즈-옵션선택-theraphosa-apophysis/672/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "핑크풋골리앗 버드이터 유체 / Theraphosa apophysis",
+      "price": 45000,
+      "url": "https://tarancenter.com/product/핑크풋골리앗-버드이터-유체-theraphosa-apophysis/1658/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
