@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-27T02:56:28",
+  "updated_at": "2026-09-27T16:09:13",
   "channels": {
-    "자사몰": "2026-09-27T02:56:28",
+    "자사몰": "2026-09-27T16:09:13",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -11582,7 +11582,8 @@
       "channel": "자사몰",
       "name": "아마존 사파이어 핑크토 / 유체",
       "price": 25000,
-      "url": "https://theraphosidae.co.kr/product/아마존-사파이어-핑크토-유체/2053/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/아마존-사파이어-핑크토-유체/2053/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -12315,14 +12316,16 @@
       "channel": "자사몰",
       "name": "우잠바라 바분 DCF (보츠와나/짐바브웨) / 유체",
       "price": 35000,
-      "url": "https://theraphosidae.co.kr/product/우잠바라-바분-dcf-보츠와나짐바브웨-유체/1449/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/우잠바라-바분-dcf-보츠와나짐바브웨-유체/1449/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "우잠바라 바분 DCF (키고마 국립공원) / 유체",
       "price": 15000,
-      "url": "https://theraphosidae.co.kr/product/우잠바라-바분-dcf-키고마-국립공원-유체/884/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/우잠바라-바분-dcf-키고마-국립공원-유체/884/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
