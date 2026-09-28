@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-27T16:09:13",
+  "updated_at": "2026-09-28T02:55:50",
   "channels": {
-    "자사몰": "2026-09-27T16:09:13",
+    "자사몰": "2026-09-28T02:55:50",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -19817,7 +19817,8 @@
       "channel": "자사몰",
       "name": "핑크풋골리앗 버드이터 유체 / Theraphosa apophysis",
       "price": 45000,
-      "url": "https://tarancenter.com/product/핑크풋골리앗-버드이터-유체-theraphosa-apophysis/1658/category/51/display/1/"
+      "url": "https://tarancenter.com/product/핑크풋골리앗-버드이터-유체-theraphosa-apophysis/1658/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -22172,7 +22173,8 @@
       "channel": "자사몰",
       "name": "팜포베테우스 spec. \"레드\" 에콰도르 유체",
       "price": 125000,
-      "url": "https://tarantulakorea.com/product/팜포베테우스-spec-레드-에콰도르-유체/669/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/팜포베테우스-spec-레드-에콰도르-유체/669/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
