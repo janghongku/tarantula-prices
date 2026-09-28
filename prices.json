@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-28T02:55:50",
+  "updated_at": "2026-09-28T19:03:16",
   "channels": {
-    "자사몰": "2026-09-28T02:55:50",
+    "자사몰": "2026-09-28T19:03:16",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -15781,7 +15781,8 @@
       "channel": "자사몰",
       "name": "구티사파이어 오너멘탈 유체 / Poecilotheria metallica",
       "price": 25000,
-      "url": "https://tarancenter.com/product/구티사파이어-오너멘탈-유체-poecilotheria-metallica/1606/category/51/display/1/"
+      "url": "https://tarancenter.com/product/구티사파이어-오너멘탈-유체-poecilotheria-metallica/1606/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -19817,8 +19818,7 @@
       "channel": "자사몰",
       "name": "핑크풋골리앗 버드이터 유체 / Theraphosa apophysis",
       "price": 45000,
-      "url": "https://tarancenter.com/product/핑크풋골리앗-버드이터-유체-theraphosa-apophysis/1658/category/51/display/1/",
-      "soldout": true
+      "url": "https://tarancenter.com/product/핑크풋골리앗-버드이터-유체-theraphosa-apophysis/1658/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
