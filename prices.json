@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-30T17:22:15",
+  "updated_at": "2026-10-01T03:28:32",
   "channels": {
-    "자사몰": "2026-09-30T17:22:15",
+    "자사몰": "2026-10-01T03:28:32",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20833,9 +20833,10 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "브라질리안 블랙 / 브블 유체",
+      "name": "브라질리안 블랙 / 브블 유체 ( 재입고 예정)",
       "price": 65000,
-      "url": "https://tarantulakorea.com/product/브라질리안-블랙-브블-유체/477/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/브라질리안-블랙-브블-유체-재입고-예정/477/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
