@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-09T03:58:23",
+  "updated_at": "2026-10-09T17:48:49",
   "channels": {
-    "자사몰": "2026-10-09T03:58:23",
+    "자사몰": "2026-10-09T17:48:49",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -9261,8 +9261,7 @@
       "channel": "자사몰",
       "name": "골든그레이 버드이터 / 유체",
       "price": 15000,
-      "url": "https://theraphosidae.co.kr/product/골든그레이-버드이터-유체/1121/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/골든그레이-버드이터-유체/1121/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -9659,10 +9658,24 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
+      "name": "도미니칸 스틸리블루 \"골드 카라팍스\" / 유체",
+      "price": 25000,
+      "url": "https://theraphosidae.co.kr/product/도미니칸-스틸리블루-골드-카라팍스-유체/2121/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
       "name": "도미니칸 퍼플 / 10cm+-.암컷",
       "price": 160000,
       "url": "https://theraphosidae.co.kr/product/도미니칸-퍼플-10cm-암컷/1481/category/24/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "도미니칸 퍼플 / 유체",
+      "price": 35000,
+      "url": "https://theraphosidae.co.kr/product/도미니칸-퍼플-유체/1664/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -10030,6 +10043,14 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
+      "name": "마데라 캐니언 블랙 / 유체",
+      "price": 135000,
+      "url": "https://theraphosidae.co.kr/product/마데라-캐니언-블랙-유체/2123/category/24/display/1/",
+      "soldout": true
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
       "name": "마드레 데 디오스 핑크토 / 유체",
       "price": 25000,
       "url": "https://theraphosidae.co.kr/product/마드레-데-디오스-핑크토-유체/1600/category/24/display/1/",
@@ -10307,6 +10328,13 @@
       "name": "미초아칸 레드럼프 (ex.탄제리) / 유체",
       "price": 32000,
       "url": "https://theraphosidae.co.kr/product/미초아칸-레드럼프-ex탄제리-유체/1818/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "미초아칸 블론디 / 준성체+",
+      "price": 185000,
+      "url": "https://theraphosidae.co.kr/product/미초아칸-블론디-준성체/2126/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -11537,6 +11565,13 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
+      "name": "아마조니안 스타우트렉",
+      "price": 75000,
+      "url": "https://theraphosidae.co.kr/product/아마조니안-스타우트렉/2124/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
       "name": "아마조니카 핑크토 \"마나우스\" / 유체",
       "price": 35000,
       "url": "https://theraphosidae.co.kr/product/아마조니카-핑크토-마나우스-유체/1499/category/24/display/1/",
@@ -12586,9 +12621,20 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "자이언트 화이트니 / 유체",
-      "price": 10000,
+      "price": 12000,
       "url": "https://theraphosidae.co.kr/product/자이언트-화이트니-유체/1567/category/24/display/1/",
-      "soldout": true
+      "prev": 10000,
+      "changed_on": "2026-10-09",
+      "hist": [
+        [
+          "2026-06-02",
+          10000
+        ],
+        [
+          "2026-10-09",
+          12000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -12730,6 +12776,13 @@
       "price": 520000,
       "url": "https://theraphosidae.co.kr/product/칼즈배드-그린-ex가벨리-준성체711cm한쌍/1964/category/24/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "칼즈배드 그린 / 유체",
+      "price": 95000,
+      "url": "https://theraphosidae.co.kr/product/칼즈배드-그린-유체/2122/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -13742,6 +13795,13 @@
       "name": "테라포시다이 spec. \"파코라\" / 유체",
       "price": 85000,
       "url": "https://theraphosidae.co.kr/product/테라포시다이-spec-파코라-유체/1824/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "텍사스 브라운 (ex.헨지) / 아성체.암컷",
+      "price": 75000,
+      "url": "https://theraphosidae.co.kr/product/텍사스-브라운-ex헨지-아성체암컷/2125/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -14854,14 +14914,6 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "포르믹토푸스 spec. \"도미니칸 퍼플\" / 유체",
-      "price": 35000,
-      "url": "https://theraphosidae.co.kr/product/포르믹토푸스-spec-도미니칸-퍼플-유체/1664/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
       "name": "포르믹토푸스 spec. \"몬테 크리스티\" / 7cm+-.암컷",
       "price": 65000,
       "url": "https://theraphosidae.co.kr/product/포르믹토푸스-spec-몬테-크리스티-7cm-암컷/1626/category/24/display/1/",
@@ -14903,9 +14955,20 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "포르믹토푸스 spec. \"사바나\" / 유체",
-      "price": 25000,
+      "price": 35000,
       "url": "https://theraphosidae.co.kr/product/포르믹토푸스-spec-사바나-유체/1631/category/24/display/1/",
-      "soldout": true
+      "prev": 25000,
+      "changed_on": "2026-10-09",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-10-09",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -14926,25 +14989,10 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "포르믹토푸스 spec. \"시에라\" (산티아고) / 유체",
-      "price": 32000,
-      "url": "https://theraphosidae.co.kr/product/포르믹토푸스-spec-시에라-산티아고-유체/1517/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
       "name": "포르믹토푸스 spec. \"오리엔트\" (ex.아트리코마투스/푼타 카나) / 유체",
       "price": 30000,
       "url": "https://theraphosidae.co.kr/product/포르믹토푸스-spec-오리엔트-ex아트리코마투스푼타-카나-유체/1203/category/24/display/1/",
       "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "포르믹토푸스 spec. \"오리엔트\" 푼타 카나 (ex.아트리코마투스 \"푼타 카나\") / 유체",
-      "price": 30000,
-      "url": "https://theraphosidae.co.kr/product/포르믹토푸스-spec-오리엔트-푼타-카나-ex아트리코마투스-푼타-카나-유체/1774/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -15057,8 +15105,7 @@
       "channel": "자사몰",
       "name": "프린지드 오너멘탈 / 유체",
       "price": 15000,
-      "url": "https://theraphosidae.co.kr/product/프린지드-오너멘탈-유체/1671/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/프린지드-오너멘탈-유체/1671/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -15453,6 +15500,13 @@
       "price": 10000,
       "url": "https://theraphosidae.co.kr/product/헤라클레스-바분-유체/714/category/24/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
+      "name": "헤이티안 브라운 버드이터 / 유체",
+      "price": 25000,
+      "url": "https://theraphosidae.co.kr/product/헤이티안-브라운-버드이터-유체/2120/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
