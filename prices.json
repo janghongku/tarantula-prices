@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-10T16:43:27",
+  "updated_at": "2026-10-11T03:16:22",
   "channels": {
-    "자사몰": "2026-10-10T16:43:27",
+    "자사몰": "2026-10-11T03:16:22",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21975,6 +21975,13 @@
       "name": "타이거럼프 유체",
       "price": 10000,
       "url": "https://tarantulakorea.com/product/타이거럼프-유체/155/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "타이거바분 유체",
+      "price": 65000,
+      "url": "https://tarantulakorea.com/product/타이거바분-유체/293/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
