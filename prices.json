@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-14T02:59:39",
+  "updated_at": "2026-10-14T16:16:50",
   "channels": {
-    "자사몰": "2026-10-14T02:59:39",
+    "자사몰": "2026-10-14T16:16:50",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20157,6 +20157,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "'과테말란' 타이거럼프 유체",
+      "price": 10000,
+      "url": "https://tarantulakorea.com/product/과테말란-타이거럼프-유체/155/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "구티 사파이어 오너멘탈 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/구티-사파이어-오너멘탈-유체/141/category/67/display/1/",
@@ -20794,6 +20801,14 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "버간디 골리앗 유체",
+      "price": 90000,
+      "url": "https://tarantulakorea.com/product/버간디-골리앗-유체/323/category/24/display/1/",
+      "soldout": true
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "버마초코 브라운 유체",
       "price": 9000,
       "url": "https://tarantulakorea.com/product/버마초코-브라운-유체/270/category/24/display/1/"
@@ -20818,6 +20833,20 @@
       "name": "베네슈엘라 핑크토 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/베네슈엘라-핑크토-유체/253/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "'베라쿠르즈' 타이거럼프 유체",
+      "price": 15000,
+      "url": "https://tarantulakorea.com/product/베라쿠르즈-타이거럼프-유체/779/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "'베라쿠르즈' 타이거럼프 유체",
+      "price": 15000,
+      "url": "https://tarantulakorea.com/product/베라쿠르즈-타이거럼프-유체/779/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21570,6 +21599,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "이매니즈 '블랙파이어' 유체",
+      "price": 80000,
+      "url": "https://tarantulakorea.com/product/이매니즈-블랙파이어-유체/343/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "이젠다미 바분 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/이젠다미-바분-유체/221/category/66/display/1/"
@@ -21900,17 +21936,17 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "크세 인터메디아 '투르히오' 유체",
+      "name": "크세 인터메디아 '투르히오' 유체 (10월말 재입고 예정)",
       "price": 100000,
-      "url": "https://tarantulakorea.com/product/크세-인터메디아-투르히오-유체/776/category/24/display/1/",
+      "url": "https://tarantulakorea.com/product/크세-인터메디아-투르히오-유체-10월말-재입고-예정/776/category/24/display/1/",
       "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "크세 인터메디아 '투르히오' 유체",
+      "name": "크세 인터메디아 '투르히오' 유체 (10월말 재입고 예정)",
       "price": 100000,
-      "url": "https://tarantulakorea.com/product/크세-인터메디아-투르히오-유체/776/category/24/display/2/",
+      "url": "https://tarantulakorea.com/product/크세-인터메디아-투르히오-유체-10월말-재입고-예정/776/category/24/display/2/",
       "soldout": true
     },
     {
@@ -21989,13 +22025,6 @@
       "name": "킹바분 준~성체 암컷",
       "price": 250000,
       "url": "https://tarantulakorea.com/product/킹바분-준성체-암컷/209/category/66/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "타이거럼프 유체",
-      "price": 10000,
-      "url": "https://tarantulakorea.com/product/타이거럼프-유체/155/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -22429,13 +22458,6 @@
       "name": "페루비안 퍼플 바이올렛 유체",
       "price": 95000,
       "url": "https://tarantulakorea.com/product/페루비안-퍼플-바이올렛-유체/770/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "페루비안 퍼플 바이올렛 유체",
-      "price": 95000,
-      "url": "https://tarantulakorea.com/product/페루비안-퍼플-바이올렛-유체/770/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
