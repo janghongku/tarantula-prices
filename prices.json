@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-15T02:39:35",
+  "updated_at": "2026-10-15T16:04:23",
   "channels": {
-    "자사몰": "2026-10-15T02:39:35",
+    "자사몰": "2026-10-15T16:04:23",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -17851,7 +17851,8 @@
       "channel": "자사몰",
       "name": "안틸레스 핑크토 유체 / Caribena versicolor",
       "price": 10000,
-      "url": "https://tarancenter.com/product/안틸레스-핑크토-유체-caribena-versicolor/1449/category/51/display/1/"
+      "url": "https://tarancenter.com/product/안틸레스-핑크토-유체-caribena-versicolor/1449/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -20612,14 +20613,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "말레이시안 어스타이거 '네게리셈빌란' 유체",
-      "price": 45000,
-      "url": "https://tarantulakorea.com/product/말레이시안-어스타이거-네게리셈빌란-유체/545/category/67/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "말레이시안 지구 타이거 '말지타' 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/말레이시안-지구-타이거-말지타-유체/108/category/67/display/1/"
@@ -21924,14 +21917,6 @@
       "name": "크세 이매니즈 '숏헤어' 타입 유체",
       "price": 90000,
       "url": "https://tarantulakorea.com/product/크세-이매니즈-숏헤어-타입-유체/732/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "크세 인터메디아 B라인 유체",
-      "price": 120000,
-      "url": "https://tarantulakorea.com/product/크세-인터메디아-b라인-유체/282/category/24/display/1/",
-      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
