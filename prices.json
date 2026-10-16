@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-15T16:04:23",
+  "updated_at": "2026-10-16T02:35:07",
   "channels": {
-    "자사몰": "2026-10-15T16:04:23",
+    "자사몰": "2026-10-16T02:35:07",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -18868,8 +18868,7 @@
       "channel": "자사몰",
       "name": "킹바분 유체 (대사이즈 크기옵션선택) / Pelinobius muticus",
       "price": 15000,
-      "url": "https://tarancenter.com/product/킹바분-유체-대사이즈-크기옵션선택-pelinobius-muticus/880/category/51/display/1/",
-      "soldout": true
+      "url": "https://tarancenter.com/product/킹바분-유체-대사이즈-크기옵션선택-pelinobius-muticus/880/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
