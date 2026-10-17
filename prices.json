@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-17T02:27:42",
+  "updated_at": "2026-10-17T14:45:52",
   "channels": {
-    "자사몰": "2026-10-17T02:27:42",
+    "자사몰": "2026-10-17T14:45:52",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20949,6 +20949,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "브라질리안 카뎃 블루 '브로멜리콜라' 유체",
+      "price": 55000,
+      "url": "https://tarantulakorea.com/product/브라질리안-카뎃-블루-브로멜리콜라-유체/355/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "브라질리안레드 유체",
       "price": 30000,
       "url": "https://tarantulakorea.com/product/브라질리안레드-유체/414/category/24/display/1/"
@@ -21513,6 +21520,14 @@
       "name": "에콰도르 드워프 유체",
       "price": 20000,
       "url": "https://tarantulakorea.com/product/에콰도르-드워프-유체/403/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "에콰퍼플 핑크토 유체",
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/에콰퍼플-핑크토-유체/157/category/67/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
