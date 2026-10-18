@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-18T02:27:49",
+  "updated_at": "2026-10-18T15:11:17",
   "channels": {
-    "자사몰": "2026-10-18T02:27:49",
+    "자사몰": "2026-10-18T15:11:17",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -9760,6 +9760,13 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
+      "name": "람프로펠마 녹스 / 준성체+(12~14cm+-)",
+      "price": 95000,
+      "url": "https://theraphosidae.co.kr/product/람프로펠마-녹스-준성체1214cm/2063/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
       "name": "러스티 브라운 버드이터 / 유체",
       "price": 30000,
       "url": "https://theraphosidae.co.kr/product/러스티-브라운-버드이터-유체/2031/category/24/display/1/"
@@ -10037,9 +10044,21 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
-      "name": "마그누스 타이거 / 유체",
-      "price": 50000,
-      "url": "https://theraphosidae.co.kr/product/마그누스-타이거-유체/2000/category/24/display/1/"
+      "name": "마그누스 타이거 (POSS.라프니) / 유체",
+      "price": 35000,
+      "url": "https://theraphosidae.co.kr/product/마그누스-타이거-poss라프니-유체/2000/category/24/display/1/",
+      "prev": 50000,
+      "changed_on": "2026-10-18",
+      "hist": [
+        [
+          "2026-06-02",
+          50000
+        ],
+        [
+          "2026-10-18",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -10707,9 +10726,20 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "보르네오 블랙 / 유체",
-      "price": 12000,
+      "price": 9500,
       "url": "https://theraphosidae.co.kr/product/보르네오-블랙-유체/1550/category/24/display/1/",
-      "soldout": true
+      "prev": 12000,
+      "changed_on": "2026-10-18",
+      "hist": [
+        [
+          "2026-06-02",
+          12000
+        ],
+        [
+          "2026-10-18",
+          9500
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
@@ -11019,16 +11049,7 @@
       "channel": "자사몰",
       "name": "블론디 골리앗 버드이터 / 유체",
       "price": 95000,
-      "url": "https://theraphosidae.co.kr/product/블론디-골리앗-버드이터-유체/1669/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "거미랑",
-      "channel": "자사몰",
-      "name": "블론디 골리앗 버드이터 / 유체",
-      "price": 75000,
-      "url": "https://theraphosidae.co.kr/product/블론디-골리앗-버드이터-유체/548/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/블론디-골리앗-버드이터-유체/2128/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -11113,6 +11134,13 @@
     {
       "vendor": "거미랑",
       "channel": "자사몰",
+      "name": "사우스 타일랜드 블루 / 유체(대)",
+      "price": 25000,
+      "url": "https://theraphosidae.co.kr/product/사우스-타일랜드-블루-유체대/2127/category/24/display/1/"
+    },
+    {
+      "vendor": "거미랑",
+      "channel": "자사몰",
       "name": "사이공 타이거 (ex.럼동) / 유체",
       "price": 10000,
       "url": "https://theraphosidae.co.kr/product/사이공-타이거-ex럼동-유체/1786/category/24/display/1/"
@@ -11161,8 +11189,7 @@
       "channel": "자사몰",
       "name": "상히에 아일랜드 블랙 / 유체",
       "price": 13000,
-      "url": "https://theraphosidae.co.kr/product/상히에-아일랜드-블랙-유체/1537/category/24/display/1/",
-      "soldout": true
+      "url": "https://theraphosidae.co.kr/product/상히에-아일랜드-블랙-유체/1537/category/24/display/1/"
     },
     {
       "vendor": "거미랑",
@@ -11390,9 +11417,20 @@
       "vendor": "거미랑",
       "channel": "자사몰",
       "name": "수마트라 타이거 / 유체",
-      "price": 45000,
+      "price": 40000,
       "url": "https://theraphosidae.co.kr/product/수마트라-타이거-유체/1629/category/24/display/1/",
-      "soldout": true
+      "prev": 45000,
+      "changed_on": "2026-10-18",
+      "hist": [
+        [
+          "2026-06-02",
+          45000
+        ],
+        [
+          "2026-10-18",
+          40000
+        ]
+      ]
     },
     {
       "vendor": "거미랑",
