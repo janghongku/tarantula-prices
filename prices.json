@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-19T02:41:45",
+  "updated_at": "2026-10-19T18:05:34",
   "channels": {
-    "자사몰": "2026-10-19T02:41:45",
+    "자사몰": "2026-10-19T18:05:34",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -22613,7 +22613,8 @@
       "channel": "자사몰",
       "name": "푸카이파 핑크토 유체",
       "price": 25000,
-      "url": "https://tarantulakorea.com/product/푸카이파-핑크토-유체/428/category/67/display/1/"
+      "url": "https://tarantulakorea.com/product/푸카이파-핑크토-유체/428/category/67/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
