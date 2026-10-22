@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-22T02:46:20",
+  "updated_at": "2026-10-22T16:24:16",
   "channels": {
-    "자사몰": "2026-10-22T02:46:20",
+    "자사몰": "2026-10-22T16:24:16",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -17944,6 +17944,13 @@
       "name": "어셈 오렌지 바분 유체 (크기 옵션선택) / Pterinochilus murinus",
       "price": 4000,
       "url": "https://tarancenter.com/product/어셈-오렌지-바분-유체-크기-옵션선택-pterinochilus-murinus/104/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "어셈바라 바분 \"TCF\" 유체 / Pterinochilus murinus \"TCF\"",
+      "price": 5000,
+      "url": "https://tarancenter.com/product/어셈바라-바분-tcf-유체-pterinochilus-murinus-tcf/1697/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
