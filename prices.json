@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-23T16:13:33",
+  "updated_at": "2026-10-24T02:47:06",
   "channels": {
-    "자사몰": "2026-10-23T16:13:33",
+    "자사몰": "2026-10-24T02:47:06",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21099,6 +21099,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "블론디 골리앗 유체",
+      "price": 95000,
+      "url": "https://tarantulakorea.com/product/블론디-골리앗-유체/392/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "블루보틀 유체 대",
       "price": 55000,
       "url": "https://tarantulakorea.com/product/블루보틀-유체-대/409/category/24/display/1/",
@@ -22037,6 +22044,13 @@
       "name": "크세 화이트 M라인 유체",
       "price": 150000,
       "url": "https://tarantulakorea.com/product/크세-화이트-m라인-유체/743/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "크세네스티스 spec. '파우나' 유체",
+      "price": 300000,
+      "url": "https://tarantulakorea.com/product/크세네스티스-spec-파우나-유체/544/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
