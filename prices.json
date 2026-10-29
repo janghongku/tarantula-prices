@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-29T03:48:00",
+  "updated_at": "2026-10-29T17:52:16",
   "channels": {
-    "자사몰": "2026-10-29T03:48:00",
+    "자사몰": "2026-10-29T17:52:16",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -17928,7 +17928,8 @@
       "channel": "자사몰",
       "name": "어셈 바분 DCF (보츠와나) 유체 / Pterinochilus murinus DCF \"Botswana\"",
       "price": 35000,
-      "url": "https://tarancenter.com/product/어셈-바분-dcf-보츠와나-유체-pterinochilus-murinus-dcf-botswana/1399/category/51/display/1/"
+      "url": "https://tarancenter.com/product/어셈-바분-dcf-보츠와나-유체-pterinochilus-murinus-dcf-botswana/1399/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -18464,7 +18465,8 @@
       "channel": "자사몰",
       "name": "칠리안 로즈헤어 유체 / Grammostola rosea",
       "price": 18000,
-      "url": "https://tarancenter.com/product/칠리안-로즈헤어-유체-grammostola-rosea/1291/category/51/display/1/"
+      "url": "https://tarancenter.com/product/칠리안-로즈헤어-유체-grammostola-rosea/1291/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -19878,7 +19880,8 @@
       "channel": "자사몰",
       "name": "피더스니 오너멘탈 유체 / Poecilotheria vittata",
       "price": 25000,
-      "url": "https://tarancenter.com/product/피더스니-오너멘탈-유체-poecilotheria-vittata/1624/category/51/display/1/"
+      "url": "https://tarancenter.com/product/피더스니-오너멘탈-유체-poecilotheria-vittata/1624/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
