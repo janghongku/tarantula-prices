@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-30T03:51:03",
+  "updated_at": "2026-10-30T17:33:26",
   "channels": {
-    "자사몰": "2026-10-30T03:51:03",
+    "자사몰": "2026-10-30T17:33:26",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -18526,7 +18526,8 @@
       "channel": "자사몰",
       "name": "코레미오크네미스 코타카나 준~성체급 암컷 / Coremiocnemis kotacana",
       "price": 80000,
-      "url": "https://tarancenter.com/product/코레미오크네미스-코타카나-준성체급-암컷-coremiocnemis-kotacana/1478/category/51/display/1/"
+      "url": "https://tarancenter.com/product/코레미오크네미스-코타카나-준성체급-암컷-coremiocnemis-kotacana/1478/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -20222,10 +20223,10 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "구티 사파이어 오너멘탈 유체",
-      "price": 25000,
+      "price": 30000,
       "url": "https://tarantulakorea.com/product/구티-사파이어-오너멘탈-유체/141/category/67/display/1/",
-      "prev": 30000,
-      "changed_on": "2026-08-22",
+      "prev": 25000,
+      "changed_on": "2026-10-30",
       "hist": [
         [
           "2026-06-02",
@@ -20234,6 +20235,10 @@
         [
           "2026-08-22",
           25000
+        ],
+        [
+          "2026-10-30",
+          30000
         ]
       ]
     },
@@ -21015,7 +21020,8 @@
       "channel": "자사몰",
       "name": "브라질리안 카뎃 블루 '브로멜리콜라' 유체",
       "price": 55000,
-      "url": "https://tarantulakorea.com/product/브라질리안-카뎃-블루-브로멜리콜라-유체/355/category/67/display/1/"
+      "url": "https://tarantulakorea.com/product/브라질리안-카뎃-블루-브로멜리콜라-유체/355/category/67/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
