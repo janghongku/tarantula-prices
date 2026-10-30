@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-29T17:52:16",
+  "updated_at": "2026-10-30T03:51:03",
   "channels": {
-    "자사몰": "2026-10-29T17:52:16",
+    "자사몰": "2026-10-30T03:51:03",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21396,6 +21396,20 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "아마조니안 스타우트렉 유체",
+      "price": 75000,
+      "url": "https://tarantulakorea.com/product/아마조니안-스타우트렉-유체/781/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "아마조니안 스타우트렉 유체",
+      "price": 75000,
+      "url": "https://tarantulakorea.com/product/아마조니안-스타우트렉-유체/781/category/24/display/2/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "아마조니카 핑크토'마나우스'  유체",
       "price": 35000,
       "url": "https://tarantulakorea.com/product/아마조니카-핑크토마나우스-유체/279/category/67/display/1/"
@@ -21822,6 +21836,20 @@
       "name": "칼리만탄 브라우니 유체",
       "price": 19000,
       "url": "https://tarantulakorea.com/product/칼리만탄-브라우니-유체/759/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "칼즈배드 그린 '가벨리' 유체",
+      "price": 95000,
+      "url": "https://tarantulakorea.com/product/칼즈배드-그린-가벨리-유체/780/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "칼즈배드 그린 '가벨리' 유체",
+      "price": 95000,
+      "url": "https://tarantulakorea.com/product/칼즈배드-그린-가벨리-유체/780/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -22348,13 +22376,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "팜포베테우스 spec. \"우스치\" 유체",
-      "price": 100000,
-      "url": "https://tarantulakorea.com/product/팜포베테우스-spec-우스치-유체/775/category/24/display/2/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "팜포베테우스 spec. 티그리스 유체",
       "price": 35000,
       "url": "https://tarantulakorea.com/product/팜포베테우스-spec-티그리스-유체/255/category/24/display/1/"
@@ -22541,13 +22562,6 @@
       "name": "페루비안 화이트 파우더 유체",
       "price": 90000,
       "url": "https://tarantulakorea.com/product/페루비안-화이트-파우더-유체/771/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "페루비안 화이트 파우더 유체",
-      "price": 90000,
-      "url": "https://tarantulakorea.com/product/페루비안-화이트-파우더-유체/771/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
