@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-30T17:33:26",
+  "updated_at": "2026-10-31T03:34:43",
   "channels": {
-    "자사몰": "2026-10-30T17:33:26",
+    "자사몰": "2026-10-31T03:34:43",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20674,6 +20674,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "마호가니 트리 스파이더 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/마호가니-트리-스파이더-유체/654/category/67/display/2/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "말레이시안 블루 / 말블 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/말레이시안-블루-말블-유체/105/category/67/display/1/"
@@ -20829,20 +20836,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "바히아 퍼플레드 유체",
-      "price": 38000,
-      "url": "https://tarantulakorea.com/product/바히아-퍼플레드-유체/746/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "바히아 퍼플레드 유체",
-      "price": 38000,
-      "url": "https://tarantulakorea.com/product/바히아-퍼플레드-유체/746/category/67/display/2/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "발파라이소 자이언트 브론즈 유체",
       "price": 96000,
       "url": "https://tarantulakorea.com/product/발파라이소-자이언트-브론즈-유체/748/category/24/display/1/"
@@ -20865,14 +20858,6 @@
           35000
         ]
       ]
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "버간디 골리앗 유체",
-      "price": 90000,
-      "url": "https://tarantulakorea.com/product/버간디-골리앗-유체/323/category/24/display/1/",
-      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -21324,14 +21309,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "스켈레톤 유체",
-      "price": 50000,
-      "url": "https://tarantulakorea.com/product/스켈레톤-유체/212/category/66/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "스트레이트 혼드 바분 유체",
       "price": 5000,
       "url": "https://tarantulakorea.com/product/스트레이트-혼드-바분-유체/86/category/66/display/1/"
@@ -21371,26 +21348,6 @@
       "name": "실버백 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/실버백-유체/487/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "싱가폴블루 유체 (재입고예정)",
-      "price": 28000,
-      "url": "https://tarantulakorea.com/product/싱가폴블루-유체-재입고예정/106/category/67/display/1/",
-      "soldout": true,
-      "prev": 25000,
-      "changed_on": "2026-06-09",
-      "hist": [
-        [
-          "2026-06-02",
-          25000
-        ],
-        [
-          "2026-06-09",
-          28000
-        ]
-      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -22352,25 +22309,9 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "팜포베테우스 spec. \"레드\" 에콰도르 유체",
-      "price": 125000,
-      "url": "https://tarantulakorea.com/product/팜포베테우스-spec-레드-에콰도르-유체/669/category/24/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "팜포베테우스 spec. 미라도르 유체",
       "price": 68000,
       "url": "https://tarantulakorea.com/product/팜포베테우스-spec-미라도르-유체/724/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "팜포베테우스 spec. 산토도밍고 골리앗 유체",
-      "price": 75000,
-      "url": "https://tarantulakorea.com/product/팜포베테우스-spec-산토도밍고-골리앗-유체/723/category/24/display/1/",
-      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -22658,14 +22599,6 @@
       "name": "푸에르토리칸 핑크토 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/푸에르토리칸-핑크토-유체/231/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "푸카이파 핑크토 유체",
-      "price": 25000,
-      "url": "https://tarantulakorea.com/product/푸카이파-핑크토-유체/428/category/67/display/1/",
-      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
