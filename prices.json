@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-31T03:34:43",
+  "updated_at": "2026-10-31T16:37:59",
   "channels": {
-    "자사몰": "2026-10-31T03:34:43",
+    "자사몰": "2026-10-31T16:37:59",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21126,6 +21126,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "블루팽 스켈레톤 유체 대",
+      "price": 50000,
+      "url": "https://tarantulakorea.com/product/블루팽-스켈레톤-유체-대/250/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "블루프론트 유체",
       "price": 35000,
       "url": "https://tarantulakorea.com/product/블루프론트-유체/699/category/24/display/1/",
@@ -21309,6 +21316,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "스켈레톤 유체",
+      "price": 50000,
+      "url": "https://tarantulakorea.com/product/스켈레톤-유체/212/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "스트레이트 혼드 바분 유체",
       "price": 5000,
       "url": "https://tarantulakorea.com/product/스트레이트-혼드-바분-유체/86/category/66/display/1/"
@@ -21348,6 +21362,29 @@
       "name": "실버백 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/실버백-유체/487/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "싱가폴 블루 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/싱가폴-블루-유체/106/category/67/display/1/",
+      "prev": 28000,
+      "changed_on": "2026-10-31",
+      "hist": [
+        [
+          "2026-06-02",
+          25000
+        ],
+        [
+          "2026-06-09",
+          28000
+        ],
+        [
+          "2026-10-31",
+          25000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
@@ -21655,6 +21692,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "이매니즈 '롱헤어 타입' 유체",
+      "price": 80000,
+      "url": "https://tarantulakorea.com/product/이매니즈-롱헤어-타입-유체/536/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "이매니즈 '블랙파이어' 유체",
       "price": 80000,
       "url": "https://tarantulakorea.com/product/이매니즈-블랙파이어-유체/343/category/24/display/1/"
@@ -21687,6 +21731,13 @@
       "name": "인디언레인보우 유체",
       "price": 55000,
       "url": "https://tarantulakorea.com/product/인디언레인보우-유체/81/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "일렉트릭 블루 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/일렉트릭-블루-유체/95/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21968,6 +22019,13 @@
       "name": "크세 메가스코플라 D.W 유체",
       "price": 180000,
       "url": "https://tarantulakorea.com/product/크세-메가스코플라-dw-유체/397/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "크세 메가스코플라 M라인 유체",
+      "price": 180000,
+      "url": "https://tarantulakorea.com/product/크세-메가스코플라-m라인-유체/376/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
