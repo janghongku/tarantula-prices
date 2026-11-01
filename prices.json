@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-31T16:37:59",
+  "updated_at": "2026-11-01T03:40:45",
   "channels": {
-    "자사몰": "2026-10-31T16:37:59",
+    "자사몰": "2026-11-01T03:40:45",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21126,9 +21126,9 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "블루팽 스켈레톤 유체 대",
+      "name": "블루팽 스켈레톤 유체",
       "price": 50000,
-      "url": "https://tarantulakorea.com/product/블루팽-스켈레톤-유체-대/250/category/66/display/1/"
+      "url": "https://tarantulakorea.com/product/블루팽-스켈레톤-유체/250/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21672,8 +21672,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "올리브 유체",
-      "price": 18000,
-      "url": "https://tarantulakorea.com/product/올리브-유체/80/category/66/display/1/"
+      "price": 20000,
+      "url": "https://tarantulakorea.com/product/올리브-유체/80/category/66/display/1/",
+      "prev": 18000,
+      "changed_on": "2026-11-01",
+      "hist": [
+        [
+          "2026-07-28",
+          18000
+        ],
+        [
+          "2026-11-01",
+          20000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
