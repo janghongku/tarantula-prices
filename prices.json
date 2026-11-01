@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-01T03:40:45",
+  "updated_at": "2026-11-01T17:28:16",
   "channels": {
-    "자사몰": "2026-11-01T03:40:45",
+    "자사몰": "2026-11-01T17:28:16",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -9338,7 +9338,8 @@
       "channel": "자사몰",
       "name": "골리앗 핑크토 \"브라질\" / 유체",
       "price": 15000,
-      "url": "https://theraphosidae.co.kr/product/골리앗-핑크토-브라질-유체/2051/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/골리앗-핑크토-브라질-유체/2051/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -10801,7 +10802,8 @@
       "channel": "자사몰",
       "name": "부톤 타이거 (ex.차콜 타이거) / 유체",
       "price": 18000,
-      "url": "https://theraphosidae.co.kr/product/부톤-타이거-ex차콜-타이거-유체/1949/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/부톤-타이거-ex차콜-타이거-유체/1949/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -11963,7 +11965,8 @@
       "channel": "자사몰",
       "name": "아포노펠마 스테인닥네리 / 준성체+.성별선택",
       "price": 480000,
-      "url": "https://theraphosidae.co.kr/product/아포노펠마-스테인닥네리-준성체성별선택/1910/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/아포노펠마-스테인닥네리-준성체성별선택/1910/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -13170,7 +13173,8 @@
       "channel": "자사몰",
       "name": "크세네스티스 spec. \"라이트\" D.W",
       "price": 320000,
-      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-라이트-dw/1635/category/24/display/1/"
+      "url": "https://theraphosidae.co.kr/product/크세네스티스-spec-라이트-dw/1635/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "거미랑",
@@ -21734,15 +21738,7 @@
       "channel": "자사몰",
       "name": "인디언 오너멘탈 유체",
       "price": 10000,
-      "url": "https://tarantulakorea.com/product/인디언-오너멘탈-유체/136/category/67/display/1/",
-      "soldout": true
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "인디언레인보우 유체",
-      "price": 55000,
-      "url": "https://tarantulakorea.com/product/인디언레인보우-유체/81/category/66/display/1/"
+      "url": "https://tarantulakorea.com/product/인디언-오너멘탈-유체/136/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
