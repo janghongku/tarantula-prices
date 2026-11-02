@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-02T03:45:52",
+  "updated_at": "2026-11-02T21:14:06",
   "channels": {
-    "자사몰": "2026-11-02T03:45:52",
+    "자사몰": "2026-11-02T21:14:06",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21662,6 +21662,25 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "오렌지패치'게릴라' 유체",
+      "price": 38000,
+      "url": "https://tarantulakorea.com/product/오렌지패치게릴라-유체/614/category/24/display/1/",
+      "prev": 30000,
+      "changed_on": "2026-11-02",
+      "hist": [
+        [
+          "2026-06-02",
+          30000
+        ],
+        [
+          "2026-11-02",
+          38000
+        ]
+      ]
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "오악사카 유체",
       "price": 32000,
       "url": "https://tarantulakorea.com/product/오악사카-유체/530/category/24/display/1/"
@@ -21670,10 +21689,10 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "올리브 유체",
-      "price": 20000,
+      "price": 25000,
       "url": "https://tarantulakorea.com/product/올리브-유체/80/category/66/display/1/",
-      "prev": 18000,
-      "changed_on": "2026-11-01",
+      "prev": 20000,
+      "changed_on": "2026-11-02",
       "hist": [
         [
           "2026-07-28",
@@ -21682,8 +21701,19 @@
         [
           "2026-11-01",
           20000
+        ],
+        [
+          "2026-11-02",
+          25000
         ]
       ]
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "올리브'골드' 유체",
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/올리브골드-유체/320/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21885,6 +21915,13 @@
           15000
         ]
       ]
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "케라도 유체",
+      "price": 36000,
+      "url": "https://tarantulakorea.com/product/케라도-유체/469/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -22518,6 +22555,25 @@
       "name": "퍼플트리스파이더 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/퍼플트리스파이더-유체/418/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "펌킨패치'라지' 유체",
+      "price": 25000,
+      "url": "https://tarantulakorea.com/product/펌킨패치라지-유체/211/category/24/display/1/",
+      "prev": 22000,
+      "changed_on": "2026-11-02",
+      "hist": [
+        [
+          "2026-07-28",
+          22000
+        ],
+        [
+          "2026-11-02",
+          25000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
