@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-01T17:28:16",
+  "updated_at": "2026-11-02T03:45:52",
   "channels": {
-    "자사몰": "2026-11-01T17:28:16",
+    "자사몰": "2026-11-02T03:45:52",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20505,20 +20505,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "람프로펠마 sp. 녹스 유체",
-      "price": 45000,
-      "url": "https://tarantulakorea.com/product/람프로펠마-sp-녹스-유체/755/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "람프로펠마 sp. 녹스 유체",
-      "price": 45000,
-      "url": "https://tarantulakorea.com/product/람프로펠마-sp-녹스-유체/755/category/67/display/2/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "랑카위 타이거 유체",
       "price": 28000,
       "url": "https://tarantulakorea.com/product/랑카위-타이거-유체/619/category/67/display/1/"
@@ -20694,7 +20680,8 @@
       "channel": "자사몰",
       "name": "말레이시안 어스타이거 '네게리셈빌란' 유체",
       "price": 45000,
-      "url": "https://tarantulakorea.com/product/말레이시안-어스타이거-네게리셈빌란-유체/545/category/67/display/1/"
+      "url": "https://tarantulakorea.com/product/말레이시안-어스타이거-네게리셈빌란-유체/545/category/67/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -21344,6 +21331,13 @@
       "name": "슬라웨시 차콜 유체",
       "price": 20000,
       "url": "https://tarantulakorea.com/product/슬라웨시-차콜-유체/644/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "슬라웨시 차콜 유체",
+      "price": 20000,
+      "url": "https://tarantulakorea.com/product/슬라웨시-차콜-유체/644/category/67/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
