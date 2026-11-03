@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-03T04:50:23",
+  "updated_at": "2026-11-03T18:54:05",
   "channels": {
-    "자사몰": "2026-11-03T04:50:23",
+    "자사몰": "2026-11-03T18:54:05",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20000,7 +20000,8 @@
       "channel": "자사몰",
       "name": "하티하티 어스 타이거 유체 (크기 옵션선택) / Cyriopagopus Sp. \"Hati hati\"",
       "price": 5000,
-      "url": "https://tarancenter.com/product/하티하티-어스-타이거-유체-크기-옵션선택-cyriopagopus-sp-hati-hati/192/category/51/display/1/"
+      "url": "https://tarancenter.com/product/하티하티-어스-타이거-유체-크기-옵션선택-cyriopagopus-sp-hati-hati/192/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -20926,6 +20927,13 @@
       "name": "베트남어스타이거 '베지타' 유체",
       "price": 15000,
       "url": "https://tarantulakorea.com/product/베트남어스타이거-베지타-유체/742/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "베트남어스타이거 '베지타' 유체",
+      "price": 15000,
+      "url": "https://tarantulakorea.com/product/베트남어스타이거-베지타-유체/742/category/66/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -22164,14 +22172,8 @@
       "channel": "자사몰",
       "name": "킬로브라키스 spec. \"트로피칼 블루\" 유체",
       "price": 220000,
-      "url": "https://tarantulakorea.com/product/킬로브라키스-spec-트로피칼-블루-유체/777/category/66/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "킬로브라키스 spec. \"트로피칼 블루\" 유체",
-      "price": 220000,
-      "url": "https://tarantulakorea.com/product/킬로브라키스-spec-트로피칼-블루-유체/777/category/66/display/2/"
+      "url": "https://tarantulakorea.com/product/킬로브라키스-spec-트로피칼-블루-유체/777/category/66/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
