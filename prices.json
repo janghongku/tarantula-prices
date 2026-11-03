@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-02T21:14:06",
+  "updated_at": "2026-11-03T04:50:23",
   "channels": {
-    "자사몰": "2026-11-02T21:14:06",
+    "자사몰": "2026-11-03T04:50:23",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21117,9 +21117,10 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "블루팽 스켈레톤 유체",
+      "name": "블루팽 스켈레톤 유체 [선주문이 많아 발송후에 수량 확인후 재업로드]",
       "price": 50000,
-      "url": "https://tarantulakorea.com/product/블루팽-스켈레톤-유체/250/category/66/display/1/"
+      "url": "https://tarantulakorea.com/product/블루팽-스켈레톤-유체-선주문이-많아-발송후에-수량-확인후-재업로드/250/category/66/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -21307,9 +21308,10 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "스켈레톤 유체",
+      "name": "스켈레톤 유체 [선주문이 많아 발송후에 수량 확인후 재업로드]",
       "price": 50000,
-      "url": "https://tarantulakorea.com/product/스켈레톤-유체/212/category/66/display/1/"
+      "url": "https://tarantulakorea.com/product/스켈레톤-유체-선주문이-많아-발송후에-수량-확인후-재업로드/212/category/66/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -21689,10 +21691,10 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "올리브 유체",
-      "price": 25000,
+      "price": 24000,
       "url": "https://tarantulakorea.com/product/올리브-유체/80/category/66/display/1/",
-      "prev": 20000,
-      "changed_on": "2026-11-02",
+      "prev": 25000,
+      "changed_on": "2026-11-03",
       "hist": [
         [
           "2026-07-28",
@@ -21705,6 +21707,10 @@
         [
           "2026-11-02",
           25000
+        ],
+        [
+          "2026-11-03",
+          24000
         ]
       ]
     },
@@ -21712,8 +21718,20 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "올리브'골드' 유체",
-      "price": 35000,
-      "url": "https://tarantulakorea.com/product/올리브골드-유체/320/category/66/display/1/"
+      "price": 30000,
+      "url": "https://tarantulakorea.com/product/올리브골드-유체/320/category/66/display/1/",
+      "prev": 35000,
+      "changed_on": "2026-11-03",
+      "hist": [
+        [
+          "2026-11-02",
+          35000
+        ],
+        [
+          "2026-11-03",
+          30000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
