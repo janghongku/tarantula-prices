@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-06T04:33:50",
+  "updated_at": "2026-11-06T18:43:55",
   "channels": {
-    "자사몰": "2026-11-06T04:33:50",
+    "자사몰": "2026-11-06T18:43:55",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20637,6 +20637,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "루비블룸 핑크토 '올리웨이라이' 유체",
+      "price": 40000,
+      "url": "https://tarantulakorea.com/product/루비블룸-핑크토-올리웨이라이-유체/471/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "루푸스 타이거 유체",
       "price": 5000,
       "url": "https://tarantulakorea.com/product/루푸스-타이거-유체/104/category/67/display/1/"
@@ -21094,8 +21101,7 @@
       "channel": "자사몰",
       "name": "블론디 골리앗 유체 [주문건 발송후 수량 확인후 재업로드]",
       "price": 95000,
-      "url": "https://tarantulakorea.com/product/블론디-골리앗-유체-주문건-발송후-수량-확인후-재업로드/392/category/24/display/1/",
-      "soldout": true
+      "url": "https://tarantulakorea.com/product/블론디-골리앗-유체-주문건-발송후-수량-확인후-재업로드/392/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21606,6 +21612,13 @@
       "name": "에콰도르 드워프 유체",
       "price": 20000,
       "url": "https://tarantulakorea.com/product/에콰도르-드워프-유체/403/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "에콰퍼플 핑크토 유체",
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/에콰퍼플-핑크토-유체/157/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
