@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-07T17:14:36",
+  "updated_at": "2026-11-08T03:45:04",
   "channels": {
-    "자사몰": "2026-11-07T17:14:36",
+    "자사몰": "2026-11-08T03:45:04",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21101,7 +21101,8 @@
       "channel": "자사몰",
       "name": "블론디 골리앗 유체 [주문건 발송후 수량 확인후 재업로드]",
       "price": 95000,
-      "url": "https://tarantulakorea.com/product/블론디-골리앗-유체-주문건-발송후-수량-확인후-재업로드/392/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/블론디-골리앗-유체-주문건-발송후-수량-확인후-재업로드/392/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
