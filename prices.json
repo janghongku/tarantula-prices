@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-11T04:01:19",
+  "updated_at": "2026-11-11T19:05:20",
   "channels": {
-    "자사몰": "2026-11-11T04:01:19",
+    "자사몰": "2026-11-11T19:05:20",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -16734,7 +16734,8 @@
       "channel": "자사몰",
       "name": "베네주엘라 썬타이거 유체 (대) / Psalmopoeus irminia",
       "price": 20000,
-      "url": "https://tarancenter.com/product/베네주엘라-썬타이거-유체-대-psalmopoeus-irminia/968/category/51/display/1/"
+      "url": "https://tarancenter.com/product/베네주엘라-썬타이거-유체-대-psalmopoeus-irminia/968/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
