@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-11T19:05:20",
+  "updated_at": "2026-11-12T05:13:24",
   "channels": {
-    "자사몰": "2026-11-11T19:05:20",
+    "자사몰": "2026-11-12T05:13:24",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21801,6 +21801,13 @@
       "name": "인디언 오너멘탈 유체",
       "price": 10000,
       "url": "https://tarantulakorea.com/product/인디언-오너멘탈-유체/136/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "인디언레인보우 유체",
+      "price": 55000,
+      "url": "https://tarantulakorea.com/product/인디언레인보우-유체/81/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
