@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-13T04:29:07",
+  "updated_at": "2026-11-13T19:01:04",
   "channels": {
-    "자사몰": "2026-11-13T04:29:07",
+    "자사몰": "2026-11-13T19:01:04",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -20995,6 +20995,14 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "브라질리안 블랙 유체 특대",
+      "price": 65000,
+      "url": "https://tarantulakorea.com/product/브라질리안-블랙-유체-특대/477/category/24/display/1/",
+      "soldout": true
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "브라질리안 쥬얼 유체",
       "price": 140000,
       "url": "https://tarantulakorea.com/product/브라질리안-쥬얼-유체/436/category/67/display/1/"
@@ -21317,9 +21325,9 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "스켈레톤 유체 [선주문이 많아 발송후에 수량 확인후 재업로드]",
+      "name": "스켈레톤 유체",
       "price": 50000,
-      "url": "https://tarantulakorea.com/product/스켈레톤-유체-선주문이-많아-발송후에-수량-확인후-재업로드/212/category/66/display/1/",
+      "url": "https://tarantulakorea.com/product/스켈레톤-유체/212/category/66/display/1/",
       "soldout": true
     },
     {
@@ -22025,6 +22033,20 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "콜롬비아 '썬버스트' 유체 대",
+      "price": 325000,
+      "url": "https://tarantulakorea.com/product/콜롬비아-썬버스트-유체-대/783/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "콜롬비아 '썬버스트' 유체 대",
+      "price": 325000,
+      "url": "https://tarantulakorea.com/product/콜롬비아-썬버스트-유체-대/783/category/24/display/2/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "콜롬비안 브라운 \"포티스\" 유체",
       "price": 45000,
       "url": "https://tarantulakorea.com/product/콜롬비안-브라운-포티스-유체/539/category/24/display/1/"
@@ -22042,6 +22064,13 @@
       "name": "퀘존블루 유체",
       "price": 10000,
       "url": "https://tarantulakorea.com/product/퀘존블루-유체/515/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "퀴리오코스무스 아우에리 유체 대",
+      "price": 38000,
+      "url": "https://tarantulakorea.com/product/퀴리오코스무스-아우에리-유체-대/726/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -22143,13 +22172,6 @@
       "name": "크세 인터메디아 '투르히오' 유체",
       "price": 100000,
       "url": "https://tarantulakorea.com/product/크세-인터메디아-투르히오-유체/776/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "크세 인터메디아 '투르히오' 유체",
-      "price": 100000,
-      "url": "https://tarantulakorea.com/product/크세-인터메디아-투르히오-유체/776/category/24/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -22354,6 +22376,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "테라포시데 '만다린' 유체",
+      "price": 55000,
+      "url": "https://tarantulakorea.com/product/테라포시데-만다린-유체/527/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "토노네그로 유체",
       "price": 65000,
       "url": "https://tarantulakorea.com/product/토노네그로-유체/531/category/67/display/1/"
@@ -22413,6 +22442,13 @@
       "name": "파나마블론디 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/파나마블론디-유체/113/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "파나마핑크 유체",
+      "price": 125000,
+      "url": "https://tarantulakorea.com/product/파나마핑크-유체/429/category/24/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -22580,6 +22616,7 @@
       "name": "펌킨패치'라지' 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/펌킨패치라지-유체/211/category/24/display/1/",
+      "soldout": true,
       "prev": 22000,
       "changed_on": "2026-11-02",
       "hist": [
