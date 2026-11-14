@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-14T04:25:20",
+  "updated_at": "2026-11-14T17:31:20",
   "channels": {
-    "자사몰": "2026-11-14T04:25:20",
+    "자사몰": "2026-11-14T17:31:20",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -16984,7 +16984,8 @@
       "channel": "자사몰",
       "name": "부톤 어스타이거 유체 / Lampropelma Sp. \"Buton\"",
       "price": 15000,
-      "url": "https://tarancenter.com/product/부톤-어스타이거-유체-lampropelma-sp-buton/1197/category/51/display/1/"
+      "url": "https://tarancenter.com/product/부톤-어스타이거-유체-lampropelma-sp-buton/1197/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -17507,7 +17508,8 @@
       "channel": "자사몰",
       "name": "소코트라 아일랜드 블루바분 유체 / Monocentropus balfouri",
       "price": 15000,
-      "url": "https://tarancenter.com/product/소코트라-아일랜드-블루바분-유체-monocentropus-balfouri/1647/category/51/display/1/"
+      "url": "https://tarancenter.com/product/소코트라-아일랜드-블루바분-유체-monocentropus-balfouri/1647/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -20107,7 +20109,8 @@
       "channel": "자사몰",
       "name": "후아히니 버드이터 유체 / Chilobrachys huahini",
       "price": 5000,
-      "url": "https://tarancenter.com/product/후아히니-버드이터-유체-chilobrachys-huahini/1288/category/51/display/1/"
+      "url": "https://tarancenter.com/product/후아히니-버드이터-유체-chilobrachys-huahini/1288/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -22035,14 +22038,16 @@
       "channel": "자사몰",
       "name": "콜롬비아 '썬버스트' 유체 대",
       "price": 325000,
-      "url": "https://tarantulakorea.com/product/콜롬비아-썬버스트-유체-대/783/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/콜롬비아-썬버스트-유체-대/783/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "콜롬비아 '썬버스트' 유체 대",
       "price": 325000,
-      "url": "https://tarantulakorea.com/product/콜롬비아-썬버스트-유체-대/783/category/24/display/2/"
+      "url": "https://tarantulakorea.com/product/콜롬비아-썬버스트-유체-대/783/category/24/display/2/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
