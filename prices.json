@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-16T04:09:30",
+  "updated_at": "2026-11-16T21:28:48",
   "channels": {
-    "자사몰": "2026-11-16T04:09:30",
+    "자사몰": "2026-11-16T21:28:48",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -16363,6 +16363,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "말레이시안 블루 유체 / Omothymus violaceopes",
+      "price": 25000,
+      "url": "https://tarancenter.com/product/말레이시안-블루-유체-omothymus-violaceopes/1730/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "말레이시안 블루 (파항) 유체 / Lampropelma violaceopes",
       "price": 20000,
       "url": "https://tarancenter.com/product/말레이시안-블루-파항-유체-lampropelma-violaceopes/726/category/51/display/1/",
@@ -16411,9 +16418,20 @@
       "vendor": "타란센터",
       "channel": "자사몰",
       "name": "매그너스 어스 타이거 유체 / Omothymus Sp. \"Magnus\"",
-      "price": 120000,
+      "price": 35000,
       "url": "https://tarancenter.com/product/매그너스-어스-타이거-유체-omothymus-sp-magnus/1440/category/51/display/1/",
-      "soldout": true
+      "prev": 120000,
+      "changed_on": "2026-11-16",
+      "hist": [
+        [
+          "2026-06-02",
+          120000
+        ],
+        [
+          "2026-11-16",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -16656,7 +16674,8 @@
       "channel": "자사몰",
       "name": "발할라 어스타이거 유체 / Omothymus Sp. \"Valhalla\"",
       "price": 35000,
-      "url": "https://tarancenter.com/product/발할라-어스타이거-유체-omothymus-sp-valhalla/1554/category/51/display/1/"
+      "url": "https://tarancenter.com/product/발할라-어스타이거-유체-omothymus-sp-valhalla/1554/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -17757,7 +17776,8 @@
       "channel": "자사몰",
       "name": "아마존 사파이어 핑크토 유체 / Ybyrapora diversipes",
       "price": 25000,
-      "url": "https://tarancenter.com/product/아마존-사파이어-핑크토-유체-ybyrapora-diversipes/1605/category/51/display/1/"
+      "url": "https://tarancenter.com/product/아마존-사파이어-핑크토-유체-ybyrapora-diversipes/1605/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -20738,13 +20758,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "메리아나이 핑크토 유체",
-      "price": 45000,
-      "url": "https://tarantulakorea.com/product/메리아나이-핑크토-유체/600/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "메탈릭 핑크토 유체",
       "price": 25000,
       "url": "https://tarantulakorea.com/product/메탈릭-핑크토-유체/217/category/67/display/1/"
@@ -21009,14 +21022,6 @@
       "name": "브라질리안 쥬얼 유체",
       "price": 140000,
       "url": "https://tarantulakorea.com/product/브라질리안-쥬얼-유체/436/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "브라질리안 카뎃 블루 '브로멜리콜라' 유체",
-      "price": 55000,
-      "url": "https://tarantulakorea.com/product/브라질리안-카뎃-블루-브로멜리콜라-유체/355/category/67/display/1/",
-      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
