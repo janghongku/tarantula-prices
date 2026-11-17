@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-16T21:28:48",
+  "updated_at": "2026-11-17T05:57:23",
   "channels": {
-    "자사몰": "2026-11-16T21:28:48",
+    "자사몰": "2026-11-17T05:57:23",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -18536,6 +18536,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "칼즈배드 그린 (ex.아포노 가벨리) / Aphonopelma gabeli",
+      "price": 95000,
+      "url": "https://tarancenter.com/product/칼즈배드-그린-ex아포노-가벨리-aphonopelma-gabeli/1731/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "캐리비안 다이아몬드 유체 / Tapinauchenius rasti",
       "price": 18000,
       "url": "https://tarancenter.com/product/캐리비안-다이아몬드-유체-tapinauchenius-rasti/1530/category/51/display/1/"
@@ -21026,6 +21033,13 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "브라질리안 카뎃 블루 '브로멜리콜라' 유체",
+      "price": 55000,
+      "url": "https://tarantulakorea.com/product/브라질리안-카뎃-블루-브로멜리콜라-유체/355/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "브라질리안레드 유체",
       "price": 30000,
       "url": "https://tarantulakorea.com/product/브라질리안레드-유체/414/category/24/display/1/"
@@ -21142,10 +21156,9 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "블루팽 스켈레톤 유체 [선주문이 많아 발송후에 수량 확인후 재업로드]",
+      "name": "블루팽 스켈레톤 유체 [일반택배 불가 : 소량 남아서 고택, 매장방문 입양만 가능}",
       "price": 50000,
-      "url": "https://tarantulakorea.com/product/블루팽-스켈레톤-유체-선주문이-많아-발송후에-수량-확인후-재업로드/250/category/66/display/1/",
-      "soldout": true
+      "url": "https://tarantulakorea.com/product/블루팽-스켈레톤-유체-일반택배-불가-소량-남아서-고택-매장방문-입양만-가능/250/category/66/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -22260,6 +22273,13 @@
       "name": "킹바분 준~성체 암컷",
       "price": 250000,
       "url": "https://tarantulakorea.com/product/킹바분-준성체-암컷/209/category/66/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "타라포토 핑크토 '메리아나이' 유체",
+      "price": 45000,
+      "url": "https://tarantulakorea.com/product/타라포토-핑크토-메리아나이-유체/600/category/67/display/1/"
     },
     {
       "vendor": "타란툴라코리아",
