@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-17T05:57:23",
+  "updated_at": "2026-11-17T20:18:02",
   "channels": {
-    "자사몰": "2026-11-17T05:57:23",
+    "자사몰": "2026-11-17T20:18:02",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -16048,6 +16048,20 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "뉴기니아 러스트오렌지 유체 / Chilocosmia arndsti",
+      "price": 25000,
+      "url": "https://tarancenter.com/product/뉴기니아-러스트오렌지-유체-chilocosmia-arndsti/1733/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "뉴기니아 블랙퓨리 유체 / Chilocosmia dichromata",
+      "price": 25000,
+      "url": "https://tarancenter.com/product/뉴기니아-블랙퓨리-유체-chilocosmia-dichromata/1732/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "다부스 Sp. \"오악사카\" 아성체 / Davus Sp. \"Oaxaca\"",
       "price": 40000,
       "url": "https://tarancenter.com/product/다부스-sp-오악사카-아성체-davus-sp-oaxaca/981/category/51/display/1/"
@@ -18536,9 +18550,9 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
-      "name": "칼즈배드 그린 (ex.아포노 가벨리) / Aphonopelma gabeli",
+      "name": "칼즈배드 그린 (ex.아포노 가벨리) 유체 / Aphonopelma gabeli",
       "price": 95000,
-      "url": "https://tarancenter.com/product/칼즈배드-그린-ex아포노-가벨리-aphonopelma-gabeli/1731/category/51/display/1/"
+      "url": "https://tarancenter.com/product/칼즈배드-그린-ex아포노-가벨리-유체-aphonopelma-gabeli/1731/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -20859,6 +20873,20 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
+      "name": "바히아 퍼플레드 유체",
+      "price": 38000,
+      "url": "https://tarantulakorea.com/product/바히아-퍼플레드-유체/746/category/67/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "바히아 퍼플레드 유체",
+      "price": 38000,
+      "url": "https://tarantulakorea.com/product/바히아-퍼플레드-유체/746/category/67/display/2/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
       "name": "발파라이소 자이언트 브론즈 유체",
       "price": 96000,
       "url": "https://tarantulakorea.com/product/발파라이소-자이언트-브론즈-유체/748/category/24/display/1/"
@@ -21371,13 +21399,6 @@
       "name": "슬라웨시 차콜 유체",
       "price": 20000,
       "url": "https://tarantulakorea.com/product/슬라웨시-차콜-유체/644/category/67/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
-      "name": "슬라웨시 차콜 유체",
-      "price": 20000,
-      "url": "https://tarantulakorea.com/product/슬라웨시-차콜-유체/644/category/67/display/2/"
     },
     {
       "vendor": "타란툴라코리아",
@@ -21904,13 +21925,6 @@
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
-      "name": "칠레플레임 ex.에슐러스레드 유체",
-      "price": 115000,
-      "url": "https://tarantulakorea.com/product/칠레플레임-ex에슐러스레드-유체/628/category/24/display/1/"
-    },
-    {
-      "vendor": "타란툴라코리아",
-      "channel": "자사몰",
       "name": "칠로 블루 유체",
       "price": 5000,
       "url": "https://tarantulakorea.com/product/칠로-블루-유체/94/category/24/display/1/"
@@ -22072,7 +22086,8 @@
       "channel": "자사몰",
       "name": "콜롬비안 브라운 \"포티스\" 유체",
       "price": 45000,
-      "url": "https://tarantulakorea.com/product/콜롬비안-브라운-포티스-유체/539/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/콜롬비안-브라운-포티스-유체/539/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
@@ -22478,7 +22493,8 @@
       "channel": "자사몰",
       "name": "파나마핑크 유체",
       "price": 125000,
-      "url": "https://tarantulakorea.com/product/파나마핑크-유체/429/category/24/display/1/"
+      "url": "https://tarantulakorea.com/product/파나마핑크-유체/429/category/24/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
