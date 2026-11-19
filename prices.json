@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-19T05:23:45",
+  "updated_at": "2026-11-19T19:48:55",
   "channels": {
-    "자사몰": "2026-11-19T05:23:45",
+    "자사몰": "2026-11-19T19:48:55",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -15985,9 +15985,21 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
-      "name": "그레이스모크 유체 / Grammostola alticeps",
-      "price": 35000,
-      "url": "https://tarancenter.com/product/그레이스모크-유체-grammostola-alticeps/1172/category/51/display/1/"
+      "name": "그레이스모크 유체 (대) / Grammostola alticeps",
+      "price": 55000,
+      "url": "https://tarancenter.com/product/그레이스모크-유체-대-grammostola-alticeps/1172/category/51/display/1/",
+      "prev": 35000,
+      "changed_on": "2026-11-19",
+      "hist": [
+        [
+          "2026-06-02",
+          35000
+        ],
+        [
+          "2026-11-19",
+          55000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -18732,9 +18744,21 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
-      "name": "코스타리칸 제브라 유체 / Aphonopelma seemanni",
-      "price": 20000,
-      "url": "https://tarancenter.com/product/코스타리칸-제브라-유체-aphonopelma-seemanni/1235/category/51/display/1/"
+      "name": "코스타리칸 제브라 유체 (대) / Aphonopelma seemanni",
+      "price": 35000,
+      "url": "https://tarancenter.com/product/코스타리칸-제브라-유체-대-aphonopelma-seemanni/1235/category/51/display/1/",
+      "prev": 20000,
+      "changed_on": "2026-11-19",
+      "hist": [
+        [
+          "2026-06-02",
+          20000
+        ],
+        [
+          "2026-11-19",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
@@ -19971,9 +19995,21 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
-      "name": "프세우드하팔로푸스 Sp. \"쿠르즈하르\" 유체 / Pseudhapalopus Sp. \"Kurzhaar\"",
-      "price": 23000,
-      "url": "https://tarancenter.com/product/프세우드하팔로푸스-sp-쿠르즈하르-유체-pseudhapalopus-sp-kurzhaar/1308/category/51/display/1/"
+      "name": "프세우드하팔로푸스 Sp. \"쿠르즈하르\" 유체 (대) / Pseudhapalopus Sp. \"Kurzhaar\"",
+      "price": 35000,
+      "url": "https://tarancenter.com/product/프세우드하팔로푸스-sp-쿠르즈하르-유체-대-pseudhapalopus-sp-kurzhaar/1308/category/51/display/1/",
+      "prev": 23000,
+      "changed_on": "2026-11-19",
+      "hist": [
+        [
+          "2026-06-02",
+          23000
+        ],
+        [
+          "2026-11-19",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "타란센터",
