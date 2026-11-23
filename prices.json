@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-22T18:53:47",
+  "updated_at": "2026-11-23T05:03:27",
   "channels": {
-    "자사몰": "2026-11-22T18:53:47",
+    "자사몰": "2026-11-23T05:03:27",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21290,7 +21290,8 @@
       "channel": "자사몰",
       "name": "블루팽 스켈레톤 유체 [※일반택배 불가 : 소량 남아서 매장방문 입양만 가능]",
       "price": 50000,
-      "url": "https://tarantulakorea.com/product/블루팽-스켈레톤-유체-일반택배-불가-소량-남아서-매장방문-입양만-가능/250/category/66/display/1/"
+      "url": "https://tarantulakorea.com/product/블루팽-스켈레톤-유체-일반택배-불가-소량-남아서-매장방문-입양만-가능/250/category/66/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
