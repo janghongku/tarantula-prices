@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-23T23:10:15",
+  "updated_at": "2026-11-24T07:51:12",
   "channels": {
-    "자사몰": "2026-11-23T23:10:15",
+    "자사몰": "2026-11-24T07:51:12",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -21695,6 +21695,14 @@
       "name": "안티쿠나 spec. 에르두아 유체",
       "price": 105000,
       "url": "https://tarantulakorea.com/product/안티쿠나-spec-에르두아-유체/740/category/24/display/1/"
+    },
+    {
+      "vendor": "타란툴라코리아",
+      "channel": "자사몰",
+      "name": "안틸레스 핑크토 유체 대 잔여 : 2마리",
+      "price": 22000,
+      "url": "https://tarantulakorea.com/product/안틸레스-핑크토-유체-대-잔여-2마리/441/category/67/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란툴라코리아",
