@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-24T21:47:59",
+  "updated_at": "2026-11-25T06:24:17",
   "channels": {
-    "자사몰": "2026-11-24T21:47:59",
+    "자사몰": "2026-11-25T06:24:17",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -16127,6 +16127,13 @@
     {
       "vendor": "타란센터",
       "channel": "자사몰",
+      "name": "넨뎁어스타이거 암컷 준성체 13cm+ / Melopoeus Sp. \"Nhen dep\"",
+      "price": 70000,
+      "url": "https://tarancenter.com/product/넨뎁어스타이거-암컷-준성체-13cm-melopoeus-sp-nhen-dep/1739/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
       "name": "뉴기니아 러스트오렌지 유체 / Chilocosmia arndsti",
       "price": 25000,
       "url": "https://tarancenter.com/product/뉴기니아-러스트오렌지-유체-chilocosmia-arndsti/1733/category/51/display/1/"
@@ -16358,6 +16365,13 @@
       "price": 12000,
       "url": "https://tarancenter.com/product/레드트리-스파이더-유체-amazonius-germani-ex-tapinauchenius-gigas/1205/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "레드트리 스파이더 유체 / Amazonius germani (ex. Tapinauchenius gigas)",
+      "price": 15000,
+      "url": "https://tarancenter.com/product/레드트리-스파이더-유체-amazonius-germani-ex-tapinauchenius-gigas/1738/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -16721,6 +16735,13 @@
       "name": "바크마 어스타이거 유체 / Cyriopagopus Sp. \"Bach ma\"",
       "price": 15000,
       "url": "https://tarancenter.com/product/바크마-어스타이거-유체-cyriopagopus-sp-bach-ma/901/category/51/display/1/"
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "바크마 어스타이거 준성체 11cm / Melopoeus Sp. \"Bach ma\"",
+      "price": 60000,
+      "url": "https://tarancenter.com/product/바크마-어스타이거-준성체-11cm-melopoeus-sp-bach-ma/1741/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -17338,6 +17359,13 @@
       "price": 125000,
       "url": "https://tarancenter.com/product/블랙-스트라이프-핑크토-ex히르스키-avicularia-hirschii/1127/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "블랙 어스타이거 준성체 암컷 11cm+ / Melopoeus hainanum",
+      "price": 80000,
+      "url": "https://tarancenter.com/product/블랙-어스타이거-준성체-암컷-11cm-melopoeus-hainanum/1740/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -19163,6 +19191,13 @@
       "price": 30000,
       "url": "https://tarancenter.com/product/타이제브라-유체-대-cyriopagopus-albostriatus/728/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "타이타이거 암컷 준성체 10cm+ / Melopoeus cf. \"Longipes\"",
+      "price": 60000,
+      "url": "https://tarancenter.com/product/타이타이거-암컷-준성체-10cm-melopoeus-cf-longipes/1742/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
@@ -21338,15 +21373,39 @@
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "사바레드 유체",
-      "price": 95000,
-      "url": "https://tarantulakorea.com/product/사바레드-유체/696/category/67/display/1/"
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/사바레드-유체/696/category/67/display/1/",
+      "prev": 95000,
+      "changed_on": "2026-11-25",
+      "hist": [
+        [
+          "2026-06-02",
+          95000
+        ],
+        [
+          "2026-11-25",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
       "channel": "자사몰",
       "name": "사바레드 유체",
-      "price": 95000,
-      "url": "https://tarantulakorea.com/product/사바레드-유체/696/category/67/display/2/"
+      "price": 35000,
+      "url": "https://tarantulakorea.com/product/사바레드-유체/696/category/67/display/2/",
+      "prev": 95000,
+      "changed_on": "2026-11-25",
+      "hist": [
+        [
+          "2026-06-02",
+          95000
+        ],
+        [
+          "2026-11-25",
+          35000
+        ]
+      ]
     },
     {
       "vendor": "타란툴라코리아",
