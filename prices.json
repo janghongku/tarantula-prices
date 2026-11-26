@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-26T06:16:33",
+  "updated_at": "2026-11-26T20:46:48",
   "channels": {
-    "자사몰": "2026-11-26T06:16:33",
+    "자사몰": "2026-11-26T20:46:48",
     "네이버": "2026-08-06T20:07:38"
   },
   "products": [
@@ -16129,7 +16129,8 @@
       "channel": "자사몰",
       "name": "넨뎁어스타이거 암컷 준성체 13cm+ / Melopoeus Sp. \"Nhen dep\"",
       "price": 70000,
-      "url": "https://tarancenter.com/product/넨뎁어스타이거-암컷-준성체-13cm-melopoeus-sp-nhen-dep/1739/category/51/display/1/"
+      "url": "https://tarancenter.com/product/넨뎁어스타이거-암컷-준성체-13cm-melopoeus-sp-nhen-dep/1739/category/51/display/1/",
+      "soldout": true
     },
     {
       "vendor": "타란센터",
@@ -20112,6 +20113,13 @@
       "price": 50000,
       "url": "https://tarancenter.com/product/피치-어스타이거-10cm-준성체-암컷-phormingochilus-sp-rufus/949/category/51/display/1/",
       "soldout": true
+    },
+    {
+      "vendor": "타란센터",
+      "channel": "자사몰",
+      "name": "피치어스타이거 암컷 성체급 11cm+ / Aspinochilus rufus",
+      "price": 60000,
+      "url": "https://tarancenter.com/product/피치어스타이거-암컷-성체급-11cm-aspinochilus-rufus/1743/category/51/display/1/"
     },
     {
       "vendor": "타란센터",
